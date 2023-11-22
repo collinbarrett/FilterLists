@@ -14397,19 +14397,19 @@
     "filterListId": 2440,
     "id": 2642,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/arapurayil/aBL/master/lists/social/filter_list.txt"
+    "url": "https://raw.githubusercontent.com/arapurayil/aBL/main/filters/social.txt"
   },
   {
     "filterListId": 2441,
     "id": 2643,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/arapurayil/aBL/master/lists/porn_gambling_snuff/filter_list.txt"
+    "url": "https://raw.githubusercontent.com/arapurayil/aBL/main/filters/nsfw.txt"
   },
   {
     "filterListId": 2442,
     "id": 2644,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/arapurayil/aBL/master/lists/regional/filter_list.txt"
+    "url": "https://raw.githubusercontent.com/arapurayil/aBL/main/filters/main.txt"
   },
   {
     "filterListId": 2443,
