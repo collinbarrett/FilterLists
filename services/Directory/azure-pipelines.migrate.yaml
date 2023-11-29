@@ -85,7 +85,7 @@ steps:
     displayName: install ef dotnet tool
     condition: and(eq(variables['abortJustMigrated.aborted'], 'false'), succeeded())
     inputs:
-      script: dotnet tool install -g dotnet-ef
+      script: dotnet tool install --global dotnet-ef --version 7.*
 
   - task: Bash@3
     displayName: revert existing PR migration
