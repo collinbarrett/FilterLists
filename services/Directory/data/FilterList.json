@@ -17315,11 +17315,11 @@
     "name": "RU BlockList for uBO"
   },
   {
-  "description": "This robust filter is meticulously designed to fortify your online privacy by intercepting and blocking a wide array of trackers, web analytics tools, and data collectors, ensuring a more secure and confidential browsing experience. Stay protected and in control of your digital footprint with this comprehensive shield against intrusive tracking mechanisms.",
-  "homeUrl": "https://github.com/complexorganizations/content-blocker",
-  "id": 2663,
-  "issuesUrl": "https://github.com/complexorganizations/content-blocker/issues",
-  "licenseId": 2,
-  "name": "Content Blocker - Advanced Tracker and Analytics Blocker"
+    "description": "This robust filter is meticulously designed to fortify your online privacy by intercepting and blocking a wide array of trackers, web analytics tools, and data collectors, ensuring a more secure and confidential browsing experience. Stay protected and in control of your digital footprint with this comprehensive shield against intrusive tracking mechanisms.",
+    "homeUrl": "https://github.com/complexorganizations/content-blocker",
+    "id": 2663,
+    "issuesUrl": "https://github.com/complexorganizations/content-blocker/issues",
+    "licenseId": 2,
+    "name": "Content Blocker - Advanced Tracker and Analytics Blocker"
   }
 ]
