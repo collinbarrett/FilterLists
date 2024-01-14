@@ -16071,5 +16071,65 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://raw.githubusercontent.com/complexorganizations/content-blocker/main/assets/hosts"
+  },
+  {
+    "filterListId": 2664,
+    "id": 2943,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCorruptSportsList.txt"
+  },
+  {
+    "filterListId": 2664,
+    "id": 2944,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiCorruptSportsList.txt"
+  },
+  {
+    "filterListId": 2665,
+    "id": 2945,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiMV3List.txt"
+  },
+  {
+    "filterListId": 2665,
+    "id": 2946,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiMV3List.txt"
+  },
+  {
+    "filterListId": 2666,
+    "id": 2947,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AfricanLanguagesList.txt"
+  },
+  {
+    "filterListId": 2666,
+    "id": 2948,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AfricanLanguagesList.txt"
+  },
+  {
+    "filterListId": 2667,
+    "id": 2949,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Special%20security%20lists/HTTPSOnlyModeForAllBrowsers.txt"
+  },
+  {
+    "filterListId": 2667,
+    "id": 2950,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Special%20security%20lists/HTTPSOnlyModeForAllBrowsers.txt"
+  },
+  {
+    "filterListId": 2668,
+    "id": 2951,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/Anti-'StockVectorArtOnCopypasteBackgrounds'.txt"
+  },
+  {
+    "filterListId": 2668,
+    "id": 2952,
+    "primariness": 2,
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Sensitive%20lists/Anti-'StockVectorArtOnCopypasteBackgrounds'.txt"
   }
 ]
