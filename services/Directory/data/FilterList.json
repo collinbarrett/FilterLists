@@ -11709,7 +11709,7 @@
     "id": 1841,
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
-    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for Pi-hole)"
+    "name": "Dandelion Sprout's Nordic Filters for Tidier Websites (for Legacy Pi-hole version ≤5.21)"
   },
   {
     "description": "Removes ads, affiliation ads, and empty boxes on Norwegian, Danish, Icelandic, Sami and Danish territorial sites to produce a cleaner browser experience. Meant to be used on top of general filters. uBO users should use the regular version instead.",
@@ -17321,5 +17321,55 @@
     "issuesUrl": "https://github.com/complexorganizations/content-blocker/issues",
     "licenseId": 2,
     "name": "Content Blocker - Advanced Tracker and Analytics Blocker"
+  },
+  {
+    "description": "This list aims to remove news articles about sports competitions that are laughably corrupt and money-hoarding, especially those that are in the pockets of the homicidal, anti-atheist Saudi Arabian royal house.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2664,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Corrupt Sports' List"
+  },
+  {
+    "description": "When I declared war on Chrome Manifest V3 in 2021, I really meant it. With this list that blocks MV3 extensions' download files and homepages, you too can be an active participant in the survival war.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2665,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-MV3 List"
+  },
+  {
+    "description": "Spun off from «Ad Removal List for Unusual Ads», as a result of not all African languages having newssites with high enough Alexa ranks to make it to AdGuard Base Filter's «Foreign» section.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2666,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "African Languages List"
+  },
+  {
+    "description": "I discovered in November 2023 that there was a non-zero market for this kind of list, so here it is.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2667,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "HTTPS-only Mode for All Browsers"
+  },
+  {
+    "description": "This list removes «Your fav is» and some character-specific «Daily _____» from some sites, to reduce clutter when searching for top-class fanart of various franchises.",
+    "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
+    "emailAddress": "imreeil42@gmail.com",
+    "homeUrl": "https://github.com/DandelionSprout/adfilt",
+    "id": 2668,
+    "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
+    "licenseId": 35,
+    "name": "Anti-'Stock vector art on copypaste backgrounds'"
   }
 ]
