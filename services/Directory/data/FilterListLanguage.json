@@ -3470,5 +3470,41 @@
   {
     "filterListId": 2662,
     "languageId": 132
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 6
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 55
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 99
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 133
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 145
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 148
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 151
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 177
+  },
+  {
+    "filterListId": 2666,
+    "languageId": 180
   }
 ]
