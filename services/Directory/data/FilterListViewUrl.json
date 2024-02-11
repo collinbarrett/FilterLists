@@ -16131,5 +16131,11 @@
     "id": 2952,
     "primariness": 2,
     "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Sensitive%20lists/Anti-'StockVectorArtOnCopypasteBackgrounds'.txt"
-  }
+  },
+  {
+    "filterListId": 2669,
+    "id": 2953,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt"
+  }  
 ]
