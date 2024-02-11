@@ -17377,10 +17377,10 @@
     "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=AQ9BB34WHFADC",
     "homeUrl": "https://github.com/braveinnovators/ukrainian-security-filter",
     "id": 2669,
-    "viewUrl": "https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt",
     "issuesUrl": "https://github.com/braveinnovators/ukrainian-security-filter/issues",
-    "syntaxId": 3,
     "licenseId": 4,
-    "name": "Ukrainian Security Filter"
+    "name": "Ukrainian Security Filter",
+    "syntaxId": 3,
+    "viewUrl": "https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt"
   }
 ]
