@@ -17371,5 +17371,16 @@
     "issuesUrl": "https://github.com/DandelionSprout/adfilt/issues",
     "licenseId": 35,
     "name": "Anti-'Stock vector art on copypaste backgrounds'"
+  },
+  {
+    "description": "Filter of malicious web resources (phishing, online fraud, malware, etc.) targeting Ukrainian citizens",
+    "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=AQ9BB34WHFADC",
+    "homeUrl": "https://github.com/braveinnovators/ukrainian-security-filter",
+    "id": 2669,
+    "viewUrl": "https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt",
+    "issuesUrl": "https://github.com/braveinnovators/ukrainian-security-filter/issues",
+    "syntaxId": 3,
+    "licenseId": 4,
+    "name": "Ukrainian Security Filter"
   }
 ]
