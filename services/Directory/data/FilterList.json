@@ -17379,8 +17379,6 @@
     "id": 2669,
     "issuesUrl": "https://github.com/braveinnovators/ukrainian-security-filter/issues",
     "licenseId": 4,
-    "name": "Ukrainian Security Filter",
-    "syntaxId": 3,
-    "viewUrl": "https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt"
+    "name": "Ukrainian Security Filter"
   }
 ]
