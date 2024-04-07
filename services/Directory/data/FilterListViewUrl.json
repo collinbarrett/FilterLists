@@ -16029,13 +16029,13 @@
     "filterListId": 2657,
     "id": 2935,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/domains.txt"
+    "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/lists/adblock/scams.txt"
   },
   {
     "filterListId": 2658,
     "id": 2936,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/adblock.txt"
+    "url": "https://raw.githubusercontent.com/jarelllama/Scam-Blocklist/main/lists/adblock/scams_light.txt"
   },
   {
     "filterListId": 2519,
