@@ -17267,20 +17267,20 @@
     "name": "BlockModReposting"
   },
   {
-    "description": "Blocklist for scam sites extracted from Google",
+    "description": "Blocklist for newly created scam domains retrieved daily using Google Search API, automated detection, and other public sources.",
     "homeUrl": "https://github.com/jarelllama/Scam-Blocklist",
     "id": 2657,
     "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
-    "licenseId": 5,
+    "licenseId": 4,
     "name": "Jarelllama's Scam Blocklist"
   },
   {
-    "description": "Blocklist for scam sites extracted from Google",
+    "description": "Light version of Jarelllama's Scam Blocklist.",
     "homeUrl": "https://github.com/jarelllama/Scam-Blocklist",
     "id": 2658,
     "issuesUrl": "https://github.com/jarelllama/Scam-Blocklist/issues",
-    "licenseId": 5,
-    "name": "Jarelllama's Scam Blocklist (ABP syntax)"
+    "licenseId": 4,
+    "name": "Jarelllama's Scam Blocklist LIGHT VERSION"
   },
   {
     "description": "A blocklist for Arabic content and websites not listed in StevenBlack/hosts. Blocks pornography, gambling, social media, dating websites, and phishing.",
