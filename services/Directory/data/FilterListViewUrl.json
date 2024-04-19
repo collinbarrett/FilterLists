@@ -16137,5 +16137,23 @@
     "id": 2953,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt"
-  }
+  },
+  {
+    "filterListId": 2670,
+    "id": 2954,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/ads.txt"
+  },
+  {
+    "filterListId": 2671,
+    "id": 2955,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/annoyances.txt"
+  },
+  {
+    "filterListId": 2672,
+    "id": 2956,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/privacy.txt"
+  }  
 ]
