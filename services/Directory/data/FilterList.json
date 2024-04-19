@@ -17374,11 +17374,38 @@
   },
   {
     "description": "Filter of malicious web resources (phishing, online fraud, malware, etc.) targeting Ukrainian citizens",
-    "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=AQ9BB34WHFADC",
+    "donateUrl": "https://donatello.to/serhiyguryev",
     "homeUrl": "https://github.com/braveinnovators/ukrainian-security-filter",
     "id": 2669,
     "issuesUrl": "https://github.com/braveinnovators/ukrainian-security-filter/issues",
     "licenseId": 4,
     "name": "Ukrainian Security Filter"
+  },
+  {
+    "description": "Removes ads from Ukrainian websites",
+    "donateUrl": "https://donatello.to/serhiyguryev",
+    "homeUrl": "https://github.com/serhiyguryev/ukrainian-filters",
+    "id": 2670,
+    "issuesUrl": "https://github.com/serhiyguryev/ukrainian-filters/issues",
+    "licenseId": 4,
+    "name": "Ukrainian Ad Filter"
+  },
+  {
+    "description": "Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)",
+    "donateUrl": "https://donatello.to/serhiyguryev",
+    "homeUrl": "https://github.com/serhiyguryev/ukrainian-filters",
+    "id": 2671,
+    "issuesUrl": "https://github.com/serhiyguryev/ukrainian-filters/issues",
+    "licenseId": 4,
+    "name": "Ukrainian Annoyance Filter"
+  },
+  {
+    "description": "Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior",
+    "donateUrl": "https://donatello.to/serhiyguryev",
+    "homeUrl": "https://github.com/serhiyguryev/ukrainian-filters",
+    "id": 2672,
+    "issuesUrl": "https://github.com/serhiyguryev/ukrainian-filters/issues",
+    "licenseId": 4,
+    "name": "Ukrainian Privacy Filter"
   }
 ]
