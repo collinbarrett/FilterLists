@@ -3183,13 +3183,13 @@
     "filterListId": 430,
     "id": 558,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicHosts.txt"
   },
   {
     "filterListId": 430,
     "id": 559,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/AdawayHosts"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/NorwegianExperimentalList%20alternate%20versions/NordicHosts.txt"
   },
   {
     "filterListId": 431,
@@ -8811,13 +8811,13 @@
     "filterListId": 1564,
     "id": 1566,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiCelebBirthList.txt"
   },
   {
     "filterListId": 1564,
     "id": 1567,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/raw/master/AntiCelebBirthList.txt"
   },
   {
     "filterListId": 1566,
@@ -14985,13 +14985,13 @@
     "filterListId": 2533,
     "id": 2746,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AntiOwlHouseList.txt"
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Sensitive%20lists/AntiOWDList.txt"
   },
   {
     "filterListId": 2533,
     "id": 2747,
     "primariness": 2,
-    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/AntiOwlHouseList.txt"
+    "url": "https://gitlab.com/DandelionSprout/adfilt/-/raw/master/Sensitive%20lists/AntiOWDList.txt"
   },
   {
     "filterListId": 2534,
