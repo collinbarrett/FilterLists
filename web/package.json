@@ -27,7 +27,7 @@
     "react-scripts": "^5.0.0",
     "slugify": "^1.6.6",
     "typescript": "^4.9.5",
-    "web-vitals": "^3.5.2"
+    "web-vitals": "^4.0.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
