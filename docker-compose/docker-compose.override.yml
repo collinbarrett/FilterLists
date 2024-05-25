@@ -12,13 +12,6 @@ services:
       - ../reverse-proxy/conf.d.dev:/etc/nginx/conf.d:ro
     command: ["nginx-debug", "-g", "daemon off;"]
 
-  archival-api:
-    build:
-      context: ../services
-      dockerfile: Archival/FilterLists.Archival.Api/dev.Dockerfile
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-
   directory-api:
     build:
       context: ../services

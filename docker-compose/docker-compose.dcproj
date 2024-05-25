@@ -12,7 +12,6 @@
     <None Include=".env" />
     <None Include="directory-db.env" />
     <None Include="directory-api.env" />
-    <None Include="archival-api.env" />
     <None Include="api-docs.env" />
     <None Include="docker-compose.directory.migrations.tests.yml" />
     <None Include="docker-compose.override.yml">

@@ -8,7 +8,6 @@ services:
       - reverse-proxy
     depends_on:
       - api-docs
-      - archival-api
       - directory-api
 
   api-docs:
@@ -17,37 +16,9 @@ services:
     networks:
       - reverse-proxy
     depends_on:
-      - archival-api
       - directory-api
     env_file:
       - api-docs.env
-
-  archival-api:
-    image: ghcr.io/collinbarrett/filterlists-archival-api
-    restart: always
-    networks:
-      - reverse-proxy
-      - archival
-    depends_on:
-      - archival-scheduling-db
-    volumes:
-      - archival-application-insights:/app/${ARCHIVAL_APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
-      - archival-archives:/app/${ARCHIVAL_GIT_REPOSITORY_PATH}
-    env_file:
-      - archival-api.env
-    environment:
-      ApplicationInsights__ServerTelemetryChannelStoragePath: ${ARCHIVAL_APPLICATION_INSIGHTS_SERVER_TELEMETRY_CHANNEL_STORAGE_PATH}
-      Api__DirectoryHost: ${DIRECTORY_HOST}
-      Git__RepositoryPath: ${ARCHIVAL_GIT_REPOSITORY_PATH}
-
-  archival-scheduling-db:
-    image: redis:alpine
-    restart: always
-    networks:
-      - archival
-    volumes:
-      - archival-scheduling-db:/data
-    entrypoint: ["redis-server", "--appendonly", "yes"]
 
   directory-api:
     image: ghcr.io/collinbarrett/filterlists-directory-api
@@ -78,12 +49,8 @@ services:
 
 networks:
   reverse-proxy:
-  archival:
   directory:
 
 volumes:
-  archival-application-insights:
-  archival-scheduling-db:
-  archival-archives:
   directory-application-insights:
   directory-db:
