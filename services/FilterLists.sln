@@ -50,24 +50,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8F419098-3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Infrastructure.Migrations.Tests", "Directory\FilterLists.Directory.Infrastructure.Migrations.Tests\FilterLists.Directory.Infrastructure.Migrations.Tests.csproj", "{8B07EF04-5516-40BB-B21B-CEC6F90EC631}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archival", "Archival", "{5E52FEF9-9605-4ACB-8A42-A20E06331599}"
-	ProjectSection(SolutionItems) = preProject
-		Archival\azure-pipelines.api.yaml = Archival\azure-pipelines.api.yaml
-	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Api", "Archival\FilterLists.Archival.Api\FilterLists.Archival.Api.csproj", "{F625C241-0501-4AEB-8B82-609C93EE6B7D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Application", "Archival\FilterLists.Archival.Application\FilterLists.Archival.Application.csproj", "{11669839-E666-477B-A1B6-276041AD3768}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Infrastructure", "Archival\FilterLists.Archival.Infrastructure\FilterLists.Archival.Infrastructure.csproj", "{A0B77015-E8C4-41D3-B63D-BF818026298C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{59197818-6C72-4A3C-A595-49F3D7D2EB18}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.SharedKernel.Logging", "SharedKernel\FilterLists.SharedKernel.Logging\FilterLists.SharedKernel.Logging.csproj", "{5485F55E-DFED-4DA0-8A00-220B081FAC96}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api.Contracts", "Directory\FilterLists.Directory.Api.Contracts\FilterLists.Directory.Api.Contracts.csproj", "{4D3D2508-CCC6-4C0B-B5E4-734DD5EC588F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Archival.Domain", "Archival\FilterLists.Archival.Domain\FilterLists.Archival.Domain.csproj", "{6402E81A-75C2-422F-933B-AAC1ED8C4128}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Domain", "Directory\FilterLists.Directory.Domain\FilterLists.Directory.Domain.csproj", "{EE844873-71D7-4B9D-93BF-DF65B9E4770D}"
 EndProject
