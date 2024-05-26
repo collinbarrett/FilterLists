@@ -16838,8 +16838,8 @@
     "name": "Scam Links - Links"
   },
   {
-    "description": "Adblocker list (experimental) which allows you to read articles from (supported) sites that implement a paywall. For some sites it will log you out (or block you to log in); caused by removing cookies or blocking general paywall-scripts. Disclaimer: the list doesn't support as many sites as the extension/add-on though.",
-    "homeUrl": "https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters",
+    "description": "Filters for news sites (supports less sites than the extension/add-on)",
+    "homeUrl": "https://github.com/bpc-clone/bypass-paywalls-clean-filters",
     "id": 2603,
     "name": "Bypass Paywalls Clean filter"
   },
