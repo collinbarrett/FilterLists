@@ -15618,7 +15618,7 @@
     "filterListId": 2603,
     "id": 2867,
     "primariness": 1,
-    "url": "https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt"
+    "url": "https://raw.githubusercontent.com/bpc-clone/bypass-paywalls-clean-filters/main/bpc-paywall-filter.txt"
   },
   {
     "filterListId": 2604,
