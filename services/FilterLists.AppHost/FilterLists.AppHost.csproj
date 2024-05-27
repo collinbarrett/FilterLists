@@ -16,6 +16,7 @@
 
     <ItemGroup>
         <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1"/>
+        <PackageReference Include="Aspire.Hosting.Azure.ApplicationInsights" Version="8.0.1"/>
     </ItemGroup>
 
 </Project>
