@@ -27,6 +27,12 @@ jobs:
           - language: javascript-typescript
             build-mode: none
     steps:
+      # CodeQL C# autobuild doesn't (yet?) recognize .NET Aspire
+      - if: matrix.language == 'csharp'
+        run: |
+          dotnet workload update
+          dotnet workload install aspire
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
