@@ -24,7 +24,7 @@ jobs:
         include:
           - language: csharp
             build-mode: autobuild
-          - language: javascript-typescript
+          - language: javascript
             build-mode: none
     steps:
       - name: Checkout repository
