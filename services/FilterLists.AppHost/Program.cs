@@ -4,7 +4,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 var appInsights = builder.AddAzureApplicationInsights("appinsights");
 
-var directoryApi = builder.AddProject<FilterLists_ApiService>("directoryapi")
+var directoryApi = builder.AddProject<FilterLists_Directory_Api>("directoryapi")
     .WithReference(appInsights);
 
 builder.AddProject<FilterLists_Web>("web")
