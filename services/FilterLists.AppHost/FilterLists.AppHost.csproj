@@ -10,7 +10,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\FilterLists.ApiService\FilterLists.ApiService.csproj"/>
+        <ProjectReference Include="..\Directory\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj"/>
         <ProjectReference Include="..\FilterLists.Web\FilterLists.Web.csproj"/>
     </ItemGroup>
 
