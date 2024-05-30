@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\FilterLists.ServiceDefaults\FilterLists.ServiceDefaults.csproj"/>
+        <ProjectReference Include="..\..\FilterLists.ServiceDefaults\FilterLists.ServiceDefaults.csproj"/>
     </ItemGroup>
 
 </Project>
