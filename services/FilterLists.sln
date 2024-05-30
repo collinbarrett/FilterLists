@@ -6,11 +6,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.AppHost", "Filt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.ServiceDefaults", "FilterLists.ServiceDefaults\FilterLists.ServiceDefaults.csproj", "{472BCEAB-C845-4870-AC82-437B10CA9CDE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.ApiService", "FilterLists.ApiService\FilterLists.ApiService.csproj", "{85A14D07-5C37-458A-B74B-4EE67BBA7102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Directory.Api", "Directory\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj", "{85A14D07-5C37-458A-B74B-4EE67BBA7102}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Tests", "FilterLists.Tests\FilterLists.Tests.csproj", "{063F0781-ECBC-4254-AF2F-1B75C6CC03B4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilterLists.Web", "FilterLists.Web\FilterLists.Web.csproj", "{E1311604-98F6-4AC7-8995-5E9F4CC34809}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Directory", "Directory", "{C4F6197D-9546-480E-AE92-1FC264D8E88F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,5 +46,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {019F26B8-9430-4EAB-87B8-E8F52A739F4C}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{495795BE-7386-4BEF-9407-A8E64BBE5292} = {C4F6197D-9546-480E-AE92-1FC264D8E88F}
 	EndGlobalSection
 EndGlobal
