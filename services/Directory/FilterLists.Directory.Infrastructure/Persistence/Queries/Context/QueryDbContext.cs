@@ -27,6 +27,7 @@ public class QueryDbContext(DbContextOptions<QueryDbContext> options) : DbContex
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.UseCollation("Latin1_General_100_CI_AS_SC");
         modelBuilder.ApplyConfigurationsFromAssembly(
             GetType().Assembly,
             type => type.Namespace == typeof(FilterListTypeConfiguration).Namespace);

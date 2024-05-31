@@ -5,10 +5,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Fork
 {
-    public long UpstreamFilterListId { get; init; }
-    public FilterList UpstreamFilterList { get; init; } = default!;
-    public long ForkFilterListId { get; init; }
-    public FilterList ForkFilterList { get; init; } = default!;
+    public int UpstreamFilterListId { get; init; }
+    public FilterList UpstreamFilterList { get; init; } = null!;
+    public int ForkFilterListId { get; init; }
+    public FilterList ForkFilterList { get; init; } = null!;
 }
 
 internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
@@ -21,7 +21,8 @@ internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
             .HasForeignKey(f => f.UpstreamFilterListId);
         builder.HasOne(f => f.ForkFilterList)
             .WithMany(fl => fl.UpstreamFilterLists)
-            .HasForeignKey(f => f.ForkFilterListId);
+            .HasForeignKey(f => f.ForkFilterListId)
+            .OnDelete(DeleteBehavior.NoAction);
         builder.HasDataJsonFile<Fork>();
     }
 }

@@ -5,10 +5,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record SoftwareSyntax
 {
-    public long SoftwareId { get; init; }
-    public Software Software { get; init; } = default!;
-    public long SyntaxId { get; init; }
-    public Syntax Syntax { get; init; } = default!;
+    public short SoftwareId { get; init; }
+    public Software Software { get; init; } = null!;
+    public short SyntaxId { get; init; }
+    public Syntax Syntax { get; init; } = null!;
 }
 
 internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<SoftwareSyntax>
