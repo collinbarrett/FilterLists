@@ -42,7 +42,7 @@ internal static class SeedConfigurationExtensions
     private static List<TEntity> Deserialize<TEntity>()
     {
         // uncomment to short-circuit HasData() when adding a migration
-        //return new List<TEntity>();
+        return new List<TEntity>();
 
         var path = Path.Combine("../data", $"{typeof(TEntity).Name}.json");
         if (!File.Exists(path)) return [];
