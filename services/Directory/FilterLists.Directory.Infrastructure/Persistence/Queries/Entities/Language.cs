@@ -3,11 +3,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Language : Entity
+public record Language
 {
-    public string Iso6391 { get; init; } = default!;
-    public string Name { get; init; } = default!;
-    public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new HashSet<FilterListLanguage>();
+    public short Id { get; init; }
+    public string Iso6391 { get; init; } = null!;
+    public string Name { get; init; } = null!;
+    public IEnumerable<FilterListLanguage> FilterListLanguages { get; init; } = new List<FilterListLanguage>();
 }
 
 internal class LanguageTypeConfiguration : IEntityTypeConfiguration<Language>
@@ -19,6 +20,8 @@ internal class LanguageTypeConfiguration : IEntityTypeConfiguration<Language>
             .HasMaxLength(2);
         builder.HasIndex(l => l.Iso6391)
             .IsUnique();
+        builder.Property(l => l.Name)
+            .HasMaxLength(64);
         builder.HasIndex(l => l.Name)
             .IsUnique();
         builder.HasDataJsonFile<Language>();
