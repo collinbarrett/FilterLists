@@ -9,6 +9,10 @@ var directoryDb = builder.AddSqlServer("directorysqlserver")
     .PublishAsConnectionString() // customized for free tier, don't trust Aspire to provision db
     .AddDatabase("directorydb");
 
+builder.AddProject<FilterLists_Directory_Infrastructure_MigrationService>("directorymigrationservice")
+    .WithReference(directoryDb)
+    .WithReference(appInsights);
+
 var directoryApi = builder.AddProject<FilterLists_Directory_Api>("directoryapi")
     .WithReference(directoryDb)
     .WithReference(appInsights);

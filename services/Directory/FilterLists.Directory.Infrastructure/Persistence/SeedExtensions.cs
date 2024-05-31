@@ -1,21 +1,7 @@
 ﻿using System.Text.Json;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace FilterLists.Directory.Infrastructure.Persistence;
-
-public static class SeedExtension
-{
-    public static async Task MigrateAsync(this IHost host)
-    {
-        using var scope = host.Services.CreateScope();
-        var db = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
-        await db.Database.MigrateAsync();
-    }
-}
 
 internal static class SeedConfigurationExtensions
 {
