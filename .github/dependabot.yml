@@ -8,6 +8,11 @@ updates:
     directory: /services
     schedule:
       interval: daily
+  - package-ecosystem: nuget
+    directory: /services
+    schedule:
+      interval: daily
+    target-branch: aspire
   - package-ecosystem: docker
     directory: /web
     schedule:
