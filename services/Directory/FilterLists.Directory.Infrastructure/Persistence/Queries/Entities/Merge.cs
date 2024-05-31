@@ -5,10 +5,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record Merge
 {
-    public long IncludedInFilterListId { get; init; }
-    public FilterList IncludedInFilterList { get; init; } = default!;
-    public long IncludesFilterListId { get; init; }
-    public FilterList IncludesFilterList { get; init; } = default!;
+    public int IncludedInFilterListId { get; init; }
+    public FilterList IncludedInFilterList { get; init; } = null!;
+    public int IncludesFilterListId { get; init; }
+    public FilterList IncludesFilterList { get; init; } = null!;
 }
 
 internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
@@ -21,7 +21,8 @@ internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
             .HasForeignKey(m => m.IncludedInFilterListId);
         builder.HasOne(m => m.IncludesFilterList)
             .WithMany(fl => fl.IncludedInFilterLists)
-            .HasForeignKey(m => m.IncludesFilterListId);
+            .HasForeignKey(m => m.IncludesFilterListId)
+            .OnDelete(DeleteBehavior.NoAction);
         builder.HasDataJsonFile<Merge>();
     }
 }
