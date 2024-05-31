@@ -5,11 +5,7 @@ updates:
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: /services/Directory/FilterLists.Directory.Api
-    schedule:
-      interval: daily
-  - package-ecosystem: nuget
-    directory: /services/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests
+    directory: /services
     schedule:
       interval: daily
   - package-ecosystem: docker
