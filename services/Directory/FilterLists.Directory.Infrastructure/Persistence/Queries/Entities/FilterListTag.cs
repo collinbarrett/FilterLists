@@ -5,10 +5,10 @@ namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
 public record FilterListTag
 {
-    public long FilterListId { get; init; }
-    public FilterList FilterList { get; init; } = default!;
-    public long TagId { get; init; }
-    public Tag Tag { get; init; } = default!;
+    public int FilterListId { get; init; }
+    public required FilterList FilterList { get; init; }
+    public int TagId { get; init; }
+    public required Tag Tag { get; init; }
 }
 
 internal class FilterListTagTypeConfiguration : IEntityTypeConfiguration<FilterListTag>
