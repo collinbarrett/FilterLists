@@ -14,7 +14,7 @@ public class WebTests
         await app.StartAsync();
 
         // Act
-        var httpClient = app.CreateHttpClient("webfrontend");
+        var httpClient = app.CreateHttpClient("web");
         var response = await httpClient.GetAsync("/");
 
         // Assert
