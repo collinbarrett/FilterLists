@@ -13140,12 +13140,6 @@
     "url": "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.txt"
   },
   {
-    "filterListId": 2275,
-    "id": 2415,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/easylistchina+easylistchina_compliance+easylist.tpl"
-  },
-  {
     "filterListId": 2276,
     "id": 2416,
     "primariness": 1,
@@ -13834,12 +13828,6 @@
     "id": 2546,
     "primariness": 1,
     "url": "https://easylist-downloads.adblockplus.org/dandelion_sprouts_nordic_filters+easylist.txt"
-  },
-  {
-    "filterListId": 2378,
-    "id": 2547,
-    "primariness": 1,
-    "url": "https://easylist-downloads.adblockplus.org/dandelion_sprouts_nordic_filters+easylist.tpl"
   },
   {
     "filterListId": 2379,
