@@ -16,7 +16,7 @@ builder.Services.AddHttpClient<WeatherApiClient>(client =>
 {
     // This URL uses "https+http://" to indicate HTTPS is preferred over HTTP.
     // Learn more about service discovery scheme resolution at https://aka.ms/dotnet/sdschemes.
-    client.BaseAddress = new Uri("https+http://apiservice");
+    client.BaseAddress = new Uri("https+http://directoryapi");
 });
 
 var app = builder.Build();
