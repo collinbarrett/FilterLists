@@ -5,20 +5,20 @@ updates:
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: services/Directory/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj
+    directory: services/Directory/FilterLists.Directory.Api
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: services/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests/FilterLists.Directory.Infrastructure.Migrations.Tests.csproj
+    directory: services/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests
     schedule:
       interval: daily
   - package-ecosystem: nuget
-    directory: services/FilterLists.AppHost/FilterLists.AppHost.csproj
+    directory: services/FilterLists.AppHost
     schedule:
       interval: daily
     target-branch: aspire
   - package-ecosystem: nuget
-    directory: services/FilterLists.Tests/FilterLists.Tests.csproj
+    directory: services/FilterLists.Tests
     schedule:
       interval: daily
     target-branch: aspire
