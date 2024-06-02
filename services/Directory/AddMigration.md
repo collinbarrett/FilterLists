@@ -1,1 +1,0 @@
-dotnet ef migrations add InitialCreate --project FilterLists.Directory.Infrastructure.Migrations/FilterLists.Directory.Infrastructure.Migrations.csproj --startup-project FilterLists.Directory.Infrastructure.MigrationService/FilterLists.Directory.Infrastructure.MigrationService.csproj
