@@ -20,9 +20,4 @@ var directoryApi = builder.AddProject<FilterLists_Directory_Api>("directoryapi")
     .WithReference(directoryDb)
     .WithReference(appInsights);
 
-builder.AddProject<FilterLists_Web>("web")
-    .WithReference(directoryApi)
-    .WithReference(appInsights)
-    .WithExternalHttpEndpoints();
-
 builder.Build().Run();
