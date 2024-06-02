@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
+// TODO: explicitly make more readonly-ish
 public class QueryDbContext(DbContextOptions<QueryDbContext> options) : DbContext(options)
 {
     public DbSet<FilterList> FilterLists => Set<FilterList>();
@@ -12,18 +13,6 @@ public class QueryDbContext(DbContextOptions<QueryDbContext> options) : DbContex
     public DbSet<Software> Software => Set<Software>();
     public DbSet<Syntax> Syntaxes => Set<Syntax>();
     public DbSet<Tag> Tags => Set<Tag>();
-
-    public override int SaveChanges(bool acceptAllChangesOnSuccess)
-    {
-        throw new InvalidOperationException("This context is read-only.");
-    }
-
-    public override Task<int> SaveChangesAsync(
-        bool acceptAllChangesOnSuccess,
-        CancellationToken cancellationToken = default)
-    {
-        throw new InvalidOperationException("This context is read-only.");
-    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
