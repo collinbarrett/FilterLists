@@ -6,11 +6,14 @@ namespace FilterLists.Directory.Infrastructure;
 
 public static class ConfigurationExtensions
 {
-    public static void AddInfrastructureForDbMaintenance(this IHostApplicationBuilder builder)
+    public static void AddInfrastructure(this IHostApplicationBuilder builder)
     {
         builder.AddSqlServerDbContext<QueryDbContext>("directorydb",
-            settings => { },
-            o => o.UseSqlServer(so => so.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations"))
-        );
+            _ => { },
+            o =>
+            {
+                o.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+                o.UseSqlServer(so => so.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations"));
+            });
     }
 }

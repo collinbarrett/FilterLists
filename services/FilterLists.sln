@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Directory.Infra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Directory.Infrastructure", "Directory\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj", "{02B4FF36-8012-42CD-BE3E-92475C091A4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterLists.Directory.Application", "Directory\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj", "{0D4420C3-283B-4C0A-88B4-D39E2033B80F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{02B4FF36-8012-42CD-BE3E-92475C091A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02B4FF36-8012-42CD-BE3E-92475C091A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02B4FF36-8012-42CD-BE3E-92475C091A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D4420C3-283B-4C0A-88B4-D39E2033B80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D4420C3-283B-4C0A-88B4-D39E2033B80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D4420C3-283B-4C0A-88B4-D39E2033B80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D4420C3-283B-4C0A-88B4-D39E2033B80F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +70,6 @@ Global
 		{5DD434A8-D394-4178-9DF3-669EC85EA229} = {C4F6197D-9546-480E-AE92-1FC264D8E88F}
 		{37170729-4BC9-412F-9ADF-97592A677E90} = {C4F6197D-9546-480E-AE92-1FC264D8E88F}
 		{02B4FF36-8012-42CD-BE3E-92475C091A4C} = {C4F6197D-9546-480E-AE92-1FC264D8E88F}
+		{0D4420C3-283B-4C0A-88B4-D39E2033B80F} = {C4F6197D-9546-480E-AE92-1FC264D8E88F}
 	EndGlobalSection
 EndGlobal
