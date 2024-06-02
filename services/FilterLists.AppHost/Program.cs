@@ -9,9 +9,11 @@ var directoryDb = builder.AddSqlServer("directorysqlserver")
     .PublishAsConnectionString() // customized for free tier, don't trust Aspire to provision db
     .AddDatabase("directorydb");
 
-builder.AddProject<FilterLists_Directory_Infrastructure_MigrationService>("directorymigrationservice")
-    .WithReference(directoryDb)
-    .WithReference(appInsights);
+// TODO: migrate published db from run-once instance (Container Apps 'App" type restarts)
+if (!builder.ExecutionContext.IsPublishMode)
+    builder.AddProject<FilterLists_Directory_Infrastructure_MigrationService>("directorymigrationservice")
+        .WithReference(directoryDb)
+        .WithReference(appInsights);
 
 var directoryApi = builder.AddProject<FilterLists_Directory_Api>("directoryapi")
     .WithReference(directoryDb)
