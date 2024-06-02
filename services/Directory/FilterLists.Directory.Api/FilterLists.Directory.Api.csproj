@@ -8,6 +8,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\FilterLists.ServiceDefaults\FilterLists.ServiceDefaults.csproj"/>
+        <ProjectReference Include="..\FilterLists.Directory.Infrastructure\FilterLists.Directory.Infrastructure.csproj"/>
     </ItemGroup>
 
 </Project>
