@@ -18,6 +18,7 @@ if (builder.ExecutionContext.IsRunMode)
 
 builder.AddProject<FilterLists_Directory_Api>("directoryapi")
     .WithReference(directoryDb)
-    .WithReference(appInsights);
+    .WithReference(appInsights)
+    .WithExternalHttpEndpoints();
 
 builder.Build().Run();
