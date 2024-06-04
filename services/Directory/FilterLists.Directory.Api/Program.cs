@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.ConfigureKestrel(serverOptions => serverOptions.AddServerHeader = false);
+
 // Add service defaults & Aspire components.
 builder.AddServiceDefaults();
 
