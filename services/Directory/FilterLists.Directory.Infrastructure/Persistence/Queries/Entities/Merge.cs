@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Merge
+public sealed record Merge
 {
     public int IncludedInFilterListId { get; init; }
     public FilterList IncludedInFilterList { get; init; } = null!;
@@ -11,9 +11,9 @@ public record Merge
     public FilterList IncludesFilterList { get; init; } = null!;
 }
 
-internal class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
+internal sealed class MergeTypeConfiguration : IEntityTypeConfiguration<Merge>
 {
-    public virtual void Configure(EntityTypeBuilder<Merge> builder)
+    public void Configure(EntityTypeBuilder<Merge> builder)
     {
         builder.HasKey(m => new { m.IncludedInFilterListId, m.IncludesFilterListId });
         builder.HasOne(m => m.IncludedInFilterList)

@@ -51,7 +51,7 @@ public static class GetLists
     }
 
     [PublicAPI]
-    public record ListVm
+    public sealed record ListVm
     {
         /// <summary>
         ///     The identifier.

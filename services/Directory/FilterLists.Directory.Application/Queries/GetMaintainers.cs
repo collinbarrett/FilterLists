@@ -40,7 +40,7 @@ public static class GetMaintainers
     }
 
     [PublicAPI]
-    public record MaintainerVm
+    public sealed record MaintainerVm
     {
         /// <summary>
         ///     The identifier.

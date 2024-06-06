@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record License
+public sealed record License
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
@@ -14,9 +14,9 @@ public record License
     public IEnumerable<FilterList> FilterLists { get; init; } = new List<FilterList>();
 }
 
-internal class LicenseTypeConfiguration : IEntityTypeConfiguration<License>
+internal sealed class LicenseTypeConfiguration : IEntityTypeConfiguration<License>
 {
-    public virtual void Configure(EntityTypeBuilder<License> builder)
+    public void Configure(EntityTypeBuilder<License> builder)
     {
         builder.Property(l => l.Name)
             .HasMaxLength(64);

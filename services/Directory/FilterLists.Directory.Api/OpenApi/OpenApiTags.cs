@@ -87,7 +87,7 @@ internal static class OpenApiTags
     };
 
     [UsedImplicitly]
-    internal class TagDescriptionsDocumentFilter : IDocumentFilter
+    internal sealed class TagDescriptionsDocumentFilter : IDocumentFilter
     {
         public void Apply(OpenApiDocument swaggerDoc, DocumentFilterContext context)
         {

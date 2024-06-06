@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Software
+public sealed record Software
 {
     public short Id { get; init; }
     public string Name { get; init; } = null!;
@@ -14,9 +14,9 @@ public record Software
     public IEnumerable<SoftwareSyntax> SoftwareSyntaxes { get; init; } = new List<SoftwareSyntax>();
 }
 
-internal class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
+internal sealed class SoftwareTypeConfiguration : IEntityTypeConfiguration<Software>
 {
-    public virtual void Configure(EntityTypeBuilder<Software> builder)
+    public void Configure(EntityTypeBuilder<Software> builder)
     {
         builder.Property(s => s.Name)
             .HasMaxLength(64);

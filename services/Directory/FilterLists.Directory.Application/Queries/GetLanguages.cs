@@ -37,7 +37,7 @@ public static class GetLanguages
     }
 
     [PublicAPI]
-    public record LanguageVm
+    public sealed record LanguageVm
     {
         /// <summary>
         ///     The identifier.

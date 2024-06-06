@@ -8,7 +8,7 @@ using OpenTelemetry.Trace;
 namespace FilterLists.Directory.Infrastructure.MigrationService;
 
 /// <remarks>https://learn.microsoft.com/en-us/dotnet/aspire/database/ef-core-migrations#create-the-migration-service</remarks>
-public class Worker(
+public sealed class Worker(
     IServiceProvider serviceProvider,
     IHostApplicationLifetime hostApplicationLifetime,
     IHostEnvironment hostEnvironment) : BackgroundService
@@ -16,10 +16,10 @@ public class Worker(
     private const string ActivitySourceName = "Migrations";
     private static readonly ActivitySource ActivitySource = new(ActivitySourceName);
 
-    protected override async Task ExecuteAsync(CancellationToken cancellationToken)
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         // allow SQL Server container time to start
-        await Task.Delay(3000, cancellationToken);
+        await Task.Delay(3000, stoppingToken);
 
         // ReSharper disable once ExplicitCallerInfoArgument
         using var activity = ActivitySource.StartActivity("Migrating database", ActivityKind.Client);
@@ -29,8 +29,8 @@ public class Worker(
             using var scope = serviceProvider.CreateScope();
             var dbContext = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
 
-            if (hostEnvironment.IsDevelopment()) await EnsureDatabaseAsync(dbContext, cancellationToken);
-            await RunMigrationAsync(dbContext, cancellationToken);
+            if (hostEnvironment.IsDevelopment()) await EnsureDatabaseAsync(dbContext, stoppingToken);
+            await RunMigrationAsync(dbContext, stoppingToken);
         }
         catch (Exception ex)
         {

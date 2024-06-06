@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record FilterListLanguage
+public sealed record FilterListLanguage
 {
     public int FilterListId { get; init; }
     public FilterList FilterList { get; init; } = null!;
@@ -11,9 +11,9 @@ public record FilterListLanguage
     public Language Language { get; init; } = null!;
 }
 
-internal class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<FilterListLanguage>
+internal sealed class FilterListLanguageTypeConfiguration : IEntityTypeConfiguration<FilterListLanguage>
 {
-    public virtual void Configure(EntityTypeBuilder<FilterListLanguage> builder)
+    public void Configure(EntityTypeBuilder<FilterListLanguage> builder)
     {
         builder.HasKey(fll => new { fll.FilterListId, fll.LanguageId });
         builder.HasDataJsonFile<FilterListLanguage>();

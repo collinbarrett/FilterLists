@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Maintainer
+public sealed record Maintainer
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
@@ -13,9 +13,9 @@ public record Maintainer
     public IEnumerable<FilterListMaintainer> FilterListMaintainers { get; init; } = new List<FilterListMaintainer>();
 }
 
-internal class MaintainerTypeConfiguration : IEntityTypeConfiguration<Maintainer>
+internal sealed class MaintainerTypeConfiguration : IEntityTypeConfiguration<Maintainer>
 {
-    public virtual void Configure(EntityTypeBuilder<Maintainer> builder)
+    public void Configure(EntityTypeBuilder<Maintainer> builder)
     {
         builder.Property(m => m.Name)
             .HasMaxLength(64);
