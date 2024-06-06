@@ -11,7 +11,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Languages",
+                name: "Language",
                 columns: table => new
                 {
                     Id = table.Column<short>(type: "smallint", nullable: false)
@@ -21,11 +21,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Languages", x => x.Id);
+                    table.PrimaryKey("PK_Language", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Licenses",
+                name: "License",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -38,11 +38,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Licenses", x => x.Id);
+                    table.PrimaryKey("PK_License", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Maintainers",
+                name: "Maintainer",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -54,7 +54,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Maintainers", x => x.Id);
+                    table.PrimaryKey("PK_Maintainer", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -75,7 +75,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Syntaxes",
+                name: "Syntax",
                 columns: table => new
                 {
                     Id = table.Column<short>(type: "smallint", nullable: false)
@@ -86,11 +86,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Syntaxes", x => x.Id);
+                    table.PrimaryKey("PK_Syntax", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Tags",
+                name: "Tag",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -100,11 +100,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tags", x => x.Id);
+                    table.PrimaryKey("PK_Tag", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "FilterLists",
+                name: "FilterList",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -124,11 +124,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FilterLists", x => x.Id);
+                    table.PrimaryKey("PK_FilterList", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_FilterLists_Licenses_LicenseId",
+                        name: "FK_FilterList_License_LicenseId",
                         column: x => x.LicenseId,
-                        principalTable: "Licenses",
+                        principalTable: "License",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -150,9 +150,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SoftwareSyntax_Syntaxes_SyntaxId",
+                        name: "FK_SoftwareSyntax_Syntax_SyntaxId",
                         column: x => x.SyntaxId,
-                        principalTable: "Syntaxes",
+                        principalTable: "Syntax",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -168,15 +168,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_Dependent", x => new { x.DependencyFilterListId, x.DependentFilterListId });
                     table.ForeignKey(
-                        name: "FK_Dependent_FilterLists_DependencyFilterListId",
+                        name: "FK_Dependent_FilterList_DependencyFilterListId",
                         column: x => x.DependencyFilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Dependent_FilterLists_DependentFilterListId",
+                        name: "FK_Dependent_FilterList_DependentFilterListId",
                         column: x => x.DependentFilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id");
                 });
 
@@ -191,15 +191,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_FilterListLanguage", x => new { x.FilterListId, x.LanguageId });
                     table.ForeignKey(
-                        name: "FK_FilterListLanguage_FilterLists_FilterListId",
+                        name: "FK_FilterListLanguage_FilterList_FilterListId",
                         column: x => x.FilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_FilterListLanguage_Languages_LanguageId",
+                        name: "FK_FilterListLanguage_Language_LanguageId",
                         column: x => x.LanguageId,
-                        principalTable: "Languages",
+                        principalTable: "Language",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -215,15 +215,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_FilterListMaintainer", x => new { x.FilterListId, x.MaintainerId });
                     table.ForeignKey(
-                        name: "FK_FilterListMaintainer_FilterLists_FilterListId",
+                        name: "FK_FilterListMaintainer_FilterList_FilterListId",
                         column: x => x.FilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_FilterListMaintainer_Maintainers_MaintainerId",
+                        name: "FK_FilterListMaintainer_Maintainer_MaintainerId",
                         column: x => x.MaintainerId,
-                        principalTable: "Maintainers",
+                        principalTable: "Maintainer",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -239,15 +239,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_FilterListSyntax", x => new { x.FilterListId, x.SyntaxId });
                     table.ForeignKey(
-                        name: "FK_FilterListSyntax_FilterLists_FilterListId",
+                        name: "FK_FilterListSyntax_FilterList_FilterListId",
                         column: x => x.FilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_FilterListSyntax_Syntaxes_SyntaxId",
+                        name: "FK_FilterListSyntax_Syntax_SyntaxId",
                         column: x => x.SyntaxId,
-                        principalTable: "Syntaxes",
+                        principalTable: "Syntax",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -263,15 +263,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_FilterListTag", x => new { x.FilterListId, x.TagId });
                     table.ForeignKey(
-                        name: "FK_FilterListTag_FilterLists_FilterListId",
+                        name: "FK_FilterListTag_FilterList_FilterListId",
                         column: x => x.FilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_FilterListTag_Tags_TagId",
+                        name: "FK_FilterListTag_Tag_TagId",
                         column: x => x.TagId,
-                        principalTable: "Tags",
+                        principalTable: "Tag",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -291,9 +291,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_FilterListViewUrl", x => new { x.FilterListId, x.Id });
                     table.ForeignKey(
-                        name: "FK_FilterListViewUrl_FilterLists_FilterListId",
+                        name: "FK_FilterListViewUrl_FilterList_FilterListId",
                         column: x => x.FilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -309,14 +309,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_Fork", x => new { x.UpstreamFilterListId, x.ForkFilterListId });
                     table.ForeignKey(
-                        name: "FK_Fork_FilterLists_ForkFilterListId",
+                        name: "FK_Fork_FilterList_ForkFilterListId",
                         column: x => x.ForkFilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Fork_FilterLists_UpstreamFilterListId",
+                        name: "FK_Fork_FilterList_UpstreamFilterListId",
                         column: x => x.UpstreamFilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -332,15 +332,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_Merge", x => new { x.IncludedInFilterListId, x.IncludesFilterListId });
                     table.ForeignKey(
-                        name: "FK_Merge_FilterLists_IncludedInFilterListId",
+                        name: "FK_Merge_FilterList_IncludedInFilterListId",
                         column: x => x.IncludedInFilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Merge_FilterLists_IncludesFilterListId",
+                        name: "FK_Merge_FilterList_IncludesFilterListId",
                         column: x => x.IncludesFilterListId,
-                        principalTable: "FilterLists",
+                        principalTable: "FilterList",
                         principalColumn: "Id");
                 });
 
@@ -348,6 +348,17 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "IX_Dependent_DependentFilterListId",
                 table: "Dependent",
                 column: "DependentFilterListId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FilterList_LicenseId",
+                table: "FilterList",
+                column: "LicenseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FilterList_Name",
+                table: "FilterList",
+                column: "Name",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_FilterListLanguage_LanguageId",
@@ -358,17 +369,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "IX_FilterListMaintainer_MaintainerId",
                 table: "FilterListMaintainer",
                 column: "MaintainerId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_FilterLists_LicenseId",
-                table: "FilterLists",
-                column: "LicenseId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_FilterLists_Name",
-                table: "FilterLists",
-                column: "Name",
-                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_FilterListSyntax_SyntaxId",
@@ -392,26 +392,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 column: "ForkFilterListId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Languages_Iso6391",
-                table: "Languages",
+                name: "IX_Language_Iso6391",
+                table: "Language",
                 column: "Iso6391",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Languages_Name",
-                table: "Languages",
+                name: "IX_Language_Name",
+                table: "Language",
                 column: "Name",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Licenses_Name",
-                table: "Licenses",
+                name: "IX_License_Name",
+                table: "License",
                 column: "Name",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Maintainers_Name",
-                table: "Maintainers",
+                name: "IX_Maintainer_Name",
+                table: "Maintainer",
                 column: "Name",
                 unique: true);
 
@@ -432,14 +432,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 column: "SyntaxId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Syntaxes_Name",
-                table: "Syntaxes",
+                name: "IX_Syntax_Name",
+                table: "Syntax",
                 column: "Name",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Tags_Name",
-                table: "Tags",
+                name: "IX_Tag_Name",
+                table: "Tag",
                 column: "Name",
                 unique: true);
         }
@@ -475,25 +475,25 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 name: "SoftwareSyntax");
 
             migrationBuilder.DropTable(
-                name: "Languages");
+                name: "Language");
 
             migrationBuilder.DropTable(
-                name: "Maintainers");
+                name: "Maintainer");
 
             migrationBuilder.DropTable(
-                name: "Tags");
+                name: "Tag");
 
             migrationBuilder.DropTable(
-                name: "FilterLists");
+                name: "FilterList");
 
             migrationBuilder.DropTable(
                 name: "Software");
 
             migrationBuilder.DropTable(
-                name: "Syntaxes");
+                name: "Syntax");
 
             migrationBuilder.DropTable(
-                name: "Licenses");
+                name: "License");
         }
     }
 }

@@ -148,7 +148,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("FilterLists");
+                    b.ToTable("FilterList");
 
                     b.HasData(
                         new
@@ -58506,7 +58506,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Languages");
+                    b.ToTable("Language");
 
                     b.HasData(
                         new
@@ -59628,7 +59628,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Licenses");
+                    b.ToTable("License");
 
                     b.HasData(
                         new
@@ -60053,7 +60053,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Maintainers");
+                    b.ToTable("Maintainer");
 
                     b.HasData(
                         new
@@ -63049,7 +63049,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Syntaxes");
+                    b.ToTable("Syntax");
 
                     b.HasData(
                         new
@@ -63337,7 +63337,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Tags");
+                    b.ToTable("Tag");
 
                     b.HasData(
                         new
