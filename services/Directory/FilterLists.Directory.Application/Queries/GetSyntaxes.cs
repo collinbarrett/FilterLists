@@ -42,7 +42,7 @@ public static class GetSyntaxes
     }
 
     [PublicAPI]
-    public record SyntaxVm
+    public sealed record SyntaxVm
     {
         /// <summary>
         ///     The identifier.

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
 // TODO: explicitly make more readonly-ish
-public class QueryDbContext(DbContextOptions<QueryDbContext> options) : DbContext(options)
+public sealed class QueryDbContext(DbContextOptions<QueryDbContext> options) : DbContext(options)
 {
     public DbSet<FilterList> FilterLists => Set<FilterList>();
     public DbSet<Language> Languages => Set<Language>();

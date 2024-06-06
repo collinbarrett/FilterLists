@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record FilterList
+public sealed record FilterList
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
@@ -32,9 +32,9 @@ public record FilterList
     public IEnumerable<Dependent> DependentFilterLists { get; init; } = new List<Dependent>();
 }
 
-internal class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>
+internal sealed class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>
 {
-    public virtual void Configure(EntityTypeBuilder<FilterList> builder)
+    public void Configure(EntityTypeBuilder<FilterList> builder)
     {
         builder.Property(f => f.Name)
             .HasMaxLength(256);

@@ -42,7 +42,7 @@ public static class GetSoftware
     }
 
     [PublicAPI]
-    public record SoftwareVm
+    public sealed record SoftwareVm
     {
         /// <summary>
         ///     The identifier.

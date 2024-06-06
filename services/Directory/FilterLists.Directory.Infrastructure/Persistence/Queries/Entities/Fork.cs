@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Fork
+public sealed record Fork
 {
     public int UpstreamFilterListId { get; init; }
     public FilterList UpstreamFilterList { get; init; } = null!;
@@ -11,9 +11,9 @@ public record Fork
     public FilterList ForkFilterList { get; init; } = null!;
 }
 
-internal class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
+internal sealed class ForkTypeConfiguration : IEntityTypeConfiguration<Fork>
 {
-    public virtual void Configure(EntityTypeBuilder<Fork> builder)
+    public void Configure(EntityTypeBuilder<Fork> builder)
     {
         builder.HasKey(f => new { f.UpstreamFilterListId, f.ForkFilterListId });
         builder.HasOne(f => f.UpstreamFilterList)

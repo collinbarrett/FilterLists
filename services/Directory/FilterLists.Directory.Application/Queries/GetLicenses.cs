@@ -40,7 +40,7 @@ public static class GetLicenses
     }
 
     [PublicAPI]
-    public record LicenseVm
+    public sealed record LicenseVm
     {
         /// <summary>
         ///     The identifier.
