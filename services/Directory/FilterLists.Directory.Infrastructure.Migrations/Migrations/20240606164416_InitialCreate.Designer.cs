@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20240601133712_InitialCreate")]
+    [Migration("20240606164416_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -104,7 +104,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("FilterLists");
+                    b.ToTable("FilterList");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.FilterListLanguage", b =>
@@ -209,7 +209,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Languages");
+                    b.ToTable("Language");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.License", b =>
@@ -249,7 +249,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Licenses");
+                    b.ToTable("License");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Maintainer", b =>
@@ -282,7 +282,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Maintainers");
+                    b.ToTable("Maintainer");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Merge", b =>
@@ -377,7 +377,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Syntaxes");
+                    b.ToTable("Syntax");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Tag", b =>
@@ -401,7 +401,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Tags");
+                    b.ToTable("Tag");
                 });
 
             modelBuilder.Entity("FilterLists.Directory.Infrastructure.Persistence.Queries.Entities.Dependent", b =>

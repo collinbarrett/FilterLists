@@ -10,10 +10,6 @@ public static class ConfigurationExtensions
     {
         builder.AddSqlServerDbContext<QueryDbContext>("directorydb",
             _ => { },
-            o =>
-            {
-                o.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
-                o.UseSqlServer(so => so.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations"));
-            });
+            o => o.UseSqlServer(so => so.MigrationsAssembly("FilterLists.Directory.Infrastructure.Migrations")));
     }
 }
