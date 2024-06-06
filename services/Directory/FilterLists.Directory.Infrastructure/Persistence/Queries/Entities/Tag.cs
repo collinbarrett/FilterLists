@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Tag
+public sealed record Tag
 {
     public int Id { get; init; }
     public string Name { get; init; } = null!;
@@ -11,9 +11,9 @@ public record Tag
     public IEnumerable<FilterListTag> FilterListTags { get; init; } = new List<FilterListTag>();
 }
 
-internal class TagTypeConfiguration : IEntityTypeConfiguration<Tag>
+internal sealed class TagTypeConfiguration : IEntityTypeConfiguration<Tag>
 {
-    public virtual void Configure(EntityTypeBuilder<Tag> builder)
+    public void Configure(EntityTypeBuilder<Tag> builder)
     {
         builder.Property(t => t.Name)
             .HasMaxLength(32);

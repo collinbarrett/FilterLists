@@ -38,7 +38,7 @@ public static class GetTags
     }
 
     [PublicAPI]
-    public record TagVm
+    public sealed record TagVm
     {
         /// <summary>
         ///     The identifier.

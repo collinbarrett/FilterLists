@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record SoftwareSyntax
+public sealed record SoftwareSyntax
 {
     public short SoftwareId { get; init; }
     public Software Software { get; init; } = null!;
@@ -11,9 +11,9 @@ public record SoftwareSyntax
     public Syntax Syntax { get; init; } = null!;
 }
 
-internal class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<SoftwareSyntax>
+internal sealed class SoftwareSyntaxTypeConfiguration : IEntityTypeConfiguration<SoftwareSyntax>
 {
-    public virtual void Configure(EntityTypeBuilder<SoftwareSyntax> builder)
+    public void Configure(EntityTypeBuilder<SoftwareSyntax> builder)
     {
         builder.HasKey(ss => new { ss.SoftwareId, ss.SyntaxId });
         builder.HasDataJsonFile<SoftwareSyntax>();

@@ -4,19 +4,19 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <AnalysisMode>Recommended</AnalysisMode>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <NoWarn>1591;1701;1702</NoWarn>
+        <NoWarn>1591;1701;1702</NoWarn>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <NoWarn>1591;1701;1702</NoWarn>
+        <NoWarn>1591;1701;1702</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0"/>
         <PackageReference Include="MediatR" Version="12.2.0"/>
     </ItemGroup>
 

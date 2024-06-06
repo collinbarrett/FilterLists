@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record Dependent
+public sealed record Dependent
 {
     public int DependencyFilterListId { get; init; }
     public FilterList DependencyFilterList { get; init; } = null!;
@@ -11,9 +11,9 @@ public record Dependent
     public FilterList DependentFilterList { get; init; } = null!;
 }
 
-internal class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
+internal sealed class DependentTypeConfiguration : IEntityTypeConfiguration<Dependent>
 {
-    public virtual void Configure(EntityTypeBuilder<Dependent> builder)
+    public void Configure(EntityTypeBuilder<Dependent> builder)
     {
         builder.HasKey(d => new { d.DependencyFilterListId, d.DependentFilterListId });
         builder.HasOne(d => d.DependencyFilterList)

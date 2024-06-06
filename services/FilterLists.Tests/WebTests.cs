@@ -3,7 +3,7 @@ using Projects;
 
 namespace FilterLists.Tests;
 
-public class WebTests
+public sealed class WebTests
 {
     [Fact]
     public async Task GetWebResourceRootReturnsOkStatusCode()

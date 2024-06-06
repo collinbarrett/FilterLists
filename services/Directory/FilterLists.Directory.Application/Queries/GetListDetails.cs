@@ -81,7 +81,7 @@ public static class GetListDetails
     }
 
     [PublicAPI]
-    public record ListDetailsVm
+    public sealed record ListDetailsVm
     {
         /// <summary>
         ///     The identifier.
@@ -231,7 +231,7 @@ public static class GetListDetails
         public IEnumerable<int> DependentFilterListIds { get; init; } = [];
 
         [PublicAPI]
-        public record ViewUrlVm
+        public sealed record ViewUrlVm
         {
             /// <summary>
             ///     The segment number of the URL for the FilterList (for multi-part lists).

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-public record FilterListSyntax
+public sealed record FilterListSyntax
 {
     public int FilterListId { get; init; }
     public FilterList FilterList { get; init; } = null!;
@@ -11,9 +11,9 @@ public record FilterListSyntax
     public Syntax Syntax { get; init; } = null!;
 }
 
-internal class FilterListSyntaxTypeConfiguration : IEntityTypeConfiguration<FilterListSyntax>
+internal sealed class FilterListSyntaxTypeConfiguration : IEntityTypeConfiguration<FilterListSyntax>
 {
-    public virtual void Configure(EntityTypeBuilder<FilterListSyntax> builder)
+    public void Configure(EntityTypeBuilder<FilterListSyntax> builder)
     {
         builder.HasKey(fls => new { fls.FilterListId, fls.SyntaxId });
         builder.HasDataJsonFile<FilterListSyntax>();
