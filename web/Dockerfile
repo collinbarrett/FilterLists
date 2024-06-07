@@ -1,6 +1,8 @@
 # init base
 FROM nginx:alpine as base
+LABEL org.opencontainers.image.source="https://github.com/collinbarrett/FilterLists"
 LABEL org.opencontainers.image.description="filterlists.com | github.com/collinbarrett/filterlists | A React & TypeScript UI built with Ant Design."
+LABEL org.opencontainers.image.licenses="MIT"
 COPY server/conf.d /etc/nginx/conf.d
 
 # init build
