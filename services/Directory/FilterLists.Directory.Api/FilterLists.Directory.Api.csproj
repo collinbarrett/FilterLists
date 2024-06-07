@@ -7,6 +7,12 @@
         <AnalysisMode>Recommended</AnalysisMode>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
+        <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime-deps:8.0-jammy-chiseled-extra</ContainerBaseImage>
+        <ContainerRuntimeIdentifier>linux-x64</ContainerRuntimeIdentifier>
+    </PropertyGroup>
+
     <ItemGroup>
         <ProjectReference Include="..\..\FilterLists.ServiceDefaults\FilterLists.ServiceDefaults.csproj"/>
         <ProjectReference Include="..\FilterLists.Directory.Application\FilterLists.Directory.Application.csproj"/>
@@ -15,6 +21,12 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ContainerLabel Include="org.opencontainers.image.source" Value="https://github.com/collinbarrett/FilterLists"/>
+        <ContainerLabel Include="org.opencontainers.image.description" Value="filterlists.com | github.com/collinbarrett/filterlists | An ASP.NET Core API serving the core FilterList information."/>
+        <ContainerLabel Include="org.opencontainers.image.licenses" Value="MIT"/>
     </ItemGroup>
 
 </Project>
