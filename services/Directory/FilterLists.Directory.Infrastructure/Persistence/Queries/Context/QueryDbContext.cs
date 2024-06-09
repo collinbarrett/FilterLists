@@ -3,14 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 
-public sealed class QueryDbContext : DbContext
+public sealed class QueryDbContext(DbContextOptions<QueryDbContext> options) : DbContext(options)
 {
     private const string ReadOnlyErrorMessage = "This context is read-only and cannot save changes.";
-
-    public QueryDbContext(DbContextOptions<QueryDbContext> options) : base(options)
-    {
-        ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
-    }
 
     public IQueryable<FilterList> FilterLists => Set<FilterList>();
     public IQueryable<Language> Languages => Set<Language>();

@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace FilterLists.Directory.Infrastructure.Persistence;
+namespace FilterLists.Directory.Infrastructure.Persistence.Queries;
 
 internal static class SeedConfigurationExtensions
 {
