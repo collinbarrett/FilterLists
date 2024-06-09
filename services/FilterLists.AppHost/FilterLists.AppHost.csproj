@@ -12,7 +12,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Directory\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj"/>
-        <ProjectReference Include="..\Directory\FilterLists.Directory.Infrastructure.MigrationService\FilterLists.Directory.Infrastructure.MigrationService.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
