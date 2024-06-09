@@ -45,7 +45,7 @@ internal static class Endpoints
                 OperationId = nameof(GetLists)
             });
 
-        app.MapGet("/lists/{id:int}", async Task<Results<Ok<ListDetailsVm>, NotFound>>
+        app.MapGet("/lists/{id:int}", async Task<Results<Ok<Response>, NotFound>>
                 (int id, IMediator mediator, CancellationToken ct) =>
             {
                 var list = await mediator.Send(new Request(id), ct);
