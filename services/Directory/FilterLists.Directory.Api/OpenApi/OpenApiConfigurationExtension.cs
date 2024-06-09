@@ -33,6 +33,9 @@ internal static class OpenApiConfigurationExtensions
 
             // include OpenApiTag Description and ExternalDocs
             options.DocumentFilter<OpenApiTags.TagDescriptionsDocumentFilter>();
+
+            // allow re-using simple type names like "Response"
+            options.CustomSchemaIds(s => s.FullName?.Replace("+", "."));
         });
     }
 }

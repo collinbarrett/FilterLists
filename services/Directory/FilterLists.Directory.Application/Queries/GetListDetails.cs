@@ -2,16 +2,15 @@
 using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using static FilterLists.Directory.Application.Queries.GetListDetails.ListDetailsVm;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetListDetails
 {
-    private static readonly Func<QueryDbContext, int, Task<ListDetailsVm?>> Query =
+    private static readonly Func<QueryDbContext, int, Task<Response?>> Query =
         EF.CompileAsyncQuery((QueryDbContext ctx, int id) =>
             ctx.FilterLists
-                .Select(f => new ListDetailsVm
+                .Select(f => new Response
                 {
                     Id = f.Id,
                     Name = f.Name,
@@ -29,12 +28,12 @@ public static class GetListDetails
                     ViewUrls = f.ViewUrls
                         .OrderBy(u => u.SegmentNumber)
                         .ThenBy(u => u.Primariness)
-                        .Select(u => new ViewUrlVm
-                        {
-                            SegmentNumber = u.SegmentNumber,
-                            Primariness = u.Primariness,
-                            Url = u.Url
-                        }),
+                        .Select(u => new ViewUrlResponse
+                        (
+                            u.SegmentNumber,
+                            u.Primariness,
+                            u.Url
+                        )),
                     HomeUrl = f.HomeUrl,
                     OnionUrl = f.OnionUrl,
                     PolicyUrl = f.PolicyUrl,
@@ -69,19 +68,20 @@ public static class GetListDetails
                 .TagWith(nameof(GetListDetails))
                 .SingleOrDefault(f => f.Id == id));
 
-    public sealed record Request(int Id) : IRequest<ListDetailsVm?>;
+    public sealed record Request(int Id) : IRequest<Response?>;
 
     [UsedImplicitly]
-    private sealed class Handler(QueryDbContext ctx) : IRequestHandler<Request, ListDetailsVm?>
+    private sealed class Handler(QueryDbContext ctx) : IRequestHandler<Request, Response?>
     {
-        public Task<ListDetailsVm?> Handle(Request request, CancellationToken _)
+        public Task<Response?> Handle(Request request, CancellationToken _)
         {
             return Query(ctx, request.Id);
         }
     }
 
+    // TODO: refactor to primary ctor syntax while allowing EF Core query compilation to succeed
     [PublicAPI]
-    public sealed record ListDetailsVm
+    public sealed record Response
     {
         /// <summary>
         ///     The identifier.
@@ -132,7 +132,7 @@ public static class GetListDetails
         /// <summary>
         ///     The view URLs.
         /// </summary>
-        public IEnumerable<ViewUrlVm> ViewUrls { get; init; } = [];
+        public IEnumerable<ViewUrlResponse> ViewUrls { get; init; } = [];
 
         /// <summary>
         ///     The URL of the home page.
@@ -229,27 +229,14 @@ public static class GetListDetails
         /// </summary>
         /// <example>[]</example>
         public IEnumerable<int> DependentFilterListIds { get; init; } = [];
-
-        [PublicAPI]
-        public sealed record ViewUrlVm
-        {
-            /// <summary>
-            ///     The segment number of the URL for the FilterList (for multi-part lists).
-            /// </summary>
-            /// <example>1</example>
-            public short SegmentNumber { get; init; }
-
-            /// <summary>
-            ///     How primary the URL is for the FilterList segment (1 is original, 2+ is a mirror; unique per SegmentNumber)
-            /// </summary>
-            /// <example>1</example>
-            public short Primariness { get; init; }
-
-            /// <summary>
-            ///     The view URL.
-            /// </summary>
-            /// <example>https://easylist.to/easylist/easylist.txt</example>
-            public required Uri Url { get; init; }
-        }
     }
+
+    /// <param name="SegmentNumber" example="1">The segment number of the URL for the FilterList (for multi-part lists).</param>
+    /// <param name="Primariness" example="1">
+    ///     How primary the URL is for the FilterList segment (1 is original, 2+ is a mirror;
+    ///     unique per SegmentNumber)
+    /// </param>
+    /// <param name="Url" example="https://easylist.to/easylist/easylist.txt">The view URL.</param>
+    [PublicAPI]
+    public sealed record ViewUrlResponse(short SegmentNumber, short Primariness, Uri Url);
 }

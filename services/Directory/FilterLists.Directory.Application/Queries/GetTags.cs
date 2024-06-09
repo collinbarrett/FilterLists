@@ -8,60 +8,39 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetTags
 {
-    private static readonly Func<QueryDbContext, IAsyncEnumerable<TagVm>> Query =
+    private static readonly Func<QueryDbContext, IAsyncEnumerable<Response>> Query =
         EF.CompileAsyncQuery((QueryDbContext ctx) =>
             ctx.Tags
                 .Where(t => t.FilterListTags.Any())
                 .OrderBy(t => t.Id)
-                .Select(t => new TagVm
-                {
-                    Id = t.Id,
-                    Name = t.Name,
-                    Description = t.Description,
-                    FilterListIds = t.FilterListTags
+                .Select(t => new Response
+                (
+                    t.Id,
+                    t.Name,
+                    t.Description,
+                    t.FilterListTags
                         .OrderBy(flt => flt.FilterListId)
                         .Select(flt => flt.FilterListId)
-                })
+                ))
                 .TagWith(nameof(GetTags))
         );
 
-    public sealed record Request : IStreamRequest<TagVm>;
+    public sealed record Request : IStreamRequest<Response>;
 
     [UsedImplicitly]
-    private sealed class Handler(QueryDbContext ctx) : IStreamRequestHandler<Request, TagVm>
+    private sealed class Handler(QueryDbContext ctx) : IStreamRequestHandler<Request, Response>
     {
-        public async IAsyncEnumerable<TagVm> Handle(Request request,
+        public async IAsyncEnumerable<Response> Handle(Request request,
             [EnumeratorCancellation] CancellationToken ct)
         {
             await foreach (var tag in Query(ctx).WithCancellation(ct)) yield return tag;
         }
     }
 
+    /// <param name="Id" example="2">The identifier.</param>
+    /// <param name="Name" example="ads">The unique name.</param>
+    /// <param name="Description" example="Blocks advertisements">The description.</param>
+    /// <param name="FilterListIds" example="[ 1, 3, 6 ]">The identifiers of the FilterLists to which this Tag is applied.</param>
     [PublicAPI]
-    public sealed record TagVm
-    {
-        /// <summary>
-        ///     The identifier.
-        /// </summary>
-        /// <example>2</example>
-        public int Id { get; init; }
-
-        /// <summary>
-        ///     The unique name.
-        /// </summary>
-        /// <example>ads</example>
-        public required string Name { get; init; }
-
-        /// <summary>
-        ///     The description.
-        /// </summary>
-        /// <example>Blocks advertisements</example>
-        public string? Description { get; init; }
-
-        /// <summary>
-        ///     The identifiers of the FilterLists to which this Tag is applied.
-        /// </summary>
-        /// <example>[ 1, 3, 6 ]</example>
-        public IEnumerable<int> FilterListIds { get; init; } = [];
-    }
+    public sealed record Response(int Id, string Name, string? Description, IEnumerable<int> FilterListIds);
 }
