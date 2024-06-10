@@ -1,8 +1,10 @@
 ﻿using System.Runtime.CompilerServices;
+using FilterLists.Directory.Infrastructure;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Directory.Application.Queries;
 
@@ -32,12 +34,15 @@ public static class GetSoftware
     public sealed record Request : IStreamRequest<Response>;
 
     [UsedImplicitly]
-    private sealed class Handler(QueryDbContext ctx) : IStreamRequestHandler<Request, Response>
+    private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
     {
-        public async IAsyncEnumerable<Response> Handle(Request request,
-            [EnumeratorCancellation] CancellationToken ct)
+        public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
         {
-            await foreach (var software in Query(ctx).WithCancellation(ct)) yield return software;
+            await foreach (var software in cache.GetOrCreateAsyncEnumerable(
+                                   nameof(GetSoftware),
+                                   Query(ctx).WithCancellation(ct))
+                               .WithCancellation(ct))
+                yield return software;
         }
     }
 

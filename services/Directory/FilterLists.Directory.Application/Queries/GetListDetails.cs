@@ -2,6 +2,7 @@
 using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace FilterLists.Directory.Application.Queries;
 
@@ -71,11 +72,11 @@ public static class GetListDetails
     public sealed record Request(int Id) : IRequest<Response?>;
 
     [UsedImplicitly]
-    private sealed class Handler(QueryDbContext ctx) : IRequestHandler<Request, Response?>
+    private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IRequestHandler<Request, Response?>
     {
         public Task<Response?> Handle(Request request, CancellationToken _)
         {
-            return Query(ctx, request.Id);
+            return cache.GetOrCreateAsync($"{nameof(GetListDetails)}_{request.Id}", entry => Query(ctx, request.Id));
         }
     }
 
