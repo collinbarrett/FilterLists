@@ -81,7 +81,7 @@ Modify the database schema or seed data by adding an EF Core migration.
 3. Execute the command below in the `services/Directory` directory replacing `<MigrationName>` with a meaningful name.
 
 ```bash
-dotnet ef migrations add <MigrationName> --project FilterLists.Directory.Infrastructure.Migrations/FilterLists.Directory.Infrastructure.Migrations.csproj --startup-project FilterLists.Directory.Infrastructure.MigrationService/FilterLists.Directory.Infrastructure.MigrationService.csproj
+dotnet ef migrations add <MigrationName> -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api
 ```
 
 ## Deploying to Production
