@@ -1,4 +1,4 @@
-name: Directory API CI/CD
+name: Directory - Build & Deploy
 
 on:
   push:
@@ -6,30 +6,35 @@ on:
       - main
       - aspire # TODO: rm when merging aspire to main
     paths:
-      - '.github/workflows/directory.yml'
-      - 'services/Directory/**'
-      - 'services/FilterLists.ServiceDefaults/**'
+      - .github/workflows/directory.yml
+      - services/Directory/**
+      - services/FilterLists.ServiceDefaults/**
   # TODO: uncomment when merging aspire to main
   # pull_request:
   #   branches:
   #     - main
   #   paths:
-  #     - '.github/workflows/directory.yml'
-  #     - 'services/Directory/**'
-  #     - 'services/FilterLists.ServiceDefaults/**'
+  #     - .github/workflows/directory.yml
+  #     - services/Directory/**
+  #     - services/FilterLists.ServiceDefaults/**
 
 env:
   CONTAINER_REGISTRY: ghcr.io
   CONTAINER_REPOSITORY: collinbarrett/filterlists-directory-api
   CONTAINER_IMAGE_TAG_UNIQUE: ${{ github.run_id }}
-  CONTAINER_IMAGE_TAG_STABLE: latest-aspire # TODO: drop '-aspire' when merging aspire to main
-  AZURE_WEBAPP_NAME: app-filterlists-directory-prod
 
 jobs:
   build:
+    name: Build
+    
     runs-on: ubuntu-latest
+
     permissions:
       packages: write
+
+    env:
+      CONTAINER_IMAGE_TAG_STABLE: latest-aspire # TODO: drop '-aspire' when merging aspire to main
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,20 +53,29 @@ jobs:
       - name: Publish & Push
         if: github.event_name == 'push'
         run: >
-          dotnet publish --sc \
-            -p:PublishProfile=DefaultContainer \
-            -p:ContainerRegistry=${{ env.CONTAINER_REGISTRY }} \
-            -p:ContainerRepository=${{ env.CONTAINER_REPOSITORY }} \
-            -p:ContainerImageTags='"${{ env.CONTAINER_IMAGE_TAG_UNIQUE }};${{ env.CONTAINER_IMAGE_TAG_STABLE }}"'
+          dotnet publish --sc
+          -p:PublishProfile=DefaultContainer
+          -p:ContainerRegistry=${{ env.CONTAINER_REGISTRY }}
+          -p:ContainerRepository=${{ env.CONTAINER_REPOSITORY }}
+          -p:ContainerImageTags='"${{ env.CONTAINER_IMAGE_TAG_UNIQUE }};${{ env.CONTAINER_IMAGE_TAG_STABLE }}"'
         working-directory: ./services/Directory/FilterLists.Directory.Api
 
   deploy:
+    name: Deploy
+
     runs-on: ubuntu-latest
+
     needs: build
+
     if: github.event_name == 'push'
+
+    env:
+      AZURE_WEBAPP_NAME: app-filterlists-directory-prod
+
     environment:
       name: production
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}/swagger
+
     steps:
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
