@@ -20,7 +20,7 @@ public static class ConfigurationExtensions
                     so.EnableRetryOnFailure([0])
                         .MigrationsAssembly(MigrationsAssembly))
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
-
         builder.Services.AddHostedService<MigrationService>();
+        builder.Services.AddMemoryCache();
     }
 }
