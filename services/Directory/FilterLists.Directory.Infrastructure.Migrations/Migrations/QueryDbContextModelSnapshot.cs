@@ -66452,7 +66452,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 362,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://www.rakuten.ca/static/cashback-shopping-whitelist?title=Rakuten Cash Back Shopping"
+                                    Url = "https://www.ebates.com/whitelist/ebates-cash-back-shopping.txt"
                                 },
                                 new
                                 {
