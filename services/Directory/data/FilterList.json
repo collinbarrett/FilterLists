@@ -1,13 +1,5 @@
 [
   {
-    "description": "This complements AdGuard Japanese filter and mainly consists of 1) additional generic rules to counter circumvention ads and anti-adblock, and 2) specific rules to address sites not addresed in the Japanese filters.",
-    "homeUrl": "https://github.com/Yuki2718/adblock2",
-    "id": 1,
-    "issuesUrl": "https://github.com/Yuki2718/adblock2/issues",
-    "licenseId": 4,
-    "name": "AdGuard Japanese filter Plus"
-  },
-  {
     "description": "Mute is an AdBlock Plus filter for user comments. In the same way that AdBlock hides ads, AdBlock can use this filter to hide user-generated comments, allowing you to browse the Internet with less stupidity clawing at your eyeballs.",
     "homeUrl": "https://github.com/B-Con/mute",
     "id": 2,
