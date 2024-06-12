@@ -16,12 +16,12 @@ updates:
     directory: services/FilterLists.AppHost
     schedule:
       interval: daily
-    target-branch: aspire
+    target-branch: aspire # TODO: rm when merging aspire to main
   - package-ecosystem: nuget
     directory: services/FilterLists.Tests
     schedule:
       interval: daily
-    target-branch: aspire
+    target-branch: aspire # TODO: rm when merging aspire to main
   - package-ecosystem: docker
     directory: /web
     schedule:

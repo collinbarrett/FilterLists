@@ -1,0 +1,60 @@
+name: Web - Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+      - aspire # TODO: rm when merging aspire to main
+    paths:
+      - .github/workflows/web.yml
+      - web/**
+  # TODO: uncomment when merging aspire to main
+  # pull_request:
+  #   types: [opened, synchronize, reopened, closed]
+  #   branches:
+  #     - main
+  #   paths:
+  #     - .github/workflows/web.yml
+  #     - web/**
+
+jobs:
+  build_and_deploy_job:
+    name: Build and Deploy
+
+    runs-on: ubuntu-latest
+
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+
+    environment:
+      name: production
+      url: https://aspire.filterlists.com # TODO: change to root when merging aspire to main
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build And Deploy
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "./web"
+          output_location: "build"
+
+  close_pull_request_job:
+    name: Close Pull Request
+
+    runs-on: ubuntu-latest
+
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+
+    steps:
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
+          action: "close"
+          app_location: "./web"
