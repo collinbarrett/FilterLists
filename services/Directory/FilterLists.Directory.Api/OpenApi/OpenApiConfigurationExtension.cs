@@ -38,4 +38,14 @@ internal static class OpenApiConfigurationExtensions
             options.CustomSchemaIds(s => s.FullName?.Replace("+", "."));
         });
     }
+
+    internal static void UseSwaggerCustom(this IApplicationBuilder app)
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI(options =>
+        {
+            options.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists Directory API v1");
+            options.RoutePrefix = string.Empty;
+        });
+    }
 }
