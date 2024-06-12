@@ -1,4 +1,4 @@
-﻿import { SoftwareCloud } from "./SoftwareCloud";
+import { SoftwareCloud } from "./SoftwareCloud";
 import { SoftwareIcon } from "./SoftwareIcon";
 
 export { SoftwareCloud, SoftwareIcon };
