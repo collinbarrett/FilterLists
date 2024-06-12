@@ -89,8 +89,8 @@ jobs:
       AZURE_WEBAPP_NAME: app-filterlists-directory-prod
 
     environment:
-      name: production
-      url: https://api.filterlists.com/swagger/index.html
+      name: production-directory-api
+      url: https://api.filterlists.com
 
     steps:
       - name: Deploy to Azure
