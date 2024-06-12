@@ -50,7 +50,21 @@ jobs:
         run: dotnet build -c Release
         working-directory: ./services/Directory/FilterLists.Directory.Api
 
-      # TODO: run automated tests
+      # TODO: get test passing
+      # - name: Install Aspire Workload
+      #   run: |
+      #     dotnet workload update
+      #     dotnet workload install aspire
+
+      # - name: Test
+      #   run: dotnet test -c Release --logger trx
+      #   working-directory: ./services/FilterLists.Tests
+
+      # - name: Upload Test Results
+      #   if: ${{ always() }}
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     path: ./services/FilterLists.Tests/TestResults
 
       - name: Publish & Push
         if: github.event_name == 'push'

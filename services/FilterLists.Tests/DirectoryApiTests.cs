@@ -3,10 +3,10 @@ using Projects;
 
 namespace FilterLists.Tests;
 
-public sealed class WebTests
+public sealed class DirectoryApiTests
 {
     [Fact]
-    public async Task GetWebResourceRootReturnsOkStatusCode()
+    public async Task GetDirectoryApiAliveReturnsOkStatusCode()
     {
         // Arrange
         var appHost = await DistributedApplicationTestingBuilder.CreateAsync<FilterLists_AppHost>();
@@ -14,8 +14,8 @@ public sealed class WebTests
         await app.StartAsync();
 
         // Act
-        var httpClient = app.CreateHttpClient("web");
-        var response = await httpClient.GetAsync("/");
+        var httpClient = app.CreateHttpClient("directoryapi");
+        var response = await httpClient.GetAsync("/alive");
 
         // Assert
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
