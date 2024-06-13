@@ -23,7 +23,7 @@ jobs:
 
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
 
-    # TODO: revise environment for stapp staging sites
+    # TODO: revise for stapp staging sites
     environment:
       name: production-web
       url: https://filterlists.com
