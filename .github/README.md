@@ -6,19 +6,6 @@
 <a href="https://madewithreactjs.com/p/filterlists/shield-link"><img alt="MadeWithReactJS.com" src="https://madewithreactjs.com/storage/repo-shields/2335-shield.svg"/></a>
 <br/>FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</p>
 
-# Table of Contents
-
-- [Background](#background)
-- [Services](#services)
-- [Contributing](#contributing)
-  - [Adding or Updating Lists](#adding-or-updating-lists)
-  - [Adding or Updating Rules](#adding-or-updating-rules)
-  - [Building and Running Locally](#building-and-running-locally)
-- [Acknowledgements](#acknowledgements)
-- [Miscellany](#miscellany)
-  - [Disclaimer](#disclaimer)
-  - [Privacy](#privacy)
-
 # Background
 
 FilterLists helps to protect your privacy and security when using the internet. It provides a comprehensive directory of subscription lists to block advertisements, malware, trackers, and other general annoyances. First, install one of the software tools that supports these lists. Then you can subscribe to a set of these lists inside of that software. If you need help or have a comment/question, start a [Discussion](https://github.com/collinbarrett/FilterLists/discussions).
@@ -55,10 +42,6 @@ FilterLists does not maintain any of these lists. It serves only as a discovery 
 FilterLists is build on the .NET Aspire stack. Install the [.NET Aspire prerequisites](https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/setup-tooling) before proceeding.
 
 ### Directory API
-
-#### Configure Azure Resources
-
-Local debugging depends on an Azure Application Insights resource. Either [configure a connection to your Azure subscription](https://learn.microsoft.com/en-us/dotnet/aspire/deployment/azure/local-provisioning#configuration) or comment out the `appInsights` resource in `services/FilterLists.AppHost/Program.cs`.
 
 #### Prepare Database Volume
 

@@ -4,7 +4,6 @@ on:
   pull_request:
     branches:
       - main
-      - aspire # TODO: rm after testing passes
     paths:
       - .github/workflows/directory-migrate.yml
       - services/Directory/data/**

@@ -4,19 +4,17 @@ on:
   push:
     branches:
       - main
-      - aspire # TODO: rm when merging aspire to main
     paths:
       - .github/workflows/directory.yml
       - services/Directory/**
       - services/FilterLists.ServiceDefaults/**
-  # TODO: uncomment when merging aspire to main
-  # pull_request:
-  #   branches:
-  #     - main
-  #   paths:
-  #     - .github/workflows/directory.yml
-  #     - services/Directory/**
-  #     - services/FilterLists.ServiceDefaults/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/directory.yml
+      - services/Directory/**
+      - services/FilterLists.ServiceDefaults/**
 
 env:
   CONTAINER_REGISTRY: ghcr.io
@@ -33,7 +31,7 @@ jobs:
       packages: write
 
     env:
-      CONTAINER_IMAGE_TAG_STABLE: latest-aspire # TODO: drop '-aspire' when merging aspire to main
+      CONTAINER_IMAGE_TAG_STABLE: latest
 
     steps:
       - name: Checkout
@@ -49,22 +47,6 @@ jobs:
       - name: Build
         run: dotnet build -c Release
         working-directory: ./services/Directory/FilterLists.Directory.Api
-
-      # TODO: get test passing
-      # - name: Install Aspire Workload
-      #   run: |
-      #     dotnet workload update
-      #     dotnet workload install aspire
-
-      # - name: Test
-      #   run: dotnet test -c Release --logger trx
-      #   working-directory: ./services/FilterLists.Tests
-
-      # - name: Upload Test Results
-      #   if: ${{ always() }}
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     path: ./services/FilterLists.Tests/TestResults
 
       - name: Publish & Push
         if: github.event_name == 'push'
