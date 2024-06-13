@@ -1,29 +1,7 @@
 version: 2
 updates:
-  - package-ecosystem: docker
-    directory: /services/Directory/FilterLists.Directory.Api
-    schedule:
-      interval: daily
-  - package-ecosystem: nuget
-    directory: services/Directory/FilterLists.Directory.Api
-    schedule:
-      interval: daily
-  - package-ecosystem: nuget
-    directory: services/Directory/FilterLists.Directory.Infrastructure.Migrations.Tests
-    schedule:
-      interval: daily
   - package-ecosystem: nuget
     directory: services/FilterLists.AppHost
-    schedule:
-      interval: daily
-    target-branch: aspire # TODO: rm when merging aspire to main
-  - package-ecosystem: nuget
-    directory: services/FilterLists.Tests
-    schedule:
-      interval: daily
-    target-branch: aspire # TODO: rm when merging aspire to main
-  - package-ecosystem: docker
-    directory: /web
     schedule:
       interval: daily
   - package-ecosystem: npm

@@ -5,7 +5,7 @@ using FilterLists.Directory.Application;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
-    policy.WithOrigins("https://filterlists.com", "https://aspire.filterlists.com") // TODO: rm 'aspire.' when merging aspire to main
+    policy.WithOrigins("https://filterlists.com")
         .WithMethods("GET")
         .AllowAnyHeader()));
 builder.WebHost.ConfigureKestrel(serverOptions => serverOptions.AddServerHeader = false);

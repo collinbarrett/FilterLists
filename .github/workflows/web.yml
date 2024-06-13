@@ -4,18 +4,16 @@ on:
   push:
     branches:
       - main
-      - aspire # TODO: rm when merging aspire to main
     paths:
       - .github/workflows/web.yml
       - web/**
-  # TODO: uncomment when merging aspire to main
-  # pull_request:
-  #   types: [opened, synchronize, reopened, closed]
-  #   branches:
-  #     - main
-  #   paths:
-  #     - .github/workflows/web.yml
-  #     - web/**
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+    paths:
+      - .github/workflows/web.yml
+      - web/**
 
 jobs:
   build_and_deploy_job:
@@ -25,9 +23,10 @@ jobs:
 
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
 
+    # TODO: revise environment for stapp staging sites
     environment:
       name: production-web
-      url: https://aspire.filterlists.com # TODO: change to root when merging aspire to main
+      url: https://filterlists.com
 
     steps:
       - name: Checkout
