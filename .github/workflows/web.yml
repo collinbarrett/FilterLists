@@ -16,23 +16,22 @@ on:
       - web/**
 
 jobs:
-  build_and_deploy_job:
-    name: Build and Deploy
+  build_and_deploy_staging:
+    name: Build & Deploy to Staging
 
     runs-on: ubuntu-latest
 
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    if: github.event_name == 'pull_request' && github.event.action != 'closed'
 
-    # TODO: revise for stapp staging sites
     environment:
-      name: production-web
-      url: https://filterlists.com
+      name: staging-web
+      url:  ${{ steps.builddeploy.outputs.static_web_app_url }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build And Deploy
+      - name: Build & Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
@@ -42,7 +41,31 @@ jobs:
           app_location: "./web"
           output_location: "build"
 
-  close_pull_request_job:
+  build_and_deploy_production:
+    name: Build & Deploy to Production
+
+    runs-on: ubuntu-latest
+
+    if: github.event_name == 'push'
+
+    environment:
+      name: production-web
+      url:  https://filterlists.com
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build & Deploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "./web"
+          output_location: "build"
+
+  close_pull_request:
     name: Close Pull Request
 
     runs-on: ubuntu-latest
@@ -51,7 +74,6 @@ jobs:
 
     steps:
       - name: Close Pull Request
-        id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
