@@ -41,11 +41,11 @@ internal static class OpenApiConfigurationExtensions
 
     internal static void UseSwaggerCustom(this IApplicationBuilder app)
     {
-        app.UseSwagger();
+        app.UseSwagger(o => o.RouteTemplate = "{documentName}/openapi.json");
         app.UseSwaggerUI(options =>
         {
             options.DocumentTitle = "FilterLists API";
-            options.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists Directory API v1");
+            options.SwaggerEndpoint("/v1/openapi.json", "FilterLists Directory API v1");
             options.RoutePrefix = string.Empty;
         });
     }
