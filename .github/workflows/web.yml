@@ -68,6 +68,7 @@ jobs:
           app_location: ./web/build
           output_location: ''
           skip_app_build: true
+        continue-on-error: true
 
   build_and_deploy_production:
     name: Build & Deploy to Production
