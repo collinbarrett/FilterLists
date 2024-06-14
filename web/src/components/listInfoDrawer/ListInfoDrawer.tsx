@@ -74,7 +74,7 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
   const viewUrls = viewUrlModels == null ? [] : viewUrlModels.map((u) => u.url);
   return list ? (
     <Drawer
-      visible={true}
+      open={true}
       width={350}
       placement={"right"}
       mask={false}

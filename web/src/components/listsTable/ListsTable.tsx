@@ -283,7 +283,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             value: t.id.toString(),
           }))}
           onFilter={(value, record) =>
-            record.tagIds ? record.tagIds.includes(+value) : false
+            record.tagIds ? record.tagIds.includes(Number(value)) : false
           }
           render={(tagIds: number[]) =>
             tagIds ? (
@@ -318,7 +318,9 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             value: t.id.toString(),
           }))}
           onFilter={(value, record) =>
-            record.maintainerIds ? record.maintainerIds.includes(+value) : false
+            record.maintainerIds
+              ? record.maintainerIds.includes(Number(value))
+              : false
           }
           render={(maintainerIds: number[]) =>
             maintainerIds ? (
