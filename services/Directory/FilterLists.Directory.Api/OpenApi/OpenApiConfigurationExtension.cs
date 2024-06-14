@@ -45,7 +45,7 @@ internal static class OpenApiConfigurationExtensions
         app.UseSwaggerUI(options =>
         {
             options.DocumentTitle = "FilterLists API";
-            options.SwaggerEndpoint("/v1/openapi.json", "FilterLists Directory API v1");
+            options.SwaggerEndpoint("/swagger/v1/swagger.json", "FilterLists Directory API v1");
             options.RoutePrefix = string.Empty;
         });
     }
