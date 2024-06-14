@@ -42,6 +42,14 @@ jobs:
         run: npm ci
         working-directory: ./web
 
+      - name: Run Prettier
+        run: npm run prettier:check
+        working-directory: ./web
+
+      - name: Run ESLint
+        run: npm run eslint:check
+        working-directory: ./web
+
       - name: Build
         run: npm run build
         working-directory: ./web
