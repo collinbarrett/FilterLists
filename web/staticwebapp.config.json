@@ -2,5 +2,8 @@
   "navigationFallback": {
     "rewrite": "/index.html"
   },
-  "trailingSlash": "never"
+  "trailingSlash": "never",
+  "globalHeaders": {
+    "Content-Security-Policy": "upgrade-insecure-requests; default-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'; connect-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; manifest-src 'self';"
+  }
 }
