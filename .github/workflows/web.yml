@@ -31,15 +31,35 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build & Deploy
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install
+        run: npm ci
+        working-directory: ./web
+
+      - name: Build
+        run: npm run build
+        working-directory: ./web
+
+      - name: Copy Static Web App Config
+        run: cp staticwebapp.config.json build/
+        working-directory: ./web
+
+      - name: Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"
-          app_location: "./web"
-          output_location: "build"
+          action: upload
+          app_location: ./web/build
+          output_location: ''
+          skip_app_build: true
 
   build_and_deploy_production:
     name: Build & Deploy to Production
@@ -56,14 +76,35 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build & Deploy
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install
+        run: npm ci
+        working-directory: ./web
+
+      - name: Build
+        run: npm run build
+        working-directory: ./web
+
+      - name: Copy Static Web App Config
+        run: cp staticwebapp.config.json build/
+        working-directory: ./web
+
+      - name: Deploy
+        id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"
-          app_location: "./web"
-          output_location: "build"
+          action: upload
+          app_location: ./web/build
+          output_location: ''
+          skip_app_build: true
 
   close_pull_request:
     name: Close Pull Request
@@ -77,5 +118,5 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
-          action: "close"
-          app_location: "./web"
+          action: close
+          app_location: ./web
