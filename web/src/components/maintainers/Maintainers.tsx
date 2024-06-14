@@ -32,7 +32,7 @@ const MaintainerComponent = (props: MaintainerComponentProps) => {
         rel="noopener noreferrer"
       >
         <HomeOutlined key="home" />
-      </a>
+      </a>,
     );
   }
   if (props.maintainer.emailAddress) {
@@ -44,7 +44,7 @@ const MaintainerComponent = (props: MaintainerComponentProps) => {
         rel="noopener noreferrer"
       >
         <MailOutlined key="mail" />
-      </a>
+      </a>,
     );
   }
   if (props.maintainer.twitterHandle) {
@@ -56,7 +56,7 @@ const MaintainerComponent = (props: MaintainerComponentProps) => {
         rel="noopener noreferrer"
       >
         <TwitterOutlined key="twitter" />
-      </a>
+      </a>,
     );
   }
   return <Card title={props.maintainer.name} actions={actions} />;

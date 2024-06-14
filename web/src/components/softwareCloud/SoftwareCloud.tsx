@@ -26,7 +26,7 @@ export const SoftwareCloud = (props: Props) =>
           </a>
         ) : (
           <SoftwareIcon key={i} id={s.id} />
-        )
+        ),
       )}
     </div>
   ) : null;

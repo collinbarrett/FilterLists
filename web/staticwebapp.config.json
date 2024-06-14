@@ -1,6 +1,6 @@
 {
-    "navigationFallback": {
-        "rewrite": "/index.html"
-    },
-    "trailingSlash": "never"
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
+  "trailingSlash": "never"
 }

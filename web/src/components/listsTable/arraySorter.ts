@@ -6,7 +6,7 @@ interface ArraySortableEntity {
 export const arraySorter = (
   a: number[],
   b: number[],
-  entities: ArraySortableEntity[]
+  entities: ArraySortableEntity[],
 ) =>
   a && a.length
     ? b && b.length
@@ -24,7 +24,7 @@ export const arraySorter = (
           ? 1
           : -1
         : a.length > b.length
-        ? -1
-        : 1
+          ? -1
+          : 1
       : -1
     : 1;

@@ -22,7 +22,7 @@ export const MaintainerCloud = (props: Props) =>
           </Tag>
         ) : (
           <Tag key={i}>{m.name}</Tag>
-        )
+        ),
       )}
     </div>
   ) : null;
