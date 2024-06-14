@@ -39,7 +39,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
             placeholder={`Search ${
               dataIndex.charAt(0).toUpperCase() + dataIndex.slice(1)
             }`}
-            value={selectedKeys && selectedKeys[0]}
+            value={(selectedKeys && (selectedKeys[0] as string)) || ""}
             onChange={(e) =>
               setSelectedKeys &&
               setSelectedKeys(e.target.value ? [e.target.value] : [])
