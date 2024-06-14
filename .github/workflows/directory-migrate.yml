@@ -61,8 +61,18 @@ jobs:
             git revert --no-edit $PREVIOUS_MIGRATION_HASH
           fi
 
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
+          cache: true
+
       - name: Install dotnet-ef
         run: dotnet tool install --global dotnet-ef
+
+      - name: Restore
+        run: dotnet restore --locked-mode
+        working-directory: ./services/Directory/FilterLists.Directory.Api
 
       - name: Add Migration
         run: >
