@@ -3,49 +3,49 @@
     {
       "route": "/static/*",
       "headers": {
-        "cache-control": "public, max-age=31536000, immutable"
+        "Cache-Control": "public, max-age=31536000, immutable"
       }
     },
     {
       "route": "/favicon.ico",
       "headers": {
-        "cache-control": "public, max-age=86400"
+        "Cache-Control": "public, max-age=86400"
       }
     },
     {
       "route": "/logo_filterlists.png",
       "headers": {
-        "cache-control": "public, max-age=31536000, immutable"
+        "Cache-Control": "public, max-age=31536000, immutable"
       }
     },
     {
       "route": "/icon_filterlists.png",
       "headers": {
-        "cache-control": "public, max-age=31536000, immutable"
+        "Cache-Control": "public, max-age=31536000, immutable"
       }
     },
     {
       "route": "/manifest.json",
       "headers": {
-        "cache-control": "public, max-age=86400"
+        "Cache-Control": "public, max-age=86400"
       }
     },
     {
       "route": "/robots.txt",
       "headers": {
-        "cache-control": "public, max-age=86400"
+        "Cache-Control": "public, max-age=86400"
       }
     },
     {
       "route": "/tpl-redirect.js",
       "headers": {
-        "cache-control": "public, max-age=86400"
+        "Cache-Control": "public, max-age=86400"
       }
     },
     {
       "route": "/tpl.html",
       "headers": {
-        "cache-control": "public, max-age=86400"
+        "Cache-Control": "public, max-age=86400"
       }
     }
   ],
