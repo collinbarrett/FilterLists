@@ -26,5 +26,5 @@ module.exports = override(
   adjustStyleLoaders(({ use: [, , postcss] }) => {
     const postcssOptions = postcss.options;
     postcss.options = { postcssOptions };
-  })
+  }),
 );

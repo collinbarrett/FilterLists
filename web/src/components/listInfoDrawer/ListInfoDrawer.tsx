@@ -46,18 +46,18 @@ export const ListInfoDrawer = (props: RouteComponentProps & Props) => {
   const list = useListDetails(props.listId);
 
   const listLanguage = props.languages.filter((l) =>
-    list?.languageIds.includes(l.id)
+    list?.languageIds.includes(l.id),
   );
   const listTags = props.tags.filter((t) => list?.tagIds.includes(t.id));
   const listLicense = props.licenses.find((l) => l.id === list?.licenseId);
   const listSyntaxes = props.syntaxes.filter((s) =>
-    list?.syntaxIds.includes(s.id)
+    list?.syntaxIds.includes(s.id),
   );
   const listSoftware = props.software.filter((s) =>
-    s.syntaxIds.some((sid) => list?.syntaxIds.includes(sid))
+    s.syntaxIds.some((sid) => list?.syntaxIds.includes(sid)),
   );
   const listMaintainers = props.maintainers.filter((m) =>
-    list?.maintainerIds.includes(m.id)
+    list?.maintainerIds.includes(m.id),
   );
 
   const [originalTitle] = useState<string>(document.title);

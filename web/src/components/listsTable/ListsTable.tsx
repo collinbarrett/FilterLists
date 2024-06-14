@@ -51,7 +51,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
   const tablePageSize = useTablePageSizer();
   const searchNameColumn = useSearchColumnFilter<List>(nameof<List>("name"));
   const searchDescriptionColumn = useSearchColumnFilter<List>(
-    nameof<List>("description")
+    nameof<List>("description"),
   );
   const [visibleLists, setVisibleLists] = useState<List[]>(lists);
   useEffect(() => {
@@ -78,7 +78,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
         _pagination: TablePaginationConfig,
         _filters: Record<string, (Key | boolean)[] | null>,
         _sorter: SorterResult<List> | SorterResult<List>[],
-        extra: TableCurrentDataSource<List>
+        extra: TableCurrentDataSource<List>,
       ) => setVisibleLists(extra.currentDataSource)}
     >
       <Table.Column<List>
@@ -140,7 +140,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 .filter(
                   (s: Software) =>
                     s.syntaxIds &&
-                    s.syntaxIds.some((i) => l.syntaxIds.includes(i))
+                    s.syntaxIds.some((i) => l.syntaxIds.includes(i)),
                 )
                 .map((s) => s.id);
             return arraySorter(getSoftwareIds(a), getSoftwareIds(b), software);
@@ -156,7 +156,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                   visibleLists.filter(
                     (l) =>
                       s.syntaxIds &&
-                      s.syntaxIds.some((i) => l.syntaxIds.includes(i))
+                      s.syntaxIds.some((i) => l.syntaxIds.includes(i)),
                   ).length
                 }
                 )
@@ -176,7 +176,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 software={software.filter(
                   (s: Software) =>
                     s.syntaxIds &&
-                    s.syntaxIds.some((i) => syntaxIds.includes(i))
+                    s.syntaxIds.some((i) => syntaxIds.includes(i)),
                 )}
               />
             ) : null
@@ -197,7 +197,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 &nbsp;(
                 {
                   visibleLists.filter(
-                    (li) => li.syntaxIds && li.syntaxIds.includes(s.id)
+                    (li) => li.syntaxIds && li.syntaxIds.includes(s.id),
                   ).length
                 }
                 )
@@ -214,7 +214,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             syntaxIds ? (
               <SyntaxCloud
                 syntaxes={syntaxes.filter((s: Syntax) =>
-                  syntaxIds.includes(s.id)
+                  syntaxIds.includes(s.id),
                 )}
               />
             ) : null
@@ -237,7 +237,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 {l.name}&nbsp; (
                 {
                   visibleLists.filter(
-                    (li) => li.languageIds && li.languageIds.includes(l.id)
+                    (li) => li.languageIds && li.languageIds.includes(l.id),
                   ).length
                 }
                 )
@@ -254,7 +254,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             languageIds ? (
               <LanguageCloud
                 languages={languages.filter((l: Language) =>
-                  languageIds.includes(l.id)
+                  languageIds.includes(l.id),
                 )}
               />
             ) : null
@@ -274,7 +274,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 <Tag title={t.description}>{t.name}</Tag>(
                 {
                   visibleLists.filter(
-                    (l) => l.tagIds && l.tagIds.includes(t.id)
+                    (l) => l.tagIds && l.tagIds.includes(t.id),
                   ).length
                 }
                 )
@@ -309,7 +309,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 <Tag title={t.name}>{t.name}</Tag>(
                 {
                   visibleLists.filter(
-                    (l) => l.maintainerIds && l.maintainerIds.includes(t.id)
+                    (l) => l.maintainerIds && l.maintainerIds.includes(t.id),
                   ).length
                 }
                 )
@@ -324,7 +324,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
             maintainerIds ? (
               <MaintainerCloud
                 maintainers={maintainers.filter((t: Maintainer) =>
-                  maintainerIds.includes(t.id)
+                  maintainerIds.includes(t.id),
                 )}
               />
             ) : null
@@ -352,7 +352,7 @@ export const ListsTable = (props: RouteComponentProps & Props) => {
                 <LicenseTag name={l.name} showLabel={false} />(
                 {
                   visibleLists.filter(
-                    (li) => li.licenseId && li.licenseId === l.id
+                    (li) => li.licenseId && li.licenseId === l.id,
                   ).length
                 }
                 )

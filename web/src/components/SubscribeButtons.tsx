@@ -55,7 +55,7 @@ const SubscribeButton = (props: SubscribeButtonProps) => {
   const buttonProps = buildButtonProps(
     props.name,
     props.viewUrl,
-    props.isPrimary
+    props.isPrimary,
   );
   return (
     <Button
@@ -74,7 +74,7 @@ const SubscribeButton = (props: SubscribeButtonProps) => {
 const buildButtonProps = (
   name: string,
   viewUrl: string,
-  isPrimary: boolean
+  isPrimary: boolean,
 ) => {
   let type: ButtonType = isPrimary ? "primary" : "default";
   let hidden: boolean = false;
