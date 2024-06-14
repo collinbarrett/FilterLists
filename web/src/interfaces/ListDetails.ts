@@ -1,4 +1,4 @@
-﻿export interface ListDetails {
+export interface ListDetails {
   id: number;
   name: string;
   description?: string;
