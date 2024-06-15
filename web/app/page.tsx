@@ -16,9 +16,6 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="absolute top-0 right-0 m-4">
-        <ModeToggle />
-      </div>
       <div className="container mx-auto py-10">
         <DataTable columns={columns} data={data} />
       </div>
