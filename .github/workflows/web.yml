@@ -1,0 +1,106 @@
+name: Web - Build & Deploy
+
+on:
+  push:
+    branches:
+      # - main # TODO: uncomment when merging nextjs to main
+      - nextjs # TODO: remove when merging nextjs to main
+    paths:
+      - .github/workflows/web.yml
+      - web/**
+  # TODO: uncomment when merging nextjs to main
+  # pull_request:
+  #   types: [opened, synchronize, reopened, closed]
+  #   branches:
+  #     - main
+  #   paths:
+  #     - .github/workflows/web.yml
+  #     - web/**
+
+jobs:
+  build_and_deploy_staging:
+    # name: Build & Deploy to Staging
+    name: Build & Deploy to Next.js Staging
+
+    runs-on: ubuntu-latest
+
+    # if: github.event_name == 'pull_request' && github.event.action != 'closed'
+    if: github.event_name == 'push'
+
+    environment:
+      name: nextjs-web
+      # url: ${{ steps.builddeploy.outputs.static_web_app_url }}
+      url: https://next.filterlists.com
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install
+        run: npm ci
+        working-directory: ./web
+
+      - name: Run Prettier
+        run: npm run prettier
+        working-directory: ./web
+
+      - name: Run ESLint
+        run: npm run lint
+        working-directory: ./web
+
+      - name: Build & Deploy
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_NEXTJS_PROD }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: upload
+          app_location: ./web
+          output_location: ""
+
+  # build_and_deploy_production:
+  #   name: Build & Deploy to Production
+
+  #   runs-on: ubuntu-latest
+
+  #   if: github.event_name == 'push'
+
+  #   environment:
+  #     name: production-web
+  #     url: https://filterlists.com
+
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+
+  #     - name: Build & Deploy
+  #       id: builddeploy
+  #       uses: Azure/static-web-apps-deploy@v1
+  #       with:
+  #         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
+  #         repo_token: ${{ secrets.GITHUB_TOKEN }}
+  #         action: upload
+  #         app_location: ./web
+  #         output_location: ""
+
+  # close_pull_request:
+  #   name: Close Pull Request
+
+  #   runs-on: ubuntu-latest
+
+  #   if: github.event_name == 'pull_request' && github.event.action == 'closed'
+
+  #   steps:
+  #     - name: Close Pull Request
+  #       uses: Azure/static-web-apps-deploy@v1
+  #       with:
+  #         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
+  #         action: close
+  #         app_location: ./web
