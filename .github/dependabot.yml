@@ -8,3 +8,8 @@ updates:
     directory: /web
     schedule:
       interval: daily
+  - package-ecosystem: npm
+    directory: /web
+    schedule:
+      interval: daily
+    target-branch: nextjs
