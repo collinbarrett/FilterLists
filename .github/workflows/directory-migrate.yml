@@ -21,8 +21,8 @@ jobs:
     env:
       USER_NAME: github-actions[bot]
       USER_EMAIL: github-actions[bot]@users.noreply.github.com
-      LINT_MESSAGE: 'chore(dir-data): 🎨 lint PR #${{ github.event.number }}'
-      MIGRATION_MESSAGE: 'chore(dir-data): ♻️ migrate PR #${{ github.event.number }}'
+      LINT_MESSAGE: "chore(dir-data): 🎨 lint PR #${{ github.event.number }}"
+      MIGRATION_MESSAGE: "chore(dir-data): ♻️ migrate PR #${{ github.event.number }}"
       TEST_MSSQL_IMAGE: mcr.microsoft.com/mssql/server:2022-latest
 
     steps:
@@ -31,7 +31,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 50 # guess max depth for data migration branch to avoid fetching all while still allowing sync w/upstream
-      
+
       - name: Lint
         run: ./lint.sh
         working-directory: ./services/Directory/data
@@ -61,18 +61,19 @@ jobs:
             git revert --no-edit $PREVIOUS_MIGRATION_HASH
           fi
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
-          cache: true
+      # Disabled GH Actions cache for Dependabot. https://github.com/dependabot/dependabot-core/issues/1303
+      # - name: Setup .NET
+      #   uses: actions/setup-dotnet@v4
+      #   with:
+      #     cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
+      #     cache: true
 
       - name: Install dotnet-ef
         run: dotnet tool install --global dotnet-ef
 
-      - name: Restore
-        run: dotnet restore --locked-mode
-        working-directory: ./services/Directory/FilterLists.Directory.Api
+      # - name: Restore
+      #   run: dotnet restore --locked-mode
+      #   working-directory: ./services/Directory/FilterLists.Directory.Api
 
       - name: Add Migration
         run: >

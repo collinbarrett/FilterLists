@@ -24,7 +24,7 @@ env:
 jobs:
   build:
     name: Build
-    
+
     runs-on: ubuntu-latest
 
     permissions:
@@ -37,15 +37,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
-          cache: true
+      # Disabled GH Actions cache for Dependabot. https://github.com/dependabot/dependabot-core/issues/1303
+      # - name: Setup .NET
+      #   uses: actions/setup-dotnet@v4
+      #   with:
+      #     cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
+      #     cache: true
 
-      - name: Restore
-        run: dotnet restore --locked-mode
-        working-directory: ./services/Directory/FilterLists.Directory.Api
+      # - name: Restore
+      #   run: dotnet restore --locked-mode
+      #   working-directory: ./services/Directory/FilterLists.Directory.Api
 
       - name: Build
         run: dotnet build -c Release
