@@ -25,7 +25,7 @@ jobs:
 
     environment:
       name: staging-web
-      url:  ${{ steps.builddeploy.outputs.static_web_app_url }}
+      url: ${{ steps.builddeploy.outputs.static_web_app_url }}
 
     steps:
       - name: Checkout
@@ -66,7 +66,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: upload
           app_location: ./web/build
-          output_location: ''
+          output_location: ""
           skip_app_build: true
         continue-on-error: true
 
@@ -79,7 +79,7 @@ jobs:
 
     environment:
       name: production-web
-      url:  https://filterlists.com
+      url: https://filterlists.com
 
     steps:
       - name: Checkout
@@ -112,7 +112,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: upload
           app_location: ./web/build
-          output_location: ''
+          output_location: ""
           skip_app_build: true
 
   close_pull_request:
