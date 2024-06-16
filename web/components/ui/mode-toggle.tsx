@@ -1,19 +1,20 @@
 // https://ui.shadcn.com/docs/dark-mode/next
-"use client";
+"use client"
 
-import * as React from "react";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
-import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
+import * as React from "react"
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
+import { useTheme } from "next-themes"
+
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu"
 
 export function ModeToggle() {
-  const { setTheme } = useTheme();
+  const { setTheme } = useTheme()
 
   return (
     <DropdownMenu>
@@ -36,5 +37,5 @@ export function ModeToggle() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }
