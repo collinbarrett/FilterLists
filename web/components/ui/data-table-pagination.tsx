@@ -1,3 +1,4 @@
+// https://ui.shadcn.com/docs/components/data-table#pagination-1
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
@@ -5,7 +6,6 @@ import {
   DoubleArrowRightIcon,
 } from "@radix-ui/react-icons";
 import { Table } from "@tanstack/react-table";
-
 import { Button } from "@/components/ui/button";
 
 interface DataTablePaginationProps<TData> {
