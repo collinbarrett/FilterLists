@@ -12,6 +12,12 @@ async function getData(): Promise<FilterList[]> {
 }
 
 interface FilterListsTableProps {
+  /**
+   * Indicates whether the component is for loading/suspense only.
+   *
+   * @type {boolean}
+   * @default false
+   */
   isLoading?: boolean;
 }
 
