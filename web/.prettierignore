@@ -1,3 +1,7 @@
 # Ignore artifacts:
 build
 coverage
+
+# ignore shadcn/ui to support cli
+# https://ui.shadcn.com/docs/cli#diff-experimental
+components/ui
