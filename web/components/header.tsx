@@ -5,15 +5,21 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
+import lightLogo from "./logo_filterlists.png";
+import darkLogo from "./logo_filterlists_white.png";
 import { useEffect, useState } from "react";
 
 export function Header() {
-  const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
+  const [currentLogo, setCurrentLogo] = useState(lightLogo);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    if (resolvedTheme === "dark") {
+      setCurrentLogo(darkLogo);
+    } else {
+      setCurrentLogo(lightLogo);
+    }
+  }, [resolvedTheme]);
 
   return (
     <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
@@ -23,11 +29,7 @@ export function Header() {
           className="flex items-center gap-2 text-lg font-semibold md:text-base"
         >
           <Image
-            src={
-              !mounted || resolvedTheme === "light"
-                ? "/logo_filterlists.png"
-                : "/logo_filterlists_white.png"
-            }
+            src={currentLogo}
             alt="FilterLists Logo"
             width={270}
             height={63}
