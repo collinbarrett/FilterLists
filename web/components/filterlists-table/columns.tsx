@@ -3,18 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDownIcon, ArrowUpIcon } from "@radix-ui/react-icons";
 import { ColumnDef } from "@tanstack/react-table";
-
-export type FilterList = {
-  id: number;
-  name: string;
-  description?: string | null;
-  licenseId: number;
-  syntaxIds: number[];
-  languageIds: number[];
-  tagIds: number[];
-  primaryViewUrl?: string | null;
-  maintainerIds: number[];
-};
+import { FilterList } from "./filterlist";
 
 export const columns: ColumnDef<FilterList>[] = [
   {
