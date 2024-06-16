@@ -72,7 +72,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
           <Header />
-          {children}
+          <main className="flex flex-col p-6">
+            <div className="w-full py-10">{children}</div>
+          </main>
         </ThemeProvider>
       </body>
     </html>
