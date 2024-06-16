@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ModeToggle } from "./mode-toggle";
+import { ModeToggle } from "../ui/mode-toggle";
 import Link from "next/link";
 import { Logo } from "./logo/logo";
 
