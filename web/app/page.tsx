@@ -1,6 +1,5 @@
 import { FilterList, columns } from "./columns";
 import { DataTable } from "../components/ui/data-table";
-import { ModeToggle } from "@/components/mode-toggle";
 
 async function getData(): Promise<FilterList[]> {
   const response = await fetch("https://api.filterlists.com/lists");
