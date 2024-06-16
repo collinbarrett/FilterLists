@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
-import { Logo } from "./logo";
+import { Logo } from "./logo/logo";
 
 export function Header() {
   return (
