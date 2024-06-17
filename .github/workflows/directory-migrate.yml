@@ -82,6 +82,8 @@ jobs:
           -p FilterLists.Directory.Infrastructure.Migrations
           -s FilterLists.Directory.Api
         working-directory: ./services/Directory
+        env:
+          DOTNET_RUNNING_EF_CORE_TOOLS: true
 
       - name: Commit Effective Migration
         run: |

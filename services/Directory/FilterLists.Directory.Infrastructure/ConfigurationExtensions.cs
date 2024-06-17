@@ -19,7 +19,10 @@ public static class ConfigurationExtensions
                     // retry on Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - Undefined error: 0)
                     so.EnableRetryOnFailure([0])
                         .MigrationsAssembly(MigrationsAssembly))
-                .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+                .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
+                .EnableSensitiveDataLogging(string.Equals(
+                    Environment.GetEnvironmentVariable("DOTNET_RUNNING_EF_CORE_TOOLS"), "true",
+                    StringComparison.OrdinalIgnoreCase)));
         builder.Services.AddHostedService<MigrationService>();
         builder.Services.AddMemoryCache();
     }
