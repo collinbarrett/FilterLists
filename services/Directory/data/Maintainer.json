@@ -995,17 +995,17 @@
   },
   {
     "id": 193,
-    "name": "BadBlock"
+    "name": "BadBlock",
     "url": "https://codeberg.org/Magnesium1062/BadBlock"
   },
   {
     "id": 194,
-    "name": "Divested Computing Group"
+    "name": "Divested Computing Group",
     "url": "https://divested.dev"
   },
   {
     "id": 195,
-    "name": "ph00lt0"
+    "name": "ph00lt0",
     "url": "https://github.com/ph00lt0"
   }
 ]
