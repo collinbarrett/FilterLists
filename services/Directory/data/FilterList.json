@@ -17555,11 +17555,11 @@
     "name": "Divested - Fingerprinting"
   },
   {
-  "description": "Blocklist of analytics and annoyances found by our own research (either discovery or found by collecting sources)."
-  "homeUrl": "https://github.com/ph00lt0/blocklist",
-  "id": 2691,
-  "issuesUrl": "https://github.com/ph00lt0/blocklist/issues",
-  "licenseId": 9,
-  "name": "Ph00lt0's Blocklist"
+    "description": "Blocklist of analytics and annoyances found by our own research (either discovery or found by collecting sources)."
+    "homeUrl": "https://github.com/ph00lt0/blocklist",
+    "id": 2691,
+    "issuesUrl": "https://github.com/ph00lt0/blocklist/issues",
+    "licenseId": 9,
+    "name": "Ph00lt0's Blocklist"
   }
 ]
