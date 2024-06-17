@@ -17414,124 +17414,364 @@
     "id": 2673,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock"
+    "name": "BadBlock (ABP)"
   },
   {
-    "description": "BadBlock, but slimmer! BadBlock's lite block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more.",
+    "description": "Block the bad! BadBlock's premier block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware.",
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2674,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock Lite"
+    "name": "BadBlock (Wildcard Domains)"
   },
   {
-    "description": "Complete coverage! Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware & toxic domains."
+    "description": "Block the bad! BadBlock's premier block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware.",
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2675,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock+"
+    "name": "BadBlock (Domains)"
   },
   {
-    "description": "Block Apple advertising, telemetry, promotions, & more!"
+    "description": "BadBlock, but slimmer! BadBlock's lite block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more.",
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2676,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Apple"
+    "name": "BadBlock Lite (ABP)"
   },
   {
-    "description": "Block Brave telemetry, analytics, advertising, sponsored content, & more!"
+    "description": "BadBlock, but slimmer! BadBlock's lite block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more.",
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2677,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Brave"
+    "name": "BadBlock Lite (Wildcard Domains)"
   },
   {
-    "description": "Block toxic domains!"
+    "description": "BadBlock, but slimmer! BadBlock's lite block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more.",
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2678,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Crap"
+    "name": "BadBlock Lite (Domains)"
   },
   {
-    "description": "Stop the people search!"
+    "description": "Complete coverage! Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware & toxic domains."
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2679,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Data Brokers"
+    "name": "BadBlock+ (ABP)"
   },
   {
-    "description": "Stop Digital Restrictions Management!"
+    "description": "Complete coverage! Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware & toxic domains."
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2680,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - DRM"
+    "name": "BadBlock+ (Wildcard Domains)"
   },
   {
-    "description": "Block Google advertising, tracking, promotions, & more!"
+    "description": "Complete coverage! Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware & toxic domains."
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2681,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Google"
+    "name": "BadBlock+ (Domains)"
   },
   {
-    "description": "Close the Windows! Block Microsoft advertising, tracking, promotions, & more!"
+    "description": "Block Apple advertising, telemetry, promotions, & more!"
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2682,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Microsoft"
+    "name": "BadBlock - Apple (ABP)"
   },
   {
-    "description": "Block Mozilla telemetry, analytics, advertising, sponsored content, & more!"
+    "description": "Block Apple advertising, telemetry, promotions, & more!"
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2683,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Mozilla"
+    "name": "BadBlock - Apple (Wildcard Domains)"
   },
   {
-    "description": "Block Big Brother!"
+    "description": "Block Apple advertising, telemetry, promotions, & more!"
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2684,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "NSA Blocklist - Next Generation"
+    "name": "BadBlock - Apple (Domains)"
   },
   {
-    "description": "Block Roblox telemetry, analytics, advertising, tracking, & more!"
+    "description": "Block Brave telemetry, analytics, advertising, sponsored content, & more!"
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2685,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Roblox"
+    "name": "BadBlock - Brave (ABP)"
   },
   {
-    "description": "Stop the spy!"
+    "description": "Block Brave telemetry, analytics, advertising, sponsored content, & more!"
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2686,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Stalkerware"
+    "name": "BadBlock - Brave (Wildcard Domains)"
   },
   {
-    "description": "BadBlock Personal Blocklist! Further improves privacy & reduces annoyances."
+    "description": "Block Brave telemetry, analytics, advertising, sponsored content, & more!"
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
     "id": 2687,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
-    "name": "BadBlock - Personal"
+    "name": "BadBlock - Brave (Domains)"
+  },
+  {
+    "description": "Block toxic domains!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2688,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Crap (ABP)"
+  },
+  {
+    "description": "Block toxic domains!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2689,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Crap (Wildcard Domains)"
+  },
+  {
+    "description": "Block toxic domains!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2690,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Crap (Domains)"
+  },
+  {
+    "description": "Stop the people search!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2691,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Data Brokers (ABP)"
+  },
+  {
+    "description": "Stop the people search!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2692,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Data Brokers (Wildcard Domains)"
+  },
+  {
+    "description": "Stop the people search!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2693,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Data Brokers (Domains)"
+  },
+  {
+    "description": "Stop Digital Restrictions Management!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2694,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - DRM (ABP)"
+  },
+  {
+    "description": "Stop Digital Restrictions Management!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2695,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - DRM (Wildcard Domains)"
+  },
+  {
+    "description": "Stop Digital Restrictions Management!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2696,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - DRM (Domains)"
+  },
+  {
+    "description": "Block Google advertising, tracking, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2697,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Google (ABP)"
+  },
+  {
+    "description": "Block Google advertising, tracking, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2698,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Google (Wildcard Domains)"
+  },
+  {
+    "description": "Block Google advertising, tracking, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2699,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Google (Domains)"
+  },
+  {
+    "description": "Close the Windows! Block Microsoft advertising, tracking, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2700,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Microsoft (ABP)"
+  },
+  {
+    "description": "Close the Windows! Block Microsoft advertising, tracking, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2701,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Microsoft (Wildcard Domains)"
+  },
+  {
+    "description": "Close the Windows! Block Microsoft advertising, tracking, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2702,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Microsoft (Domains)"
+  },
+  {
+    "description": "Block Mozilla telemetry, analytics, advertising, sponsored content, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2703,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Mozilla (ABP)"
+  },
+  {
+    "description": "Block Mozilla telemetry, analytics, advertising, sponsored content, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2704,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Mozilla (Wildcard Domains)"
+  },
+  {
+    "description": "Block Mozilla telemetry, analytics, advertising, sponsored content, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2705,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Mozilla (Domains)"
+  },
+  {
+    "description": "Block Big Brother!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2706,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "NSA Blocklist - Next Generation (ABP)"
+  },
+  {
+    "description": "Block Big Brother!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2707,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "NSA Blocklist - Next Generation (Wildcard Domains)"
+  },
+  {
+    "description": "Block Big Brother!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2708,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "NSA Blocklist - Next Generation (Domains)"
+  },
+  {
+    "description": "Block Roblox telemetry, analytics, advertising, tracking, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2709,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Roblox (ABP)"
+  },
+  {
+    "description": "Block Roblox telemetry, analytics, advertising, tracking, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2710,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Roblox (Wildcard Domains)"
+  },
+  {
+    "description": "Block Roblox telemetry, analytics, advertising, tracking, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2711,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Roblox (Domains)"
+  },
+  {
+    "description": "Stop the spy!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2712,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Stalkerware (ABP)"
+  },
+  {
+    "description": "Stop the spy!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2713,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Stalkerware (Wildcard Domains)"
+  },
+  {
+    "description": "Stop the spy!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2714,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Stalkerware (Domains)"
+  },
+  {
+    "description": "BadBlock Personal Blocklist! Further improves privacy & reduces annoyances."
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2715,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Personal (ABP)"
+  },
+  {
+    "description": "BadBlock Personal Blocklist! Further improves privacy & reduces annoyances."
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2716,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Personal (Wildcard Domains)"
+  },
+  {
+    "description": "BadBlock Personal Blocklist! Further improves privacy & reduces annoyances."
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2717,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Personal (Domains)"
   },
   {
     "description": "Allow the legitimate domains!"
     "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
-    "id": 2688,
+    "id": 2718,
     "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
     "licenseId": 4,
     "name": "BadBlock - Whitelist"
@@ -17540,16 +17780,43 @@
     "description": "Supercharge your content blocker to increase privacy and security."
     "donateUrl": "https://divested.dev/pages/donate",
     "homeUrl": "https://divested.dev/pages/dnsbl",
-    "id": 2689,
+    "id": 2719,
     "issuesUrl": "https://codeberg.org/divested/dnsbl/issues",
     "licenseId": 4,
-    "name": "Divested Combined Blocklist"
+    "name": "Divested Combined Blocklist (Wildcard Domains)"
   },
   {
     "description": "Supercharge your content blocker to increase privacy and security."
     "donateUrl": "https://divested.dev/pages/donate",
     "homeUrl": "https://divested.dev/pages/dnsbl",
-    "id": 2690,
+    "id": 2720,
+    "issuesUrl": "https://codeberg.org/divested/dnsbl/issues",
+    "licenseId": 4,
+    "name": "Divested Combined Blocklist (Domains)"
+  },
+  {
+    "description": "Supercharge your content blocker to increase privacy and security."
+    "donateUrl": "https://divested.dev/pages/donate",
+    "homeUrl": "https://divested.dev/pages/dnsbl",
+    "id": 2721,
+    "issuesUrl": "https://codeberg.org/divested/dnsbl/issues",
+    "licenseId": 4,
+    "name": "Divested Combined Blocklist (HOSTS)"
+  },
+  {
+    "description": "Supercharge your content blocker to increase privacy and security."
+    "donateUrl": "https://divested.dev/pages/donate",
+    "homeUrl": "https://divested.dev/pages/dnsbl",
+    "id": 2722,
+    "issuesUrl": "https://codeberg.org/divested/dnsbl/issues",
+    "licenseId": 4,
+    "name": "Divested Combined Blocklist (dnsmasq)"
+  },
+  {
+    "description": "Supercharge your content blocker to increase privacy and security."
+    "donateUrl": "https://divested.dev/pages/donate",
+    "homeUrl": "https://divested.dev/pages/dnsbl",
+    "id": 2723,
     "issuesUrl": "https://codeberg.org/divested/dnsbl/issues",
     "licenseId": 28,
     "name": "Divested - Fingerprinting"
@@ -17557,9 +17824,33 @@
   {
     "description": "Blocklist of analytics and annoyances found by our own research (either discovery or found by collecting sources)."
     "homeUrl": "https://github.com/ph00lt0/blocklist",
-    "id": 2691,
+    "id": 2724,
     "issuesUrl": "https://github.com/ph00lt0/blocklist/issues",
     "licenseId": 9,
-    "name": "Ph00lt0's Blocklist"
+    "name": "Ph00lt0's Blocklist (ABP)"
+  },
+  {
+    "description": "Blocklist of analytics and annoyances found by our own research (either discovery or found by collecting sources)."
+    "homeUrl": "https://github.com/ph00lt0/blocklist",
+    "id": 2725,
+    "issuesUrl": "https://github.com/ph00lt0/blocklist/issues",
+    "licenseId": 9,
+    "name": "Ph00lt0's Blocklist (Little Snitch)"
+  },
+  {
+    "description": "Blocklist of analytics and annoyances found by our own research (either discovery or found by collecting sources)."
+    "homeUrl": "https://github.com/ph00lt0/blocklist",
+    "id": 2726,
+    "issuesUrl": "https://github.com/ph00lt0/blocklist/issues",
+    "licenseId": 9,
+    "name": "Ph00lt0's Blocklist (Unbound)"
+  },
+  {
+    "description": "Blocklist of analytics and annoyances found by our own research (either discovery or found by collecting sources)."
+    "homeUrl": "https://github.com/ph00lt0/blocklist",
+    "id": 2727,
+    "issuesUrl": "https://github.com/ph00lt0/blocklist/issues",
+    "licenseId": 9,
+    "name": "Ph00lt0's Blocklist (HOSTS)"
   }
 ]
