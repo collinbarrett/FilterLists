@@ -1,11 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { useTheme } from "next-themes";
-import Image from "next/image";
-import lightLogo from "./logo_filterlists.png";
-import darkLogo from "./logo_filterlists_white.png";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
+
+import darkLogo from "./logo_filterlists_white.png";
+import lightLogo from "./logo_filterlists.png";
 
 export function Logo() {
   const { resolvedTheme } = useTheme();
