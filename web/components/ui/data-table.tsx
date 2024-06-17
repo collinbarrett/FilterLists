@@ -1,15 +1,17 @@
 // https://ui.shadcn.com/docs/components/data-table
-"use client";
+"use client"
 
+import React from "react"
 import {
   ColumnDef,
-  SortingState,
   flexRender,
   getCoreRowModel,
   getPaginationRowModel,
   getSortedRowModel,
+  SortingState,
   useReactTable,
-} from "@tanstack/react-table";
+} from "@tanstack/react-table"
+
 import {
   Table,
   TableBody,
@@ -17,20 +19,20 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import { DataTablePagination } from "./data-table-pagination";
-import React from "react";
+} from "@/components/ui/table"
+
+import { DataTablePagination } from "./data-table-pagination"
 
 interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[];
-  data: TData[];
+  columns: ColumnDef<TData, TValue>[]
+  data: TData[]
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
 }: DataTableProps<TData, TValue>) {
-  const [sorting, setSorting] = React.useState<SortingState>([]);
+  const [sorting, setSorting] = React.useState<SortingState>([])
 
   const table = useReactTable({
     data,
@@ -42,7 +44,7 @@ export function DataTable<TData, TValue>({
     state: {
       sorting,
     },
-  });
+  })
 
   return (
     <div className="rounded-md border h-full">
@@ -57,10 +59,10 @@ export function DataTable<TData, TValue>({
                       ? null
                       : flexRender(
                           header.column.columnDef.header,
-                          header.getContext(),
+                          header.getContext()
                         )}
                   </TableHead>
-                );
+                )
               })}
             </TableRow>
           ))}
@@ -94,5 +96,5 @@ export function DataTable<TData, TValue>({
       </Table>
       <DataTablePagination table={table} />
     </div>
-  );
+  )
 }
