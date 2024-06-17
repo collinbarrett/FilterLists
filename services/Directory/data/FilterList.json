@@ -17407,5 +17407,158 @@
     "issuesUrl": "https://github.com/serhiyguryev/ukrainian-filters/issues",
     "licenseId": 4,
     "name": "Ukrainian Privacy Filter"
-  }
+  },
+  {
+    "description": "Block the bad! BadBlock's premier block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware.",
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2673,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock"
+  },
+  {
+    "description": "BadBlock, but slimmer! BadBlock's lite block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more.",
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2674,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock Lite"
+  },
+  {
+    "description": "Complete coverage! Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware & toxic domains."
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2675,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock+"
+  },
+  {
+    "description": "Block Apple advertising, telemetry, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2676,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Apple"
+  },
+  {
+    "description": "Block Brave telemetry, analytics, advertising, sponsored content, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2677,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Brave"
+  },
+  {
+    "description": "Block toxic domains!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2678,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Crap"
+  },
+  {
+    "description": "Stop the people search!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2679,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Data Brokers"
+  },
+  {
+    "description": "Stop Digital Restrictions Management!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2680,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - DRM"
+  },
+  {
+    "description": "Block Google advertising, tracking, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2681,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Google"
+  },
+  {
+    "description": "Close the Windows! Block Microsoft advertising, tracking, promotions, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2682,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Microsoft"
+  },
+  {
+    "description": "Block Mozilla telemetry, analytics, advertising, sponsored content, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2683,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Mozilla"
+  },
+  {
+    "description": "Block Big Brother!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2684,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "NSA Blocklist - Next Generation"
+  },
+  {
+    "description": "Block Roblox telemetry, analytics, advertising, tracking, & more!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2685,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Roblox"
+  },
+  {
+    "description": "Stop the spy!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2686,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Stalkerware"
+  },
+  {
+    "description": "BadBlock Personal Blocklist! Further improves privacy & reduces annoyances."
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2687,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Personal"
+  },
+  {
+    "description": "Allow the legitimate domains!"
+    "homeUrl": "https://codeberg.org/Magnesium1062/BadBlock",
+    "id": 2688,
+    "issuesUrl": "https://codeberg.org/Magnesium1062/BadBlock/issues",
+    "licenseId": 4,
+    "name": "BadBlock - Whitelist"
+  },
+  {
+    "description": "Supercharge your content blocker to increase privacy and security."
+    "donateUrl": "https://divested.dev/pages/donate",
+    "homeUrl": "https://divested.dev/pages/dnsbl",
+    "id": 2689,
+    "issuesUrl": "https://codeberg.org/divested/dnsbl/issues",
+    "licenseId": 4,
+    "name": "Divested Combined Blocklist"
+  },
+  {
+    "description": "Supercharge your content blocker to increase privacy and security."
+    "donateUrl": "https://divested.dev/pages/donate",
+    "homeUrl": "https://divested.dev/pages/dnsbl",
+    "id": 2690,
+    "issuesUrl": "https://codeberg.org/divested/dnsbl/issues",
+    "licenseId": 28,
+    "name": "Divested - Fingerprinting"
+  },
+  {
+  "description": "Blocklist of analytics and annoyances found by our own research (either discovery or found by collecting sources)."
+  "homeUrl": "https://github.com/ph00lt0/blocklist",
+  "id": 2691,
+  "issuesUrl": "https://github.com/ph00lt0/blocklist/issues",
+  "licenseId": 9,
+  "name": "Ph00lt0's Blocklist"
 ]
