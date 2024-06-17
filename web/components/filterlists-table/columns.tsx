@@ -1,8 +1,10 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { ArrowDownIcon, ArrowUpIcon } from "@radix-ui/react-icons";
 import { ColumnDef } from "@tanstack/react-table";
+
+import { Button } from "@/components/ui/button";
+
 import { FilterList } from "./filterlist";
 
 export const columns: ColumnDef<FilterList>[] = [
