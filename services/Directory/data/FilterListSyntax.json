@@ -8915,7 +8915,7 @@
     "filterListId": 2702,
     "syntaxId": 2
   },
- {
+  {
     "filterListId": 2703,
     "syntaxId": 3
   },
@@ -9034,10 +9034,6 @@
   {
     "filterListId": 2724,
     "syntaxId": 6
-  },
-  {
-    "filterListId": 2723,
-    "syntaxId": 3
   },
   {
     "filterListId": 2725,
