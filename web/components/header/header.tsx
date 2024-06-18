@@ -1,4 +1,3 @@
-import * as React from "react";
 import Link from "next/link";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 

@@ -1,7 +1,6 @@
 "use client";
 
-import * as React from "react";
-import { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
@@ -10,9 +9,9 @@ import lightLogo from "./logo_filterlists.png";
 
 export function Logo() {
   const { resolvedTheme } = useTheme();
-  const [currentLogo, setCurrentLogo] = useState(lightLogo);
+  const [currentLogo, setCurrentLogo] = React.useState(lightLogo);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (resolvedTheme === "dark") {
       setCurrentLogo(darkLogo);
     } else {
