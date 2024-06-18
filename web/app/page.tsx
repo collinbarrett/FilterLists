@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import {
   Card,
   CardContent,
@@ -5,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { DataTableSkeleton } from "@/components/ui/data-table-skeleton";
 import { FilterListsTable } from "@/components/filterlists-table/filterlists-table";
 
 export default function Home() {
@@ -24,7 +27,9 @@ export default function Home() {
           </div>
         </CardHeader>
         <CardContent>
-          <FilterListsTable />
+          <Suspense fallback={<DataTableSkeleton />}>
+            <FilterListsTable />
+          </Suspense>
         </CardContent>
       </Card>
     </div>
