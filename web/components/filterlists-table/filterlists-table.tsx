@@ -11,20 +11,6 @@ async function getData(): Promise<FilterList[]> {
   return data;
 }
 
-interface FilterListsTableProps {
-  /**
-   * Indicates whether the component is for loading/suspense only.
-   *
-   * @type {boolean}
-   * @default false
-   */
-  isLoading?: boolean;
-}
-
-export async function FilterListsTable({
-  isLoading = false,
-}: FilterListsTableProps) {
-  const data = isLoading ? [] : await getData();
-
-  return <DataTable columns={columns} data={data} />;
+export async function FilterListsTable() {
+  return <DataTable columns={columns} data={await getData()} />;
 }
