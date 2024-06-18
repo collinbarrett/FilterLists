@@ -8,5 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 1,
     },
+    {
+      url: "https://filterlists.com/about",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 2,
+    },
   ];
 }
