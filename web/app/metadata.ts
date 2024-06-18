@@ -1,11 +1,15 @@
 import { Metadata } from "next";
 
+export const title =
+  "FilterLists | Subscriptions for uBlock Origin, Adblock Plus, AdGuard, ...";
+
+export const description =
+  "FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances. By Collin M. Barrett.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://filterlists.com"),
-  title:
-    "FilterLists | Subscriptions for uBlock Origin, Adblock Plus, AdGuard, ...",
-  description:
-    "FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances. By Collin M. Barrett.",
+  title: title,
+  description: description,
   applicationName: "FilterLists",
   authors: [
     {
@@ -32,20 +36,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://filterlists.com",
-    title:
-      "FilterLists | Subscriptions for uBlock Origin, Adblock Plus, AdGuard, ...",
-    description:
-      "FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances. By Collin M. Barrett.",
+    title: title,
+    description: description,
     siteName: "FilterLists",
   },
   twitter: {
     card: "summary_large_image",
     site: "@FilterLists",
     creator: "@FilterLists",
-    title:
-      "FilterLists | Subscriptions for uBlock Origin, Adblock Plus, AdGuard, ...",
-    description:
-      "FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances. By Collin M. Barrett.",
+    title: title,
+    description: description,
   },
   appleWebApp: {
     capable: true,
