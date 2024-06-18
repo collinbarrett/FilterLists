@@ -8,20 +8,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import { metadata as siteMetadata } from "../metadata";
+import { metadata as siteMetadata, title } from "../metadata";
 
 export const metadata: Metadata = {
-  title:
-    "About | FilterLists | Subscriptions for uBlock Origin, Adblock Plus, AdGuard, ...",
+  title: "About | " + title,
   openGraph: {
     ...siteMetadata.openGraph,
-    title:
-      "About | FilterLists | Subscriptions for uBlock Origin, Adblock Plus, AdGuard, ...",
+    title: "About | " + title,
   },
   twitter: {
     ...siteMetadata.twitter,
-    title:
-      "About | FilterLists | Subscriptions for uBlock Origin, Adblock Plus, AdGuard, ...",
+    title: "About | " + title,
   },
 };
 
