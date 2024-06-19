@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowDownIcon, ArrowUpIcon } from "@radix-ui/react-icons";
 import { ColumnDef } from "@tanstack/react-table";
 
@@ -8,6 +9,16 @@ import { Button } from "@/components/ui/button";
 import { FilterList } from "./filterlist";
 
 export const columns: ColumnDef<FilterList>[] = [
+  {
+    accessorKey: "id",
+    cell: ({ row }) => {
+      return (
+        <Link className="card" key={row.id} href={`/lists/${row.id}`} passHref>
+          {row.id}
+        </Link>
+      );
+    },
+  },
   {
     accessorKey: "name",
     header: ({ column }) => {
