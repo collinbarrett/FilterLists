@@ -16130,19 +16130,19 @@
     "filterListId": 2670,
     "id": 2954,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/ads.txt"
+    "url": "https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt"
   },
   {
     "filterListId": 2671,
     "id": 2955,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/annoyances.txt"
+    "url": "https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt"
   },
   {
     "filterListId": 2672,
     "id": 2956,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/privacy.txt"
+    "url": "https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt"
   },
   {
     "filterListId": 2673,
