@@ -17374,7 +17374,7 @@
   },
   {
     "description": "Filter of malicious web resources (phishing, online fraud, malware, etc.) targeting Ukrainian citizens",
-    "donateUrl": "https://github.com/serhiyguryev/ukrainian-filters?tab=readme-ov-file#%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82",
+    "donateUrl": "https://github.com/ukrainianfilters/lists#%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82",
     "homeUrl": "https://github.com/braveinnovators/ukrainian-security-filter",
     "id": 2669,
     "issuesUrl": "https://github.com/braveinnovators/ukrainian-security-filter/issues",
@@ -17383,28 +17383,28 @@
   },
   {
     "description": "Removes ads from Ukrainian websites",
-    "donateUrl": "https://github.com/serhiyguryev/ukrainian-filters?tab=readme-ov-file#%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82",
-    "homeUrl": "https://github.com/serhiyguryev/ukrainian-filters",
+    "donateUrl": "https://github.com/ukrainianfilters/lists#%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82",
+    "homeUrl": "https://github.com/ukrainianfilters/lists",
     "id": 2670,
-    "issuesUrl": "https://github.com/serhiyguryev/ukrainian-filters/issues",
+    "issuesUrl": "https://github.com/ukrainianfilters/lists/issues",
     "licenseId": 4,
     "name": "Ukrainian Ad Filter"
   },
   {
     "description": "Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)",
-    "donateUrl": "https://github.com/serhiyguryev/ukrainian-filters?tab=readme-ov-file#%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82",
-    "homeUrl": "https://github.com/serhiyguryev/ukrainian-filters",
+    "donateUrl": "https://github.com/ukrainianfilters/lists#%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82",
+    "homeUrl": "https://github.com/ukrainianfilters/lists",
     "id": 2671,
-    "issuesUrl": "https://github.com/serhiyguryev/ukrainian-filters/issues",
+    "issuesUrl": "https://github.com/ukrainianfilters/lists/issues",
     "licenseId": 4,
     "name": "Ukrainian Annoyance Filter"
   },
   {
     "description": "Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior",
-    "donateUrl": "https://github.com/serhiyguryev/ukrainian-filters?tab=readme-ov-file#%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82",
-    "homeUrl": "https://github.com/serhiyguryev/ukrainian-filters",
+    "donateUrl": "https://github.com/ukrainianfilters/lists#%D0%BF%D1%96%D0%B4%D1%82%D1%80%D0%B8%D0%BC%D0%B0%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82",
+    "homeUrl": "https://github.com/ukrainianfilters/lists",
     "id": 2672,
-    "issuesUrl": "https://github.com/serhiyguryev/ukrainian-filters/issues",
+    "issuesUrl": "https://github.com/ukrainianfilters/lists/issues",
     "licenseId": 4,
     "name": "Ukrainian Privacy Filter"
   },
