@@ -16838,8 +16838,8 @@
     "name": "Scam Links - Links"
   },
   {
-    "description": "Filters for news sites (supports less sites than the extension/add-on)",
-    "homeUrl": "https://github.com/bpc-clone/bypass-paywalls-clean-filters",
+    "description": "Filters to bypass paywalls for news sites (supports less sites than the extension/add-on)",
+    "homeUrl": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters",
     "id": 2603,
     "name": "Bypass Paywalls Clean filter"
   },
