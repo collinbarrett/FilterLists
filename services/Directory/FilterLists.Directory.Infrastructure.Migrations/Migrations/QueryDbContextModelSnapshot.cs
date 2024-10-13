@@ -17,7 +17,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .UseCollation("Latin1_General_100_CI_AS_SC")
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "8.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -19711,10 +19711,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2673,
                             Description = "Block the bad! BadBlock's premier block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock (ABP)"
                         },
@@ -19722,10 +19720,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2674,
                             Description = "Block the bad! BadBlock's premier block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock (Wildcard Domains)"
                         },
@@ -19733,10 +19729,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2675,
                             Description = "Block the bad! BadBlock's premier block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock (Domains)"
                         },
@@ -19744,10 +19738,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2676,
                             Description = "BadBlock, but slimmer! BadBlock's lite block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock Lite (ABP)"
                         },
@@ -19755,10 +19747,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2677,
                             Description = "BadBlock, but slimmer! BadBlock's lite block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock Lite (Wildcard Domains)"
                         },
@@ -19766,10 +19756,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2678,
                             Description = "BadBlock, but slimmer! BadBlock's lite block list - Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock Lite (Domains)"
                         },
@@ -19777,10 +19765,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2679,
                             Description = "Complete coverage! Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware & toxic domains.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock+ (ABP)"
                         },
@@ -19788,10 +19774,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2680,
                             Description = "Complete coverage! Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware & toxic domains.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock+ (Wildcard Domains)"
                         },
@@ -19799,10 +19783,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2681,
                             Description = "Complete coverage! Blocks domains used for advertising, promotions, sponsorships, tracking, analytics, telemetry, annoyances, & more, as well as stalkerware & toxic domains.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock+ (Domains)"
                         },
@@ -19810,10 +19792,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2682,
                             Description = "Block Apple advertising, telemetry, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Apple (ABP)"
                         },
@@ -19821,10 +19801,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2683,
                             Description = "Block Apple advertising, telemetry, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Apple (Wildcard Domains)"
                         },
@@ -19832,10 +19810,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2684,
                             Description = "Block Apple advertising, telemetry, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Apple (Domains)"
                         },
@@ -19843,10 +19819,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2685,
                             Description = "Block Brave telemetry, analytics, advertising, sponsored content, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Brave (ABP)"
                         },
@@ -19854,10 +19828,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2686,
                             Description = "Block Brave telemetry, analytics, advertising, sponsored content, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Brave (Wildcard Domains)"
                         },
@@ -19865,10 +19837,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2687,
                             Description = "Block Brave telemetry, analytics, advertising, sponsored content, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Brave (Domains)"
                         },
@@ -19876,10 +19846,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2688,
                             Description = "Block toxic domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Crap (ABP)"
                         },
@@ -19887,10 +19855,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2689,
                             Description = "Block toxic domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Crap (Wildcard Domains)"
                         },
@@ -19898,10 +19864,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2690,
                             Description = "Block toxic domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Crap (Domains)"
                         },
@@ -19909,10 +19873,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2691,
                             Description = "Stop the people search!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Data Brokers (ABP)"
                         },
@@ -19920,10 +19882,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2692,
                             Description = "Stop the people search!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Data Brokers (Wildcard Domains)"
                         },
@@ -19931,10 +19891,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2693,
                             Description = "Stop the people search!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Data Brokers (Domains)"
                         },
@@ -19942,10 +19900,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2694,
                             Description = "Stop Digital Restrictions Management!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - DRM (ABP)"
                         },
@@ -19953,10 +19909,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2695,
                             Description = "Stop Digital Restrictions Management!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - DRM (Wildcard Domains)"
                         },
@@ -19964,10 +19918,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2696,
                             Description = "Stop Digital Restrictions Management!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - DRM (Domains)"
                         },
@@ -19975,10 +19927,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2697,
                             Description = "Block Google advertising, tracking, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Google (ABP)"
                         },
@@ -19986,10 +19936,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2698,
                             Description = "Block Google advertising, tracking, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Google (Wildcard Domains)"
                         },
@@ -19997,10 +19945,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2699,
                             Description = "Block Google advertising, tracking, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Google (Domains)"
                         },
@@ -20008,10 +19954,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2700,
                             Description = "Close the Windows! Block Microsoft advertising, tracking, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Microsoft (ABP)"
                         },
@@ -20019,10 +19963,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2701,
                             Description = "Close the Windows! Block Microsoft advertising, tracking, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Microsoft (Wildcard Domains)"
                         },
@@ -20030,10 +19972,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2702,
                             Description = "Close the Windows! Block Microsoft advertising, tracking, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Microsoft (Domains)"
                         },
@@ -20041,10 +19981,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2703,
                             Description = "Block Mozilla telemetry, analytics, advertising, sponsored content, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Mozilla (ABP)"
                         },
@@ -20052,10 +19990,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2704,
                             Description = "Block Mozilla telemetry, analytics, advertising, sponsored content, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Mozilla (Wildcard Domains)"
                         },
@@ -20063,10 +19999,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2705,
                             Description = "Block Mozilla telemetry, analytics, advertising, sponsored content, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Mozilla (Domains)"
                         },
@@ -20074,10 +20008,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2706,
                             Description = "Block Big Brother!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "NSA Blocklist - Next Generation (ABP)"
                         },
@@ -20085,10 +20017,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2707,
                             Description = "Block Big Brother!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "NSA Blocklist - Next Generation (Wildcard Domains)"
                         },
@@ -20096,10 +20026,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2708,
                             Description = "Block Big Brother!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "NSA Blocklist - Next Generation (Domains)"
                         },
@@ -20107,10 +20035,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2709,
                             Description = "Block Roblox telemetry, analytics, advertising, tracking, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Roblox (ABP)"
                         },
@@ -20118,10 +20044,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2710,
                             Description = "Block Roblox telemetry, analytics, advertising, tracking, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Roblox (Wildcard Domains)"
                         },
@@ -20129,54 +20053,44 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2711,
                             Description = "Block Roblox telemetry, analytics, advertising, tracking, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Roblox (Domains)"
                         },
                         new
                         {
                             Id = 2712,
-                            Description = "Stop the spying!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            Description = "Stop the spy!",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
-                            Name = "BadBlock - Anti-Monitoring (ABP)"
+                            Name = "BadBlock - Stalkerware (ABP)"
                         },
                         new
                         {
                             Id = 2713,
-                            Description = "Stop the spying!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            Description = "Stop the spy!",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
-                            Name = "BadBlock - Anti-Monitoring (Wildcard Domains)"
+                            Name = "BadBlock - Stalkerware (Wildcard Domains)"
                         },
                         new
                         {
                             Id = 2714,
-                            Description = "Stop the spying!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            Description = "Stop the spy!",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
-                            Name = "BadBlock - Anti-Monitoring (Domains)"
+                            Name = "BadBlock - Stalkerware (Domains)"
                         },
                         new
                         {
                             Id = 2715,
                             Description = "BadBlock Personal Blocklist! Further improves privacy & reduces annoyances.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Personal (ABP)"
                         },
@@ -20184,10 +20098,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2716,
                             Description = "BadBlock Personal Blocklist! Further improves privacy & reduces annoyances.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Personal (Wildcard Domains)"
                         },
@@ -20195,10 +20107,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2717,
                             Description = "BadBlock Personal Blocklist! Further improves privacy & reduces annoyances.",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
                             Name = "BadBlock - Personal (Domains)"
                         },
@@ -20206,19 +20116,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2718,
                             Description = "Allow the legitimate domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
+                            HomeUrl = "https://codeberg.org/Magnesium1062/BadBlock",
+                            IssuesUrl = "https://codeberg.org/Magnesium1062/BadBlock/issues",
                             LicenseId = 4,
-                            Name = "BadBlock - Whitelist (ABP)"
+                            Name = "BadBlock - Whitelist"
                         },
                         new
                         {
                             Id = 2719,
                             Description = "Supercharge your content blocker to increase privacy and security.",
                             DonateUrl = "https://divested.dev/pages/donate",
-                            EmailAddress = "celenity@celenity.dev",
                             HomeUrl = "https://divested.dev/pages/dnsbl",
                             IssuesUrl = "https://codeberg.org/divested/dnsbl/issues",
                             LicenseId = 4,
@@ -20299,127 +20206,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/ph00lt0/blocklist/issues",
                             LicenseId = 9,
                             Name = "Ph00lt0's Blocklist (HOSTS)"
-                        },
-                        new
-                        {
-                            Id = 2728,
-                            Description = "Block Amazon advertising, tracking, telemetry, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Amazon (ABP)"
-                        },
-                        new
-                        {
-                            Id = 2729,
-                            Description = "Block Amazon advertising, tracking, telemetry, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Amazon (Wildcard Domains)"
-                        },
-                        new
-                        {
-                            Id = 2730,
-                            Description = "Block Amazon advertising, tracking, telemetry, promotions, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Amazon (Domains)"
-                        },
-                        new
-                        {
-                            Id = 2731,
-                            Description = "Block nasty domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Unsafe (ABP)"
-                        },
-                        new
-                        {
-                            Id = 2732,
-                            Description = "Block nasty domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Unsafe (Wildcard Domains)"
-                        },
-                        new
-                        {
-                            Id = 2733,
-                            Description = "Block nasty domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Unsafe (Domains)"
-                        },
-                        new
-                        {
-                            Id = 2734,
-                            Description = "Block Cookie banners, Live Chat widgets, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Annoyances (ABP)"
-                        },
-                        new
-                        {
-                            Id = 2735,
-                            Description = "Block Cookie banners, Live Chat widgets, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Annoyances (Wildcard Domains)"
-                        },
-                        new
-                        {
-                            Id = 2736,
-                            Description = "Block Cookie banners, Live Chat widgets, & more!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Annoyances (Domains)"
-                        },
-                        new
-                        {
-                            Id = 2737,
-                            Description = "Allow the legitimate domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Whitelist (Wildcard Domains)"
-                        },
-                        new
-                        {
-                            Id = 2738,
-                            Description = "Allow the legitimate domains!",
-                            DonateUrl = "https://celenity.dev/donate",
-                            EmailAddress = "celenity@celenity.dev",
-                            HomeUrl = "https://badblock.celenity.dev/",
-                            IssuesUrl = "https://badblock.celenity.dev/issues",
-                            LicenseId = 4,
-                            Name = "BadBlock - Whitelist (Domains)"
                         });
                 });
 
@@ -43796,76 +43582,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2727,
                             SyntaxId = (short)1
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            SyntaxId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            SyntaxId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = 2729,
-                            SyntaxId = (short)16
-                        },
-                        new
-                        {
-                            FilterListId = 2730,
-                            SyntaxId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = 2731,
-                            SyntaxId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = 2731,
-                            SyntaxId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = 2732,
-                            SyntaxId = (short)16
-                        },
-                        new
-                        {
-                            FilterListId = 2733,
-                            SyntaxId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = 2734,
-                            SyntaxId = (short)3
-                        },
-                        new
-                        {
-                            FilterListId = 2734,
-                            SyntaxId = (short)6
-                        },
-                        new
-                        {
-                            FilterListId = 2735,
-                            SyntaxId = (short)16
-                        },
-                        new
-                        {
-                            FilterListId = 2736,
-                            SyntaxId = (short)2
-                        },
-                        new
-                        {
-                            FilterListId = 2737,
-                            SyntaxId = (short)16
-                        },
-                        new
-                        {
-                            FilterListId = 2738,
-                            SyntaxId = (short)2
                         });
                 });
 
@@ -60093,61 +59809,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2727,
                             TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2729,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2730,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2731,
-                            TagId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2732,
-                            TagId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2733,
-                            TagId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2734,
-                            TagId = 8
-                        },
-                        new
-                        {
-                            FilterListId = 2735,
-                            TagId = 8
-                        },
-                        new
-                        {
-                            FilterListId = 2736,
-                            TagId = 8
-                        },
-                        new
-                        {
-                            FilterListId = 2737,
-                            TagId = 10
-                        },
-                        new
-                        {
-                            FilterListId = 2738,
-                            TagId = 10
                         });
                 });
 
@@ -62987,10 +62648,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 193,
-                            EmailAddress = "celenity@celenity.dev",
-                            Name = "celenity",
-                            TwitterHandle = "celenityyy",
-                            Url = "https://celenity.dev/"
+                            Name = "BadBlock",
+                            Url = "https://codeberg.org/Magnesium1062/BadBlock"
                         },
                         new
                         {
@@ -86944,737 +86603,737 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 {
                                     FilterListId = 2673,
                                     Id = 2957,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/badblock.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2673,
                                     Id = 2958,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/badblock.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2674,
                                     Id = 2959,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/badblock.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2674,
                                     Id = 2960,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/badblock.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2675,
                                     Id = 2961,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/badblock.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2675,
                                     Id = 2962,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/badblock.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2676,
                                     Id = 2963,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/badblock_lite.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_lite.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2676,
                                     Id = 2964,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/badblock_lite.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock_lite.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2677,
                                     Id = 2965,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/badblock_lite.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock_lite.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2677,
                                     Id = 2966,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/badblock_lite.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock_lite.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2678,
                                     Id = 2967,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/badblock_lite.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_lite.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2678,
                                     Id = 2968,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/badblock_lite.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_lite.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2679,
                                     Id = 2969,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/badblock_plus.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_plus.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2679,
                                     Id = 2970,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/badblock_plus.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock_plus.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2680,
                                     Id = 2971,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/badblock_plus.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock_plus.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2680,
                                     Id = 2972,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/badblock_plus.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock_plus.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2681,
                                     Id = 2973,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/badblock_plus.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_plus.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2681,
                                     Id = 2974,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/badblock_plus.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_plus.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2682,
                                     Id = 2975,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/apple.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/apple.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2682,
                                     Id = 2976,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/apple.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/apple.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2683,
                                     Id = 2977,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/apple.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/apple.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2683,
                                     Id = 2978,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/apple.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/apple.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2684,
                                     Id = 2979,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/apple.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/apple.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2684,
                                     Id = 2980,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/apple.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/apple.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2685,
                                     Id = 2981,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/brave.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/brave.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2685,
                                     Id = 2982,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/brave.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/brave.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2686,
                                     Id = 2983,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/brave.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/brave.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2686,
                                     Id = 2984,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/brave.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/brave.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2687,
                                     Id = 2985,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/brave.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/brave.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2687,
                                     Id = 2986,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/brave.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/brave.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2688,
                                     Id = 2987,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/crap.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/crap.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2688,
                                     Id = 2988,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/crap.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/crap.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2689,
                                     Id = 2989,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/crap.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/crap.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2689,
                                     Id = 2990,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/crap.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/crap.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2690,
                                     Id = 2991,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/crap.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/crap.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2690,
                                     Id = 2992,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/crap.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/crap.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2691,
                                     Id = 2993,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/data-brokers.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/data-brokers.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2691,
                                     Id = 2994,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/data-brokers.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/data-brokers.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2692,
                                     Id = 2995,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/data-brokers.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/data-brokers.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2692,
                                     Id = 2996,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/data-brokers.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/data-brokers.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2693,
                                     Id = 2997,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/data-brokers.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/data-brokers.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2693,
                                     Id = 2998,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/data-brokers.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/data-brokers.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2694,
                                     Id = 2999,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/drm.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/drm.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2694,
                                     Id = 3000,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/drm.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/drm.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2695,
                                     Id = 3001,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/drm.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/drm.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2695,
                                     Id = 3002,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/drm.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/drm.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2696,
                                     Id = 3003,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/drm.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/drm.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2696,
                                     Id = 3004,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/drm.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/drm.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2697,
                                     Id = 3005,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/google.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/google.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2697,
                                     Id = 3006,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/google.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/google.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2698,
                                     Id = 3007,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/google.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/google.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2698,
                                     Id = 3008,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/google.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/google.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2699,
                                     Id = 3009,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/google.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/google.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2699,
                                     Id = 3010,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/google.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/google.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2700,
                                     Id = 3011,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/microsoft.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/microsoft.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2700,
                                     Id = 3012,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/microsoft.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/microsoft.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2701,
                                     Id = 3013,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/microsoft.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/microsoft.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2701,
                                     Id = 3014,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/microsoft.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/microsoft.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2702,
                                     Id = 3015,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/microsoft.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/microsoft.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2702,
                                     Id = 3016,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/microsoft.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/microsoft.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2703,
                                     Id = 3017,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/mozilla.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/mozilla.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2703,
                                     Id = 3018,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/mozilla.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/mozilla.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2704,
                                     Id = 3019,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/mozilla.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/mozilla.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2704,
                                     Id = 3020,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/mozilla.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/mozilla.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2705,
                                     Id = 3021,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/mozilla.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/mozilla.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2705,
                                     Id = 3022,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/mozilla.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/mozilla.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2706,
                                     Id = 3023,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/nsa-blocklist-ng.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/nsa-blocklist-ng.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2706,
                                     Id = 3024,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/nsa-blocklist-ng.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/nsa-blocklist-ng.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2707,
                                     Id = 3025,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/nsa-blocklist-ng.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/nsa-blocklist-ng.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2707,
                                     Id = 3026,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/nsa-blocklist-ng.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/nsa-blocklist-ng.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2708,
                                     Id = 3027,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/nsa-blocklist-ng.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/nsa-blocklist-ng.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2708,
                                     Id = 3028,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/nsa-blocklist-ng.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/nsa-blocklist-ng.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2709,
                                     Id = 3029,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/roblox.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/roblox.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2709,
                                     Id = 3030,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/roblox.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/roblox.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2710,
                                     Id = 3031,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/roblox.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/roblox.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2710,
                                     Id = 3032,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/roblox.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/roblox.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2711,
                                     Id = 3033,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/roblox.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/roblox.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2711,
                                     Id = 3034,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/roblox.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/roblox.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2712,
                                     Id = 3035,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/monitoring.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/stalkerware.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2712,
                                     Id = 3036,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/monitoring.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/stalkerware.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2713,
                                     Id = 3037,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/monitoring.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/stalkerware.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2713,
                                     Id = 3038,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/monitoring.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/stalkerware.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2714,
                                     Id = 3039,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/monitoring.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/stalkerware.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2714,
                                     Id = 3040,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/monitoring.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/stalkerware.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2715,
                                     Id = 3041,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/personal.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/personal.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2715,
                                     Id = 3042,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/personal.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/personal.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2716,
                                     Id = 3043,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/personal.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/personal.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2716,
                                     Id = 3044,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/personal.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-%2A/personal.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2717,
                                     Id = 3045,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/personal.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/personal.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2717,
                                     Id = 3046,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/personal.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-%2A/personal.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2718,
                                     Id = 3047,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/celenity/BadBlock/raw/branch/main/whitelist.txt"
+                                    Url = "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/whitelist.txt"
                                 },
                                 new
                                 {
                                     FilterListId = 2718,
                                     Id = 3048,
-                                    Primariness = (short)3,
+                                    Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/celenityy/BadBlock/main/whitelist.txt"
+                                    Url = "https://raw.githubusercontent.com/Retold3202/BadBlock/main/whitelist.txt"
                                 },
                                 new
                                 {
@@ -87771,462 +87430,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://raw.githubusercontent.com/ph00lt0/blocklists/master/pihole-blocklist.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2673,
-                                    Id = 3061,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/badblock.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2674,
-                                    Id = 3062,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/badblock.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2675,
-                                    Id = 3063,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/badblock.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2676,
-                                    Id = 3064,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/badblock_lite.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2677,
-                                    Id = 3065,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/badblock_lite.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2678,
-                                    Id = 3066,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/badblock_lite.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2679,
-                                    Id = 3067,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/badblock_plus.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2680,
-                                    Id = 3068,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/badblock_plus.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2681,
-                                    Id = 3069,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/badblock_plus.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2682,
-                                    Id = 3070,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/apple.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2683,
-                                    Id = 3071,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/apple.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2684,
-                                    Id = 3072,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/apple.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2685,
-                                    Id = 3073,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/brave.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2686,
-                                    Id = 3074,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/brave.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2687,
-                                    Id = 3075,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/brave.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2688,
-                                    Id = 3076,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/crap.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2689,
-                                    Id = 3077,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/crap.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2690,
-                                    Id = 3078,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/crap.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2691,
-                                    Id = 3079,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/data-brokers.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2692,
-                                    Id = 3080,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/data-brokers.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2693,
-                                    Id = 3081,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/data-brokers.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2694,
-                                    Id = 3082,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/drm.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2695,
-                                    Id = 3083,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/drm.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2696,
-                                    Id = 3084,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/drm.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2697,
-                                    Id = 3085,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/google.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2698,
-                                    Id = 3086,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/google.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2699,
-                                    Id = 3087,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/google.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2700,
-                                    Id = 3088,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/microsoft.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2701,
-                                    Id = 3089,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/microsoft.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2702,
-                                    Id = 3090,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/microsoft.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2703,
-                                    Id = 3091,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/mozilla.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2704,
-                                    Id = 3092,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/mozilla.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2705,
-                                    Id = 3093,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/mozilla.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2706,
-                                    Id = 3094,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/nsa-blocklist-ng.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2707,
-                                    Id = 3095,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/nsa-blocklist-ng.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2708,
-                                    Id = 3096,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/nsa-blocklist-ng.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2709,
-                                    Id = 3097,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/roblox.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2710,
-                                    Id = 3098,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/roblox.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2711,
-                                    Id = 3099,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/roblox.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2712,
-                                    Id = 3100,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/monitoring.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2713,
-                                    Id = 3101,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/monitoring.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2714,
-                                    Id = 3102,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/monitoring.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2715,
-                                    Id = 3103,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/personal.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2716,
-                                    Id = 3104,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/personal.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2717,
-                                    Id = 3105,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/personal.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2718,
-                                    Id = 3106,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/whitelist.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2728,
-                                    Id = 3107,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/amazon.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2729,
-                                    Id = 3108,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/amazon.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2730,
-                                    Id = 3109,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/amazon.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2731,
-                                    Id = 3110,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/unsafe.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2732,
-                                    Id = 3111,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/unsafe.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2733,
-                                    Id = 3112,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/unsafe.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2734,
-                                    Id = 3113,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/abp/annoyances.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2735,
-                                    Id = 3114,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/annoyances.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2736,
-                                    Id = 3115,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/annoyances.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2737,
-                                    Id = 3116,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-star/whitelist.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2738,
-                                    Id = 3117,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://badblock.celenity.dev/wildcards-no-star/whitelist.txt"
                                 });
                         });
 
