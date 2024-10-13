@@ -17870,8 +17870,9 @@
   },
   {
     "description": "Supercharge your content blocker to increase privacy and security.",
-    "donateUrl": "https://divested.dev/pages/donate",
+    "donateUrl": "https://celenity.dev/donate",
     "emailAddress": "celenity@celenity.dev",
+    "donateUrl": "https://divested.dev/pages/donate",
     "homeUrl": "https://divested.dev/pages/dnsbl",
     "id": 2719,
     "issuesUrl": "https://codeberg.org/divested/dnsbl/issues",
