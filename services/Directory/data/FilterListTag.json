@@ -12966,5 +12966,49 @@
   {
     "filterListId": 2727,
     "tagId": 3
+  },
+  {
+    "filterListId": 2728,
+    "tagId": 3
+  },
+  {
+    "filterListId": 2729,
+    "tagId": 3
+  },
+  {
+    "filterListId": 2730,
+    "tagId": 3
+  },
+  {
+    "filterListId": 2731,
+    "tagId": 6
+  },
+  {
+    "filterListId": 2732,
+    "tagId": 6
+  },
+  {
+    "filterListId": 2733,
+    "tagId": 6
+  },
+  {
+    "filterListId": 2734,
+    "tagId": 8
+  },
+  {
+    "filterListId": 2735,
+    "tagId": 8
+  },
+  {
+    "filterListId": 2736,
+    "tagId": 8
+  },
+  {
+    "filterListId": 2737,
+    "tagId": 10
+  },
+  {
+    "filterListId": 2738,
+    "tagId": 10
   }
 ]
