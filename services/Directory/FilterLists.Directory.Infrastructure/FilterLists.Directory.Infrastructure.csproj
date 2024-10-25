@@ -9,7 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="8.2.2"/>
-        <PackageReference Include="JetBrains.Annotations" Version="2024.2.0"/>
+        <PackageReference Include="JetBrains.Annotations" Version="2024.3.0"/>
     </ItemGroup>
 
 </Project>
