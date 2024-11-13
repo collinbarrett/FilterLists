@@ -16,7 +16,7 @@
 
     <ItemGroup>
         <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2"/>
-        <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.2.2"/>
+        <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.0.0"/>
     </ItemGroup>
 
 </Project>
