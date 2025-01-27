@@ -16147,554 +16147,554 @@
   {
     "filterListId": 2673,
     "id": 2957,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/badblock.txt"
   },
   {
     "filterListId": 2673,
     "id": 2958,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/badblock.txt"
   },
   {
     "filterListId": 2674,
     "id": 2959,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/badblock.txt"
   },
   {
     "filterListId": 2674,
     "id": 2960,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/badblock.txt"
   },
   {
     "filterListId": 2675,
     "id": 2961,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/badblock.txt"
   },
   {
     "filterListId": 2675,
     "id": 2962,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/badblock.txt"
   },
   {
     "filterListId": 2676,
     "id": 2963,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_lite.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/badblock_lite.txt"
   },
   {
     "filterListId": 2676,
     "id": 2964,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock_lite.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/badblock_lite.txt"
   },
   {
     "filterListId": 2677,
     "id": 2965,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock_lite.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/badblock_lite.txt"
   },
   {
     "filterListId": 2677,
     "id": 2966,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock_lite.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/badblock_lite.txt"
   },
   {
     "filterListId": 2678,
     "id": 2967,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_lite.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/badblock_lite.txt"
   },
   {
     "filterListId": 2678,
     "id": 2968,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_lite.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/badblock_lite.txt"
   },
   {
     "filterListId": 2679,
     "id": 2969,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/badblock_plus.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/badblock_plus.txt"
   },
   {
     "filterListId": 2679,
     "id": 2970,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/badblock_plus.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/badblock_plus.txt"
   },
   {
     "filterListId": 2680,
     "id": 2971,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/badblock_plus.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/badblock_plus.txt"
   },
   {
     "filterListId": 2680,
     "id": 2972,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/badblock_plus.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/badblock_plus.txt"
   },
   {
     "filterListId": 2681,
     "id": 2973,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/badblock_plus.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/badblock_plus.txt"
   },
   {
     "filterListId": 2681,
     "id": 2974,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/badblock_plus.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/badblock_plus.txt"
   },
   {
     "filterListId": 2682,
     "id": 2975,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/apple.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/apple.txt"
   },
   {
     "filterListId": 2682,
     "id": 2976,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/apple.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/apple.txt"
   },
   {
     "filterListId": 2683,
     "id": 2977,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/apple.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/apple.txt"
   },
   {
     "filterListId": 2683,
     "id": 2978,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/apple.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/apple.txt"
   },
   {
     "filterListId": 2684,
     "id": 2979,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/apple.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/apple.txt"
   },
   {
     "filterListId": 2684,
     "id": 2980,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/apple.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/apple.txt"
   },
   {
     "filterListId": 2685,
     "id": 2981,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/brave.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/brave.txt"
   },
   {
     "filterListId": 2685,
     "id": 2982,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/brave.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/brave.txt"
   },
   {
     "filterListId": 2686,
     "id": 2983,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/brave.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/brave.txt"
   },
   {
     "filterListId": 2686,
     "id": 2984,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/brave.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/brave.txt"
   },
   {
     "filterListId": 2687,
     "id": 2985,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/brave.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/brave.txt"
   },
   {
     "filterListId": 2687,
     "id": 2986,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/brave.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/brave.txt"
   },
   {
     "filterListId": 2688,
     "id": 2987,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/crap.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/crap.txt"
   },
   {
     "filterListId": 2688,
     "id": 2988,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/crap.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/crap.txt"
   },
   {
     "filterListId": 2689,
     "id": 2989,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/crap.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/crap.txt"
   },
   {
     "filterListId": 2689,
     "id": 2990,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/crap.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/crap.txt"
   },
   {
     "filterListId": 2690,
     "id": 2991,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/crap.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/crap.txt"
   },
   {
     "filterListId": 2690,
     "id": 2992,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/crap.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/crap.txt"
   },
   {
     "filterListId": 2691,
     "id": 2993,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/data-brokers.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/data-brokers.txt"
   },
   {
     "filterListId": 2691,
     "id": 2994,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/data-brokers.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/data-brokers.txt"
   },
   {
     "filterListId": 2692,
     "id": 2995,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/data-brokers.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/data-brokers.txt"
   },
   {
     "filterListId": 2692,
     "id": 2996,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/data-brokers.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/data-brokers.txt"
   },
   {
     "filterListId": 2693,
     "id": 2997,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/data-brokers.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/data-brokers.txt"
   },
   {
     "filterListId": 2693,
     "id": 2998,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/data-brokers.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/data-brokers.txt"
   },
   {
     "filterListId": 2694,
     "id": 2999,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/drm.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/drm.txt"
   },
   {
     "filterListId": 2694,
     "id": 3000,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/drm.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/drm.txt"
   },
   {
     "filterListId": 2695,
     "id": 3001,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/drm.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/drm.txt"
   },
   {
     "filterListId": 2695,
     "id": 3002,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/drm.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/drm.txt"
   },
   {
     "filterListId": 2696,
     "id": 3003,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/drm.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/drm.txt"
   },
   {
     "filterListId": 2696,
     "id": 3004,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/drm.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/drm.txt"
   },
   {
     "filterListId": 2697,
     "id": 3005,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/google.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/google.txt"
   },
   {
     "filterListId": 2697,
     "id": 3006,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/google.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/google.txt"
   },
   {
     "filterListId": 2698,
     "id": 3007,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/google.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/google.txt"
   },
   {
     "filterListId": 2698,
     "id": 3008,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/google.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/google.txt"
   },
   {
     "filterListId": 2699,
     "id": 3009,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/google.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/google.txt"
   },
   {
     "filterListId": 2699,
     "id": 3010,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/google.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/google.txt"
   },
   {
     "filterListId": 2700,
     "id": 3011,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/microsoft.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/microsoft.txt"
   },
   {
     "filterListId": 2700,
     "id": 3012,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/microsoft.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/microsoft.txt"
   },
   {
     "filterListId": 2701,
     "id": 3013,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/microsoft.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/microsoft.txt"
   },
   {
     "filterListId": 2701,
     "id": 3014,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/microsoft.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/microsoft.txt"
   },
   {
     "filterListId": 2702,
     "id": 3015,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/microsoft.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/microsoft.txt"
   },
   {
     "filterListId": 2702,
     "id": 3016,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/microsoft.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/microsoft.txt"
   },
   {
     "filterListId": 2703,
     "id": 3017,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/mozilla.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/mozilla.txt"
   },
   {
     "filterListId": 2703,
     "id": 3018,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/mozilla.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/mozilla.txt"
   },
   {
     "filterListId": 2704,
     "id": 3019,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/mozilla.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/mozilla.txt"
   },
   {
     "filterListId": 2704,
     "id": 3020,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/mozilla.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/mozilla.txt"
   },
   {
     "filterListId": 2705,
     "id": 3021,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/mozilla.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/mozilla.txt"
   },
   {
     "filterListId": 2705,
     "id": 3022,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/mozilla.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/mozilla.txt"
   },
   {
     "filterListId": 2706,
     "id": 3023,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/nsa-blocklist-ng.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/nsa-blocklist-ng.txt"
   },
   {
     "filterListId": 2706,
     "id": 3024,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/nsa-blocklist-ng.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/nsa-blocklist-ng.txt"
   },
   {
     "filterListId": 2707,
     "id": 3025,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/nsa-blocklist-ng.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/nsa-blocklist-ng.txt"
   },
   {
     "filterListId": 2707,
     "id": 3026,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/nsa-blocklist-ng.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/nsa-blocklist-ng.txt"
   },
   {
     "filterListId": 2708,
     "id": 3027,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/nsa-blocklist-ng.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/nsa-blocklist-ng.txt"
   },
   {
     "filterListId": 2708,
     "id": 3028,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/nsa-blocklist-ng.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/nsa-blocklist-ng.txt"
   },
   {
     "filterListId": 2709,
     "id": 3029,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/roblox.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/roblox.txt"
   },
   {
     "filterListId": 2709,
     "id": 3030,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/roblox.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/roblox.txt"
   },
   {
     "filterListId": 2710,
     "id": 3031,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/roblox.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/roblox.txt"
   },
   {
     "filterListId": 2710,
     "id": 3032,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/roblox.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/roblox.txt"
   },
   {
     "filterListId": 2711,
     "id": 3033,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/roblox.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/roblox.txt"
   },
   {
     "filterListId": 2711,
     "id": 3034,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/roblox.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/roblox.txt"
   },
   {
     "filterListId": 2712,
     "id": 3035,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/stalkerware.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/monitoring.txt"
   },
   {
     "filterListId": 2712,
     "id": 3036,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/stalkerware.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/monitoring.txt"
   },
   {
     "filterListId": 2713,
     "id": 3037,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/stalkerware.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/monitoring.txt"
   },
   {
     "filterListId": 2713,
     "id": 3038,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-*/stalkerware.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/monitoring.txt"
   },
   {
     "filterListId": 2714,
     "id": 3039,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/stalkerware.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/monitoring.txt"
   },
   {
     "filterListId": 2714,
     "id": 3040,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-*/stalkerware.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/monitoring.txt"
   },
   {
     "filterListId": 2715,
     "id": 3041,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/abp/personal.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/abp/personal.txt"
   },
   {
     "filterListId": 2715,
     "id": 3042,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/abp/personal.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/abp/personal.txt"
   },
   {
     "filterListId": 2716,
     "id": 3043,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-%2A/personal.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-star/personal.txt"
   },
   {
     "filterListId": 2716,
     "id": 3044,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-%2A/personal.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-star/personal.txt"
   },
   {
     "filterListId": 2717,
     "id": 3045,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/wildcards-no-%2A/personal.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/wildcards-no-star/personal.txt"
   },
   {
     "filterListId": 2717,
     "id": 3046,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/wildcards-no-%2A/personal.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-star/personal.txt"
   },
   {
     "filterListId": 2718,
     "id": 3047,
-    "primariness": 1,
-    "url": "https://codeberg.org/Magnesium1062/BadBlock/raw/branch/main/whitelist.txt"
+    "primariness": 2,
+    "url": "https://codeberg.org/celenity/BadBlock/raw/branch/main/whitelist.txt"
   },
   {
     "filterListId": 2718,
     "id": 3048,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/Retold3202/BadBlock/main/whitelist.txt"
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/whitelist.txt"
   },
   {
     "filterListId": 2719,
@@ -16767,5 +16767,347 @@
     "id": 3060,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/ph00lt0/blocklists/master/pihole-blocklist.txt"
+  },
+  {
+    "filterListId": 2673,
+    "id": 3061,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/badblock.txt"
+  },
+  {
+    "filterListId": 2674,
+    "id": 3062,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/badblock.txt"
+  },
+  {
+    "filterListId": 2675,
+    "id": 3063,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/badblock.txt"
+  },
+  {
+    "filterListId": 2676,
+    "id": 3064,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/badblock_lite.txt"
+  },
+  {
+    "filterListId": 2677,
+    "id": 3065,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/badblock_lite.txt"
+  },
+  {
+    "filterListId": 2678,
+    "id": 3066,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/badblock_lite.txt"
+  },
+  {
+    "filterListId": 2679,
+    "id": 3067,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/badblock_plus.txt"
+  },
+  {
+    "filterListId": 2680,
+    "id": 3068,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/badblock_plus.txt"
+  },
+  {
+    "filterListId": 2681,
+    "id": 3069,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/badblock_plus.txt"
+  },
+  {
+    "filterListId": 2682,
+    "id": 3070,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/apple.txt"
+  },
+  {
+    "filterListId": 2683,
+    "id": 3071,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/apple.txt"
+  },
+  {
+    "filterListId": 2684,
+    "id": 3072,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/apple.txt"
+  },
+  {
+    "filterListId": 2685,
+    "id": 3073,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/brave.txt"
+  },
+  {
+    "filterListId": 2686,
+    "id": 3074,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/brave.txt"
+  },
+  {
+    "filterListId": 2687,
+    "id": 3075,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/brave.txt"
+  },
+  {
+    "filterListId": 2688,
+    "id": 3076,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/crap.txt"
+  },
+  {
+    "filterListId": 2689,
+    "id": 3077,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/crap.txt"
+  },
+  {
+    "filterListId": 2690,
+    "id": 3078,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/crap.txt"
+  },
+  {
+    "filterListId": 2691,
+    "id": 3079,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/data-brokers.txt"
+  },
+  {
+    "filterListId": 2692,
+    "id": 3080,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/data-brokers.txt"
+  },
+  {
+    "filterListId": 2693,
+    "id": 3081,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/data-brokers.txt"
+  },
+  {
+    "filterListId": 2694,
+    "id": 3082,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/drm.txt"
+  },
+  {
+    "filterListId": 2695,
+    "id": 3083,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/drm.txt"
+  },
+  {
+    "filterListId": 2696,
+    "id": 3084,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/drm.txt"
+  },
+  {
+    "filterListId": 2697,
+    "id": 3085,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/google.txt"
+  },
+  {
+    "filterListId": 2698,
+    "id": 3086,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/google.txt"
+  },
+  {
+    "filterListId": 2699,
+    "id": 3087,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/google.txt"
+  },
+  {
+    "filterListId": 2700,
+    "id": 3088,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/microsoft.txt"
+  },
+  {
+    "filterListId": 2701,
+    "id": 3089,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/microsoft.txt"
+  },
+  {
+    "filterListId": 2702,
+    "id": 3090,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/microsoft.txt"
+  },
+  {
+    "filterListId": 2703,
+    "id": 3091,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/mozilla.txt"
+  },
+  {
+    "filterListId": 2704,
+    "id": 3092,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/mozilla.txt"
+  },
+  {
+    "filterListId": 2705,
+    "id": 3093,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/mozilla.txt"
+  },
+  {
+    "filterListId": 2706,
+    "id": 3094,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/nsa-blocklist-ng.txt"
+  },
+  {
+    "filterListId": 2707,
+    "id": 3095,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/nsa-blocklist-ng.txt"
+  },
+  {
+    "filterListId": 2708,
+    "id": 3096,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/nsa-blocklist-ng.txt"
+  },
+  {
+    "filterListId": 2709,
+    "id": 3097,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/roblox.txt"
+  },
+  {
+    "filterListId": 2710,
+    "id": 3098,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/roblox.txt"
+  },
+  {
+    "filterListId": 2711,
+    "id": 3099,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/roblox.txt"
+  },
+  {
+    "filterListId": 2712,
+    "id": 3100,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/monitoring.txt"
+  },
+  {
+    "filterListId": 2713,
+    "id": 3101,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/monitoring.txt"
+  },
+  {
+    "filterListId": 2714,
+    "id": 3102,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/monitoring.txt"
+  },
+  {
+    "filterListId": 2715,
+    "id": 3103,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/personal.txt"
+  },
+  {
+    "filterListId": 2716,
+    "id": 3104,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/personal.txt"
+  },
+  {
+    "filterListId": 2717,
+    "id": 3105,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/personal.txt"
+  },
+  {
+    "filterListId": 2718,
+    "id": 3106,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/whitelist.txt"
+  },
+  {
+    "filterListId": 2728,
+    "id": 3107,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/amazon.txt"
+  },
+  {
+    "filterListId": 2729,
+    "id": 3108,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/amazon.txt"
+  },
+  {
+    "filterListId": 2730,
+    "id": 3109,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/amazon.txt"
+  },
+  {
+    "filterListId": 2731,
+    "id": 3110,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/unsafe.txt"
+  },
+  {
+    "filterListId": 2732,
+    "id": 3111,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/unsafe.txt"
+  },
+  {
+    "filterListId": 2733,
+    "id": 3112,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/unsafe.txt"
+  },
+  {
+    "filterListId": 2734,
+    "id": 3113,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/abp/annoyances.txt"
+  },
+  {
+    "filterListId": 2735,
+    "id": 3114,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/annoyances.txt"
+  },
+  {
+    "filterListId": 2736,
+    "id": 3115,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/annoyances.txt"
+  },
+  {
+    "filterListId": 2737,
+    "id": 3116,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-star/whitelist.txt"
+  },
+  {
+    "filterListId": 2738,
+    "id": 3117,
+    "primariness": 1,
+    "url": "https://badblock.celenity.dev/wildcards-no-star/whitelist.txt"
   }
 ]
