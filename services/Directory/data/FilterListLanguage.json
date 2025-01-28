@@ -3506,5 +3506,13 @@
   {
     "filterListId": 2666,
     "languageId": 180
+  },
+  {
+    "filterListId": 2728,
+    "languageId": 19
+  },
+  {
+    "filterListId": 2728,
+    "languageId": 37
   }
 ]

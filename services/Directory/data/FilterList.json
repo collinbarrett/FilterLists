@@ -17852,5 +17852,13 @@
     "issuesUrl": "https://github.com/ph00lt0/blocklist/issues",
     "licenseId": 9,
     "name": "Ph00lt0's Blocklist (HOSTS)"
+  },
+  {
+    "id": 2728,
+    "name": "Malicious Hosts BD",
+    "description": "An attempt to list malicious sites that plagues the cyberspace of Bangladesh.",
+    "licenseId": 10,
+    "homeUrl": "https://github.com/touhidurrr/malicious-hosts-bd",
+    "issuesUrl": "https://github.com/touhidurrr/malicious-hosts-bd/issues"
   }
 ]
