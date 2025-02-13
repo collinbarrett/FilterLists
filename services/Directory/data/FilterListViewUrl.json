@@ -16767,5 +16767,11 @@
     "id": 3060,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/ph00lt0/blocklists/master/pihole-blocklist.txt"
+  },
+  {
+    "id": 3061,
+    "filterListId": 2728,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/touhidurrr/malicious-hosts-bd/main/domains.txt"
   }
 ]
