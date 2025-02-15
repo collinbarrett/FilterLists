@@ -62,14 +62,12 @@ jobs:
             git revert --no-edit $PREVIOUS_MIGRATION_HASH
           fi
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: "9.0.x"
-
-          # Disabled GH Actions cache for Dependabot. https://github.com/dependabot/dependabot-core/issues/1303
-          # cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
-          # cache: true
+      # Disabled GH Actions cache for Dependabot. https://github.com/dependabot/dependabot-core/issues/1303
+      # - name: Setup .NET
+      #   uses: actions/setup-dotnet@v4
+      #   with:
+      #     cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
+      #     cache: true
 
       - name: Install dotnet-ef
         run: dotnet tool install --global dotnet-ef
