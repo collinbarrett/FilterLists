@@ -17,7 +17,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .UseCollation("Latin1_General_100_CI_AS_SC")
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "8.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -20206,15 +20206,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/ph00lt0/blocklist/issues",
                             LicenseId = 9,
                             Name = "Ph00lt0's Blocklist (HOSTS)"
-                        },
-                        new
-                        {
-                            Id = 2728,
-                            Description = "An attempt to list malicious sites that plagues the cyberspace of Bangladesh.",
-                            HomeUrl = "https://github.com/touhidurrr/malicious-hosts-bd",
-                            IssuesUrl = "https://github.com/touhidurrr/malicious-hosts-bd/issues",
-                            LicenseId = 10,
-                            Name = "Malicious Hosts BD"
                         });
                 });
 
@@ -24617,16 +24608,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2666,
                             LanguageId = (short)180
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            LanguageId = (short)19
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            LanguageId = (short)37
                         });
                 });
 
@@ -32274,11 +32255,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2727,
                             MaintainerId = 195
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            MaintainerId = 196
                         });
                 });
 
@@ -43606,11 +43582,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2727,
                             SyntaxId = (short)1
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            SyntaxId = (short)2
                         });
                 });
 
@@ -59838,26 +59809,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2727,
                             TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 7
                         });
                 });
 
@@ -62711,13 +62662,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 195,
                             Name = "ph00lt0",
                             Url = "https://github.com/ph00lt0"
-                        },
-                        new
-                        {
-                            Id = 196,
-                            EmailAddress = "তালিকা@তৌহিদুর.বাংলা",
-                            Name = "Md. Touhidur Rahman",
-                            Url = "তৌহিদুর.বাংলা"
                         });
                 });
 
@@ -87486,14 +87430,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://raw.githubusercontent.com/ph00lt0/blocklists/master/pihole-blocklist.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2728,
-                                    Id = 3061,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/touhidurrr/malicious-hosts-bd/main/domains.txt"
                                 });
                         });
 
