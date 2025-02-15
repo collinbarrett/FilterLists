@@ -37,12 +37,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Disabled GH Actions cache for Dependabot. https://github.com/dependabot/dependabot-core/issues/1303
-      # - name: Setup .NET
-      #   uses: actions/setup-dotnet@v4
-      #   with:
-      #     cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
-      #     cache: true
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "9.0.x"
+
+          # Disabled GH Actions cache for Dependabot. https://github.com/dependabot/dependabot-core/issues/1303
+          # cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
+          # cache: true
 
       # - name: Restore
       #   run: dotnet restore --locked-mode
