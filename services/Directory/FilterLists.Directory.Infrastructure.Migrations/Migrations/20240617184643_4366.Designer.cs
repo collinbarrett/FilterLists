@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20250215233946_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240617184643_4366")]
+    partial class _4366
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .UseCollation("Latin1_General_100_CI_AS_SC")
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "8.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -19069,8 +19069,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 2603,
-                            Description = "Filters to bypass paywalls for news sites (supports less sites than the extension/add-on)",
-                            HomeUrl = "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters",
+                            Description = "Filters for news sites (supports less sites than the extension/add-on)",
+                            HomeUrl = "https://github.com/bpc-clone/bypass-paywalls-clean-filters",
                             LicenseId = 0,
                             Name = "Bypass Paywalls Clean filter"
                         },
@@ -19674,7 +19674,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2669,
                             Description = "Filter of malicious web resources (phishing, online fraud, malware, etc.) targeting Ukrainian citizens",
-                            DonateUrl = "https://github.com/ukrainianfilters/lists#підтримати-проєкт",
+                            DonateUrl = "https://github.com/serhiyguryev/ukrainian-filters?tab=readme-ov-file#підтримати-проект",
                             HomeUrl = "https://github.com/braveinnovators/ukrainian-security-filter",
                             IssuesUrl = "https://github.com/braveinnovators/ukrainian-security-filter/issues",
                             LicenseId = 4,
@@ -19684,9 +19684,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2670,
                             Description = "Removes ads from Ukrainian websites",
-                            DonateUrl = "https://github.com/ukrainianfilters/lists#підтримати-проєкт",
-                            HomeUrl = "https://github.com/ukrainianfilters/lists",
-                            IssuesUrl = "https://github.com/ukrainianfilters/lists/issues",
+                            DonateUrl = "https://github.com/serhiyguryev/ukrainian-filters?tab=readme-ov-file#підтримати-проект",
+                            HomeUrl = "https://github.com/serhiyguryev/ukrainian-filters",
+                            IssuesUrl = "https://github.com/serhiyguryev/ukrainian-filters/issues",
                             LicenseId = 4,
                             Name = "Ukrainian Ad Filter"
                         },
@@ -19694,9 +19694,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2671,
                             Description = "Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)",
-                            DonateUrl = "https://github.com/ukrainianfilters/lists#підтримати-проєкт",
-                            HomeUrl = "https://github.com/ukrainianfilters/lists",
-                            IssuesUrl = "https://github.com/ukrainianfilters/lists/issues",
+                            DonateUrl = "https://github.com/serhiyguryev/ukrainian-filters?tab=readme-ov-file#підтримати-проект",
+                            HomeUrl = "https://github.com/serhiyguryev/ukrainian-filters",
+                            IssuesUrl = "https://github.com/serhiyguryev/ukrainian-filters/issues",
                             LicenseId = 4,
                             Name = "Ukrainian Annoyance Filter"
                         },
@@ -19704,9 +19704,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2672,
                             Description = "Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior",
-                            DonateUrl = "https://github.com/ukrainianfilters/lists#підтримати-проєкт",
-                            HomeUrl = "https://github.com/ukrainianfilters/lists",
-                            IssuesUrl = "https://github.com/ukrainianfilters/lists/issues",
+                            DonateUrl = "https://github.com/serhiyguryev/ukrainian-filters?tab=readme-ov-file#підтримати-проект",
+                            HomeUrl = "https://github.com/serhiyguryev/ukrainian-filters",
+                            IssuesUrl = "https://github.com/serhiyguryev/ukrainian-filters/issues",
                             LicenseId = 4,
                             Name = "Ukrainian Privacy Filter"
                         },
@@ -20209,15 +20209,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/ph00lt0/blocklist/issues",
                             LicenseId = 9,
                             Name = "Ph00lt0's Blocklist (HOSTS)"
-                        },
-                        new
-                        {
-                            Id = 2728,
-                            Description = "An attempt to list malicious sites that plagues the cyberspace of Bangladesh.",
-                            HomeUrl = "https://github.com/touhidurrr/malicious-hosts-bd",
-                            IssuesUrl = "https://github.com/touhidurrr/malicious-hosts-bd/issues",
-                            LicenseId = 10,
-                            Name = "Malicious Hosts BD"
                         });
                 });
 
@@ -24620,16 +24611,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2666,
                             LanguageId = (short)180
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            LanguageId = (short)19
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            LanguageId = (short)37
                         });
                 });
 
@@ -32277,11 +32258,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2727,
                             MaintainerId = 195
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            MaintainerId = 196
                         });
                 });
 
@@ -43609,11 +43585,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2727,
                             SyntaxId = (short)1
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            SyntaxId = (short)2
                         });
                 });
 
@@ -59841,26 +59812,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2727,
                             TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 2
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 3
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 6
-                        },
-                        new
-                        {
-                            FilterListId = 2728,
-                            TagId = 7
                         });
                 });
 
@@ -62714,13 +62665,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 195,
                             Name = "ph00lt0",
                             Url = "https://github.com/ph00lt0"
-                        },
-                        new
-                        {
-                            Id = 196,
-                            EmailAddress = "তালিকা@তৌহিদুর.বাংলা",
-                            Name = "Md. Touhidur Rahman",
-                            Url = "তৌহিদুর.বাংলা"
                         });
                 });
 
@@ -85952,7 +85896,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2867,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters/blob/raw?file=bpc-paywall-filter.txt"
+                                    Url = "https://raw.githubusercontent.com/bpc-clone/bypass-paywalls-clean-filters/main/bpc-paywall-filter.txt"
                                 },
                                 new
                                 {
@@ -86640,7 +86584,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2954,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt"
+                                    Url = "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/ads.txt"
                                 },
                                 new
                                 {
@@ -86648,7 +86592,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2955,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt"
+                                    Url = "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/annoyances.txt"
                                 },
                                 new
                                 {
@@ -86656,7 +86600,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2956,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt"
+                                    Url = "https://raw.githubusercontent.com/serhiyguryev/ukrainian-filters/main/filters/privacy.txt"
                                 },
                                 new
                                 {
@@ -87489,14 +87433,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://raw.githubusercontent.com/ph00lt0/blocklists/master/pihole-blocklist.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2728,
-                                    Id = 3061,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/touhidurrr/malicious-hosts-bd/main/domains.txt"
                                 });
                         });
 
