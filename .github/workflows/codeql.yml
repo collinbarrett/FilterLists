@@ -27,6 +27,11 @@ jobs:
           - language: javascript-typescript
             build-mode: none
     steps:
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "9.0.x"
+
       # CodeQL C# autobuild doesn't (yet?) recognize .NET Aspire
       - if: matrix.language == 'csharp'
         run: |
