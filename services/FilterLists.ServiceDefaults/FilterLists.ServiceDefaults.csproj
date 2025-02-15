@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsAspireSharedProject>true</IsAspireSharedProject>
@@ -12,8 +12,8 @@
         <FrameworkReference Include="Microsoft.AspNetCore.App"/>
 
         <PackageReference Include="Azure.Monitor.OpenTelemetry.AspNetCore" Version="1.2.0"/>
-        <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="9.2.0" />
-        <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="8.10.0"/>
+        <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="8.2.2"/>
         <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.11.1"/>
         <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.11.1"/>
         <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.11.0"/>
