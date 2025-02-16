@@ -23,10 +23,7 @@ public static class ConfigurationExtensions
                 .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
                 .EnableSensitiveDataLogging(string.Equals(
                     Environment.GetEnvironmentVariable("DOTNET_RUNNING_EF_CORE_TOOLS"), "true",
-                    StringComparison.OrdinalIgnoreCase))
-                
-                // TODO: use new seeding pattern https://learn.microsoft.com/en-us/ef/core/what-is-new/ef-core-9.0/whatsnew#improved-data-seeding
-                .ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning)));
+                    StringComparison.OrdinalIgnoreCase)));
         
         builder.Services.AddHostedService<MigrationService>();
         builder.Services.AddMemoryCache();
