@@ -17860,5 +17860,29 @@
     "issuesUrl": "https://github.com/touhidurrr/malicious-hosts-bd/issues",
     "licenseId": 10,
     "name": "Malicious Hosts BD"
+  },
+  {
+    "chatUrl": "xmpp:github-less-social@chat.toastal.in.th?join",
+    "description": "Removes social, upsells, & AI features from the proprietary MS GitHub Git forge, directly-adjacent Microsoft-owned platforms, & some adjacent services using this platform to integrate social features.",
+    "donateUrl": "https://toast.al/funding/",
+    "emailAddress": "~toastal/github-less-social@lists.sr.ht",
+    "homeUrl": "https://codeberg.org/toastal/github-less-social",
+    "id": 2729,
+    "issuesUrl": "https://codeberg.org/toastal/github-less-social/issues",
+    "licenseId": 37,
+    "name": "Microsoft GitHub Less Social",
+    "submissionUrl": "https://codeberg.org/toastal/github-less-social#pitching-in"
+  },
+  {
+    "chatUrl": "xmpp:github-less-social@chat.toastal.in.th?join",
+    "description": "Aggressively removes social, upsells & AI features from the proprietary MS GitHub Git forge, directly-adjacent Microsoft-owned platforms, & some adjacent services using this platform to integrate social features.",
+    "donateUrl": "https://toast.al/funding/",
+    "emailAddress": "~toastal/github-less-social@lists.sr.ht",
+    "homeUrl": "https://codeberg.org/toastal/github-less-social",
+    "id": 2730,
+    "issuesUrl": "https://codeberg.org/toastal/github-less-social/issues",
+    "licenseId": 37,
+    "name": "Microsoft GitHub Less Social",
+    "submissionUrl": "https://codeberg.org/toastal/github-less-social#pitching-in"
   }
 ]

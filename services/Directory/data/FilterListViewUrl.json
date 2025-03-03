@@ -16773,5 +16773,29 @@
     "id": 3061,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/touhidurrr/malicious-hosts-bd/main/domains.txt"
+  },
+  {
+    "filterListId": 2729,
+    "id": 3062,
+    "primariness": 1,
+    "url": "https://codeberg.org/toastal/github-less-social/raw/branch/trunk/list.txt"
+  },
+  {
+    "filterListId": 2730,
+    "id": 3062,
+    "primariness": 1,
+    "url": "https://codeberg.org/toastal/github-less-social/raw/branch/trunk/aggressive.txt"
+  },
+  {
+    "filterListId": 2729,
+    "id": 3063,
+    "primariness": 2,
+    "url": "https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt"
+  },
+  {
+    "filterListId": 2730,
+    "id": 3063,
+    "primariness": 2,
+    "url": "https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt"
   }
 ]
