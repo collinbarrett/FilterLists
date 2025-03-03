@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Sorts json files by FilterLists conventions documented in Wiki.
 
 jq -S ".|=sort_by(.dependencyFilterListId, .dependentFilterListId)" Dependent.json > Dependent.tmp
