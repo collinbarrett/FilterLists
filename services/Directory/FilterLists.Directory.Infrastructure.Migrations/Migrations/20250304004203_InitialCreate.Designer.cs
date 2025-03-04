@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20250304001344_4735")]
-    partial class _4735
+    [Migration("20250304004203_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20242,7 +20242,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://codeberg.org/toastal/github-less-social",
                             IssuesUrl = "https://codeberg.org/toastal/github-less-social/issues",
                             LicenseId = 37,
-                            Name = "Microsoft GitHub Less Social",
+                            Name = "Microsoft GitHub Less Social (Aggressive)",
                             SubmissionUrl = "https://codeberg.org/toastal/github-less-social#pitching-in"
                         });
                 });
