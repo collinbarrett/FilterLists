@@ -16797,5 +16797,35 @@
     "id": 3063,
     "primariness": 2,
     "url": "https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt"
+  },
+  {
+    "filterListId": 2731,
+    "id": 3064,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-adblock.txt"
+  },
+  {
+    "filterListId": 2732,
+    "id": 3065,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-domains.txt"
+  },
+  {
+    "filterListId": 2733,
+    "id": 3066,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-hosts_4+6.txt"
+  },
+  {
+    "filterListId": 2734,
+    "id": 3067,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-hosts_4.txt"
+  },
+  {
+    "filterListId": 2735,
+    "id": 3064,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-unbound.txt"
   }
 ]
