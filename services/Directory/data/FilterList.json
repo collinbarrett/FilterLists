@@ -17924,5 +17924,13 @@
     "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
     "licenseId": 4,
     "name": "Meta Unbound"
+  },
+  {
+    "description": "Hides distracting elements on news websites (hides sidebar with top articles, end of article recommendation, and more)",
+    "homeUrl": "https: //github.com/I-I-IT/News-sidebard-and-related-article-remover",
+    "id": 2736,
+    "issuesUrl": "https://github.com/I-I-IT/News-sidebard-and-related-article-remover/issues",
+    "licenseId": 4,
+    "name": "News debloater, distraction remover"
   }
 ]
