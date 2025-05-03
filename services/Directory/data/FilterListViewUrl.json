@@ -16827,5 +16827,11 @@
     "id": 3064,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-unbound.txt"
+  },
+  {
+    "filterListId": 2736,
+    "id": 3068,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/I-I-IT/News-sidebard-and-related-article-remover/refs/heads/main/filters.txt"
   }
 ]

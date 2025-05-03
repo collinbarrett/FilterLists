@@ -13030,5 +13030,21 @@
   {
     "filterListId": 2735,
     "tagId": 19
+  },
+  {
+    "filterListId": 2736,
+    "tagId": 15
+  },
+  {
+    "filterListId": 2736,
+    "tagId": 9
+  },
+  {
+    "filterListId": 2736,
+    "tagId": 28
+  },
+  {
+    "filterListId": 2736,
+    "tagId": 42
   }
 ]
