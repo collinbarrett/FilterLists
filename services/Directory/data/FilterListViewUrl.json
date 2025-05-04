@@ -16833,5 +16833,11 @@
     "id": 3068,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/I-I-IT/News-sidebard-and-related-article-remover/refs/heads/main/filters.txt"
+  },
+  {
+    "filterListId": 2737,
+    "id": 3069,
+    "primariness": 1,
+    "url": "https://codeberg.org/BloqueBollore/pages/src/branch/main/desarmons-bollore-et-l-extreme-droite.txt"
   }
 ]
