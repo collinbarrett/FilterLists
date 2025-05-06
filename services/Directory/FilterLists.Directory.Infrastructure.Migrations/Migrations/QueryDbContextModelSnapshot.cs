@@ -32409,11 +32409,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2735,
                             MaintainerId = 198
-                        },
-                        new
-                        {
-                            FilterListId = 2736,
-                            MaintainerId = 199
                         });
                 });
 
@@ -60102,12 +60097,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2736,
-                            TagId = 15
+                            TagId = 9
                         },
                         new
                         {
                             FilterListId = 2736,
-                            TagId = 9
+                            TagId = 15
                         },
                         new
                         {
@@ -87809,6 +87804,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 },
                                 new
                                 {
+                                    FilterListId = 2735,
+                                    Id = 3064,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)0,
+                                    Url = "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-unbound.txt"
+                                },
+                                new
+                                {
                                     FilterListId = 2732,
                                     Id = 3065,
                                     Primariness = (short)1,
@@ -87830,14 +87833,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-hosts_4.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2735,
-                                    Id = 3064,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-unbound.txt"
                                 },
                                 new
                                 {
