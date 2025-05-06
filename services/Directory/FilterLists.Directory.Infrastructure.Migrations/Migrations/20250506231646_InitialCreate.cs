@@ -11568,8 +11568,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2735, 19 },
                     { 2736, 9 },
                     { 2736, 15 },
-                    { 2736, 28 },
-                    { 2736, 42 }
+                    { 2736, 28 }
                 });
 
             migrationBuilder.InsertData(

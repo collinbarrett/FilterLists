@@ -60108,11 +60108,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2736,
                             TagId = 28
-                        },
-                        new
-                        {
-                            FilterListId = 2736,
-                            TagId = 42
                         });
                 });
 

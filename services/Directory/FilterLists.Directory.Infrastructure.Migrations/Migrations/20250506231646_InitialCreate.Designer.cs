@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20250506225514_InitialCreate")]
+    [Migration("20250506231646_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -60111,11 +60111,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2736,
                             TagId = 28
-                        },
-                        new
-                        {
-                            FilterListId = 2736,
-                            TagId = 42
                         });
                 });
 
