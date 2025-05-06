@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20250423004727_4795")]
-    partial class _4795
+    [Migration("20250506225514_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20289,6 +20289,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/Bundy01/meta-blocklists/issues",
                             LicenseId = 4,
                             Name = "Meta Unbound"
+                        },
+                        new
+                        {
+                            Id = 2736,
+                            Description = "Hides distracting elements on news websites (hides sidebar with top articles, end of article recommendation, and more)",
+                            HomeUrl = "https: //github.com/I-I-IT/News-sidebard-and-related-article-remover",
+                            IssuesUrl = "https://github.com/I-I-IT/News-sidebard-and-related-article-remover/issues",
+                            LicenseId = 4,
+                            Name = "News debloater, distraction remover"
                         });
                 });
 
@@ -24710,6 +24719,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2730,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2736,
                             LanguageId = (short)37
                         });
                 });
@@ -43770,6 +43784,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2735,
                             SyntaxId = (short)24
+                        },
+                        new
+                        {
+                            FilterListId = 2736,
+                            SyntaxId = (short)4
                         });
                 });
 
@@ -60077,6 +60096,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2735,
                             TagId = 19
+                        },
+                        new
+                        {
+                            FilterListId = 2736,
+                            TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 2736,
+                            TagId = 15
+                        },
+                        new
+                        {
+                            FilterListId = 2736,
+                            TagId = 28
+                        },
+                        new
+                        {
+                            FilterListId = 2736,
+                            TagId = 42
                         });
                 });
 
@@ -87768,6 +87807,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 },
                                 new
                                 {
+                                    FilterListId = 2735,
+                                    Id = 3064,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)0,
+                                    Url = "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-unbound.txt"
+                                },
+                                new
+                                {
                                     FilterListId = 2732,
                                     Id = 3065,
                                     Primariness = (short)1,
@@ -87792,11 +87839,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 },
                                 new
                                 {
-                                    FilterListId = 2735,
-                                    Id = 3064,
+                                    FilterListId = 2736,
+                                    Id = 3068,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-unbound.txt"
+                                    Url = "https://raw.githubusercontent.com/I-I-IT/News-sidebard-and-related-article-remover/refs/heads/main/filters.txt"
                                 });
                         });
 

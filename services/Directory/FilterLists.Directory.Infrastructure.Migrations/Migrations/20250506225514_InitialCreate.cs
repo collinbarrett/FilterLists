@@ -889,7 +889,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 194, null, "Divested Computing Group", null, "https://divested.dev/" },
                     { 195, null, "ph00lt0", null, "https://github.com/ph00lt0" },
                     { 196, "তালিকা@তৌহিদুর.বাংলা", "Md. Touhidur Rahman", null, "তৌহিদুর.বাংলা" },
-                    { 197, null, "toastal", null, "https://toast.al/" }
+                    { 197, null, "toastal", null, "https://toast.al/" },
+                    { 198, null, "Bundy01", null, "https://github.com/Bundy01" }
                 });
 
             migrationBuilder.InsertData(
@@ -3351,7 +3352,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2727, null, "Blocklist of analytics and annoyances found by our own research (either discovery or found by collecting sources).", null, null, null, "https://github.com/ph00lt0/blocklist", "https://github.com/ph00lt0/blocklist/issues", 9, "Ph00lt0's Blocklist (HOSTS)", null, null, null },
                     { 2728, null, "An attempt to list malicious sites that plagues the cyberspace of Bangladesh.", null, null, null, "https://github.com/touhidurrr/malicious-hosts-bd", "https://github.com/touhidurrr/malicious-hosts-bd/issues", 10, "Malicious Hosts BD", null, null, null },
                     { 2729, "xmpp:github-less-social@chat.toastal.in.th?join", "Removes social, upsells, & AI features from the proprietary MS GitHub Git forge, directly-adjacent Microsoft-owned platforms, & some adjacent services using this platform to integrate social features.", "https://toast.al/funding/", "~toastal/github-less-social@lists.sr.ht", null, "https://codeberg.org/toastal/github-less-social", "https://codeberg.org/toastal/github-less-social/issues", 37, "Microsoft GitHub Less Social", null, null, "https://codeberg.org/toastal/github-less-social#pitching-in" },
-                    { 2730, "xmpp:github-less-social@chat.toastal.in.th?join", "Aggressively removes social, upsells & AI features from the proprietary MS GitHub Git forge, directly-adjacent Microsoft-owned platforms, & some adjacent services using this platform to integrate social features.", "https://toast.al/funding/", "~toastal/github-less-social@lists.sr.ht", null, "https://codeberg.org/toastal/github-less-social", "https://codeberg.org/toastal/github-less-social/issues", 37, "Microsoft GitHub Less Social (Aggressive)", null, null, "https://codeberg.org/toastal/github-less-social#pitching-in" }
+                    { 2730, "xmpp:github-less-social@chat.toastal.in.th?join", "Aggressively removes social, upsells & AI features from the proprietary MS GitHub Git forge, directly-adjacent Microsoft-owned platforms, & some adjacent services using this platform to integrate social features.", "https://toast.al/funding/", "~toastal/github-less-social@lists.sr.ht", null, "https://codeberg.org/toastal/github-less-social", "https://codeberg.org/toastal/github-less-social/issues", 37, "Microsoft GitHub Less Social (Aggressive)", null, null, "https://codeberg.org/toastal/github-less-social#pitching-in" },
+                    { 2731, null, "Blocking of Meta Plateforms Domains", null, null, null, "https://github.com/Bundy01/meta-blocklists", "https://github.com/Bundy01/meta-blocklists/issues", 4, "Meta Adblock", null, null, null },
+                    { 2732, null, "Blocking of Meta Plateforms Domains", null, null, null, "https://github.com/Bundy01/meta-blocklists", "https://github.com/Bundy01/meta-blocklists/issues", 4, "Meta Domains", null, null, null },
+                    { 2733, null, "Blocking of Meta Plateforms Domains", null, null, null, "https://github.com/Bundy01/meta-blocklists", "https://github.com/Bundy01/meta-blocklists/issues", 4, "Meta Hosts (IPv4 And IPv6)", null, null, null },
+                    { 2734, null, "Blocking of Meta Plateforms Domains", null, null, null, "https://github.com/Bundy01/meta-blocklists", "https://github.com/Bundy01/meta-blocklists/issues", 4, "Meta Hosts (Only IPv4)", null, null, null },
+                    { 2735, null, "Blocking of Meta Plateforms Domains", null, null, null, "https://github.com/Bundy01/meta-blocklists", "https://github.com/Bundy01/meta-blocklists/issues", 4, "Meta Unbound", null, null, null },
+                    { 2736, null, "Hides distracting elements on news websites (hides sidebar with top articles, end of article recommendation, and more)", null, null, null, "https: //github.com/I-I-IT/News-sidebard-and-related-article-remover", "https://github.com/I-I-IT/News-sidebard-and-related-article-remover/issues", 4, "News debloater, distraction remover", null, null, null }
                 });
 
             migrationBuilder.InsertData(
@@ -4472,7 +4479,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2728, (short)19 },
                     { 2728, (short)37 },
                     { 2729, (short)37 },
-                    { 2730, (short)37 }
+                    { 2730, (short)37 },
+                    { 2736, (short)37 }
                 });
 
             migrationBuilder.InsertData(
@@ -6008,7 +6016,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2727, 195 },
                     { 2728, 196 },
                     { 2729, 197 },
-                    { 2730, 197 }
+                    { 2730, 197 },
+                    { 2731, 198 },
+                    { 2732, 198 },
+                    { 2733, 198 },
+                    { 2734, 198 },
+                    { 2735, 198 }
                 });
 
             migrationBuilder.InsertData(
@@ -8281,7 +8294,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2728, (short)2 },
                     { 2729, (short)4 },
                     { 2730, (short)4 },
-                    { 2730, (short)21 }
+                    { 2730, (short)21 },
+                    { 2731, (short)3 },
+                    { 2732, (short)2 },
+                    { 2733, (short)36 },
+                    { 2734, (short)1 },
+                    { 2735, (short)24 },
+                    { 2736, (short)4 }
                 });
 
             migrationBuilder.InsertData(
@@ -11541,7 +11560,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2730, 3 },
                     { 2730, 9 },
                     { 2730, 19 },
-                    { 2730, 35 }
+                    { 2730, 35 },
+                    { 2731, 19 },
+                    { 2732, 19 },
+                    { 2733, 19 },
+                    { 2734, 19 },
+                    { 2735, 19 },
+                    { 2736, 9 },
+                    { 2736, 15 },
+                    { 2736, 28 },
+                    { 2736, 42 }
                 });
 
             migrationBuilder.InsertData(
@@ -14410,7 +14438,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                     { 2729, 3062, (short)1, "https://codeberg.org/toastal/github-less-social/raw/branch/trunk/list.txt" },
                     { 2729, 3063, (short)2, "https://git.sr.ht/~toastal/github-less-social/blob/trunk/list.txt" },
                     { 2730, 3062, (short)1, "https://codeberg.org/toastal/github-less-social/raw/branch/trunk/aggressive.txt" },
-                    { 2730, 3063, (short)2, "https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt" }
+                    { 2730, 3063, (short)2, "https://git.sr.ht/~toastal/github-less-social/blob/trunk/aggressive.txt" },
+                    { 2731, 3064, (short)1, "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-adblock.txt" },
+                    { 2732, 3065, (short)1, "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-domains.txt" },
+                    { 2733, 3066, (short)1, "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-hosts_4+6.txt" },
+                    { 2734, 3067, (short)1, "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-hosts_4.txt" },
+                    { 2735, 3064, (short)1, "https://raw.githubusercontent.com/Bundy01/meta-blocklists/refs/heads/main/meta-unbound.txt" },
+                    { 2736, 3068, (short)1, "https://raw.githubusercontent.com/I-I-IT/News-sidebard-and-related-article-remover/refs/heads/main/filters.txt" }
                 });
 
             migrationBuilder.InsertData(
