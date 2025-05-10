@@ -17935,7 +17935,7 @@
   },
   {
     "description": "A blocklist of Bolloré, alt-right and french fascist web sites.",
-    "homeUrl": "https://bloquebollore.codeberg.page/desarmons-bollore-et-l-extreme-droite.txt",
+    "homeUrl": "https://codeberg.org/BloqueBollore/pages/src/branch/main/desarmons-bollore-et-l-extreme-droite.txt",
     "id": 2737,
     "issuesUrl": "https://codeberg.org/BloqueBollore/pages/issues",
     "licenseId": 43,
