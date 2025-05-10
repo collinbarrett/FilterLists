@@ -13,7 +13,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.InsertData(
                 table: "FilterList",
                 columns: new[] { "Id", "ChatUrl", "Description", "DonateUrl", "EmailAddress", "ForumUrl", "HomeUrl", "IssuesUrl", "LicenseId", "Name", "OnionUrl", "PolicyUrl", "SubmissionUrl" },
-                values: new object[] { 2737, null, "A blocklist of Bolloré, alt-right and french fascist web sites.", null, null, null, "https://bloquebollore.codeberg.page/desarmons-bollore-et-l-extreme-droite.txt", "https://codeberg.org/BloqueBollore/pages/issues", 43, "French far-right blocklist", null, null, null });
+                values: new object[] { 2737, null, "A blocklist of Bolloré, alt-right and french fascist web sites.", null, null, null, "https://codeberg.org/BloqueBollore/pages/src/branch/main/desarmons-bollore-et-l-extreme-droite.txt", "https://codeberg.org/BloqueBollore/pages/issues", 43, "French far-right blocklist", null, null, null });
 
             migrationBuilder.InsertData(
                 table: "Maintainer",
@@ -38,7 +38,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.InsertData(
                 table: "FilterListViewUrl",
                 columns: new[] { "FilterListId", "Id", "Primariness", "Url" },
-                values: new object[] { 2737, 3069, (short)1, "https://codeberg.org/BloqueBollore/pages/src/branch/main/desarmons-bollore-et-l-extreme-droite.txt" });
+                values: new object[] { 2737, 3069, (short)1, "https://bloquebollore.codeberg.page/desarmons-bollore-et-l-extreme-droite.txt" });
         }
 
         /// <inheritdoc />
