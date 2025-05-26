@@ -23,7 +23,7 @@ public static class ConfigurationExtensions
                 .EnableSensitiveDataLogging(string.Equals(
                     Environment.GetEnvironmentVariable("DOTNET_RUNNING_EF_CORE_TOOLS"), "true",
                     StringComparison.OrdinalIgnoreCase)));
-        
+
         builder.Services.AddHostedService<MigrationService>();
         builder.Services.AddMemoryCache();
     }
