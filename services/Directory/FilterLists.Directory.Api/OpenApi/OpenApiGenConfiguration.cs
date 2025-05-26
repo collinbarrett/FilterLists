@@ -33,6 +33,6 @@ internal static class OpenApiGenConfiguration
         options.DocumentFilter<OpenApiTags.TagDescriptionsDocumentFilter>();
 
         // allow re-using simple type names like "Response"
-        options.CustomSchemaIds(s => s.FullName?.Replace("+", "."));
+        options.CustomSchemaIds(s => s.FullName?.Replace("+", ".", StringComparison.InvariantCultureIgnoreCase));
     };
 }
