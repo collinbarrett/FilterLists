@@ -1,15 +1,10 @@
 version: 2
 updates:
   - package-ecosystem: nuget
-    directory: services/FilterLists.AppHost
+    directory: services
     schedule:
       interval: daily
   - package-ecosystem: npm
     directory: /web
     schedule:
       interval: daily
-  # - package-ecosystem: npm
-  #   directory: /web
-  #   schedule:
-  #     interval: daily
-  #   target-branch: nextjs
