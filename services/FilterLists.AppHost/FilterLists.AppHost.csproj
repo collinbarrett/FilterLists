@@ -8,7 +8,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <UserSecretsId>c7967ef0-ced7-4e18-8282-7302b3c0002b</UserSecretsId>
-        <AnalysisMode>Recommended</AnalysisMode>
+        <AnalysisMode>All</AnalysisMode>
     </PropertyGroup>
 
     <ItemGroup>
