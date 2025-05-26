@@ -1,7 +1,0 @@
-<Project>
-    <PropertyGroup>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <AnalysisMode>Recommended</AnalysisMode>
-    </PropertyGroup>
-</Project>
