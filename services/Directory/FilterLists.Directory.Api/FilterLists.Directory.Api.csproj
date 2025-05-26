@@ -2,15 +2,9 @@
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <AnalysisMode>Recommended</AnalysisMode>
     </PropertyGroup>
 
     <PropertyGroup>
-        <!-- Disabled GH Actions cache for Dependabot. https://github.com/dependabot/dependabot-core/issues/1303 -->
-        <!-- <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile> -->
-
         <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
         <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
         <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime-deps:8.0-jammy-chiseled-extra</ContainerBaseImage>
