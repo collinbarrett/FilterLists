@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - .github/workflows/directory.yml
+      - services/Directory.Build.props
       - services/Directory/**
       - services/FilterLists.ServiceDefaults/**
   pull_request:
