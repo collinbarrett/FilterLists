@@ -76,7 +76,7 @@ public static class GetListDetails
     {
         public Task<Response?> Handle(Request request, CancellationToken _)
         {
-            return cache.GetOrCreateAsync($"{nameof(GetListDetails)}_{request.Id}", entry => Query(ctx, request.Id));
+            return cache.GetOrCreateAsync($"{nameof(GetListDetails)}_{request.Id}", _ => Query(ctx, request.Id));
         }
     }
 
