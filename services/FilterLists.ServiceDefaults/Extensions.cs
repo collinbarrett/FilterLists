@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.ServiceDiscovery;
 using OpenTelemetry;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Trace;
@@ -20,7 +19,7 @@ public static class Extensions
     private const string HealthEndpointPath = "/health";
     private const string AlivenessEndpointPath = "/alive";
 
-    public static void AddServiceDefaults<TBuilder>(this TBuilder builder) where TBuilder : IHostApplicationBuilder
+    public static TBuilder AddServiceDefaults<TBuilder>(this TBuilder builder) where TBuilder : IHostApplicationBuilder
     {
         builder.ConfigureOpenTelemetry();
 
@@ -37,8 +36,13 @@ public static class Extensions
             http.AddServiceDiscovery();
         });
 
-        // restrict the allowed schemes for service discovery
-        builder.Services.Configure<ServiceDiscoveryOptions>(options => options.AllowedSchemes = ["https"]);
+        // Uncomment the following to restrict the allowed schemes for service discovery.
+        // builder.Services.Configure<ServiceDiscoveryOptions>(options =>
+        // {
+        //     options.AllowedSchemes = ["https"];
+        // });
+
+        return builder;
     }
 
     private static void ConfigureOpenTelemetry<TBuilder>(this TBuilder builder) where TBuilder : IHostApplicationBuilder
@@ -82,49 +86,37 @@ public static class Extensions
 
         if (useOtlpExporter) builder.Services.AddOpenTelemetry().UseOtlpExporter();
 
-        // enable the Azure Monitor exporter
-        if (!builder.Environment.IsDevelopment())
-        {
-            if (string.IsNullOrEmpty(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]))
-                throw new InvalidOperationException("APPLICATIONINSIGHTS_CONNECTION_STRING is not set.");
-
+        // Uncomment the following lines to enable the Azure Monitor exporter (requires the Azure.Monitor.OpenTelemetry.AspNetCore package)
+        if (!string.IsNullOrEmpty(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]))
             builder.Services.AddOpenTelemetry()
                 .UseAzureMonitor();
-        }
     }
 
-    // https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/health-checks#non-development-environments
-    private static void AddDefaultHealthChecks(this IHostApplicationBuilder builder)
+    private static void AddDefaultHealthChecks<TBuilder>(this TBuilder builder) where TBuilder : IHostApplicationBuilder
     {
-        builder.Services.AddRequestTimeouts(static timeouts =>
-            timeouts.AddPolicy("HealthChecks", TimeSpan.FromSeconds(5)));
-
-        builder.Services.AddOutputCache(static caching =>
-            caching.AddPolicy("HealthChecks",
-                static policy => policy.Expire(TimeSpan.FromSeconds(10))));
-
         builder.Services.AddHealthChecks()
             // Add a default liveness check to ensure the app is responsive
             .AddCheck("self", () => HealthCheckResult.Healthy(), ["live"]);
     }
 
-    public static void MapDefaultEndpoints(this WebApplication app)
+    public static WebApplication MapDefaultEndpoints(this WebApplication app)
     {
-        var healthChecks = app.MapGroup("");
-
-        healthChecks
-            .CacheOutput("HealthChecks")
-            .WithRequestTimeout("HealthChecks");
-
-        // All health checks must pass for the app to be
-        // considered ready to accept traffic after starting
-        healthChecks.MapHealthChecks(HealthEndpointPath);
-
-        // Only health checks tagged with the "live" tag
-        // must pass for the app to be considered alive
-        healthChecks.MapHealthChecks(AlivenessEndpointPath, new HealthCheckOptions
+        // Adding health checks endpoints to applications in non-development environments has security implications.
+        // See https://aka.ms/dotnet/aspire/healthchecks for details before enabling these endpoints in non-development environments.
+#pragma warning disable CA1062
+        if (app.Environment.IsDevelopment())
+#pragma warning restore CA1062
         {
-            Predicate = static r => r.Tags.Contains("live")
-        });
+            // All health checks must pass for the app to be considered ready to accept traffic after starting
+            app.MapHealthChecks(HealthEndpointPath);
+
+            // Only health checks tagged with the "live" tag must pass for the app to be considered alive
+            app.MapHealthChecks(AlivenessEndpointPath, new HealthCheckOptions
+            {
+                Predicate = r => r.Tags.Contains("live")
+            });
+        }
+
+        return app;
     }
 }
