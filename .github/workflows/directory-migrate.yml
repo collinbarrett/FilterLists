@@ -23,7 +23,7 @@ jobs:
       USER_EMAIL: github-actions[bot]@users.noreply.github.com
       LINT_MESSAGE: "chore(dir-data): 🎨 lint PR #${{ github.event.number }}"
       MIGRATION_MESSAGE: "chore(dir-data): ♻️ migrate PR #${{ github.event.number }}"
-      TEST_MSSQL_IMAGE: mcr.microsoft.com/mssql/server:2025-latest
+      TEST_MSSQL_IMAGE: mcr.microsoft.com/mssql/server:2022-latest
 
     steps:
       - name: Checkout
