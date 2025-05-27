@@ -6,6 +6,7 @@
 
     <PropertyGroup>
         <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+        <SelfContained>true</SelfContained>
         <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
         <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime-deps:8.0-jammy-chiseled-extra</ContainerBaseImage>
         <ContainerRuntimeIdentifier>linux-x64</ContainerRuntimeIdentifier>
