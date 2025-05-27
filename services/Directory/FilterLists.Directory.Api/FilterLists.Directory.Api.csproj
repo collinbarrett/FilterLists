@@ -5,7 +5,6 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
         <SelfContained>true</SelfContained>
         <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
         <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime-deps:9.0-azurelinux3.0-distroless-extra</ContainerBaseImage>
