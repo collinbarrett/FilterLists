@@ -55,7 +55,7 @@ jobs:
       - name: Publish & Push
         if: github.event_name == 'push'
         run: >
-          dotnet publish
+          dotnet publish --sc
           -p:PublishProfile=DefaultContainer
           -p:ContainerRegistry=${{ env.CONTAINER_REGISTRY }}
           -p:ContainerRepository=${{ env.CONTAINER_REPOSITORY }}
