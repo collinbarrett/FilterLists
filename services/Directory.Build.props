@@ -2,7 +2,6 @@
     <PropertyGroup>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <InvariantGlobalization>true</InvariantGlobalization>
         <AnalysisMode>Recommended</AnalysisMode>
     </PropertyGroup>
 </Project>
