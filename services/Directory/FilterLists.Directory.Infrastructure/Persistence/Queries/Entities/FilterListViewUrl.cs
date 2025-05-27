@@ -1,8 +1,5 @@
-﻿using JetBrains.Annotations;
+﻿namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
 
-namespace FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
-
-[PublicAPI]
 public sealed record FilterListViewUrl
 {
     public int Id { get; init; }

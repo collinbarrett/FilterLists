@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using FilterLists.Directory.Infrastructure;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -33,7 +32,6 @@ public static class GetSyntaxes
 
     public sealed record Request : IStreamRequest<Response>;
 
-    [UsedImplicitly]
     private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
     {
         public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
@@ -52,7 +50,6 @@ public static class GetSyntaxes
     /// <param name="Url" example="https://adblockplus.org/filters">The URL of the home page.</param>
     /// <param name="FilterListIds" example="[ 2, 6, 11 ]">The identifiers of the FilterLists implementing this Syntax.</param>
     /// <param name="SoftwareIds" example="[ 1, 2, 3 ]">The identifiers of the Software that supports this Syntax.</param>
-    [PublicAPI]
     public sealed record Response(
         short Id,
         string Name,

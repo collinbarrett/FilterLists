@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using FilterLists.Directory.Infrastructure;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -31,7 +30,6 @@ public static class GetLicenses
 
     public sealed record Request : IStreamRequest<Response>;
 
-    [UsedImplicitly]
     private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
     {
         public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
@@ -51,7 +49,6 @@ public static class GetLicenses
     /// <param name="PermitsDistribution" example="false">If the License permits distribution.</param>
     /// <param name="PermitsCommercialUse" example="false">If the License permits commercial use.</param>
     /// <param name="FilterListIds" example="[ 6, 31 ]">The identifiers of the FilterLists released under this License.</param>
-    [PublicAPI]
     public sealed record Response(
         int Id,
         string Name,

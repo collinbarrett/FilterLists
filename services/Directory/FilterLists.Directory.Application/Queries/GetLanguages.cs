@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using FilterLists.Directory.Infrastructure;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -28,7 +27,6 @@ public static class GetLanguages
 
     public sealed record Request : IStreamRequest<Response>;
 
-    [UsedImplicitly]
     private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
     {
         public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
@@ -45,6 +43,5 @@ public static class GetLanguages
     /// <param name="Iso6391" example="en">The unique ISO 639-1 code.</param>
     /// <param name="Name" example="English">The unique ISO name.</param>
     /// <param name="FilterListIds" example="[ 114, 141 ]">The identifiers of the FilterLists targeted by this Language.</param>
-    [PublicAPI]
     public sealed record Response(short Id, string Iso6391, string Name, IEnumerable<int> FilterListIds);
 }
