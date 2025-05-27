@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using FilterLists.Directory.Infrastructure;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -33,7 +32,6 @@ public static class GetSoftware
 
     public sealed record Request : IStreamRequest<Response>;
 
-    [UsedImplicitly]
     private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
     {
         public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
@@ -58,7 +56,6 @@ public static class GetSoftware
     ///     If the Software supports the abp: URL scheme to click-to-subscribe to a FilterList.
     /// </param>
     /// <param name="SyntaxIds" example="[ 3, 28, 38, 48 ]">The identifiers of the Syntaxes that this Software supports.</param>
-    [PublicAPI]
     public sealed record Response(
         long Id,
         string Name,

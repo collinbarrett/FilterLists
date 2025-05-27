@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using FilterLists.Directory.Infrastructure;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -43,7 +42,6 @@ public static class GetLists
 
     public sealed record Request : IStreamRequest<Response>;
 
-    [UsedImplicitly]
     private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
     {
         public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
@@ -68,7 +66,6 @@ public static class GetLists
     /// <param name="TagIds" example="[ 2 ]">The identifiers of the Tags applied to this FilterList.</param>
     /// <param name="PrimaryViewUrl" example="https://easylist.to/easylist/easylist.txt">The primary view URL.</param>
     /// <param name="MaintainerIds" example="[ 7 ]">The identifiers of the Maintainers of this FilterList.</param>
-    [PublicAPI]
     public sealed record Response(
         int Id,
         string Name,

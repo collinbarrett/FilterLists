@@ -1,5 +1,4 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using JetBrains.Annotations;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -71,7 +70,6 @@ public static class GetListDetails
 
     public sealed record Request(int Id) : IRequest<Response?>;
 
-    [UsedImplicitly]
     private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IRequestHandler<Request, Response?>
     {
         public Task<Response?> Handle(Request request, CancellationToken _)
@@ -80,8 +78,7 @@ public static class GetListDetails
         }
     }
 
-    // TODO: refactor to primary ctor syntax while allowing EF Core query compilation to succeed
-    [PublicAPI]
+    // TODO: refactor to primary ctor syntax while allowing EF Core query compilation to succeed    
     public sealed record Response
     {
         /// <summary>
@@ -238,6 +235,5 @@ public static class GetListDetails
     ///     unique per SegmentNumber)
     /// </param>
     /// <param name="Url" example="https://easylist.to/easylist/easylist.txt">The view URL.</param>
-    [PublicAPI]
     public sealed record ViewUrlResponse(short SegmentNumber, short Primariness, Uri Url);
 }
