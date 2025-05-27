@@ -14,6 +14,7 @@ on:
       - main
     paths:
       - .github/workflows/directory.yml
+      - services/Directory.Build.props
       - services/Directory/**
       - services/FilterLists.ServiceDefaults/**
 
@@ -42,19 +43,7 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "9.0.x"
-
-          # Disabled GH Actions cache for Dependabot. https://github.com/dependabot/dependabot-core/issues/1303
-          # cache-dependency-path: services/Directory/FilterLists.Directory.Api/packages.lock.json
-          # cache: true
-
-      # - name: Restore
-      #   run: dotnet restore --locked-mode
-      #   working-directory: ./services/Directory/FilterLists.Directory.Api
-
-      - name: Build
-        run: dotnet build -c Release
-        working-directory: ./services/Directory/FilterLists.Directory.Api
-
+          
       - name: Login to Container Registry
         if: github.event_name == 'push'
         uses: docker/login-action@v3
@@ -66,7 +55,7 @@ jobs:
       - name: Publish & Push
         if: github.event_name == 'push'
         run: >
-          dotnet publish --sc
+          dotnet publish
           -p:PublishProfile=DefaultContainer
           -p:ContainerRegistry=${{ env.CONTAINER_REGISTRY }}
           -p:ContainerRepository=${{ env.CONTAINER_REPOSITORY }}
