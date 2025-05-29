@@ -1,56 +1,51 @@
-﻿using System.Runtime.CompilerServices;
-using FilterLists.Directory.Infrastructure;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLists
 {
-    private static readonly Func<QueryDbContext, IAsyncEnumerable<Response>> Query =
-        EF.CompileAsyncQuery((QueryDbContext ctx) =>
-            ctx.FilterLists
-                .OrderBy(f => f.Id)
-                .Select(f => new Response
-                (
-                    f.Id,
-                    f.Name,
-                    f.Description,
-                    f.LicenseId,
-                    f.FilterListSyntaxes
-                        .OrderBy(fs => fs.SyntaxId)
-                        .Select(fs => fs.SyntaxId),
-                    f.FilterListLanguages
-                        .OrderBy(fl => fl.LanguageId)
-                        .Select(fl => fl.LanguageId),
-                    f.FilterListTags
-                        .OrderBy(ft => ft.TagId)
-                        .Select(ft => ft.TagId),
-                    f.ViewUrls
-                        .OrderBy(u => u.SegmentNumber)
-                        .ThenBy(u => u.Primariness)
-                        .Select(u => u.Url)
-                        .FirstOrDefault(),
-                    f.FilterListMaintainers
-                        .OrderBy(fm => fm.MaintainerId)
-                        .Select(fm => fm.MaintainerId)
-                ))
-                .TagWith(nameof(GetLists))
-        );
+    public sealed record Request : IRequest<List<Response>>;
 
-    public sealed record Request : IStreamRequest<Response>;
-
-    private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
+    private sealed class Handler(QueryDbContext ctx, HybridCache cache) : IRequestHandler<Request, List<Response>>
     {
-        public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
+        public async Task<List<Response>> Handle(Request request, CancellationToken ct)
         {
-            await foreach (var list in cache.GetOrCreateAsyncEnumerable(
-                                   nameof(GetLists),
-                                   Query(ctx).WithCancellation(ct))
-                               .WithCancellation(ct))
-                yield return list;
+            const string key = nameof(GetLists);
+            return await cache.GetOrCreateAsync(
+                key,
+                async cancel =>
+                    await ctx.FilterLists
+                        .OrderBy(f => f.Id)
+                        .Select(f => new Response
+                        (
+                            f.Id,
+                            f.Name,
+                            f.Description,
+                            f.LicenseId,
+                            f.FilterListSyntaxes
+                                .OrderBy(fs => fs.SyntaxId)
+                                .Select(fs => fs.SyntaxId),
+                            f.FilterListLanguages
+                                .OrderBy(fl => fl.LanguageId)
+                                .Select(fl => fl.LanguageId),
+                            f.FilterListTags
+                                .OrderBy(ft => ft.TagId)
+                                .Select(ft => ft.TagId),
+                            f.ViewUrls
+                                .OrderBy(u => u.SegmentNumber)
+                                .ThenBy(u => u.Primariness)
+                                .Select(u => u.Url)
+                                .FirstOrDefault(),
+                            f.FilterListMaintainers
+                                .OrderBy(fm => fm.MaintainerId)
+                                .Select(fm => fm.MaintainerId)
+                        ))
+                        .TagWith(key)
+                        .ToListAsync(cancel),
+                cancellationToken: ct);
         }
     }
 

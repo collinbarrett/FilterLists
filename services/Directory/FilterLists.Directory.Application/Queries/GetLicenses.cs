@@ -1,44 +1,39 @@
-﻿using System.Runtime.CompilerServices;
-using FilterLists.Directory.Infrastructure;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLicenses
 {
-    private static readonly Func<QueryDbContext, IAsyncEnumerable<Response>> Query =
-        EF.CompileAsyncQuery((QueryDbContext ctx) =>
-            ctx.Licenses
-                .Where(l => l.FilterLists.Any())
-                .OrderBy(l => l.Id)
-                .Select(l => new Response(
-                    l.Id,
-                    l.Name,
-                    l.Url,
-                    l.PermitsModification,
-                    l.PermitsDistribution,
-                    l.PermitsCommercialUse,
-                    l.FilterLists
-                        .OrderBy(f => f.Id)
-                        .Select(f => f.Id)
-                ))
-                .TagWith(nameof(GetLicenses))
-        );
+    public sealed record Request : IRequest<List<Response>>;
 
-    public sealed record Request : IStreamRequest<Response>;
-
-    private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
+    private sealed class Handler(QueryDbContext ctx, HybridCache cache) : IRequestHandler<Request, List<Response>>
     {
-        public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
+        public async Task<List<Response>> Handle(Request request, CancellationToken ct)
         {
-            await foreach (var license in cache.GetOrCreateAsyncEnumerable(
-                                   nameof(GetLicenses),
-                                   Query(ctx).WithCancellation(ct))
-                               .WithCancellation(ct))
-                yield return license;
+            const string key = nameof(GetLicenses);
+            return await cache.GetOrCreateAsync(
+                key,
+                async cancel =>
+                    await ctx.Licenses
+                        .Where(l => l.FilterLists.Any())
+                        .OrderBy(l => l.Id)
+                        .Select(l => new Response(
+                            l.Id,
+                            l.Name,
+                            l.Url,
+                            l.PermitsModification,
+                            l.PermitsDistribution,
+                            l.PermitsCommercialUse,
+                            l.FilterLists
+                                .OrderBy(f => f.Id)
+                                .Select(f => f.Id)
+                        ))
+                        .TagWith(key)
+                        .ToListAsync(cancel),
+                cancellationToken: ct);
         }
     }
 

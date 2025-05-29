@@ -1,43 +1,38 @@
-﻿using System.Runtime.CompilerServices;
-using FilterLists.Directory.Infrastructure;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetMaintainers
 {
-    private static readonly Func<QueryDbContext, IAsyncEnumerable<Response>> Query =
-        EF.CompileAsyncQuery((QueryDbContext ctx) =>
-            ctx.Maintainers
-                .Where(m => m.FilterListMaintainers.Any())
-                .OrderBy(m => m.Id)
-                .Select(m => new Response(
-                    m.Id,
-                    m.Name,
-                    m.Url,
-                    m.EmailAddress,
-                    m.TwitterHandle,
-                    m.FilterListMaintainers
-                        .OrderBy(fm => fm.FilterListId)
-                        .Select(fm => fm.FilterListId)
-                ))
-                .TagWith(nameof(GetMaintainers))
-        );
+    public sealed record Request : IRequest<List<Response>>;
 
-    public sealed record Request : IStreamRequest<Response>;
-
-    private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
+    private sealed class Handler(QueryDbContext ctx, HybridCache cache) : IRequestHandler<Request, List<Response>>
     {
-        public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
+        public async Task<List<Response>> Handle(Request request, CancellationToken ct)
         {
-            await foreach (var maintainer in cache.GetOrCreateAsyncEnumerable(
-                                   nameof(GetMaintainers),
-                                   Query(ctx).WithCancellation(ct))
-                               .WithCancellation(ct))
-                yield return maintainer;
+            const string key = nameof(GetMaintainers);
+            return await cache.GetOrCreateAsync(
+                key,
+                async cancel =>
+                    await ctx.Maintainers
+                        .Where(m => m.FilterListMaintainers.Any())
+                        .OrderBy(m => m.Id)
+                        .Select(m => new Response(
+                            m.Id,
+                            m.Name,
+                            m.Url,
+                            m.EmailAddress,
+                            m.TwitterHandle,
+                            m.FilterListMaintainers
+                                .OrderBy(fm => fm.FilterListId)
+                                .Select(fm => fm.FilterListId)
+                        ))
+                        .TagWith(key)
+                        .ToListAsync(cancel),
+                cancellationToken: ct);
         }
     }
 
