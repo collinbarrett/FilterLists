@@ -43,7 +43,11 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "9.0.x"
-          
+            
+      - name: Build
+        run: dotnet build -c Release
+        working-directory: ./services/Directory/FilterLists.Directory.Api
+
       - name: Login to Container Registry
         if: github.event_name == 'push'
         uses: docker/login-action@v3
