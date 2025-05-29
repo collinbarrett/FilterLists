@@ -1,46 +1,41 @@
-﻿using System.Runtime.CompilerServices;
-using FilterLists.Directory.Infrastructure;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetSyntaxes
 {
-    private static readonly Func<QueryDbContext, IAsyncEnumerable<Response>> Query =
-        EF.CompileAsyncQuery((QueryDbContext ctx) =>
-            ctx.Syntaxes
-                .Where(s => s.FilterListSyntaxes.Any())
-                .OrderBy(s => s.Id)
-                .Select(s => new Response
-                (
-                    s.Id,
-                    s.Name,
-                    s.Description,
-                    s.Url,
-                    s.FilterListSyntaxes
-                        .OrderBy(fs => fs.FilterListId)
-                        .Select(fs => fs.FilterListId),
-                    s.SoftwareSyntaxes
-                        .OrderBy(ss => ss.SoftwareId)
-                        .Select(ss => ss.SoftwareId)
-                ))
-                .TagWith(nameof(GetSyntaxes))
-        );
+    public sealed record Request : IRequest<List<Response>>;
 
-    public sealed record Request : IStreamRequest<Response>;
-
-    private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
+    private sealed class Handler(QueryDbContext ctx, HybridCache cache) : IRequestHandler<Request, List<Response>>
     {
-        public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
+        public async Task<List<Response>> Handle(Request request, CancellationToken ct)
         {
-            await foreach (var syntax in cache.GetOrCreateAsyncEnumerable(
-                                   nameof(GetSyntaxes),
-                                   Query(ctx).WithCancellation(ct))
-                               .WithCancellation(ct))
-                yield return syntax;
+            const string key = nameof(GetSyntaxes);
+            return await cache.GetOrCreateAsync(
+                key,
+                async cancel =>
+                    await ctx.Syntaxes
+                        .Where(s => s.FilterListSyntaxes.Any())
+                        .OrderBy(s => s.Id)
+                        .Select(s => new Response
+                        (
+                            s.Id,
+                            s.Name,
+                            s.Description,
+                            s.Url,
+                            s.FilterListSyntaxes
+                                .OrderBy(fs => fs.FilterListId)
+                                .Select(fs => fs.FilterListId),
+                            s.SoftwareSyntaxes
+                                .OrderBy(ss => ss.SoftwareId)
+                                .Select(ss => ss.SoftwareId)
+                        ))
+                        .TagWith(key)
+                        .ToListAsync(cancel),
+                cancellationToken: ct);
         }
     }
 

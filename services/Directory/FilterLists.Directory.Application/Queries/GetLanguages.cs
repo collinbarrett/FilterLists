@@ -1,41 +1,36 @@
-﻿using System.Runtime.CompilerServices;
-using FilterLists.Directory.Infrastructure;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLanguages
 {
-    private static readonly Func<QueryDbContext, IAsyncEnumerable<Response>> Query =
-        EF.CompileAsyncQuery((QueryDbContext ctx) =>
-            ctx.Languages
-                .Where(l => l.FilterListLanguages.Any())
-                .OrderBy(l => l.Iso6391)
-                .Select(l => new Response(
-                    l.Id,
-                    l.Iso6391,
-                    l.Name,
-                    l.FilterListLanguages
-                        .OrderBy(fl => fl.FilterListId)
-                        .Select(fl => fl.FilterListId)
-                ))
-                .TagWith(nameof(GetLanguages))
-        );
+    public sealed record Request : IRequest<List<Response>>;
 
-    public sealed record Request : IStreamRequest<Response>;
-
-    private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
+    private sealed class Handler(QueryDbContext ctx, HybridCache cache) : IRequestHandler<Request, List<Response>>
     {
-        public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
+        public async Task<List<Response>> Handle(Request request, CancellationToken ct)
         {
-            await foreach (var language in cache.GetOrCreateAsyncEnumerable(
-                                   nameof(GetLanguages),
-                                   Query(ctx).WithCancellation(ct))
-                               .WithCancellation(ct))
-                yield return language;
+            const string key = nameof(GetLanguages);
+            return await cache.GetOrCreateAsync(
+                key,
+                async cancel =>
+                    await ctx.Languages
+                        .Where(l => l.FilterListLanguages.Any())
+                        .OrderBy(l => l.Iso6391)
+                        .Select(l => new Response(
+                            l.Id,
+                            l.Iso6391,
+                            l.Name,
+                            l.FilterListLanguages
+                                .OrderBy(fl => fl.FilterListId)
+                                .Select(fl => fl.FilterListId)
+                        ))
+                        .TagWith(key)
+                        .ToListAsync(cancel),
+                cancellationToken: ct);
         }
     }
 

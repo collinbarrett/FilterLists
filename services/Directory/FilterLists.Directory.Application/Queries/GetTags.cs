@@ -1,42 +1,37 @@
-﻿using System.Runtime.CompilerServices;
-using FilterLists.Directory.Infrastructure;
-using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
+﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetTags
 {
-    private static readonly Func<QueryDbContext, IAsyncEnumerable<Response>> Query =
-        EF.CompileAsyncQuery((QueryDbContext ctx) =>
-            ctx.Tags
-                .Where(t => t.FilterListTags.Any())
-                .OrderBy(t => t.Id)
-                .Select(t => new Response
-                (
-                    t.Id,
-                    t.Name,
-                    t.Description,
-                    t.FilterListTags
-                        .OrderBy(flt => flt.FilterListId)
-                        .Select(flt => flt.FilterListId)
-                ))
-                .TagWith(nameof(GetTags))
-        );
+    public sealed record Request : IRequest<List<Response>>;
 
-    public sealed record Request : IStreamRequest<Response>;
-
-    private sealed class Handler(QueryDbContext ctx, IMemoryCache cache) : IStreamRequestHandler<Request, Response>
+    private sealed class Handler(QueryDbContext ctx, HybridCache cache) : IRequestHandler<Request, List<Response>>
     {
-        public async IAsyncEnumerable<Response> Handle(Request request, [EnumeratorCancellation] CancellationToken ct)
+        public async Task<List<Response>> Handle(Request request, CancellationToken ct)
         {
-            await foreach (var tag in cache.GetOrCreateAsyncEnumerable(
-                                   nameof(GetTags),
-                                   Query(ctx).WithCancellation(ct))
-                               .WithCancellation(ct))
-                yield return tag;
+            const string key = nameof(GetTags);
+            return await cache.GetOrCreateAsync(
+                key,
+                async cancel =>
+                    await ctx.Tags
+                        .Where(t => t.FilterListTags.Any())
+                        .OrderBy(t => t.Id)
+                        .Select(t => new Response
+                        (
+                            t.Id,
+                            t.Name,
+                            t.Description,
+                            t.FilterListTags
+                                .OrderBy(flt => flt.FilterListId)
+                                .Select(flt => flt.FilterListId)
+                        ))
+                        .TagWith(key)
+                        .ToListAsync(cancel),
+                cancellationToken: ct);
         }
     }
 

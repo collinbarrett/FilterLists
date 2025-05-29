@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 using static FilterLists.Directory.Api.OpenApi.OpenApiTags;
-using static FilterLists.Directory.Application.Queries.GetListDetails;
 
 namespace FilterLists.Directory.Api;
 
@@ -14,8 +13,9 @@ internal static class Endpoints
     {
         app.MapGet("/languages",
                 (IMediator mediator, CancellationToken ct) =>
-                    mediator.CreateStream(new GetLanguages.Request(), ct)
+                    mediator.Send(new GetLanguages.Request(), ct)
             )
+            .Produces<List<GetLanguages.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
                 Tags = [LanguagesTag],
@@ -25,8 +25,9 @@ internal static class Endpoints
 
         app.MapGet("/licenses",
                 (IMediator mediator, CancellationToken ct) =>
-                    mediator.CreateStream(new GetLicenses.Request(), ct)
+                    mediator.Send(new GetLicenses.Request(), ct)
             )
+            .Produces<List<GetLicenses.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
                 Tags = [LicensesTag],
@@ -36,8 +37,9 @@ internal static class Endpoints
 
         app.MapGet("/lists",
                 (IMediator mediator, CancellationToken ct) =>
-                    mediator.CreateStream(new GetLists.Request(), ct)
+                    mediator.Send(new GetLists.Request(), ct)
             )
+            .Produces<List<GetLists.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
                 Tags = [FilterListsTag],
@@ -45,14 +47,17 @@ internal static class Endpoints
                 OperationId = nameof(GetLists)
             });
 
-        app.MapGet("/lists/{id:int}", async Task<Results<Ok<Response>, NotFound>>
-                (int id, IMediator mediator, CancellationToken ct) =>
-            {
-                var list = await mediator.Send(new Request(id), ct);
-                return list is not null
-                    ? TypedResults.Ok(list)
-                    : TypedResults.NotFound();
-            })
+        app.MapGet("/lists/{id:int}",
+                async Task<Results<Ok<GetListDetails.Response>, NotFound>> (int id, IMediator mediator,
+                    CancellationToken ct) =>
+                {
+                    var list = await mediator.Send(new GetListDetails.Request(id), ct);
+                    return list is not null
+                        ? TypedResults.Ok(list)
+                        : TypedResults.NotFound();
+                })
+            .Produces<GetListDetails.Response>()
+            .Produces(StatusCodes.Status404NotFound)
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
                 Tags = [FilterListsTag],
@@ -73,8 +78,9 @@ internal static class Endpoints
 
         app.MapGet("/maintainers",
                 (IMediator mediator, CancellationToken ct) =>
-                    mediator.CreateStream(new GetMaintainers.Request(), ct)
+                    mediator.Send(new GetMaintainers.Request(), ct)
             )
+            .Produces<List<GetMaintainers.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
                 Tags = [MaintainersTag],
@@ -84,8 +90,9 @@ internal static class Endpoints
 
         app.MapGet("/software",
                 (IMediator mediator, CancellationToken ct) =>
-                    mediator.CreateStream(new GetSoftware.Request(), ct)
+                    mediator.Send(new GetSoftware.Request(), ct)
             )
+            .Produces<List<GetSoftware.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
                 Tags = [SoftwareTag],
@@ -95,8 +102,9 @@ internal static class Endpoints
 
         app.MapGet("/syntaxes",
                 (IMediator mediator, CancellationToken ct) =>
-                    mediator.CreateStream(new GetSyntaxes.Request(), ct)
+                    mediator.Send(new GetSyntaxes.Request(), ct)
             )
+            .Produces<List<GetSyntaxes.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
                 Tags = [SyntaxesTag],
@@ -106,8 +114,9 @@ internal static class Endpoints
 
         app.MapGet("/tags",
                 (IMediator mediator, CancellationToken ct) =>
-                    mediator.CreateStream(new GetTags.Request(), ct)
+                    mediator.Send(new GetTags.Request(), ct)
             )
+            .Produces<List<GetTags.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
                 Tags = [TagsTag],

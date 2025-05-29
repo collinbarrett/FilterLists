@@ -9,9 +9,6 @@ public static class ConfigurationExtensions
     public static void AddApplication(this IHostApplicationBuilder builder)
     {
         builder.AddInfrastructure();
-        builder.Services.AddMediatR(cfg =>
-        {
-            cfg.RegisterServicesFromAssembly(typeof(ConfigurationExtensions).Assembly);
-        });
+        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ConfigurationExtensions).Assembly));
     }
 }
