@@ -79,6 +79,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      id-token: write
+
     if: github.event_name == 'push'
 
     environment:
