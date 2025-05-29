@@ -79,7 +79,6 @@ public static class GetListDetails
         }
     }
 
-    // TODO: refactor to primary ctor syntax while allowing EF Core query compilation to succeed    
     public sealed record Response
     {
         /// <summary>
