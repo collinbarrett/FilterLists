@@ -73,6 +73,9 @@ jobs:
 
     needs: build
 
+    permissions:
+      contents: read
+
     if: github.event_name == 'push'
 
     env:
