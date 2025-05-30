@@ -8,6 +8,7 @@ var directoryDb = builder.AddSqlServer("directorysqlserver")
 
 builder.AddProject<FilterLists_Directory_Api>("directoryapi")
     .WithReference(directoryDb)
+    .WaitFor(directoryDb)
     .WithExternalHttpEndpoints();
 
 builder.Build().Run();
