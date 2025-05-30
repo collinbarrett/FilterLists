@@ -40,7 +40,7 @@ public static class Extensions
             logging.IncludeScopes = true;
         });
 
-        builder.Services.AddOpenTelemetry()
+        var otBuilder = builder.Services.AddOpenTelemetry()
             .WithMetrics(metrics =>
                 metrics.AddAspNetCoreInstrumentation()
                     .AddHttpClientInstrumentation()
@@ -56,17 +56,11 @@ public static class Extensions
                     )
                     .AddHttpClientInstrumentation());
 
-        builder.AddOpenTelemetryExporters();
-    }
-
-    private static void AddOpenTelemetryExporters<TBuilder>(this TBuilder builder)
-        where TBuilder : IHostApplicationBuilder
-    {
         if (!string.IsNullOrWhiteSpace(builder.Configuration["OTEL_EXPORTER_OTLP_ENDPOINT"]))
-            builder.Services.AddOpenTelemetry().UseOtlpExporter();
+            otBuilder.UseOtlpExporter();
 
         if (!string.IsNullOrEmpty(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]))
-            builder.Services.AddOpenTelemetry().UseAzureMonitor();
+            otBuilder.UseAzureMonitor();
     }
 
     // https://learn.microsoft.com/en-us/dotnet/aspire/fundamentals/health-checks#non-development-environments
