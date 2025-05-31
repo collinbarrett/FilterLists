@@ -16,14 +16,6 @@ var app = builder.Build();
 
 app.UseExceptionHandler();
 app.UseCors();
-
-// TEMP: allow Cloudflare to cache all responses since data changes infrequently
-app.Use(async (context, next) =>
-{
-    await next();
-    context.Response.Headers.Remove("Vary");
-});
-
 app.MapEndpoints();
 app.MapDefaultEndpoints();
 app.UseSwagger(o => o.RouteTemplate = "{documentName}/openapi.json");
