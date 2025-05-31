@@ -1,5 +1,4 @@
 using FilterLists.Directory.Application.Queries;
-using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
@@ -11,10 +10,7 @@ internal static class Endpoints
 {
     internal static void MapEndpoints(this WebApplication app)
     {
-        app.MapGet("/languages",
-                (IMediator mediator, CancellationToken ct) =>
-                    mediator.Send(new GetLanguages.Request(), ct)
-            )
+        app.MapGet("/languages", async (GetLanguages.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLanguages.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -23,10 +19,7 @@ internal static class Endpoints
                 OperationId = nameof(GetLanguages)
             });
 
-        app.MapGet("/licenses",
-                (IMediator mediator, CancellationToken ct) =>
-                    mediator.Send(new GetLicenses.Request(), ct)
-            )
+        app.MapGet("/licenses", async (GetLicenses.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLicenses.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -35,10 +28,7 @@ internal static class Endpoints
                 OperationId = nameof(GetLicenses)
             });
 
-        app.MapGet("/lists",
-                (IMediator mediator, CancellationToken ct) =>
-                    mediator.Send(new GetLists.Request(), ct)
-            )
+        app.MapGet("/lists", async (GetLists.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLists.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -48,10 +38,10 @@ internal static class Endpoints
             });
 
         app.MapGet("/lists/{id:int}",
-                async Task<Results<Ok<GetListDetails.Response>, NotFound>> (int id, IMediator mediator,
-                    CancellationToken ct) =>
+                async Task<Results<Ok<GetListDetails.Response>, NotFound>>
+                    (int id, GetListDetails.Query query, CancellationToken ct) =>
                 {
-                    var list = await mediator.Send(new GetListDetails.Request(id), ct);
+                    var list = await query.ExecuteAsync(id, ct);
                     return list is not null
                         ? TypedResults.Ok(list)
                         : TypedResults.NotFound();
@@ -77,9 +67,7 @@ internal static class Endpoints
             });
 
         app.MapGet("/maintainers",
-                (IMediator mediator, CancellationToken ct) =>
-                    mediator.Send(new GetMaintainers.Request(), ct)
-            )
+                async (GetMaintainers.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetMaintainers.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -88,10 +76,7 @@ internal static class Endpoints
                 OperationId = nameof(GetMaintainers)
             });
 
-        app.MapGet("/software",
-                (IMediator mediator, CancellationToken ct) =>
-                    mediator.Send(new GetSoftware.Request(), ct)
-            )
+        app.MapGet("/software", async (GetSoftware.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetSoftware.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -100,10 +85,7 @@ internal static class Endpoints
                 OperationId = nameof(GetSoftware)
             });
 
-        app.MapGet("/syntaxes",
-                (IMediator mediator, CancellationToken ct) =>
-                    mediator.Send(new GetSyntaxes.Request(), ct)
-            )
+        app.MapGet("/syntaxes", async (GetSyntaxes.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetSyntaxes.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -112,10 +94,7 @@ internal static class Endpoints
                 OperationId = nameof(GetSyntaxes)
             });
 
-        app.MapGet("/tags",
-                (IMediator mediator, CancellationToken ct) =>
-                    mediator.Send(new GetTags.Request(), ct)
-            )
+        app.MapGet("/tags", async (GetTags.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetTags.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {

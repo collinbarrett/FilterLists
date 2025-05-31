@@ -1,5 +1,4 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Hybrid;
 
@@ -7,11 +6,9 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLanguages
 {
-    public sealed record Request : IRequest<List<Response>>;
-
-    private sealed class Handler(QueryDbContext ctx, HybridCache cache) : IRequestHandler<Request, List<Response>>
+    public class Query(QueryDbContext ctx, HybridCache cache)
     {
-        public async Task<List<Response>> Handle(Request request, CancellationToken ct)
+        public async Task<List<Response>> ExecuteAsync(CancellationToken ct)
         {
             const string key = nameof(GetLanguages);
             return await cache.GetOrCreateAsync(

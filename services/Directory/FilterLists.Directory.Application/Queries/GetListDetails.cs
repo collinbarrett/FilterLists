@@ -1,5 +1,4 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Hybrid;
 
@@ -7,13 +6,11 @@ namespace FilterLists.Directory.Application.Queries;
 
 public static class GetListDetails
 {
-    public sealed record Request(int Id) : IRequest<Response?>;
-
-    private sealed class Handler(QueryDbContext ctx, HybridCache cache) : IRequestHandler<Request, Response?>
+    public class Query(QueryDbContext ctx, HybridCache cache)
     {
-        public async Task<Response?> Handle(Request request, CancellationToken ct)
+        public async Task<Response?> ExecuteAsync(int id, CancellationToken ct)
         {
-            var key = $"{nameof(GetListDetails)}_{request.Id}";
+            var key = $"{nameof(GetListDetails)}_{id}";
             return await cache.GetOrCreateAsync(
                 key,
                 async cancel =>
@@ -74,7 +71,7 @@ public static class GetListDetails
                                 .Select(fd => fd.DependentFilterListId)
                         })
                         .TagWith(key)
-                        .SingleOrDefaultAsync(l => l.Id == request.Id, cancel),
+                        .SingleOrDefaultAsync(l => l.Id == id, cancel),
                 cancellationToken: ct);
         }
     }
