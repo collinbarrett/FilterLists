@@ -14,9 +14,11 @@ internal static class CorsConfiguration
                     if (corsOptions.AllowedOrigins.Any(o => string.Equals(o, origin, StringComparison.OrdinalIgnoreCase)))
                         return true;
 
-                    if (corsOptions.StagingOriginPatterns is not null &&
-                        origin.StartsWith(corsOptions.StagingOriginPatterns.Start, StringComparison.OrdinalIgnoreCase) &&
-                        origin.EndsWith(corsOptions.StagingOriginPatterns.End, StringComparison.OrdinalIgnoreCase))
+                    if (corsOptions.StagingOriginPatterns is { } patterns &&
+                        !string.IsNullOrEmpty(patterns.Start) &&
+                        !string.IsNullOrEmpty(patterns.End) &&
+                        origin.StartsWith(patterns.Start, StringComparison.OrdinalIgnoreCase) &&
+                        origin.EndsWith(patterns.End, StringComparison.OrdinalIgnoreCase))
                         return true;
 
                     return false;
