@@ -17,8 +17,8 @@ var app = builder.Build();
 
 app.UseExceptionHandler();
 app.UseCors();
-app.MapDefaultEndpoints();
 app.MapEndpoints();
+app.MapDefaultEndpoints();
 app.UseSwagger(o => o.RouteTemplate = "{documentName}/openapi.json");
 app.UseSwaggerUI(SwaggerUiConfiguration.SetupAction);
 

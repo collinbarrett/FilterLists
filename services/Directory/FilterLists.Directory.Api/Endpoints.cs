@@ -12,7 +12,8 @@ internal static class Endpoints
 
     internal static void MapEndpoints(this WebApplication app)
     {
-        app.MapGet("/languages", async (GetLanguages.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
+        app.MapGet("/languages",
+                async (GetLanguages.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLanguages.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -22,7 +23,8 @@ internal static class Endpoints
             })
             .AddEndpointFilter(DefaultGetCacheFilter);
 
-        app.MapGet("/licenses", async (GetLicenses.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
+        app.MapGet("/licenses",
+                async (GetLicenses.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLicenses.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -32,7 +34,8 @@ internal static class Endpoints
             })
             .AddEndpointFilter(DefaultGetCacheFilter);
 
-        app.MapGet("/lists", async (GetLists.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
+        app.MapGet("/lists",
+                async (GetLists.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLists.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -83,7 +86,8 @@ internal static class Endpoints
             })
             .AddEndpointFilter(DefaultGetCacheFilter);
 
-        app.MapGet("/software", async (GetSoftware.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
+        app.MapGet("/software",
+                async (GetSoftware.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetSoftware.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -93,7 +97,8 @@ internal static class Endpoints
             })
             .AddEndpointFilter(DefaultGetCacheFilter);
 
-        app.MapGet("/syntaxes", async (GetSyntaxes.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
+        app.MapGet("/syntaxes",
+                async (GetSyntaxes.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetSyntaxes.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
@@ -103,7 +108,8 @@ internal static class Endpoints
             })
             .AddEndpointFilter(DefaultGetCacheFilter);
 
-        app.MapGet("/tags", async (GetTags.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
+        app.MapGet("/tags",
+                async (GetTags.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetTags.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
