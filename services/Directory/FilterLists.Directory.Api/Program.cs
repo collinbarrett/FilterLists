@@ -6,6 +6,8 @@ using FilterLists.Directory.Application;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(serverOptions => serverOptions.AddServerHeader = false);
+builder.Services.AddRequestTimeouts();
+builder.Services.AddOutputCache();
 builder.AddServiceDefaults();
 builder.Services.AddCors(options => CorsConfiguration.SetupAction(options, builder.Configuration));
 builder.Services.AddProblemDetails();
@@ -17,6 +19,8 @@ var app = builder.Build();
 
 app.UseExceptionHandler();
 app.UseCors();
+app.UseRequestTimeouts();
+app.UseOutputCache();
 app.MapEndpoints();
 app.MapDefaultEndpoints();
 app.UseSwagger(o => o.RouteTemplate = "{documentName}/openapi.json");
