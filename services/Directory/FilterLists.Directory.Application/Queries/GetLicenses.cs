@@ -1,36 +1,30 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLicenses
 {
-    public class Query(QueryDbContext ctx, HybridCache cache)
+    public class Query(QueryDbContext ctx)
     {
         public async Task<List<Response>> ExecuteAsync(CancellationToken ct)
         {
-            const string key = nameof(GetLicenses);
-            return await cache.GetOrCreateAsync(
-                key,
-                async cancel =>
-                    await ctx.Licenses
-                        .Where(l => l.FilterLists.Any())
-                        .OrderBy(l => l.Id)
-                        .Select(l => new Response(
-                            l.Id,
-                            l.Name,
-                            l.Url,
-                            l.PermitsModification,
-                            l.PermitsDistribution,
-                            l.PermitsCommercialUse,
-                            l.FilterLists
-                                .OrderBy(f => f.Id)
-                                .Select(f => f.Id)
-                        ))
-                        .TagWith(key)
-                        .ToListAsync(cancel),
-                cancellationToken: ct);
+            return await ctx.Licenses
+                .Where(l => l.FilterLists.Any())
+                .OrderBy(l => l.Id)
+                .Select(l => new Response(
+                    l.Id,
+                    l.Name,
+                    l.Url,
+                    l.PermitsModification,
+                    l.PermitsDistribution,
+                    l.PermitsCommercialUse,
+                    l.FilterLists
+                        .OrderBy(f => f.Id)
+                        .Select(f => f.Id)
+                ))
+                .TagWith(nameof(GetLicenses))
+                .ToListAsync(ct);
         }
     }
 

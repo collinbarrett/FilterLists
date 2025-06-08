@@ -1,78 +1,72 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetListDetails
 {
-    public class Query(QueryDbContext ctx, HybridCache cache)
+    public class Query(QueryDbContext ctx)
     {
         public async Task<Response?> ExecuteAsync(int id, CancellationToken ct)
         {
-            var key = $"{nameof(GetListDetails)}_{id}";
-            return await cache.GetOrCreateAsync(
-                key,
-                async cancel =>
-                    await ctx.FilterLists
-                        .Select(f => new Response
-                        {
-                            Id = f.Id,
-                            Name = f.Name,
-                            Description = f.Description,
-                            LicenseId = f.LicenseId,
-                            SyntaxIds = f.FilterListSyntaxes
-                                .OrderBy(fs => fs.SyntaxId)
-                                .Select(fs => fs.SyntaxId),
-                            LanguageIds = f.FilterListLanguages
-                                .OrderBy(fl => fl.LanguageId)
-                                .Select(fl => fl.LanguageId),
-                            TagIds = f.FilterListTags
-                                .OrderBy(ft => ft.TagId)
-                                .Select(ft => ft.TagId),
-                            ViewUrls = f.ViewUrls
-                                .OrderBy(u => u.SegmentNumber)
-                                .ThenBy(u => u.Primariness)
-                                .Select(u => new ViewUrlResponse
-                                (
-                                    u.SegmentNumber,
-                                    u.Primariness,
-                                    u.Url
-                                )),
-                            HomeUrl = f.HomeUrl,
-                            OnionUrl = f.OnionUrl,
-                            PolicyUrl = f.PolicyUrl,
-                            SubmissionUrl = f.SubmissionUrl,
-                            IssuesUrl = f.IssuesUrl,
-                            ForumUrl = f.ForumUrl,
-                            ChatUrl = f.ChatUrl,
-                            EmailAddress = f.EmailAddress,
-                            DonateUrl = f.DonateUrl,
-                            MaintainerIds = f.FilterListMaintainers
-                                .OrderBy(fm => fm.MaintainerId)
-                                .Select(fm => fm.MaintainerId),
-                            UpstreamFilterListIds = f.UpstreamFilterLists
-                                .OrderBy(ff => ff.UpstreamFilterListId)
-                                .Select(ff => ff.UpstreamFilterListId),
-                            ForkFilterListIds = f.ForkFilterLists
-                                .OrderBy(ff => ff.ForkFilterListId)
-                                .Select(ff => ff.ForkFilterListId),
-                            IncludedInFilterListIds = f.IncludedInFilterLists
-                                .OrderBy(fm => fm.IncludedInFilterListId)
-                                .Select(fm => fm.IncludedInFilterListId),
-                            IncludesFilterListIds = f.IncludesFilterLists
-                                .OrderBy(fm => fm.IncludesFilterListId)
-                                .Select(fm => fm.IncludesFilterListId),
-                            DependencyFilterListIds = f.DependencyFilterLists
-                                .OrderBy(fd => fd.DependencyFilterListId)
-                                .Select(fd => fd.DependencyFilterListId),
-                            DependentFilterListIds = f.DependentFilterLists
-                                .OrderBy(fd => fd.DependentFilterListId)
-                                .Select(fd => fd.DependentFilterListId)
-                        })
-                        .TagWith(key)
-                        .SingleOrDefaultAsync(l => l.Id == id, cancel),
-                cancellationToken: ct);
+            return await ctx.FilterLists
+                .Select(f => new Response
+                {
+                    Id = f.Id,
+                    Name = f.Name,
+                    Description = f.Description,
+                    LicenseId = f.LicenseId,
+                    SyntaxIds = f.FilterListSyntaxes
+                        .OrderBy(fs => fs.SyntaxId)
+                        .Select(fs => fs.SyntaxId),
+                    LanguageIds = f.FilterListLanguages
+                        .OrderBy(fl => fl.LanguageId)
+                        .Select(fl => fl.LanguageId),
+                    TagIds = f.FilterListTags
+                        .OrderBy(ft => ft.TagId)
+                        .Select(ft => ft.TagId),
+                    ViewUrls = f.ViewUrls
+                        .OrderBy(u => u.SegmentNumber)
+                        .ThenBy(u => u.Primariness)
+                        .Select(u => new ViewUrlResponse
+                        (
+                            u.SegmentNumber,
+                            u.Primariness,
+                            u.Url
+                        )),
+                    HomeUrl = f.HomeUrl,
+                    OnionUrl = f.OnionUrl,
+                    PolicyUrl = f.PolicyUrl,
+                    SubmissionUrl = f.SubmissionUrl,
+                    IssuesUrl = f.IssuesUrl,
+                    ForumUrl = f.ForumUrl,
+                    ChatUrl = f.ChatUrl,
+                    EmailAddress = f.EmailAddress,
+                    DonateUrl = f.DonateUrl,
+                    MaintainerIds = f.FilterListMaintainers
+                        .OrderBy(fm => fm.MaintainerId)
+                        .Select(fm => fm.MaintainerId),
+                    UpstreamFilterListIds = f.UpstreamFilterLists
+                        .OrderBy(ff => ff.UpstreamFilterListId)
+                        .Select(ff => ff.UpstreamFilterListId),
+                    ForkFilterListIds = f.ForkFilterLists
+                        .OrderBy(ff => ff.ForkFilterListId)
+                        .Select(ff => ff.ForkFilterListId),
+                    IncludedInFilterListIds = f.IncludedInFilterLists
+                        .OrderBy(fm => fm.IncludedInFilterListId)
+                        .Select(fm => fm.IncludedInFilterListId),
+                    IncludesFilterListIds = f.IncludesFilterLists
+                        .OrderBy(fm => fm.IncludesFilterListId)
+                        .Select(fm => fm.IncludesFilterListId),
+                    DependencyFilterListIds = f.DependencyFilterLists
+                        .OrderBy(fd => fd.DependencyFilterListId)
+                        .Select(fd => fd.DependencyFilterListId),
+                    DependentFilterListIds = f.DependentFilterLists
+                        .OrderBy(fd => fd.DependentFilterListId)
+                        .Select(fd => fd.DependentFilterListId)
+                })
+                .TagWith($"{nameof(GetListDetails)}_{id}")
+                .SingleOrDefaultAsync(l => l.Id == id, ct);
         }
     }
 
