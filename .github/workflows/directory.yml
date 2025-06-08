@@ -41,8 +41,6 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: "9.0.x"
             
       - name: Build
         run: dotnet build -c Release
