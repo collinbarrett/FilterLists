@@ -55,9 +55,9 @@ public static class Extensions
         builder.Services.AddOpenTelemetry()
             .WithMetrics(metrics =>
             {
-                metrics.AddAspNetCoreInstrumentation();
-                // .AddHttpClientInstrumentation() // causing high-ish Log Analytics bills into customMetrics
-                // .AddRuntimeInstrumentation(); // causing high-ish Log Analytics bills into customMetrics
+                metrics.AddAspNetCoreInstrumentation()
+                    .AddHttpClientInstrumentation()
+                    .AddRuntimeInstrumentation();
             })
             .WithTracing(tracing =>
             {
