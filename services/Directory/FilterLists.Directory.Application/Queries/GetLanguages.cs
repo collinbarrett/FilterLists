@@ -1,33 +1,27 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLanguages
 {
-    public class Query(QueryDbContext ctx, HybridCache cache)
+    public class Query(QueryDbContext ctx)
     {
         public async Task<List<Response>> ExecuteAsync(CancellationToken ct)
         {
-            const string key = nameof(GetLanguages);
-            return await cache.GetOrCreateAsync(
-                key,
-                async cancel =>
-                    await ctx.Languages
-                        .Where(l => l.FilterListLanguages.Any())
-                        .OrderBy(l => l.Iso6391)
-                        .Select(l => new Response(
-                            l.Id,
-                            l.Iso6391,
-                            l.Name,
-                            l.FilterListLanguages
-                                .OrderBy(fl => fl.FilterListId)
-                                .Select(fl => fl.FilterListId)
-                        ))
-                        .TagWith(key)
-                        .ToListAsync(cancel),
-                cancellationToken: ct);
+            return await ctx.Languages
+                .Where(l => l.FilterListLanguages.Any())
+                .OrderBy(l => l.Iso6391)
+                .Select(l => new Response(
+                    l.Id,
+                    l.Iso6391,
+                    l.Name,
+                    l.FilterListLanguages
+                        .OrderBy(fl => fl.FilterListId)
+                        .Select(fl => fl.FilterListId)
+                ))
+                .TagWith(nameof(GetLanguages))
+                .ToListAsync(ct);
         }
     }
 

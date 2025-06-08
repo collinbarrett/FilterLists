@@ -1,35 +1,29 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetMaintainers
 {
-    public class Query(QueryDbContext ctx, HybridCache cache)
+    public class Query(QueryDbContext ctx)
     {
         public async Task<List<Response>> ExecuteAsync(CancellationToken ct)
         {
-            const string key = nameof(GetMaintainers);
-            return await cache.GetOrCreateAsync(
-                key,
-                async cancel =>
-                    await ctx.Maintainers
-                        .Where(m => m.FilterListMaintainers.Any())
-                        .OrderBy(m => m.Id)
-                        .Select(m => new Response(
-                            m.Id,
-                            m.Name,
-                            m.Url,
-                            m.EmailAddress,
-                            m.TwitterHandle,
-                            m.FilterListMaintainers
-                                .OrderBy(fm => fm.FilterListId)
-                                .Select(fm => fm.FilterListId)
-                        ))
-                        .TagWith(key)
-                        .ToListAsync(cancel),
-                cancellationToken: ct);
+            return await ctx.Maintainers
+                .Where(m => m.FilterListMaintainers.Any())
+                .OrderBy(m => m.Id)
+                .Select(m => new Response(
+                    m.Id,
+                    m.Name,
+                    m.Url,
+                    m.EmailAddress,
+                    m.TwitterHandle,
+                    m.FilterListMaintainers
+                        .OrderBy(fm => fm.FilterListId)
+                        .Select(fm => fm.FilterListId)
+                ))
+                .TagWith(nameof(GetMaintainers))
+                .ToListAsync(ct);
         }
     }
 

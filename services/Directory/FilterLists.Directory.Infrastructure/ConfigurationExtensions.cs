@@ -25,6 +25,5 @@ public static class ConfigurationExtensions
                     StringComparison.OrdinalIgnoreCase)));
 
         builder.Services.AddHostedService<MigrationService>();
-        builder.Services.AddHybridCache();
     }
 }

@@ -1,48 +1,42 @@
 ﻿using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Hybrid;
 
 namespace FilterLists.Directory.Application.Queries;
 
 public static class GetLists
 {
-    public class Query(QueryDbContext ctx, HybridCache cache)
+    public class Query(QueryDbContext ctx)
     {
         public async Task<List<Response>> ExecuteAsync(CancellationToken ct)
         {
-            const string key = nameof(GetLists);
-            return await cache.GetOrCreateAsync(
-                key,
-                async cancel =>
-                    await ctx.FilterLists
-                        .OrderBy(f => f.Id)
-                        .Select(f => new Response
-                        (
-                            f.Id,
-                            f.Name,
-                            f.Description,
-                            f.LicenseId,
-                            f.FilterListSyntaxes
-                                .OrderBy(fs => fs.SyntaxId)
-                                .Select(fs => fs.SyntaxId),
-                            f.FilterListLanguages
-                                .OrderBy(fl => fl.LanguageId)
-                                .Select(fl => fl.LanguageId),
-                            f.FilterListTags
-                                .OrderBy(ft => ft.TagId)
-                                .Select(ft => ft.TagId),
-                            f.ViewUrls
-                                .OrderBy(u => u.SegmentNumber)
-                                .ThenBy(u => u.Primariness)
-                                .Select(u => u.Url)
-                                .FirstOrDefault(),
-                            f.FilterListMaintainers
-                                .OrderBy(fm => fm.MaintainerId)
-                                .Select(fm => fm.MaintainerId)
-                        ))
-                        .TagWith(key)
-                        .ToListAsync(cancel),
-                cancellationToken: ct);
+            return await ctx.FilterLists
+                .OrderBy(f => f.Id)
+                .Select(f => new Response
+                (
+                    f.Id,
+                    f.Name,
+                    f.Description,
+                    f.LicenseId,
+                    f.FilterListSyntaxes
+                        .OrderBy(fs => fs.SyntaxId)
+                        .Select(fs => fs.SyntaxId),
+                    f.FilterListLanguages
+                        .OrderBy(fl => fl.LanguageId)
+                        .Select(fl => fl.LanguageId),
+                    f.FilterListTags
+                        .OrderBy(ft => ft.TagId)
+                        .Select(ft => ft.TagId),
+                    f.ViewUrls
+                        .OrderBy(u => u.SegmentNumber)
+                        .ThenBy(u => u.Primariness)
+                        .Select(u => u.Url)
+                        .FirstOrDefault(),
+                    f.FilterListMaintainers
+                        .OrderBy(fm => fm.MaintainerId)
+                        .Select(fm => fm.MaintainerId)
+                ))
+                .TagWith(nameof(GetLists))
+                .ToListAsync(ct);
         }
     }
 

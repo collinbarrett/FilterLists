@@ -6,7 +6,6 @@
 
     <ItemGroup>
         <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="8.2.2"/>
-        <PackageReference Include="Microsoft.Extensions.Caching.Hybrid" Version="9.5.0"/>
     </ItemGroup>
 
 </Project>
