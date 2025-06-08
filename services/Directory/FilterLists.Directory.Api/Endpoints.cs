@@ -8,7 +8,7 @@ namespace FilterLists.Directory.Api;
 
 internal static class Endpoints
 {
-    private static readonly CacheControlFilter DefaultGetCacheFilter = new(3600, 86400);
+    private static readonly CacheControlFilter DefaultGetCacheFilter = new(900, 86400);
 
     internal static void MapEndpoints(this WebApplication app)
     {
@@ -21,7 +21,8 @@ internal static class Endpoints
                 Summary = "Gets the languages targeted by the FilterLists.",
                 OperationId = nameof(GetLanguages)
             })
-            .AddEndpointFilter(DefaultGetCacheFilter);
+            .AddEndpointFilter(DefaultGetCacheFilter)
+            .CacheOutput("ExpireDay");
 
         app.MapGet("/licenses",
                 async (GetLicenses.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
@@ -32,7 +33,8 @@ internal static class Endpoints
                 Summary = "Gets the licenses applied to the FilterLists.",
                 OperationId = nameof(GetLicenses)
             })
-            .AddEndpointFilter(DefaultGetCacheFilter);
+            .AddEndpointFilter(DefaultGetCacheFilter)
+            .CacheOutput("ExpireDay");
 
         app.MapGet("/lists",
                 async (GetLists.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
@@ -43,7 +45,8 @@ internal static class Endpoints
                 Summary = "Gets the FilterLists.",
                 OperationId = nameof(GetLists)
             })
-            .AddEndpointFilter(DefaultGetCacheFilter);
+            .AddEndpointFilter(DefaultGetCacheFilter)
+            .CacheOutput("ExpireDay");
 
         app.MapGet("/lists/{id:int}",
                 async Task<Results<Ok<GetListDetails.Response>, NotFound>>
@@ -73,7 +76,8 @@ internal static class Endpoints
                     }
                 ]
             })
-            .AddEndpointFilter(DefaultGetCacheFilter);
+            .AddEndpointFilter(DefaultGetCacheFilter)
+            .CacheOutput("ExpireDay");
 
         app.MapGet("/maintainers",
                 async (GetMaintainers.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
@@ -84,7 +88,8 @@ internal static class Endpoints
                 Summary = "Gets the maintainers of the FilterLists.",
                 OperationId = nameof(GetMaintainers)
             })
-            .AddEndpointFilter(DefaultGetCacheFilter);
+            .AddEndpointFilter(DefaultGetCacheFilter)
+            .CacheOutput("ExpireDay");
 
         app.MapGet("/software",
                 async (GetSoftware.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
@@ -95,7 +100,8 @@ internal static class Endpoints
                 Summary = "Gets the software that subscribes to the FilterLists.",
                 OperationId = nameof(GetSoftware)
             })
-            .AddEndpointFilter(DefaultGetCacheFilter);
+            .AddEndpointFilter(DefaultGetCacheFilter)
+            .CacheOutput("ExpireDay");
 
         app.MapGet("/syntaxes",
                 async (GetSyntaxes.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
@@ -106,7 +112,8 @@ internal static class Endpoints
                 Summary = "Gets the syntaxes of the FilterLists.",
                 OperationId = nameof(GetSyntaxes)
             })
-            .AddEndpointFilter(DefaultGetCacheFilter);
+            .AddEndpointFilter(DefaultGetCacheFilter)
+            .CacheOutput("ExpireDay");
 
         app.MapGet("/tags",
                 async (GetTags.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
@@ -117,6 +124,7 @@ internal static class Endpoints
                 Summary = "Gets the tags of the FilterLists.",
                 OperationId = nameof(GetTags)
             })
-            .AddEndpointFilter(DefaultGetCacheFilter);
+            .AddEndpointFilter(DefaultGetCacheFilter)
+            .CacheOutput("ExpireDay");
     }
 }
