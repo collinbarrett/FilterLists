@@ -11,7 +11,8 @@ internal static class CorsConfiguration
             options.AddDefaultPolicy(policy => policy
                 .SetIsOriginAllowed(origin =>
                 {
-                    if (corsOptions.AllowedOrigins.Any(o => string.Equals(o, origin, StringComparison.OrdinalIgnoreCase)))
+                    if (corsOptions.AllowedOrigins.Any(o =>
+                            string.Equals(o, origin, StringComparison.OrdinalIgnoreCase)))
                         return true;
 
                     if (corsOptions.StagingOriginPatterns is { } patterns &&

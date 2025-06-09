@@ -2,6 +2,7 @@ using FilterLists.Directory.Api;
 using FilterLists.Directory.Api.Cors;
 using FilterLists.Directory.Api.OpenApi;
 using FilterLists.Directory.Application;
+using FilterLists.ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 
