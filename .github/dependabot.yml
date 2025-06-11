@@ -8,11 +8,16 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-  - package-ecosystem: nuget
-    directory: services
+  - package-ecosystem: "nuget"
+    directory: "services"
     schedule:
-      interval: daily
-  - package-ecosystem: npm
-    directory: /web
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/web"
     schedule:
-      interval: daily
+      interval: "daily"
+  - package-ecosystem: "npm"
+    directory: "/web"
+    schedule:
+      interval: "daily"
+    target-branch: "next"
