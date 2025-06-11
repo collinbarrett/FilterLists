@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - .github/workflows/directory.yml
+      - global.json
       - services/Directory.Build.props
       - services/Directory/**
       - services/FilterLists.ServiceDefaults/**
@@ -14,6 +15,7 @@ on:
       - main
     paths:
       - .github/workflows/directory.yml
+      - global.json
       - services/Directory.Build.props
       - services/Directory/**
       - services/FilterLists.ServiceDefaults/**
