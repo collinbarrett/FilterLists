@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.ConfigureKestrel(serverOptions => serverOptions.AddServerHeader = false);
 builder.Services.AddRequestTimeouts();
 builder.Services.AddOutputCache(o => o.AddPolicy("ExpireDay", b => b.Expire(TimeSpan.FromDays(1))));
+builder.AddServiceDefaults();
 builder.Services.AddCors(options => CorsConfiguration.SetupAction(options, builder.Configuration));
 builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
