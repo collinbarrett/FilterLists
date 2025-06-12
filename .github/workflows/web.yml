@@ -3,140 +3,73 @@ name: Web - Build & Deploy
 on:
   push:
     branches:
-      - main
+      - next
     paths:
       - .github/workflows/web.yml
       - web/**
   pull_request:
-    types: [opened, synchronize, reopened, closed]
     branches:
-      - main
+      - next
     paths:
       - .github/workflows/web.yml
       - web/**
 
+env:
+  CONTAINER_REGISTRY: ghcr.io
+  CONTAINER_REPOSITORY: ${{ github.repository_owner }}/filterlists-web
+  CONTAINER_IMAGE_TAG_UNIQUE: ${{ github.run_id }}
+  WORKING_DIRECTORY: ./web
+
 jobs:
-  build_and_deploy_staging:
-    name: Build & Deploy to Staging
+  build:
+    name: Build & Push Docker Image
 
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
-      id-token: write
-
-    if: github.event_name == 'pull_request' && github.event.action != 'closed'
-
-    environment:
-      name: staging-web
-      url: ${{ steps.builddeploy.outputs.static_web_app_url }}
+      packages: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Log in to the Container registry
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
         with:
-          node-version: lts/*
-          cache: npm
-          cache-dependency-path: web/package-lock.json
+          registry: ${{ env.CONTAINER_REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install
-        run: npm ci
-        working-directory: ./web
-
-      - name: Run Prettier
-        run: npm run prettier:check
-        working-directory: ./web
-
-      - name: Run ESLint
-        run: npm run eslint:check
-        working-directory: ./web
-
-      - name: Build
-        run: npm run build
-        working-directory: ./web
-
-      - name: Copy Static Web App Config
-        run: cp staticwebapp.config.json build/
-        working-directory: ./web
-
-      - name: Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
+      - name: Build & Push Docker Image
+        uses: docker/build-push-action@v5
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: upload
-          app_location: ./web/build
-          output_location: ""
-          skip_app_build: true
-        continue-on-error: true
+          context: ${{ env.WORKING_DIRECTORY }}
+          push: ${{ github.event_name == 'push' }}
+          tags: |
+            ${{ env.CONTAINER_REGISTRY }}/${{ env.CONTAINER_REPOSITORY }}:${{ env.CONTAINER_IMAGE_TAG_UNIQUE }}
+            ${{ env.CONTAINER_REGISTRY }}/${{ env.CONTAINER_REPOSITORY }}:latest
 
-  build_and_deploy_production:
-    name: Build & Deploy to Production
+  deploy:
+    name: Deploy
 
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      id-token: write
+    needs: build
 
     if: github.event_name == 'push'
 
+    env:
+      AZURE_WEBAPP_NAME: app-filterlists-web-prod
+
     environment:
-      name: production-web
-      url: https://filterlists.com
+      name: production-web-next
+      url: https://next.filterlists.com
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
         with:
-          node-version: lts/*
-          cache: npm
-          cache-dependency-path: web/package-lock.json
-
-      - name: Install
-        run: npm ci
-        working-directory: ./web
-
-      - name: Build
-        run: npm run build
-        working-directory: ./web
-
-      - name: Copy Static Web App Config
-        run: cp staticwebapp.config.json build/
-        working-directory: ./web
-
-      - name: Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: upload
-          app_location: ./web/build
-          output_location: ""
-          skip_app_build: true
-
-  close_pull_request:
-    name: Close Pull Request
-
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-
-    steps:
-      - name: Close Pull Request
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_STAPP_FILTERLISTS_PROD }}
-          action: close
-          app_location: ./web
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_APP_FILTERLISTS_WEB_PROD }}
+          images: ${{ env.CONTAINER_REGISTRY }}/${{ env.CONTAINER_REPOSITORY }}:${{ env.CONTAINER_IMAGE_TAG_UNIQUE }}
