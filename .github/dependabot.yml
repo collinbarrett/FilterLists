@@ -21,6 +21,11 @@ updates:
     schedule:
       interval: "daily"
     target-branch: "next"
+  - package-ecosystem: "docker"
+    directory: "/web"
+    schedule:
+      interval: "daily"
+    target-branch: "next"
   - package-ecosystem: "npm"
     directory: "/web"
     schedule:
