@@ -27,15 +27,12 @@ env:
 
 jobs:
   build:
-    name: Build
+    name: Build & Push Docker Image
 
     runs-on: ubuntu-latest
 
     permissions:
       packages: write
-
-    env:
-      CONTAINER_IMAGE_TAG_STABLE: latest
 
     steps:
       - name: Checkout
@@ -56,14 +53,14 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish & Push
+      - name: Build & Push Docker Image
         if: github.event_name == 'push'
         run: >
           dotnet publish
           -p:PublishProfile=DefaultContainer
           -p:ContainerRegistry=${{ env.CONTAINER_REGISTRY }}
           -p:ContainerRepository=${{ env.CONTAINER_REPOSITORY }}
-          -p:ContainerImageTags='"${{ env.CONTAINER_IMAGE_TAG_UNIQUE }};${{ env.CONTAINER_IMAGE_TAG_STABLE }}"'
+          -p:ContainerImageTags='"${{ env.CONTAINER_IMAGE_TAG_UNIQUE }};latest"'
         working-directory: ./services/Directory/FilterLists.Directory.Api
 
   deploy:
@@ -72,9 +69,6 @@ jobs:
     runs-on: ubuntu-latest
 
     needs: build
-
-    permissions:
-      contents: read
 
     if: github.event_name == 'push'
 

@@ -16,6 +16,11 @@ updates:
     directory: "/web"
     schedule:
       interval: "daily"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    target-branch: "next"
   - package-ecosystem: "npm"
     directory: "/web"
     schedule:
