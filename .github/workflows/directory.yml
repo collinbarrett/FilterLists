@@ -68,6 +68,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      packages: read
+
     needs: build
 
     if: github.event_name == 'push'
