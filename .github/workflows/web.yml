@@ -27,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
+      contents: read
       packages: write
 
     steps:
@@ -54,6 +55,10 @@ jobs:
     name: Deploy
 
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: read
 
     needs: build
 
