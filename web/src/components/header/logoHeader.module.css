@@ -1,0 +1,6 @@
+@media (max-width: 640px) {
+  .logoHeader {
+    max-width: 222px;
+    max-height: 52px;
+  }
+}
