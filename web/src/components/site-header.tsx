@@ -1,5 +1,3 @@
-"use client";
-
 import { ThemeModeToggle } from "./theme-mode-toggle";
 
 export function SiteHeader() {
