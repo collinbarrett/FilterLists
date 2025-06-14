@@ -4,7 +4,7 @@ import { ApiLink } from "./api-link";
 
 export function Footer() {
   return (
-    <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+    <footer className="flex flex-wrap items-center justify-center gap-2 sm:gap-[24px] mb-2 sm:mb-3 overflow-x-auto whitespace-nowrap">
       <CollinMBarrettLink />
       <ApiLink />
       <GitHubLink />
