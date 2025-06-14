@@ -32,6 +32,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
+      contents: read
       packages: write
 
     steps:
@@ -40,7 +41,7 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
-            
+
       - name: Build
         run: dotnet build -c Release
         working-directory: ./services/Directory/FilterLists.Directory.Api
