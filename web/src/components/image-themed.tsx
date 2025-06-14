@@ -10,7 +10,7 @@ type ThemedImageProps = Omit<ImageProps, "src" | "alt"> & {
   alt: string;
 };
 
-export function ThemeImage({
+export function ImageThemed({
   srcLight,
   srcDark,
   alt,
