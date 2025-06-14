@@ -37,9 +37,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            {children}
+          <div
+            className="flex flex-col min-h-screen"
+            style={{ minHeight: "100dvh" }}
+          >
+            <Header />
+            <div className="flex-1 flex flex-col">{children}</div>
             <Footer />
           </div>
         </ThemeProvider>
