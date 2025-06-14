@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@azure/monitor-opentelemetry": "^1.11.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.514.0",
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
