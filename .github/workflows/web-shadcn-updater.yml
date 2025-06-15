@@ -1,0 +1,67 @@
+name: "shadcn/ui Component Updater"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 21 * * 5" # Fridays at 4pm Memphis (America/Chicago)
+    - cron: "45 19 * * 0" # TEMP: Sundays at 2:45pm Memphis (America/Chicago)
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-components:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: next
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check for shadcn/ui component updates
+        id: diff
+        run: |
+          UPDATES=$(npx shadcn-ui@latest diff || true)
+          if [[ $UPDATES == *"No updates available."* || -z "$UPDATES" ]]; then
+            echo "updates=false" >> $GITHUB_OUTPUT
+          else
+            echo "$UPDATES" > shadcn-updates.txt
+            echo "updates=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Update components
+        if: steps.diff.outputs.updates == 'true'
+        run: |
+          while IFS= read -r component; do
+            npx shadcn-ui@latest add "$component" --overwrite
+          done < shadcn-updates.txt
+
+      - name: Create Pull Request
+        if: steps.diff.outputs.updates == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update shadcn/ui components"
+          title: "Update shadcn/ui Components"
+          body: |
+            This pull request contains the latest updates for the shadcn/ui components.
+
+            The following components have been updated:
+            ```
+            $(cat web/shadcn-updates.txt)
+            ```
+          branch: "chore/shadcn-updates"
+          base: "next"
+          delete-branch: true
