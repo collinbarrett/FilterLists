@@ -1,6 +1,6 @@
-# https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile
+# syntax=docker/dockerfile:1
 
-# syntax=docker.io/docker/dockerfile:1
+# https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile
 
 FROM node:24-alpine AS base
 
@@ -12,7 +12,7 @@ WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* .npmrc* ./
-RUN \
+RUN --mount=type=cache,target=/app/.next/cache \
   if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
   elif [ -f package-lock.json ]; then npm ci; \
   elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm i --frozen-lockfile; \
