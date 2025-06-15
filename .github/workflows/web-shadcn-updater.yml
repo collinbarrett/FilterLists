@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 21 * * 5" # Fridays at 4pm Memphis (America/Chicago)
-    - cron: "55 19 * * 0" # TEMP: Sundays at 2:55pm Memphis (America/Chicago)
 
 permissions:
   contents: write
@@ -48,7 +47,7 @@ jobs:
 
       - name: Create Pull Request
         if: steps.diff.outputs.updates == 'true'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: update shadcn/ui components"
