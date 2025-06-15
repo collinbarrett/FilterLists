@@ -1,0 +1,5 @@
+The 'shadcn-ui' package is deprecated. Please use the 'shadcn' package instead:
+
+  npx shadcn@latest diff
+
+For more information, visit: https://ui.shadcn.com/docs/cli
