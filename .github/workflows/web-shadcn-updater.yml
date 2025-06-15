@@ -30,7 +30,7 @@ jobs:
       - name: Check for shadcn/ui component updates
         id: diff
         run: |
-          UPDATES=$(npx shadcn-ui@latest diff || true)
+          UPDATES=$(npx shadcn@latest diff || true)
           if [[ $UPDATES == *"No updates available."* || -z "$UPDATES" ]]; then
             echo "updates=false" >> $GITHUB_OUTPUT
           else
@@ -42,7 +42,7 @@ jobs:
         if: steps.diff.outputs.updates == 'true'
         run: |
           while IFS= read -r component; do
-            npx shadcn-ui@latest add "$component" --overwrite
+            npx shadcn@latest add "$component" --overwrite
           done < shadcn-updates.txt
 
       - name: Create Pull Request
