@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 21 * * 5" # Fridays at 4pm Memphis (America/Chicago)
-    - cron: "45 19 * * 0" # TEMP: Sundays at 2:45pm Memphis (America/Chicago)
+    - cron: "55 19 * * 0" # TEMP: Sundays at 2:55pm Memphis (America/Chicago)
 
 permissions:
   contents: write
@@ -24,8 +24,6 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
-        with:
-          cache: npm
 
       - name: Install dependencies
         run: npm install
