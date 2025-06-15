@@ -1,4 +1,4 @@
-name: "shadcn/ui Component Updater"
+name: "Web (next) - Update shadcn/ui Components"
 
 on:
   workflow_dispatch:
@@ -33,6 +33,7 @@ jobs:
           UPDATES=$(npx shadcn@latest diff || true)
           if [[ $UPDATES == *"No updates available."* || -z "$UPDATES" ]]; then
             echo "updates=false" >> $GITHUB_OUTPUT
+            rm -f shadcn-updates.txt
           else
             echo "$UPDATES" > shadcn-updates.txt
             echo "updates=true" >> $GITHUB_OUTPUT
