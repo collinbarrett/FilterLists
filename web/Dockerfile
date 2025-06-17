@@ -27,7 +27,7 @@ COPY . .
 #  https://nextjs.org/telemetry
 ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN --mount=type=cache,target=/app/.next/cache \
+RUN \
   if [ -f package-lock.json ]; then npm run build; \
   else echo "package-lock.json not found." && exit 1; \
   fi
