@@ -1,7 +1,9 @@
 import { FilterlistTable, Filterlist } from "@/components/filterlist-table";
 
 const getFilterlists = async (): Promise<Filterlist[]> => {
-  const res = await fetch("https://api.filterlists.com/lists");
+  const res = await fetch("https://api.filterlists.com/lists", {
+    next: { revalidate: 86400 },
+  });
   if (!res.ok) throw new Error("Failed to fetch lists");
   return res.json();
 };
