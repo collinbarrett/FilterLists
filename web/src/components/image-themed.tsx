@@ -26,7 +26,7 @@ export function ImageThemed({
   const src = resolvedTheme === "dark" ? srcDark : srcLight;
 
   if (!mounted) {
-    return <Image src={srcLight} alt={alt} {...props} unoptimized />;
+    return <Image src={srcLight} alt={alt} {...props} />;
   }
 
   return <Image src={src} alt={alt} {...props} />;
