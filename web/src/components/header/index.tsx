@@ -19,6 +19,7 @@ export function Header() {
               width={429}
               height={100}
               priority
+              fetchPriority="high"
             />
           </Link>
         </div>
