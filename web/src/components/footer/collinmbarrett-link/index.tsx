@@ -1,6 +1,6 @@
 import CollinMBarrettIconLight from "./collinmbarrett-icon-light.png";
 import CollinMBarrettIconDark from "./collinmbarrett-icon-dark.png";
-import { ImageThemed } from "@/components/image-themed";
+import { ThemeImage } from "@/components/theme-image";
 
 export function CollinMBarrettLink() {
   return (
@@ -10,7 +10,7 @@ export function CollinMBarrettLink() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <ImageThemed
+      <ThemeImage
         aria-hidden
         srcLight={CollinMBarrettIconLight}
         srcDark={CollinMBarrettIconDark}
