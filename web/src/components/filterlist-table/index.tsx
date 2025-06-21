@@ -2,10 +2,11 @@
 
 import * as React from "react";
 import {
-  ColumnDef,
   useReactTable,
   getCoreRowModel,
+  getPaginationRowModel,
   flexRender,
+  ColumnDef,
 } from "@tanstack/react-table";
 import {
   Table,
@@ -16,38 +17,19 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import { FilterList } from "./columns";
 
-export type Filterlist = {
-  id: number;
-  name: string;
-};
-
-interface FilterlistTableProps {
-  filterlists: Filterlist[];
+interface FilterListTableProps {
+  columns: ColumnDef<FilterList>[];
+  data: FilterList[];
 }
 
-const columns: ColumnDef<Filterlist>[] = [
-  {
-    accessorKey: "name",
-    header: "Name",
-    cell: (info) => info.getValue(),
-  },
-];
-
-export function FilterlistTable({ filterlists }: FilterlistTableProps) {
-  const [page, setPage] = React.useState(0);
-  const pageSize = 10;
-  const pageCount = Math.ceil(filterlists.length / pageSize);
-
-  const pagedData = React.useMemo(
-    () => filterlists.slice(page * pageSize, (page + 1) * pageSize),
-    [filterlists, page, pageSize],
-  );
-
+export function FilterListTable({ columns, data }: FilterListTableProps) {
   const table = useReactTable({
-    data: pagedData,
+    data,
     columns,
     getCoreRowModel: getCoreRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
   });
 
   return (
@@ -83,19 +65,20 @@ export function FilterlistTable({ filterlists }: FilterlistTableProps) {
         <Button
           variant="outline"
           size="sm"
-          onClick={() => setPage((p) => Math.max(0, p - 1))}
-          disabled={page === 0}
+          onClick={() => table.previousPage()}
+          disabled={!table.getCanPreviousPage()}
         >
           Previous
         </Button>
         <span className="text-sm">
-          Page {page + 1} of {pageCount}
+          Page {table.getState().pagination.pageIndex + 1} of{" "}
+          {table.getPageCount()}
         </span>
         <Button
           variant="outline"
           size="sm"
-          onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
-          disabled={page >= pageCount - 1}
+          onClick={() => table.nextPage()}
+          disabled={!table.getCanNextPage()}
         >
           Next
         </Button>
