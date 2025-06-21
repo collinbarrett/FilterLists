@@ -1,6 +1,6 @@
 import GitHubMarkLight from "./github-mark-light.svg";
 import GitHubMarkDark from "./github-mark-dark.svg";
-import { ImageThemed } from "@/components/image-themed";
+import { ThemeImage } from "@/components/theme-image";
 
 export function GitHubLink() {
   return (
@@ -10,7 +10,7 @@ export function GitHubLink() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <ImageThemed
+      <ThemeImage
         aria-hidden
         srcLight={GitHubMarkLight}
         srcDark={GitHubMarkDark}
