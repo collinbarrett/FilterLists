@@ -1,4 +1,4 @@
-import { ImageThemed } from "@/components/image-themed";
+import { ThemeImage } from "@/components/theme-image";
 import { ThemeToggle } from "../theme-toggle";
 import Link from "next/link";
 import LogoLight from "./logo-filterlists-light.png";
@@ -11,7 +11,7 @@ export function Header() {
       <div className="flex h-20 items-center justify-between px-6">
         <div className="flex items-center">
           <Link href="/" aria-label="Go to homepage">
-            <ImageThemed
+            <ThemeImage
               className={styles.logoHeader}
               srcLight={LogoLight}
               srcDark={logoDark}
