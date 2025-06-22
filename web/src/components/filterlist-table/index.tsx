@@ -16,15 +16,36 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
 import { FilterList } from "./columns";
+import { useEffect, useState } from "react";
+import { FilterListTablePagination } from "./pagination";
+import { FilterListTablePaginationSkeleton } from "./skeleton";
 
 interface FilterListTableProps {
   columns: ColumnDef<FilterList>[];
-  data: FilterList[];
+  initialData: FilterList[];
 }
 
-export function FilterListTable({ columns, data }: FilterListTableProps) {
+export function FilterListTable({
+  columns,
+  initialData,
+}: FilterListTableProps) {
+  const [data, setData] = useState<FilterList[]>(initialData);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchAll() {
+      try {
+        const response = await fetch("https://api.filterlists.com/lists");
+        const lists = await response.json();
+        setData(lists);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchAll();
+  }, [initialData.length]);
+
   const table = useReactTable({
     data,
     columns,
@@ -61,28 +82,11 @@ export function FilterListTable({ columns, data }: FilterListTableProps) {
           ))}
         </TableBody>
       </Table>
-      <div className="flex items-center justify-between gap-2">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.previousPage()}
-          disabled={!table.getCanPreviousPage()}
-        >
-          Previous
-        </Button>
-        <span className="text-sm">
-          Page {table.getState().pagination.pageIndex + 1} of{" "}
-          {table.getPageCount()}
-        </span>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.nextPage()}
-          disabled={!table.getCanNextPage()}
-        >
-          Next
-        </Button>
-      </div>
+      {loading ? (
+        <FilterListTablePaginationSkeleton />
+      ) : (
+        <FilterListTablePagination table={table} />
+      )}
     </div>
   );
 }
