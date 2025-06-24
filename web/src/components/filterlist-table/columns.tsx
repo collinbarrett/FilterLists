@@ -1,19 +1,17 @@
-"use client";
-
-import { ColumnDef } from "@tanstack/react-table";
+import { createColumnHelper } from "@tanstack/react-table";
 
 export type FilterList = {
   name: string;
   description: string;
 };
 
-export const columns: ColumnDef<FilterList>[] = [
-  {
-    accessorKey: "name",
+const columnHelper = createColumnHelper<FilterList>();
+
+export const columns = [
+  columnHelper.accessor("name", {
     header: "Name",
-  },
-  {
-    accessorKey: "description",
+  }),
+  columnHelper.accessor("description", {
     header: "Description",
-  },
+  }),
 ];
