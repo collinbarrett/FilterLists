@@ -6,7 +6,7 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   flexRender,
-  ColumnDef,
+  AccessorKeyColumnDef,
 } from "@tanstack/react-table";
 import {
   Table,
@@ -22,7 +22,7 @@ import { FilterListTablePagination } from "./pagination";
 import { FilterListTablePaginationSkeleton } from "./skeleton";
 
 interface FilterListTableProps {
-  columns: ColumnDef<FilterList>[];
+  columns: AccessorKeyColumnDef<FilterList, string>[];
   initialData: FilterList[];
 }
 
