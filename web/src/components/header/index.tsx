@@ -1,5 +1,5 @@
 import { ThemeImage } from "@/components/theme-image";
-import { ThemeToggle } from "../theme-toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import Link from "next/link";
 import LogoLight from "./logo-filterlists-light.png";
 import logoDark from "./logo-filterlists-dark.png";
