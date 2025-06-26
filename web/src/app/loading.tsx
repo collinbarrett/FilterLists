@@ -1,4 +1,4 @@
-import { FilterListTableSkeleton } from "@/components/filterlist-table/skeleton";
+import { FilterListTableSkeleton } from "@/components/filterlist-table/table-skeleton";
 
 export default function Loading() {
   return (
