@@ -18,32 +18,43 @@ import {
 } from "@/components/ui/table";
 import { useEffect, useState } from "react";
 import { FilterListTablePagination } from "./pagination";
-import { FilterList, getFilterLists } from "@/services/get-filterlists";
 import { FilterListTablePaginationSkeleton } from "./pagination-skeleton";
+import { FilterList, getFilterLists } from "@/services/get-filterlists";
+import { Language } from "@/services/get-languages";
+import { License } from "@/services/get-licenses";
+import { Maintainer } from "@/services/get-maintainers";
+import { Software } from "@/services/get-software";
+import { Syntax } from "@/services/get-syntaxes";
+import { Tag } from "@/services/get-tags";
 
 interface FilterListTableProps {
   columns: AccessorKeyColumnDef<FilterList, string>[];
-  initialData: FilterList[];
+  initialFilterLists: FilterList[];
+  languages: Language[];
+  licenses: License[];
+  maintainers: Maintainer[];
+  software: Software[];
+  syntaxes: Syntax[];
+  tags: Tag[];
 }
 
 export function FilterListTable({
   columns,
-  initialData,
+  initialFilterLists,
 }: FilterListTableProps) {
-  const [data, setData] = useState<FilterList[]>(initialData);
+  const [data, setData] = useState<FilterList[]>(initialFilterLists);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function fetchAll() {
+    (async () => {
       try {
         const lists = await getFilterLists();
         setData(lists);
       } finally {
         setLoading(false);
       }
-    }
-    fetchAll();
-  }, [initialData.length]);
+    })();
+  }, [initialFilterLists.length]);
 
   const table = useReactTable({
     data,
