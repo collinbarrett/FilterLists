@@ -6,8 +6,9 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   flexRender,
-  AccessorKeyColumnDef,
+  TableMeta,
 } from "@tanstack/react-table";
+import { columns } from "./columns";
 import {
   Table,
   TableBody,
@@ -27,8 +28,12 @@ import { Software } from "@/services/get-software";
 import { Syntax } from "@/services/get-syntaxes";
 import { Tag } from "@/services/get-tags";
 
+export interface FilterListsTableMeta extends TableMeta<FilterList> {
+  licenses: License[];
+}
+
 interface FilterListTableProps {
-  columns: AccessorKeyColumnDef<FilterList, string>[];
+  columns: typeof columns;
   initialFilterLists: FilterList[];
   languages: Language[];
   licenses: License[];
@@ -41,6 +46,7 @@ interface FilterListTableProps {
 export function FilterListTable({
   columns,
   initialFilterLists,
+  licenses,
 }: FilterListTableProps) {
   const [data, setData] = useState<FilterList[]>(initialFilterLists);
   const [loading, setLoading] = useState(true);
@@ -61,6 +67,7 @@ export function FilterListTable({
     columns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
+    meta: { licenses: licenses } as FilterListsTableMeta,
   });
 
   return (
