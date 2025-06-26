@@ -1,13 +1,15 @@
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Table } from "@tanstack/react-table";
-import { FilterList } from "./columns";
+import { FilterList } from "@/services/get-filterlists";
 
-interface PaginationProps {
+interface FilterListTablePaginationProps {
   table: Table<FilterList>;
 }
 
-export function FilterListTablePagination({ table }: PaginationProps) {
+export function FilterListTablePagination({
+  table,
+}: FilterListTablePaginationProps) {
   return (
     <div className="flex items-center justify-between gap-2">
       <Button
