@@ -1,9 +1,5 @@
+import { FilterList } from "@/services/get-filterlists";
 import { createColumnHelper } from "@tanstack/react-table";
-
-export type FilterList = {
-  name: string;
-  description: string;
-};
 
 const columnHelper = createColumnHelper<FilterList>();
 

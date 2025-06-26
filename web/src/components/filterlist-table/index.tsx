@@ -16,10 +16,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { FilterList } from "./columns";
 import { useEffect, useState } from "react";
 import { FilterListTablePagination } from "./pagination";
-import { FilterListTablePaginationSkeleton } from "./skeleton";
+import { FilterList, getFilterLists } from "@/services/get-filterlists";
+import { FilterListTablePaginationSkeleton } from "./pagination-skeleton";
 
 interface FilterListTableProps {
   columns: AccessorKeyColumnDef<FilterList, string>[];
@@ -36,8 +36,7 @@ export function FilterListTable({
   useEffect(() => {
     async function fetchAll() {
       try {
-        const response = await fetch("https://api.filterlists.com/lists");
-        const lists = await response.json();
+        const lists = await getFilterLists();
         setData(lists);
       } finally {
         setLoading(false);

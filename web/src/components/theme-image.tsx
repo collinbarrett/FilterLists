@@ -4,12 +4,12 @@ import { useTheme } from "next-themes";
 import Image, { ImageProps, StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
 
-type Props = Omit<ImageProps, "src" | "loading"> & {
+type ThemeImageProps = Omit<ImageProps, "src" | "loading"> & {
   srcLight: string | StaticImageData;
   srcDark: string | StaticImageData;
 };
 
-export const ThemeImage = (props: Props) => {
+export const ThemeImage = (props: ThemeImageProps) => {
   const { srcLight, srcDark, alt, priority, ...rest } = props;
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
