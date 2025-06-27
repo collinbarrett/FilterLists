@@ -2,9 +2,9 @@ import { API_BASE_URL, DEFAULT_REVALIDATE_SECS } from "./constants";
 
 export type Language = {
   id: number;
-  iso6391: string | null;
-  name: string | null;
-  filterListIds: number[] | null;
+  iso6391: string;
+  name: string;
+  filterListIds: number[]; // TODO: are these needed, or can we remove them from the API?
 };
 
 export async function getLanguages(): Promise<Language[]> {
