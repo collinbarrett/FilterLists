@@ -3,6 +3,7 @@
 import { FilterList } from "@/services/get-filterlists";
 import { createColumnHelper } from "@tanstack/react-table";
 import { FilterListsTableMeta } from ".";
+import { LanguageBadges } from "./language-badges";
 
 const columnHelper = createColumnHelper<FilterList>();
 
@@ -12,6 +13,18 @@ export const columns = [
   }),
   columnHelper.accessor((row) => row.description, {
     header: "Description",
+  }),
+  columnHelper.accessor((row) => row.languageIds, {
+    header: "Languages",
+    cell: (info) => {
+      const meta = info.table.options.meta as FilterListsTableMeta;
+      const languages =
+        info
+          .getValue()
+          ?.flatMap((id) => meta.languages.find((l) => l.id === id) || []) ??
+        [];
+      return <LanguageBadges languages={languages} />;
+    },
   }),
   columnHelper.accessor((row) => row.licenseId, {
     header: "License",

@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import {
   useReactTable,
   getCoreRowModel,
@@ -29,6 +28,7 @@ import { Syntax } from "@/services/get-syntaxes";
 import { Tag } from "@/services/get-tags";
 
 export interface FilterListsTableMeta extends TableMeta<FilterList> {
+  languages: Language[];
   licenses: License[];
 }
 
@@ -46,6 +46,7 @@ interface FilterListTableProps {
 export function FilterListTable({
   columns,
   initialFilterLists,
+  languages,
   licenses,
 }: FilterListTableProps) {
   const [data, setData] = useState<FilterList[]>(initialFilterLists);
@@ -67,7 +68,10 @@ export function FilterListTable({
     columns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
-    meta: { licenses: licenses } as FilterListsTableMeta,
+    meta: {
+      languages,
+      licenses,
+    },
   });
 
   return (
