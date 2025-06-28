@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 21 * * 5" # Fridays at 4pm Memphis (America/Chicago)
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/web-shadcn-updater.yml"
 
 permissions:
   contents: write
@@ -55,14 +60,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: update shadcn/ui components"
-          title: "Update shadcn/ui Components"
-          body: |
-            This pull request contains the latest updates for the shadcn/ui components.
-
-            The following components have been updated:
-            ```
-            $(cat web/shadcn-updates.txt)
-            ```
-          branch: "chore/shadcn-updates"
+          title: "Update shadcn/ui components"
+          branch: "chore/shadcn-updates-${{ github.run_id }}"
           base: "next"
           delete-branch: true
