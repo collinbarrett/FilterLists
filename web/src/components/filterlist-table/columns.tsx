@@ -10,9 +10,17 @@ const columnHelper = createColumnHelper<FilterList>();
 export const columns = [
   columnHelper.accessor((row) => row.name, {
     header: "Name",
+    size: 200,
+    cell: (info) => (
+      <div className="line-clamp-3 whitespace-normal">{info.getValue()}</div>
+    ),
   }),
   columnHelper.accessor((row) => row.description, {
     header: "Description",
+    size: 400,
+    cell: (info) => (
+      <div className="line-clamp-3 whitespace-normal">{info.getValue()}</div>
+    ),
   }),
   columnHelper.accessor((row) => row.syntaxIds, {
     header: "Syntaxes",
@@ -32,8 +40,13 @@ export const columns = [
               ]
             : [];
         }) ?? [];
-      return <BadgeCloud items={syntaxes} />;
+      return (
+        <div className="fade-out-bottom h-full">
+          <BadgeCloud items={syntaxes} />
+        </div>
+      );
     },
+    size: 150,
   }),
   columnHelper.accessor((row) => row.languageIds, {
     header: "Languages",
@@ -52,8 +65,13 @@ export const columns = [
               ]
             : [];
         }) ?? [];
-      return <BadgeCloud items={languages} />;
+      return (
+        <div className="fade-out-bottom h-full">
+          <BadgeCloud items={languages} />
+        </div>
+      );
     },
+    size: 150,
   }),
   columnHelper.accessor((row) => row.tagIds, {
     header: "Tags",
@@ -72,8 +90,13 @@ export const columns = [
               ]
             : [];
         }) ?? [];
-      return <BadgeCloud items={tags} />;
+      return (
+        <div className="fade-out-bottom h-full">
+          <BadgeCloud items={tags} />
+        </div>
+      );
     },
+    size: 200,
   }),
   columnHelper.accessor((row) => row.licenseId, {
     header: "License",
@@ -81,17 +104,20 @@ export const columns = [
       const meta = info.table.options.meta as FilterListsTableMeta;
       const license = meta.licenses.find((l) => l.id === info.getValue());
       return license ? (
-        <BadgeCloud
-          items={[
-            {
-              key: license.id,
-              value: license.name,
-              href: license.url ?? undefined,
-            },
-          ]}
-        />
+        <div className="fade-out-bottom h-full">
+          <BadgeCloud
+            items={[
+              {
+                key: license.id,
+                value: license.name,
+                href: license.url ?? undefined,
+              },
+            ]}
+          />
+        </div>
       ) : null;
     },
+    size: 150,
   }),
   columnHelper.accessor((row) => row.maintainerIds, {
     header: "Maintainers",
@@ -110,7 +136,12 @@ export const columns = [
               ]
             : [];
         }) ?? [];
-      return <BadgeCloud items={maintainers} />;
+      return (
+        <div className="fade-out-bottom h-full">
+          <BadgeCloud items={maintainers} />
+        </div>
+      );
     },
+    size: 200,
   }),
 ];
