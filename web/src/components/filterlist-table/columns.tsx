@@ -14,6 +14,27 @@ export const columns = [
   columnHelper.accessor((row) => row.description, {
     header: "Description",
   }),
+  columnHelper.accessor((row) => row.syntaxIds, {
+    header: "Syntaxes",
+    cell: (info) => {
+      const meta = info.table.options.meta as FilterListsTableMeta;
+      const syntaxes =
+        info.getValue()?.flatMap((id) => {
+          const syntax = meta.syntaxes.find((s) => s.id === id);
+          return syntax
+            ? [
+                {
+                  key: syntax.id,
+                  value: syntax.name,
+                  tooltip: syntax.description ?? undefined,
+                  href: syntax.url ?? undefined,
+                },
+              ]
+            : [];
+        }) ?? [];
+      return <BadgeCloud items={syntaxes} />;
+    },
+  }),
   columnHelper.accessor((row) => row.languageIds, {
     header: "Languages",
     cell: (info) => {

@@ -30,6 +30,7 @@ import { Tag } from "@/services/get-tags";
 export interface FilterListsTableMeta extends TableMeta<FilterList> {
   languages: readonly Language[];
   licenses: readonly License[];
+  syntaxes: readonly Syntax[];
 }
 
 type FilterListTableProps = {
@@ -48,6 +49,7 @@ export function FilterListTable({
   initialFilterLists,
   languages,
   licenses,
+  syntaxes,
 }: FilterListTableProps) {
   const [data, setData] = useState<FilterList[]>(initialFilterLists);
   const [loading, setLoading] = useState(true);
@@ -71,6 +73,7 @@ export function FilterListTable({
     meta: {
       languages,
       licenses,
+      syntaxes,
     },
   });
 
