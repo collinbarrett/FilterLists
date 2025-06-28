@@ -5,8 +5,6 @@ export type Syntax = {
   name: string;
   description: string | null;
   url: string | null;
-  // filterListIds: readonly number[]; // TODO: rm from the API?
-  // softwareIds: readonly number[]; // TODO: rm from the API?
 };
 
 export async function getSyntaxes(): Promise<Syntax[]> {
@@ -18,11 +16,5 @@ export async function getSyntaxes(): Promise<Syntax[]> {
     throw new Error(`Failed to fetch syntaxes: ${response.statusText}`);
   }
 
-  const data = await response.json();
-  return data.map((item: Record<string, unknown>) => ({
-    id: item.id as number,
-    name: item.name as string,
-    description: item.description as string | null,
-    url: item.url as string | null,
-  }));
+  return await response.json();
 }

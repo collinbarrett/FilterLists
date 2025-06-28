@@ -4,9 +4,8 @@ export type Maintainer = {
   id: number;
   name: string;
   url: string | null;
-  // emailAddress: string | null;
-  // twitterHandle: string | null;
-  // filterListIds: readonly number[]; // TODO: rm from the API?
+  emailAddress: string | null;
+  twitterHandle: string | null;
 };
 
 export async function getMaintainers(): Promise<Maintainer[]> {
@@ -18,10 +17,5 @@ export async function getMaintainers(): Promise<Maintainer[]> {
     throw new Error(`Failed to fetch maintainers: ${response.statusText}`);
   }
 
-  const data = await response.json();
-  return data.map((item: Record<string, unknown>) => ({
-    id: item.id as number,
-    name: item.name as string,
-    url: item.url as string | null,
-  }));
+  return await response.json();
 }
