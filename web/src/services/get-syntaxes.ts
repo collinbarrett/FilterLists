@@ -5,8 +5,8 @@ export type Syntax = {
   name: string | null;
   description: string | null;
   url: string | null;
-  filterListIds: number[] | null;
-  softwareIds: number[] | null;
+  filterListIds: readonly number[] | null;
+  softwareIds: readonly number[] | null;
 };
 
 export async function getSyntaxes(): Promise<Syntax[]> {
