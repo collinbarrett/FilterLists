@@ -2,9 +2,9 @@ import { API_BASE_URL, DEFAULT_REVALIDATE_SECS } from "./constants";
 
 export type Tag = {
   id: number;
-  name: string | null;
+  name: string;
   description: string | null;
-  filterListIds: readonly number[] | null;
+  // filterListIds: readonly number[]; // TODO: rm from the API?
 };
 
 export async function getTags(): Promise<Tag[]> {
@@ -16,5 +16,10 @@ export async function getTags(): Promise<Tag[]> {
     throw new Error(`Failed to fetch tags: ${response.statusText}`);
   }
 
-  return await response.json();
+  const data = await response.json();
+  return data.map((item: Record<string, unknown>) => ({
+    id: item.id as number,
+    name: item.name as string,
+    description: item.description as string | null,
+  }));
 }
