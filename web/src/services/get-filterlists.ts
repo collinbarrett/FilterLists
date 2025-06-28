@@ -8,7 +8,6 @@ export type FilterList = {
   syntaxIds: readonly number[];
   languageIds: readonly number[];
   tagIds: readonly number[];
-  // primaryViewUrl: string | null; // TODO: rm from the API?
   maintainerIds: readonly number[];
 };
 
@@ -18,18 +17,8 @@ export async function getFilterLists(): Promise<FilterList[]> {
   });
 
   if (!response.ok) {
-    throw new Error(`Failed to fetch filter lists: ${response.statusText}`);
+    throw new Error(`Failed to fetch FilterLists: ${response.statusText}`);
   }
 
-  const data = await response.json();
-  return data.map((item: Record<string, unknown>) => ({
-    id: item.id as number,
-    name: item.name as string,
-    description: item.description as string | null,
-    licenseId: item.licenseId as number,
-    syntaxIds: item.syntaxIds as readonly number[],
-    languageIds: item.languageIds as readonly number[],
-    tagIds: item.tagIds as readonly number[],
-    maintainerIds: item.maintainerIds as readonly number[],
-  }));
+  return await response.json();
 }
