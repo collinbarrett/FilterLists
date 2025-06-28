@@ -15,10 +15,7 @@ public static class GetLanguages
                 .Select(l => new Response(
                     l.Id,
                     l.Iso6391,
-                    l.Name,
-                    l.FilterListLanguages
-                        .OrderBy(fl => fl.FilterListId)
-                        .Select(fl => fl.FilterListId)
+                    l.Name
                 ))
                 .TagWith(nameof(GetLanguages))
                 .ToListAsync(ct);
@@ -28,6 +25,5 @@ public static class GetLanguages
     /// <param name="Id" example="37">The identifier.</param>
     /// <param name="Iso6391" example="en">The unique ISO 639-1 code.</param>
     /// <param name="Name" example="English">The unique ISO name.</param>
-    /// <param name="FilterListIds" example="[ 114, 141 ]">The identifiers of the FilterLists targeted by this Language.</param>
-    public sealed record Response(short Id, string Iso6391, string Name, IEnumerable<int> FilterListIds);
+    public sealed record Response(short Id, string Iso6391, string Name);
 }

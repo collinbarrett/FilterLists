@@ -16,10 +16,7 @@ public static class GetTags
                 (
                     t.Id,
                     t.Name,
-                    t.Description,
-                    t.FilterListTags
-                        .OrderBy(flt => flt.FilterListId)
-                        .Select(flt => flt.FilterListId)
+                    t.Description
                 ))
                 .TagWith(nameof(GetTags))
                 .ToListAsync(ct);
@@ -29,6 +26,5 @@ public static class GetTags
     /// <param name="Id" example="2">The identifier.</param>
     /// <param name="Name" example="ads">The unique name.</param>
     /// <param name="Description" example="Blocks advertisements">The description.</param>
-    /// <param name="FilterListIds" example="[ 1, 3, 6 ]">The identifiers of the FilterLists to which this Tag is applied.</param>
-    public sealed record Response(int Id, string Name, string? Description, IEnumerable<int> FilterListIds);
+    public sealed record Response(int Id, string Name, string? Description);
 }

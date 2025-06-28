@@ -18,10 +18,7 @@ public static class GetLicenses
                     l.Url,
                     l.PermitsModification,
                     l.PermitsDistribution,
-                    l.PermitsCommercialUse,
-                    l.FilterLists
-                        .OrderBy(f => f.Id)
-                        .Select(f => f.Id)
+                    l.PermitsCommercialUse
                 ))
                 .TagWith(nameof(GetLicenses))
                 .ToListAsync(ct);
@@ -34,13 +31,11 @@ public static class GetLicenses
     /// <param name="PermitsModification" example="false">If the License permits modification.</param>
     /// <param name="PermitsDistribution" example="false">If the License permits distribution.</param>
     /// <param name="PermitsCommercialUse" example="false">If the License permits commercial use.</param>
-    /// <param name="FilterListIds" example="[ 6, 31 ]">The identifiers of the FilterLists released under this License.</param>
     public sealed record Response(
         int Id,
         string Name,
         Uri? Url,
         bool PermitsModification,
         bool PermitsDistribution,
-        bool PermitsCommercialUse,
-        IEnumerable<int> FilterListIds);
+        bool PermitsCommercialUse);
 }

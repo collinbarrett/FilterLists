@@ -4,5 +4,4 @@ export interface Maintainer {
   url?: string;
   emailAddress?: string;
   twitterHandle?: string;
-  filterListIds: number[];
 }

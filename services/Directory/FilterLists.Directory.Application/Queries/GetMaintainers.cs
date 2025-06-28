@@ -17,10 +17,7 @@ public static class GetMaintainers
                     m.Name,
                     m.Url,
                     m.EmailAddress,
-                    m.TwitterHandle,
-                    m.FilterListMaintainers
-                        .OrderBy(fm => fm.FilterListId)
-                        .Select(fm => fm.FilterListId)
+                    m.TwitterHandle
                 ))
                 .TagWith(nameof(GetMaintainers))
                 .ToListAsync(ct);
@@ -32,12 +29,10 @@ public static class GetMaintainers
     /// <param name="Url" example="https://easylist.to/">The URL of the home page.</param>
     /// <param name="EmailAddress" example="null">The email address.</param>
     /// <param name="TwitterHandle" example="null">The Twitter handle.</param>
-    /// <param name="FilterListIds" example="[ 11, 13, 301 ]">The identifiers of the FilterLists maintained by this Maintainer.</param>
     public sealed record Response(
         int Id,
         string Name,
         Uri? Url,
         string? EmailAddress,
-        string? TwitterHandle,
-        IEnumerable<int> FilterListIds);
+        string? TwitterHandle);
 }
