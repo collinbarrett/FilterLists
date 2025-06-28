@@ -1,26 +1,53 @@
 "use client";
 
-import { createColumnHelper } from "@tanstack/react-table";
+import { createColumnHelper, Column } from "@tanstack/react-table";
 import { FilterListsTableMeta } from ".";
 import { BadgeCloud } from "@/components/badge-cloud";
 import { FilterList } from "@/services/get-filterlists";
+import { ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const SortableHeader = ({
+  column,
+  children,
+}: {
+  column: Column<FilterList, unknown>;
+  children: React.ReactNode;
+}) => {
+  return (
+    <Button variant="ghost" onClick={() => column.toggleSorting()}>
+      {children}
+      {column.getIsSorted() === "asc" ? (
+        <ArrowUp className="ml-2 h-4 w-4" />
+      ) : column.getIsSorted() === "desc" ? (
+        <ArrowDown className="ml-2 h-4 w-4" />
+      ) : (
+        <ArrowUpDown className="ml-2 h-4 w-4" />
+      )}
+    </Button>
+  );
+};
 
 const columnHelper = createColumnHelper<FilterList>();
 
 export const columns = [
   columnHelper.accessor((row) => row.name, {
-    header: "Name",
-    size: 200,
+    id: "name",
+    header: ({ column }) => (
+      <SortableHeader column={column}>Name</SortableHeader>
+    ),
     cell: (info) => (
       <div className="line-clamp-3 whitespace-normal">{info.getValue()}</div>
     ),
+    enableSorting: true,
+    size: 200,
   }),
   columnHelper.accessor((row) => row.description, {
     header: "Description",
-    size: 400,
     cell: (info) => (
       <div className="line-clamp-3 whitespace-normal">{info.getValue()}</div>
     ),
+    size: 400,
   }),
   columnHelper.accessor((row) => row.syntaxIds, {
     header: "Syntaxes",
@@ -117,6 +144,7 @@ export const columns = [
         </div>
       ) : null;
     },
+    enableSorting: true,
     size: 150,
   }),
   columnHelper.accessor((row) => row.maintainerIds, {

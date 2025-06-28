@@ -5,6 +5,7 @@ import {
   useReactTable,
   getCoreRowModel,
   getPaginationRowModel,
+  getSortedRowModel,
   flexRender,
   TableMeta,
 } from "@tanstack/react-table";
@@ -75,6 +76,7 @@ export function FilterListTable({
     columnResizeMode: "onChange",
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
+    getSortedRowModel: getSortedRowModel(),
     meta: {
       languages,
       licenses,
