@@ -2,12 +2,12 @@ import { API_BASE_URL, DEFAULT_REVALIDATE_SECS } from "./constants";
 
 export type License = {
   id: number;
-  name: string | null;
+  name: string;
   url: string | null;
   permitsModification: boolean;
   permitsDistribution: boolean;
   permitsCommercialUse: boolean;
-  filterListIds: number[] | null;
+  filterListIds: readonly number[] | null; // TODO: are these needed, or can we remove them from the API?
 };
 
 export async function getLicenses(): Promise<License[]> {
