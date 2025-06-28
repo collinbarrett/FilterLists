@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Table } from "@tanstack/react-table";
 import { FilterList } from "@/services/get-filterlists";
 
-interface FilterListTablePaginationProps {
+type FilterListTablePaginationProps = {
   table: Table<FilterList>;
-}
+};
 
 export function FilterListTablePagination({
   table,

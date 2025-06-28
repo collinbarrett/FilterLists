@@ -4,7 +4,7 @@ export type Language = {
   id: number;
   iso6391: string;
   name: string;
-  filterListIds: readonly number[]; // TODO: are these needed, or can we remove them from the API?
+  // filterListIds: readonly number[]; // TODO: rm from the API?
 };
 
 export async function getLanguages(): Promise<Language[]> {
@@ -16,5 +16,10 @@ export async function getLanguages(): Promise<Language[]> {
     throw new Error(`Failed to fetch languages: ${response.statusText}`);
   }
 
-  return await response.json();
+  const data = await response.json();
+  return data.map((item: Record<string, unknown>) => ({
+    id: item.id as number,
+    iso6391: item.iso6391 as string,
+    name: item.name as string,
+  }));
 }
