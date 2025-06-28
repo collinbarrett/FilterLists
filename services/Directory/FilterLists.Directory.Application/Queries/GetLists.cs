@@ -26,11 +26,6 @@ public static class GetLists
                     f.FilterListTags
                         .OrderBy(ft => ft.TagId)
                         .Select(ft => ft.TagId),
-                    f.ViewUrls
-                        .OrderBy(u => u.SegmentNumber)
-                        .ThenBy(u => u.Primariness)
-                        .Select(u => u.Url)
-                        .FirstOrDefault(),
                     f.FilterListMaintainers
                         .OrderBy(fm => fm.MaintainerId)
                         .Select(fm => fm.MaintainerId)
@@ -50,7 +45,6 @@ public static class GetLists
     /// <param name="SyntaxIds" example="[ 3 ]">The identifiers of the Syntaxes implemented by this FilterList.</param>
     /// <param name="LanguageIds" example="[ 37 ]">The identifiers of the Languages targeted by this FilterList.</param>
     /// <param name="TagIds" example="[ 2 ]">The identifiers of the Tags applied to this FilterList.</param>
-    /// <param name="PrimaryViewUrl" example="https://easylist.to/easylist/easylist.txt">The primary view URL.</param>
     /// <param name="MaintainerIds" example="[ 7 ]">The identifiers of the Maintainers of this FilterList.</param>
     public sealed record Response(
         int Id,
@@ -60,6 +54,5 @@ public static class GetLists
         IEnumerable<short> SyntaxIds,
         IEnumerable<short> LanguageIds,
         IEnumerable<int> TagIds,
-        Uri? PrimaryViewUrl,
         IEnumerable<int> MaintainerIds);
 }
