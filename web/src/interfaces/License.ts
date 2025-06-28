@@ -5,5 +5,4 @@ export interface License {
   permitsModification: boolean;
   permitsDistribution: boolean;
   permitsCommercialUse: boolean;
-  filterListIds: number[];
 }

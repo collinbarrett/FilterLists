@@ -3,6 +3,4 @@ export interface Syntax {
   name: string;
   description?: string;
   url?: string;
-  filterListIds: number[];
-  softwareIds: number[];
 }
