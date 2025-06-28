@@ -4,7 +4,7 @@ export type Language = {
   id: number;
   iso6391: string;
   name: string;
-  filterListIds: number[]; // TODO: are these needed, or can we remove them from the API?
+  filterListIds: readonly number[]; // TODO: are these needed, or can we remove them from the API?
 };
 
 export async function getLanguages(): Promise<Language[]> {

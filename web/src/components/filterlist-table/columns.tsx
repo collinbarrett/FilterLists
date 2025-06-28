@@ -1,9 +1,9 @@
 "use client";
 
-import { FilterList } from "@/services/get-filterlists";
 import { createColumnHelper } from "@tanstack/react-table";
 import { FilterListsTableMeta } from ".";
-import { LanguageBadges } from "./language-badges";
+import { BadgeCloud } from "@/components/badge-cloud";
+import { FilterList } from "@/services/get-filterlists";
 
 const columnHelper = createColumnHelper<FilterList>();
 
@@ -19,11 +19,19 @@ export const columns = [
     cell: (info) => {
       const meta = info.table.options.meta as FilterListsTableMeta;
       const languages =
-        info
-          .getValue()
-          ?.flatMap((id) => meta.languages.find((l) => l.id === id) || []) ??
-        [];
-      return <LanguageBadges languages={languages} />;
+        info.getValue()?.flatMap((id) => {
+          const language = meta.languages.find((l) => l.id === id);
+          return language
+            ? [
+                {
+                  key: language.id,
+                  value: language.iso6391,
+                  tooltip: language.name,
+                },
+              ]
+            : [];
+        }) ?? [];
+      return <BadgeCloud items={languages} />;
     },
   }),
   columnHelper.accessor((row) => row.licenseId, {
@@ -31,7 +39,17 @@ export const columns = [
     cell: (info) => {
       const meta = info.table.options.meta as FilterListsTableMeta;
       const license = meta.licenses.find((l) => l.id === info.getValue());
-      return license?.name;
+      return license ? (
+        <BadgeCloud
+          items={[
+            {
+              key: license.id,
+              value: license.name,
+              href: license.url ?? undefined,
+            },
+          ]}
+        />
+      ) : null;
     },
   }),
 ];

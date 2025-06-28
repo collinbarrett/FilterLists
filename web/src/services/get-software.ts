@@ -7,7 +7,7 @@ export type Software = {
   homeUrl: string | null;
   downloadUrl: string | null;
   supportsAbpUrlScheme: boolean;
-  syntaxIds: number[] | null;
+  syntaxIds: readonly number[] | null;
 };
 
 export async function getSoftware(): Promise<Software[]> {

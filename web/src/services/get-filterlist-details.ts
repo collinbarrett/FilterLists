@@ -11,10 +11,10 @@ export type FilterListDetails = {
   name: string;
   description: string | null;
   licenseId: number;
-  syntaxIds: number[] | null;
-  languageIds: number[] | null;
-  tagIds: number[] | null;
-  viewUrls: ViewUrl[] | null;
+  syntaxIds: readonly number[] | null;
+  languageIds: readonly number[] | null;
+  tagIds: readonly number[] | null;
+  viewUrls: readonly ViewUrl[] | null;
   homeUrl: string | null;
   onionUrl: string | null;
   policyUrl: string | null;
@@ -24,13 +24,13 @@ export type FilterListDetails = {
   chatUrl: string | null;
   emailAddress: string | null;
   donateUrl: string | null;
-  maintainerIds: number[] | null;
-  upstreamFilterListIds: number[] | null;
-  forkFilterListIds: number[] | null;
-  includedInFilterListIds: number[] | null;
-  includesFilterListIds: number[] | null;
-  dependencyFilterListIds: number[] | null;
-  dependentFilterListIds: number[] | null;
+  maintainerIds: readonly number[] | null;
+  upstreamFilterListIds: readonly number[] | null;
+  forkFilterListIds: readonly number[] | null;
+  includedInFilterListIds: readonly number[] | null;
+  includesFilterListIds: readonly number[] | null;
+  dependencyFilterListIds: readonly number[] | null;
+  dependentFilterListIds: readonly number[] | null;
 };
 
 export async function getFilterListDetails(

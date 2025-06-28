@@ -4,7 +4,7 @@ export type Tag = {
   id: number;
   name: string | null;
   description: string | null;
-  filterListIds: number[] | null;
+  filterListIds: readonly number[] | null;
 };
 
 export async function getTags(): Promise<Tag[]> {
