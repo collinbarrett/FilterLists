@@ -55,6 +55,26 @@ export const columns = [
       return <BadgeCloud items={languages} />;
     },
   }),
+  columnHelper.accessor((row) => row.tagIds, {
+    header: "Tags",
+    cell: (info) => {
+      const meta = info.table.options.meta as FilterListsTableMeta;
+      const tags =
+        info.getValue()?.flatMap((id) => {
+          const tag = meta.tags.find((s) => s.id === id);
+          return tag
+            ? [
+                {
+                  key: tag.id,
+                  value: tag.name,
+                  tooltip: tag.description ?? undefined,
+                },
+              ]
+            : [];
+        }) ?? [];
+      return <BadgeCloud items={tags} />;
+    },
+  }),
   columnHelper.accessor((row) => row.licenseId, {
     header: "License",
     cell: (info) => {

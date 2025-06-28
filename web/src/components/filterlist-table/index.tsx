@@ -31,6 +31,7 @@ export interface FilterListsTableMeta extends TableMeta<FilterList> {
   languages: readonly Language[];
   licenses: readonly License[];
   syntaxes: readonly Syntax[];
+  tags: readonly Tag[];
 }
 
 type FilterListTableProps = {
@@ -50,6 +51,7 @@ export function FilterListTable({
   languages,
   licenses,
   syntaxes,
+  tags,
 }: FilterListTableProps) {
   const [data, setData] = useState<FilterList[]>(initialFilterLists);
   const [loading, setLoading] = useState(true);
@@ -74,6 +76,7 @@ export function FilterListTable({
       languages,
       licenses,
       syntaxes,
+      tags,
     },
   });
 
