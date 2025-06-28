@@ -3,7 +3,6 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import Link from "next/link";
 import LogoLight from "./logo-filterlists-light.png";
 import logoDark from "./logo-filterlists-dark.png";
-import styles from "./logoHeader.module.css";
 
 export function Header() {
   return (
@@ -12,12 +11,12 @@ export function Header() {
         <div className="flex items-center">
           <Link href="/" aria-label="Go to homepage">
             <ThemeImage
-              className={styles.logoHeader}
+              className="sm:max-w-none sm:max-h-none max-w-[222px] max-h-[52px]"
               srcLight={LogoLight}
               srcDark={logoDark}
               alt="FilterLists logo"
-              width={429}
-              height={100}
+              width={320}
+              height={75}
               priority
               fetchPriority="high"
             />
