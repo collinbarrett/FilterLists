@@ -72,6 +72,7 @@ export function FilterListTable({
   const table = useReactTable({
     data,
     columns,
+    columnResizeMode: "onChange",
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     meta: {
@@ -85,16 +86,33 @@ export function FilterListTable({
 
   return (
     <div className="space-y-2">
-      <Table>
+      <Table
+        style={{
+          width: table.getCenterTotalSize(),
+          tableLayout: "fixed",
+        }}
+      >
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
-                <TableHead key={header.id}>
+                <TableHead
+                  key={header.id}
+                  colSpan={header.colSpan}
+                  style={{ width: header.getSize() }}
+                  className="relative"
+                >
                   {flexRender(
                     header.column.columnDef.header,
                     header.getContext(),
                   )}
+                  <div
+                    onMouseDown={header.getResizeHandler()}
+                    onTouchStart={header.getResizeHandler()}
+                    className={`resizer ${
+                      header.column.getIsResizing() ? "isResizing" : ""
+                    }`}
+                  />
                 </TableHead>
               ))}
             </TableRow>
@@ -102,10 +120,16 @@ export function FilterListTable({
         </TableHeader>
         <TableBody>
           {table.getRowModel().rows.map((row) => (
-            <TableRow key={row.id}>
+            <TableRow key={row.id} className="h-20">
               {row.getVisibleCells().map((cell) => (
-                <TableCell key={cell.id}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                <TableCell
+                  key={cell.id}
+                  style={{ width: cell.column.getSize() }}
+                  className="relative"
+                >
+                  <div className="h-[64px] overflow-hidden">
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </div>
                 </TableCell>
               ))}
             </TableRow>
