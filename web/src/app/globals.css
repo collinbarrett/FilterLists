@@ -120,3 +120,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fade-out-bottom {
+  -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+  mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+
+.resizer {
+  @apply absolute right-0 top-0 h-full w-[5px] cursor-col-resize select-none touch-none;
+}
+
+.resizer.isResizing {
+  @apply bg-blue-500 opacity-50;
+}
