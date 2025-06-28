@@ -5,11 +5,11 @@ export type FilterList = {
   name: string;
   description: string | null;
   licenseId: number;
-  syntaxIds: number[];
-  languageIds: number[];
-  tagIds: number[];
+  syntaxIds: readonly number[];
+  languageIds: readonly number[];
+  tagIds: readonly number[];
   primaryViewUrl: string | null;
-  maintainerIds: number[];
+  maintainerIds: readonly number[];
 };
 
 export async function getFilterLists(): Promise<FilterList[]> {
