@@ -2,12 +2,12 @@ import { API_BASE_URL, DEFAULT_REVALIDATE_SECS } from "./constants";
 
 export type Software = {
   id: number;
-  name: string | null;
+  name: string;
   description: string | null;
   homeUrl: string | null;
-  downloadUrl: string | null;
-  supportsAbpUrlScheme: boolean;
-  syntaxIds: readonly number[] | null;
+  // downloadUrl: string | null;
+  // supportsAbpUrlScheme: boolean;
+  // syntaxIds: readonly number[]; // TODO: rm from the API?
 };
 
 export async function getSoftware(): Promise<Software[]> {
@@ -19,5 +19,11 @@ export async function getSoftware(): Promise<Software[]> {
     throw new Error(`Failed to fetch software: ${response.statusText}`);
   }
 
-  return await response.json();
+  const data = await response.json();
+  return data.map((item: Record<string, unknown>) => ({
+    id: item.id as number,
+    name: item.name as string,
+    description: item.description as string | null,
+    homeUrl: item.homeUrl as string | null,
+  }));
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import {
   useReactTable,
   getCoreRowModel,
@@ -7,7 +8,6 @@ import {
   flexRender,
   TableMeta,
 } from "@tanstack/react-table";
-import { columns } from "./columns";
 import {
   Table,
   TableBody,
@@ -16,7 +16,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { useEffect, useState } from "react";
+import { columns } from "./columns";
 import { FilterListTablePagination } from "./pagination";
 import { FilterListTablePaginationSkeleton } from "./pagination-skeleton";
 import { FilterList, getFilterLists } from "@/services/get-filterlists";
@@ -32,7 +32,7 @@ export interface FilterListsTableMeta extends TableMeta<FilterList> {
   licenses: readonly License[];
 }
 
-interface FilterListTableProps {
+type FilterListTableProps = {
   columns: typeof columns;
   initialFilterLists: FilterList[];
   languages: readonly Language[];
@@ -41,7 +41,7 @@ interface FilterListTableProps {
   software: readonly Software[];
   syntaxes: readonly Syntax[];
   tags: readonly Tag[];
-}
+};
 
 export function FilterListTable({
   columns,

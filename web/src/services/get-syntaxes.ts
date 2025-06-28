@@ -2,11 +2,11 @@ import { API_BASE_URL, DEFAULT_REVALIDATE_SECS } from "./constants";
 
 export type Syntax = {
   id: number;
-  name: string | null;
+  name: string;
   description: string | null;
   url: string | null;
-  filterListIds: readonly number[] | null;
-  softwareIds: readonly number[] | null;
+  // filterListIds: readonly number[]; // TODO: rm from the API?
+  // softwareIds: readonly number[]; // TODO: rm from the API?
 };
 
 export async function getSyntaxes(): Promise<Syntax[]> {
@@ -18,5 +18,11 @@ export async function getSyntaxes(): Promise<Syntax[]> {
     throw new Error(`Failed to fetch syntaxes: ${response.statusText}`);
   }
 
-  return await response.json();
+  const data = await response.json();
+  return data.map((item: Record<string, unknown>) => ({
+    id: item.id as number,
+    name: item.name as string,
+    description: item.description as string | null,
+    url: item.url as string | null,
+  }));
 }

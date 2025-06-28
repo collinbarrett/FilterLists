@@ -8,16 +8,16 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-interface BadgeItem {
+type BadgeItem = {
   key: number;
   value: string;
   tooltip?: string;
   href?: string;
-}
+};
 
-interface BadgeCloudProps {
+type BadgeCloudProps = {
   items: readonly BadgeItem[];
-}
+};
 
 const BadgeElement = ({ item }: { item: BadgeItem }) => {
   const badge = <Badge variant="secondary">{item.value}</Badge>;

@@ -2,11 +2,11 @@ import { API_BASE_URL, DEFAULT_REVALIDATE_SECS } from "./constants";
 
 export type Maintainer = {
   id: number;
-  name: string | null;
+  name: string;
   url: string | null;
-  emailAddress: string | null;
-  twitterHandle: string | null;
-  filterListIds: readonly number[] | null;
+  // emailAddress: string | null;
+  // twitterHandle: string | null;
+  // filterListIds: readonly number[]; // TODO: rm from the API?
 };
 
 export async function getMaintainers(): Promise<Maintainer[]> {
@@ -18,5 +18,10 @@ export async function getMaintainers(): Promise<Maintainer[]> {
     throw new Error(`Failed to fetch maintainers: ${response.statusText}`);
   }
 
-  return await response.json();
+  const data = await response.json();
+  return data.map((item: Record<string, unknown>) => ({
+    id: item.id as number,
+    name: item.name as string,
+    url: item.url as string | null,
+  }));
 }

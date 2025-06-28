@@ -4,10 +4,10 @@ export type License = {
   id: number;
   name: string;
   url: string | null;
-  permitsModification: boolean;
-  permitsDistribution: boolean;
-  permitsCommercialUse: boolean;
-  filterListIds: readonly number[] | null; // TODO: are these needed, or can we remove them from the API?
+  // permitsModification: boolean;
+  // permitsDistribution: boolean;
+  // permitsCommercialUse: boolean;
+  // filterListIds: readonly number[]; // TODO: rm from the API?
 };
 
 export async function getLicenses(): Promise<License[]> {
@@ -19,5 +19,10 @@ export async function getLicenses(): Promise<License[]> {
     throw new Error(`Failed to fetch licenses: ${response.statusText}`);
   }
 
-  return await response.json();
+  const data = await response.json();
+  return data.map((item: Record<string, unknown>) => ({
+    id: item.id as number,
+    name: item.name as string,
+    url: item.url as string | null,
+  }));
 }
