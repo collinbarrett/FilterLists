@@ -93,4 +93,24 @@ export const columns = [
       ) : null;
     },
   }),
+  columnHelper.accessor((row) => row.maintainerIds, {
+    header: "Maintainers",
+    cell: (info) => {
+      const meta = info.table.options.meta as FilterListsTableMeta;
+      const maintainers =
+        info.getValue()?.flatMap((id) => {
+          const maintainer = meta.maintainers.find((s) => s.id === id);
+          return maintainer
+            ? [
+                {
+                  key: maintainer.id,
+                  value: maintainer.name,
+                  href: maintainer.url ?? undefined,
+                },
+              ]
+            : [];
+        }) ?? [];
+      return <BadgeCloud items={maintainers} />;
+    },
+  }),
 ];

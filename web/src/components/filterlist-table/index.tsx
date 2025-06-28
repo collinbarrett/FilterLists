@@ -30,6 +30,7 @@ import { Tag } from "@/services/get-tags";
 export interface FilterListsTableMeta extends TableMeta<FilterList> {
   languages: readonly Language[];
   licenses: readonly License[];
+  maintainers: readonly Maintainer[];
   syntaxes: readonly Syntax[];
   tags: readonly Tag[];
 }
@@ -50,6 +51,7 @@ export function FilterListTable({
   initialFilterLists,
   languages,
   licenses,
+  maintainers,
   syntaxes,
   tags,
 }: FilterListTableProps) {
@@ -75,6 +77,7 @@ export function FilterListTable({
     meta: {
       languages,
       licenses,
+      maintainers,
       syntaxes,
       tags,
     },
