@@ -1,0 +1,55 @@
+name: "Web - Update Browserslist"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 21 * * 5" # Fridays at 4pm Memphis (America/Chicago)
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/web-browserslist-updater.yml"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-browserslist:
+    strategy:
+      matrix:
+        branch: [main, next]
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.branch }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Browserslist DB update
+        run: npx update-browserslist-db@latest
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet || echo "changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create Pull Request
+        if: steps.git-check.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: npx update-browserslist-db@latest"
+          branch: "chore/browserslist-update-${{ github.run_id }}-${{ matrix.branch }}"
+          base: ${{ matrix.branch }}
+          delete-branch: true
+          title: "chore: update browserslist db (${{ matrix.branch }})"
