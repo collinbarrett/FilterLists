@@ -5,9 +5,9 @@ export type Software = {
   name: string;
   description: string | null;
   homeUrl: string | null;
-  // downloadUrl: string | null;
-  // supportsAbpUrlScheme: boolean;
-  // syntaxIds: readonly number[]; // TODO: rm from the API?
+  downloadUrl: string | null;
+  supportsAbpUrlScheme: boolean;
+  syntaxIds: readonly number[];
 };
 
 export async function getSoftware(): Promise<Software[]> {
@@ -19,11 +19,5 @@ export async function getSoftware(): Promise<Software[]> {
     throw new Error(`Failed to fetch software: ${response.statusText}`);
   }
 
-  const data = await response.json();
-  return data.map((item: Record<string, unknown>) => ({
-    id: item.id as number,
-    name: item.name as string,
-    description: item.description as string | null,
-    homeUrl: item.homeUrl as string | null,
-  }));
+  return await response.json();
 }
