@@ -6,7 +6,7 @@ export type Maintainer = {
   url: string | null;
   emailAddress: string | null;
   twitterHandle: string | null;
-  filterListIds: number[] | null;
+  filterListIds: readonly number[] | null;
 };
 
 export async function getMaintainers(): Promise<Maintainer[]> {
