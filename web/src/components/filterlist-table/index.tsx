@@ -28,19 +28,19 @@ import { Syntax } from "@/services/get-syntaxes";
 import { Tag } from "@/services/get-tags";
 
 export interface FilterListsTableMeta extends TableMeta<FilterList> {
-  languages: Language[];
-  licenses: License[];
+  languages: readonly Language[];
+  licenses: readonly License[];
 }
 
 interface FilterListTableProps {
   columns: typeof columns;
   initialFilterLists: FilterList[];
-  languages: Language[];
-  licenses: License[];
-  maintainers: Maintainer[];
-  software: Software[];
-  syntaxes: Syntax[];
-  tags: Tag[];
+  languages: readonly Language[];
+  licenses: readonly License[];
+  maintainers: readonly Maintainer[];
+  software: readonly Software[];
+  syntaxes: readonly Syntax[];
+  tags: readonly Tag[];
 }
 
 export function FilterListTable({
