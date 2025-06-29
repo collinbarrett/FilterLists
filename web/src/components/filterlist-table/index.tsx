@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import {
-  useReactTable,
+  flexRender,
   getCoreRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  flexRender,
   TableMeta,
+  useReactTable,
 } from "@tanstack/react-table";
 import {
   Table,
@@ -17,9 +17,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { columns } from "./columns";
-import { FilterListTablePagination } from "./pagination";
-import { FilterListTablePaginationSkeleton } from "./pagination-skeleton";
+import { useCalculatePageSize } from "./use-calculate-page-size";
 import { FilterList, getFilterLists } from "@/services/get-filterlists";
 import { Language } from "@/services/get-languages";
 import { License } from "@/services/get-licenses";
@@ -27,6 +25,9 @@ import { Maintainer } from "@/services/get-maintainers";
 import { Software } from "@/services/get-software";
 import { Syntax } from "@/services/get-syntaxes";
 import { Tag } from "@/services/get-tags";
+import { columns } from "./columns";
+import { FilterListTablePagination } from "./pagination";
+import { FilterListTablePaginationSkeleton } from "./pagination-skeleton";
 
 export interface FilterListsTableMeta extends TableMeta<FilterList> {
   languages: readonly Language[];
@@ -68,7 +69,7 @@ export function FilterListTable({
         setLoading(false);
       }
     })();
-  }, [initialFilterLists.length]);
+  }, []);
 
   const table = useReactTable({
     data,
@@ -85,6 +86,8 @@ export function FilterListTable({
       tags,
     },
   });
+
+  useCalculatePageSize(table.setPageSize);
 
   return (
     <div className="space-y-2">
@@ -122,14 +125,14 @@ export function FilterListTable({
         </TableHeader>
         <TableBody>
           {table.getRowModel().rows.map((row) => (
-            <TableRow key={row.id} className="h-20">
+            <TableRow key={row.id} className="h-16">
               {row.getVisibleCells().map((cell) => (
                 <TableCell
                   key={cell.id}
                   style={{ width: cell.column.getSize() }}
                   className="relative"
                 >
-                  <div className="h-[64px] overflow-hidden">
+                  <div className="h-[42px] overflow-hidden">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </div>
                 </TableCell>

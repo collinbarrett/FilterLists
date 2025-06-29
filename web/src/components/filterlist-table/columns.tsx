@@ -37,7 +37,7 @@ export const columns = [
       <SortableHeader column={column}>Name</SortableHeader>
     ),
     cell: (info) => (
-      <div className="line-clamp-3 whitespace-normal">{info.getValue()}</div>
+      <div className="line-clamp-2 whitespace-normal overflow-hidden text-ellipsis">{info.getValue()}</div>
     ),
     enableSorting: true,
     size: 200,
@@ -45,7 +45,7 @@ export const columns = [
   columnHelper.accessor((row) => row.description, {
     header: "Description",
     cell: (info) => (
-      <div className="line-clamp-3 whitespace-normal">{info.getValue()}</div>
+      <div className="line-clamp-2 whitespace-normal overflow-hidden text-ellipsis">{info.getValue()}</div>
     ),
     size: 400,
   }),
