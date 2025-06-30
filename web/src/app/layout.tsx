@@ -17,8 +17,10 @@ const geistMono = Geist_Mono({
 
 export default function RootLayout({
   children,
+  sheet,
 }: Readonly<{
   children: React.ReactNode;
+  sheet: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -37,6 +39,7 @@ export default function RootLayout({
           >
             <Header />
             <div className="flex-1 flex flex-col">{children}</div>
+            {sheet}
             <Footer />
           </div>
         </ThemeProvider>
