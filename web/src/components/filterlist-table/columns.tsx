@@ -6,6 +6,7 @@ import { BadgeCloud } from "@/components/badge-cloud";
 import { FilterList } from "@/services/get-filterlists";
 import { ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const SortableHeader = ({
   column,
@@ -171,5 +172,15 @@ export const columns = [
       );
     },
     size: 200,
+  }),
+  columnHelper.display({
+    id: "actions",
+    cell: ({ row }) => {
+      return (
+        <Link href={`/lists/${row.original.id}`}>
+          <Button variant="ghost">View Details</Button>
+        </Link>
+      );
+    },
   }),
 ];
