@@ -6,6 +6,7 @@ import { BadgeCloud } from "@/components/badge-cloud";
 import { FilterList } from "@/services/get-filterlists";
 import { ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const SortableHeader = ({
   column,
@@ -37,7 +38,9 @@ export const columns = [
       <SortableHeader column={column}>Name</SortableHeader>
     ),
     cell: (info) => (
-      <div className="line-clamp-2 whitespace-normal overflow-hidden text-ellipsis">{info.getValue()}</div>
+      <div className="line-clamp-2 whitespace-normal overflow-hidden text-ellipsis">
+        {info.getValue()}
+      </div>
     ),
     enableSorting: true,
     size: 200,
@@ -45,7 +48,9 @@ export const columns = [
   columnHelper.accessor((row) => row.description, {
     header: "Description",
     cell: (info) => (
-      <div className="line-clamp-2 whitespace-normal overflow-hidden text-ellipsis">{info.getValue()}</div>
+      <div className="line-clamp-2 whitespace-normal overflow-hidden text-ellipsis">
+        {info.getValue()}
+      </div>
     ),
     size: 400,
   }),
@@ -171,5 +176,15 @@ export const columns = [
       );
     },
     size: 200,
+  }),
+  columnHelper.display({
+    id: "actions",
+    cell: ({ row }) => {
+      return (
+        <Link href={`/lists/${row.original.id}`}>
+          <Button variant="ghost">View Details</Button>
+        </Link>
+      );
+    },
   }),
 ];
