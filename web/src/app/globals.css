@@ -127,7 +127,7 @@
 }
 
 .resizer {
-  @apply absolute right-0 top-0 h-full w-[5px] cursor-col-resize select-none touch-none;
+  @apply absolute right-0 top-0 h-full w-1.5 cursor-col-resize select-none touch-none;
 }
 
 .resizer.isResizing {

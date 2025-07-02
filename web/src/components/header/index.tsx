@@ -11,7 +11,7 @@ export function Header() {
         <div className="flex items-center">
           <Link href="/" aria-label="Go to homepage">
             <ThemeImage
-              className="sm:max-w-none sm:max-h-none max-w-[222px] max-h-[52px]"
+              className="sm:max-w-none sm:max-h-none max-w-56 max-h-14"
               srcLight={LogoLight}
               srcDark={logoDark}
               alt="FilterLists logo"
