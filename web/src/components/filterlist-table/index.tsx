@@ -132,7 +132,7 @@ export function FilterListTable({
                   style={{ width: cell.column.getSize() }}
                   className="relative"
                 >
-                  <div className="h-[42px] overflow-hidden">
+                  <div className="h-11 overflow-hidden">
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </div>
                 </TableCell>
