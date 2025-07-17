@@ -17,7 +17,7 @@
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.5.1",
     "http-proxy-middleware": "^3.0.5",
-    "less": "^4.3.0",
+    "less": "^4.4.0",
     "less-loader": "^12.3.0",
     "prettier": "^3.3.2",
     "react": "^19.1.0",
