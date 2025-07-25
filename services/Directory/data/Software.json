@@ -153,13 +153,6 @@
     "supportsAbpUrlScheme": false
   },
   {
-    "downloadUrl": "https://github.com/henrypp/hostsmgr/releases",
-    "homeUrl": "https://www.henrypp.org/product/hostsmgr",
-    "id": 27,
-    "name": "hostsmgr",
-    "supportsAbpUrlScheme": false
-  },
-  {
     "downloadUrl": "https://zenz-solutions.de/personaldnsfilter/",
     "homeUrl": "https://zenz-solutions.de/personaldnsfilter/",
     "id": 28,
