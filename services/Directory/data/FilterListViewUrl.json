@@ -16835,15 +16835,15 @@
     "url": "https://filters.adtidy.org/extension/ublock/filters/23.txt"
   },
   {
-    "filterListId": 1706,
+    "filterListId": 2740,
     "id": 3072,
-    "primariness": 2,
+    "primariness": 1,
     "url": "https://raw.githubusercontent.com/KodoPengin/GameIndustry-hosts-Template/master/Gaming-Full-Template/hosts"
   },
   {
-    "filterListId": 1706,
+    "filterListId": 2741,
     "id": 3073,
-    "primariness": 3,
+    "primariness": 1,
     "url": "https://raw.githubusercontent.com/KodoPengin/GameIndustry-hosts-Template/master/Android-Mini-Template/hosts"
   }
 ]
