@@ -874,7 +874,7 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
-    "description": "Filter that enables removing of the ads from websites in Spanish.",
+    "description": "Blocks ads on websites in Spanish and Portuguese.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 158,
@@ -13908,7 +13908,7 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
-    "description": "Filter that enables removing of the ads from websites in Spanish.",
+    "description": "Blocks ads on websites in Spanish and Portuguese.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 2202,
