@@ -193,3 +193,4 @@ API containerized with multi-stage build. Database runs in Docker volume with pe
 - **Read-only runtime**: Database modifications only via migrations
 - **Aspire orchestration**: Always start development via `FilterLists.AppHost`
 - **Unique naming**: All FilterList names must be unique and in title case
+- **No build artifacts**: Never commit build artifacts like `dotnet-install.sh`, `node_modules`, `dist`, or other generated files
