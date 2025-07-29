@@ -196,3 +196,4 @@ API containerized with multi-stage build. Database runs in Docker volume with pe
 - **Aspire orchestration**: Always start development via `FilterLists.AppHost`
 - **Unique naming**: All FilterList names must be unique and in title case
 - **No build artifacts**: Never commit build artifacts like `dotnet-install.sh`, `node_modules`, `dist`, or other generated files
+- **⚠️ JSON File Location**: NEVER create or modify JSON data files in the repository root directory. All JSON data files MUST be in `services/Directory/data/` only. The root directory should only contain `global.json` (a .NET SDK configuration file)
