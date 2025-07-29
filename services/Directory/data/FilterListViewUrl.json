@@ -16881,5 +16881,23 @@
     "id": 3079,
     "primariness": 1,
     "url": "https://netmountains.de/feeds/ip_blacklist.txt"
+  },
+  {
+    "filterListId": 2748,
+    "id": 3080,
+    "primariness": 1,
+    "url": "https://www.threatsourcing.com/ipall.txt"
+  },
+  {
+    "filterListId": 2749,
+    "id": 3081,
+    "primariness": 1,
+    "url": "https://www.threatsourcing.com/dnall.txt"
+  },
+  {
+    "filterListId": 2750,
+    "id": 3082,
+    "primariness": 1,
+    "url": "https://www.threatsourcing.com/ppall.txt"
   }
 ]
