@@ -4359,7 +4359,7 @@
     "filterListId": 728,
     "id": 760,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt"
+    "url": "https://raw.githubusercontent.com/realodix/AdBlockID/main/dist/adblockid.adfl.txt"
   },
   {
     "filterListId": 729,
@@ -13227,7 +13227,7 @@
     "filterListId": 2289,
     "id": 2434,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/realodix/AdBlockID-Adult/master/AdBlockID_Adult.txt"
+    "url": "https://raw.githubusercontent.com/realodix/AdBlockID/main/dist/adblockid_plus.adfl.txt"
   },
   {
     "filterListId": 2290,
