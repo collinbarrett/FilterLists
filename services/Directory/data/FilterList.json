@@ -17951,5 +17951,45 @@
     "issuesUrl": "https://github.com/KodoPengin/GameIndustry-hosts-Template/issues",
     "licenseId": 9,
     "name": "GameIndustry.eu Hosts Android Mini Template"
+  },
+  {
+    "description": "Machine-readable blocklist of websites belonging to entities listed under the United States Specially Designated Nationals List (SDN List). Contains domains of sanctioned entities.",
+    "homeUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites",
+    "id": 2742,
+    "issuesUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites/issues",
+    "licenseId": 10,
+    "name": "United States SDN List (Domains)"
+  },
+  {
+    "description": "Machine-readable blocklist of websites belonging to entities listed under the United States Specially Designated Nationals List (SDN List). Contains domains in Adblock Plus format.",
+    "homeUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites",
+    "id": 2743,
+    "issuesUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites/issues",
+    "licenseId": 10,
+    "name": "United States SDN List (Adblock Plus)"
+  },
+  {
+    "description": "Machine-readable blocklist of websites belonging to entities listed under the United States Specially Designated Nationals List (SDN List). Contains domains in uBlock Origin format.",
+    "homeUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites",
+    "id": 2744,
+    "issuesUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites/issues",
+    "licenseId": 10,
+    "name": "United States SDN List (uBlock Origin)"
+  },
+  {
+    "description": "Machine-readable blocklist of websites belonging to entities listed under the United States Specially Designated Nationals List (SDN List). Contains domains in uBlock Origin list format.",
+    "homeUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites",
+    "id": 2745,
+    "issuesUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites/issues",
+    "licenseId": 10,
+    "name": "United States SDN List (uBlock Origin List)"
+  },
+  {
+    "description": "Machine-readable blocklist of websites belonging to entities listed under the United States Specially Designated Nationals List (SDN List). Contains domains in Pi-hole format.",
+    "homeUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites",
+    "id": 2746,
+    "issuesUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites/issues",
+    "licenseId": 10,
+    "name": "United States SDN List (Pi-hole)"
   }
 ]
