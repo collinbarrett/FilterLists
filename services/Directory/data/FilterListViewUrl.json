@@ -17353,5 +17353,215 @@
     "id": 3157,
     "primariness": 3,
     "url": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Pro/dnsmasq.conf"
+  },
+  {
+    "filterListId": 2771,
+    "id": 3158,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads"
+  },
+  {
+    "filterListId": 2772,
+    "id": 3159,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Adult"
+  },
+  {
+    "filterListId": 2773,
+    "id": 3160,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Apple"
+  },
+  {
+    "filterListId": 2774,
+    "id": 3161,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Bloat"
+  },
+  {
+    "filterListId": 2775,
+    "id": 3162,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Chat"
+  },
+  {
+    "filterListId": 2776,
+    "id": 3163,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Cryptocurrency"
+  },
+  {
+    "filterListId": 2777,
+    "id": 3164,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Dating"
+  },
+  {
+    "filterListId": 2778,
+    "id": 3165,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Dynamic"
+  },
+  {
+    "filterListId": 2779,
+    "id": 3166,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Free"
+  },
+  {
+    "filterListId": 2780,
+    "id": 3167,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Junk"
+  },
+  {
+    "filterListId": 2781,
+    "id": 3168,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware"
+  },
+  {
+    "filterListId": 2782,
+    "id": 3169,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Marketing"
+  },
+  {
+    "filterListId": 2783,
+    "id": 3170,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Marketing-Email"
+  },
+  {
+    "filterListId": 2784,
+    "id": 3171,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Microsoft"
+  },
+  {
+    "filterListId": 2785,
+    "id": 3172,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Remote"
+  },
+  {
+    "filterListId": 2786,
+    "id": 3173,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Risk"
+  },
+  {
+    "filterListId": 2787,
+    "id": 3174,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Scam"
+  },
+  {
+    "filterListId": 2788,
+    "id": 3175,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Shock"
+  },
+  {
+    "filterListId": 2789,
+    "id": 3176,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Top_Level"
+  },
+  {
+    "filterListId": 2790,
+    "id": 3177,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tracking"
+  },
+  {
+    "filterListId": 2791,
+    "id": 3178,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tunnels"
+  },
+  {
+    "filterListId": 2792,
+    "id": 3179,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Typo"
+  },
+  {
+    "filterListId": 2793,
+    "id": 3180,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/UrlShortener"
+  },
+  {
+    "filterListId": 2794,
+    "id": 3181,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Whitelists/Whitelist"
+  },
+  {
+    "filterListId": 2795,
+    "id": 3182,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/Extreme"
+  },
+  {
+    "filterListId": 2796,
+    "id": 3183,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/High"
+  },
+  {
+    "filterListId": 2797,
+    "id": 3184,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/Low"
+  },
+  {
+    "filterListId": 2798,
+    "id": 3185,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/BruteForce/Medium"
+  },
+  {
+    "filterListId": 2799,
+    "id": 3186,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Malware/Browser"
+  },
+  {
+    "filterListId": 2800,
+    "id": 3187,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Malware/Hackers"
+  },
+  {
+    "filterListId": 2801,
+    "id": 3188,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Malware/Hackers_Old"
+  },
+  {
+    "filterListId": 2802,
+    "id": 3189,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Malware/Hosting"
+  },
+  {
+    "filterListId": 2803,
+    "id": 3190,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Other/Ads"
+  },
+  {
+    "filterListId": 2804,
+    "id": 3191,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Other/Trackers"
+  },
+  {
+    "filterListId": 2805,
+    "id": 3192,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Other/Tunnel"
   }
 ]
