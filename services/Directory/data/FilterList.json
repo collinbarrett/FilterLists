@@ -18046,5 +18046,158 @@
     "id": 2753,
     "licenseId": 35,
     "name": "1Hosts Xtra (Adblockers)"
+  },
+  {
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2754,
+    "licenseId": 35,
+    "name": "1Hosts Lite (Wildcards for dnscrypt-proxy)"
+  },
+  {
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2755,
+    "licenseId": 35,
+    "name": "1Hosts Lite (Response Policy Zone)"
+  },
+  {
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2756,
+    "licenseId": 35,
+    "name": "1Hosts Lite (Unbound)"
+  },
+  {
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2757,
+    "licenseId": 35,
+    "name": "1Hosts Lite (Windows)"
+  },
+  {
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2758,
+    "licenseId": 35,
+    "name": "1Hosts Lite (Little Snitch)"
+  },
+  {
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2759,
+    "licenseId": 35,
+    "name": "1Hosts Pro (Wildcards for dnscrypt-proxy)"
+  },
+  {
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2760,
+    "licenseId": 35,
+    "name": "1Hosts Pro (Response Policy Zone)"
+  },
+  {
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2761,
+    "licenseId": 35,
+    "name": "1Hosts Pro (Unbound)"
+  },
+  {
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2762,
+    "licenseId": 35,
+    "name": "1Hosts Pro (Windows)"
+  },
+  {
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2763,
+    "licenseId": 35,
+    "name": "1Hosts Pro (Little Snitch)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2764,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (Domains with wildcards)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2765,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (dnsmasq)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2766,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (Wildcards for dnscrypt-proxy)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2767,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (Response Policy Zone)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2768,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (Unbound)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2769,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (Windows)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2770,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (Little Snitch)"
   }
 ]
