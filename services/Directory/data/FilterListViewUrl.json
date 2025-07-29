@@ -16839,5 +16839,11 @@
     "id": 3069,
     "primariness": 1,
     "url": "https://bloquebollore.codeberg.page/desarmons-bollore-et-l-extreme-droite.txt"
+  },
+  {
+    "filterListId": 2738,
+    "id": 3070,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/AdCrunchSoftware/Filters/refs/heads/main/AdCrunchforABP.txt"
   }
 ]

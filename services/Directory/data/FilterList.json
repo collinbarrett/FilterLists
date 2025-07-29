@@ -17940,5 +17940,13 @@
     "issuesUrl": "https://codeberg.org/BloqueBollore/pages/issues",
     "licenseId": 43,
     "name": "French far-right blocklist"
+  },
+  {
+    "description": "AdCrunch's filter lists for different content blockers - anti-anti-adblock filters for Adblock Plus and AdBlock",
+    "homeUrl": "https://github.com/AdCrunchSoftware/Filters",
+    "id": 2738,
+    "issuesUrl": "https://github.com/AdCrunchSoftware/Filters/issues",
+    "licenseId": 4,
+    "name": "AdCrunch for Adblock Plus"
   }
 ]
