@@ -1028,5 +1028,10 @@
     "id": 199,
     "name": "BloqueBollore",
     "url": "https://codeberg.org/BloqueBollore/"
+  },
+  {
+    "id": 200,
+    "name": "AdCrunchSoftware",
+    "url": "https://github.com/AdCrunchSoftware"
   }
 ]
