@@ -4191,7 +4191,8 @@
     "filterListId": 694,
     "id": 731,
     "primariness": 1,
-    "url": "https://hosts.ubuntu101.co.za/domains.list"
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains0.list"
   },
   {
     "filterListId": 696,
@@ -16899,5 +16900,26 @@
     "id": 3082,
     "primariness": 1,
     "url": "https://www.threatsourcing.com/ppall.txt"
+  },
+  {
+    "filterListId": 694,
+    "id": 3083,
+    "primariness": 1,
+    "segmentNumber": 2,
+    "url": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains1.list"
+  },
+  {
+    "filterListId": 694,
+    "id": 3084,
+    "primariness": 1,
+    "segmentNumber": 3,
+    "url": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains2.list"
+  },
+  {
+    "filterListId": 694,
+    "id": 3085,
+    "primariness": 1,
+    "segmentNumber": 4,
+    "url": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains3.list"
   }
 ]
