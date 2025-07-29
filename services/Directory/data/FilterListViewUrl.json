@@ -9975,7 +9975,7 @@
     "filterListId": 1706,
     "id": 1766,
     "primariness": 1,
-    "url": "https://www.gameindustry.eu/files/hosts.txt"
+    "url": "https://raw.githubusercontent.com/KodoPengin/GameIndustry-hosts-Template/master/Main-Template/hosts"
   },
   {
     "filterListId": 1707,
@@ -16833,5 +16833,17 @@
     "id": 3071,
     "primariness": 1,
     "url": "https://filters.adtidy.org/extension/ublock/filters/23.txt"
+  },
+  {
+    "filterListId": 1706,
+    "id": 3072,
+    "primariness": 2,
+    "url": "https://raw.githubusercontent.com/KodoPengin/GameIndustry-hosts-Template/master/Gaming-Full-Template/hosts"
+  },
+  {
+    "filterListId": 1706,
+    "id": 3073,
+    "primariness": 3,
+    "url": "https://raw.githubusercontent.com/KodoPengin/GameIndustry-hosts-Template/master/Android-Mini-Template/hosts"
   }
 ]
