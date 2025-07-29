@@ -573,7 +573,7 @@
     "filterListId": 72,
     "id": 96,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hufilter/hufilter/master/hufilter.txt"
+    "url": "https://cdn.jsdelivr.net/gh/hufilter/hufilter@gh-pages/hufilter.txt"
   },
   {
     "filterListId": 72,
@@ -13935,7 +13935,7 @@
     "filterListId": 2392,
     "id": 2570,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hufilter/hufilter/master/hufilter-dns.txt"
+    "url": "https://cdn.jsdelivr.net/gh/hufilter/hufilter@gh-pages/hufilter-dns.txt"
   },
   {
     "filterListId": 2393,
