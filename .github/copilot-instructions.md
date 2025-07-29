@@ -84,6 +84,51 @@ Always run from `services/Directory/` with these specific parameters:
 dotnet ef migrations add <MigrationName> -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api
 ```
 
+## Data Change Requests via GitHub Issues
+
+When assigned to GitHub Issues requesting data updates, follow this comprehensive approach:
+
+### Issue Analysis & Research
+
+1. **Parse the request**: Identify specific changes mentioned in the issue
+2. **Research thoroughly**: Use web search to gather comprehensive information about the filter list(s)
+3. **Consult documentation**: Reference the FilterLists wiki for all supported properties: https://github.com/collinbarrett/FilterLists/wiki
+
+### Data Model Population Strategy
+
+**Objective**: Fill out as much of the data model as possible, not just the minimum requested changes.
+
+**Research Sources**:
+
+- Filter list's official website/repository
+- GitHub repository metadata (if applicable)
+- Documentation and README files
+- License files and terms of service
+- Maintainer information and contact details
+
+**Key Properties to Research**:
+
+- **Basic Info**: Name, description, home page URL
+- **Technical Details**: Syntax type, view URLs, download URLs
+- **Relationships**: Maintainers, languages, tags, licenses
+- **Dependencies**: Upstream forks, merges, software compatibility
+- **Metadata**: Publication date, update frequency, target audience
+
+### Implementation Process
+
+1. **JSON Updates**: Modify relevant files in `services/Directory/data/`
+2. **Relationship Mapping**: Update junction tables (FilterListMaintainer, FilterListTag, etc.)
+3. **Data Validation**: Ensure unique names (title case), valid relationships
+4. **Migration Generation**: Follow standard EF migration process
+5. **Testing**: Verify changes don't break existing functionality
+
+### Quality Standards
+
+- **Completeness**: Research and populate all discoverable properties
+- **Accuracy**: Verify information from authoritative sources
+- **Consistency**: Follow existing naming conventions and data patterns
+- **Documentation**: Provide clear commit messages explaining changes
+
 ## Domain Model Key Relationships
 
 - **FilterList**: Core entity with many-to-many relationships via junction tables
