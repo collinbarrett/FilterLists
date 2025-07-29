@@ -1966,13 +1966,13 @@
     "name": "NoCoin Hosts"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 309,
     "licenseId": 35,
-    "name": "1Hosts Complete"
+    "name": "1Hosts Lite"
   },
   {
     "description": "A generic filter for adblockers that keeps annoying header and footer bars from filling up your screen.",
@@ -4467,31 +4467,31 @@
     "name": "NLblock"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 810,
     "licenseId": 35,
-    "name": "1Hosts Complete (Domains)"
+    "name": "1Hosts Lite (Domains)"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 811,
     "licenseId": 35,
-    "name": "1Hosts Mini"
+    "name": "1Hosts Lite"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 812,
     "licenseId": 35,
-    "name": "1Hosts Mini (Domains)"
+    "name": "1Hosts Lite (Domains)"
   },
   {
     "description": "I use an ad blocker not because I hate ads, but because it makes the Internet so much more safe and less annoying. Most advertising is horrible and annoying, but there are exceptions. However, ad blocking lists like EasyList are dedicated to blocking all ads. The only maintained \"Acceptable Ads\" list is by Eyeo, Inc., which basically takes bribes to whitelist ads. I wanted to start an Acceptable Ads list that was of the people, by the people and for the people.",
@@ -10644,19 +10644,19 @@
     "name": "Soteria nou's domain list - Widgets"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 1734,
     "licenseId": 35,
     "name": "1Hosts Pro"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 1735,
     "licenseId": 35,
     "name": "1Hosts Pro (Domains)"
@@ -12341,28 +12341,28 @@
     "name": "Twitter: Pure Reading Experience"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 1953,
     "licenseId": 35,
-    "name": "1Hosts Complete (Adblockers)"
+    "name": "1Hosts Lite (Adblockers)"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 1954,
     "licenseId": 35,
-    "name": "1Hosts Mini (Adblockers)"
+    "name": "1Hosts Lite (Adblockers)"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 1955,
     "licenseId": 35,
     "name": "1Hosts Pro (Adblockers)"
@@ -12705,28 +12705,28 @@
     "name": "Dan Pollock's Hosts (IPv4 + IPv6)"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 2001,
     "licenseId": 35,
-    "name": "1Hosts Complete (dnsmasq)"
+    "name": "1Hosts Lite (dnsmasq)"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 2002,
     "licenseId": 35,
-    "name": "1Hosts Mini (dnsmasq)"
+    "name": "1Hosts Lite (dnsmasq)"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 2003,
     "licenseId": 35,
     "name": "1Hosts Pro (dnsmasq)"
@@ -14238,28 +14238,28 @@
     "name": "Watchlist Internet"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 2279,
     "licenseId": 35,
-    "name": "1Hosts Complete (Domains with wildcards)"
+    "name": "1Hosts Lite (Domains with wildcards)"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 2280,
     "licenseId": 35,
-    "name": "1Hosts Mini (Domains with wildcards)"
+    "name": "1Hosts Lite (Domains with wildcards)"
   },
   {
-    "description": "A merged hosts file from a variety of other lists.",
+    "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
     "id": 2281,
     "licenseId": 35,
     "name": "1Hosts Pro (Domains with wildcards)"
@@ -18019,5 +18019,32 @@
     "id": 2750,
     "licenseId": 3,
     "name": "Threat Sourcing HTTP Proxy Mitigation (Experimental)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2751,
+    "licenseId": 35,
+    "name": "1Hosts Xtra"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2752,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (Domains)"
+  },
+  {
+    "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
+    "emailAddress": "badmojr@gmail.com",
+    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
+    "homeUrl": "https://github.com/badmojr/1Hosts",
+    "id": 2753,
+    "licenseId": 35,
+    "name": "1Hosts Xtra (Adblockers)"
   }
 ]
