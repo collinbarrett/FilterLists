@@ -16827,5 +16827,11 @@
     "id": 3070,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/AdCrunchSoftware/Filters/refs/heads/main/AdCrunchforABP.txt"
+  },
+  {
+    "filterListId": 2739,
+    "id": 3071,
+    "primariness": 1,
+    "url": "https://filters.adtidy.org/extension/ublock/filters/23.txt"
   }
 ]
