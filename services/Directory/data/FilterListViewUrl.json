@@ -11916,24 +11916,6 @@
     "url": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt"
   },
   {
-    "filterListId": 2038,
-    "id": 2130,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/dnswarden/blocklist/master/blacklist-formats/hosts"
-  },
-  {
-    "filterListId": 2039,
-    "id": 2131,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/dnswarden/blocklist/master/blacklist-formats/hostnames"
-  },
-  {
-    "filterListId": 2040,
-    "id": 2132,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/dnswarden/blocklist/master/blacklist-formats/rpz"
-  },
-  {
     "filterListId": 2041,
     "id": 2133,
     "primariness": 1,

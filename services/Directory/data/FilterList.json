@@ -12890,30 +12890,6 @@
     "name": "notracking - Adblocker domains"
   },
   {
-    "description": "Blocklist mainly used for dns servers at dnswarden",
-    "homeUrl": "https://github.com/dnswarden/blocklist/",
-    "id": 2038,
-    "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
-    "licenseId": 5,
-    "name": "dnswarden Adblocking (Hosts)"
-  },
-  {
-    "description": "Blocklist mainly used for dns servers at dnswarden",
-    "homeUrl": "https://github.com/dnswarden/blocklist/",
-    "id": 2039,
-    "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
-    "licenseId": 5,
-    "name": "dnswarden Adblocking (Domains)"
-  },
-  {
-    "description": "Blocklist mainly used for dns servers at dnswarden",
-    "homeUrl": "https://github.com/dnswarden/blocklist/",
-    "id": 2040,
-    "issuesUrl": "https://github.com/dnswarden/blocklist/issues",
-    "licenseId": 5,
-    "name": "dnswarden Adblocking (RPZ)"
-  },
-  {
     "description": "This is a slimmer version of \"Dandelion Sprout's Nordic Filters\", intended for users of software tools that doesn't support adblocker syntaxes. It chiefly targets scams and malware on Norwegian or Danish sites, as well as some advert and tracking servers.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
