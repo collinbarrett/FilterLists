@@ -17998,5 +17998,26 @@
     "id": 2747,
     "licenseId": 3,
     "name": "NETMOUNTAINS IP Blocklist"
+  },
+  {
+    "description": "Threat Sourcing is a collaborative project to collect and study threats as they present themselves on the Internet. This list contains IP addresses associated with malicious threats.",
+    "homeUrl": "https://www.threatsourcing.com",
+    "id": 2748,
+    "licenseId": 3,
+    "name": "Threat Sourcing IP Addresses"
+  },
+  {
+    "description": "Threat Sourcing is a collaborative project to collect and study threats as they present themselves on the Internet. This list contains URLs associated with malicious threats.",
+    "homeUrl": "https://www.threatsourcing.com",
+    "id": 2749,
+    "licenseId": 3,
+    "name": "Threat Sourcing URLs"
+  },
+  {
+    "description": "Threat Sourcing is a collaborative project to collect and study threats as they present themselves on the Internet. This is a highly experimental list of URL strings for potential mitigation on HTTP proxy.",
+    "homeUrl": "https://www.threatsourcing.com",
+    "id": 2750,
+    "licenseId": 3,
+    "name": "Threat Sourcing HTTP Proxy Mitigation (Experimental)"
   }
 ]
