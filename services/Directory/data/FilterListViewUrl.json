@@ -16845,5 +16845,35 @@
     "id": 3073,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/KodoPengin/GameIndustry-hosts-Template/master/Android-Mini-Template/hosts"
+  },
+  {
+    "filterListId": 2742,
+    "id": 3074,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/United-States-SDN-List-Websites/main/urls.txt"
+  },
+  {
+    "filterListId": 2743,
+    "id": 3075,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/United-States-SDN-List-Websites/main/urls-ABP.txt"
+  },
+  {
+    "filterListId": 2744,
+    "id": 3076,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/United-States-SDN-List-Websites/main/urls-UBO.txt"
+  },
+  {
+    "filterListId": 2745,
+    "id": 3077,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/United-States-SDN-List-Websites/main/urls-UBL.txt"
+  },
+  {
+    "filterListId": 2746,
+    "id": 3078,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/United-States-SDN-List-Websites/main/urls-pihole.txt"
   }
 ]
