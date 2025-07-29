@@ -10439,12 +10439,12 @@
     "name": "Synology's own"
   },
   {
-    "description": "Hosts file for blocking spyware, ads, analytics and tracking on German websites and domains.",
+    "description": "Main template hosts file for blocking spyware, ads, analytics and tracking on German websites and domains.",
     "homeUrl": "https://hosts.gameindustry.eu/",
     "id": 1706,
     "issuesUrl": "https://github.com/KodoPengin/GameIndustry-hosts-Template/issues",
     "licenseId": 9,
-    "name": "GameIndustry.eu Hosts"
+    "name": "GameIndustry.eu Hosts Main Template"
   },
   {
     "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
@@ -17935,5 +17935,21 @@
     "licenseId": 12,
     "name": "AdGuard Ukrainian Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "Gaming-focused hosts file for blocking spyware, ads, analytics and tracking with comprehensive gaming industry coverage.",
+    "homeUrl": "https://hosts.gameindustry.eu/",
+    "id": 2740,
+    "issuesUrl": "https://github.com/KodoPengin/GameIndustry-hosts-Template/issues",
+    "licenseId": 9,
+    "name": "GameIndustry.eu Hosts Gaming Full Template"
+  },
+  {
+    "description": "Minimalist hosts file optimized for Android and mobile devices, blocking essential spyware, ads, and tracking.",
+    "homeUrl": "https://hosts.gameindustry.eu/",
+    "id": 2741,
+    "issuesUrl": "https://github.com/KodoPengin/GameIndustry-hosts-Template/issues",
+    "licenseId": 9,
+    "name": "GameIndustry.eu Hosts Android Mini Template"
   }
 ]

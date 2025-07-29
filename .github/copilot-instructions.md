@@ -142,6 +142,19 @@ When assigned to GitHub Issues requesting data updates, follow this comprehensiv
 
 Complex relationships: Fork (upstream/downstream), Merge (includes/included), Dependent (dependencies).
 
+### FilterListViewUrl Usage Guidelines
+
+**Multiple FilterListViewUrls for a single FilterList are intended ONLY for**:
+- **Mirrors**: Multiple hosting locations of the identical list content
+- **Multiple Parts**: When the same list is broken into separate files/parts
+
+**Different "flavors" or variants of a list should get separate FilterList entries**:
+- Each variant/template should be its own FilterList entity
+- Each FilterList should have a single primary ViewUrl (primariness: 1)
+- Examples: Main template vs Gaming template vs Mobile template
+
+**Reference**: https://github.com/collinbarrett/FilterLists/wiki/FilterListViewUrl
+
 ## API Conventions
 
 ### Minimal API Endpoints
