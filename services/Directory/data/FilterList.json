@@ -10440,10 +10440,11 @@
   },
   {
     "description": "Hosts file for blocking spyware, ads, analytics and tracking on German websites and domains.",
-    "homeUrl": "https://gameindustry.de/",
+    "homeUrl": "https://hosts.gameindustry.eu/",
     "id": 1706,
+    "issuesUrl": "https://github.com/KodoPengin/GameIndustry-hosts-Template/issues",
     "licenseId": 9,
-    "name": "GameIndustryDE Hosts"
+    "name": "GameIndustry.eu Hosts"
   },
   {
     "description": "Categorized hosts files for DNS based content blocking. This is meant to be used as a regional component of a more comprehensive hosts list, such as Steven Black's hosts.",
