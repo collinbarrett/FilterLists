@@ -2541,7 +2541,7 @@
     "filterListId": 309,
     "id": 447,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/hosts.txt"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/hosts.txt"
   },
   {
     "filterListId": 311,
@@ -4654,19 +4654,19 @@
     "filterListId": 810,
     "id": 840,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/domains.txt"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/domains.txt"
   },
   {
     "filterListId": 811,
     "id": 841,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/hosts.txt"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/hosts.txt"
   },
   {
     "filterListId": 812,
     "id": 842,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/domains.txt"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/domains.txt"
   },
   {
     "filterListId": 813,
@@ -11362,13 +11362,13 @@
     "filterListId": 1953,
     "id": 2026,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/adblock.txt"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt"
   },
   {
     "filterListId": 1954,
     "id": 2027,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/adblock.txt"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt"
   },
   {
     "filterListId": 1955,
@@ -11752,13 +11752,13 @@
     "filterListId": 2001,
     "id": 2097,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/dnsmasq.conf"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/dnsmasq.conf"
   },
   {
     "filterListId": 2002,
     "id": 2098,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/dnsmasq.conf"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/dnsmasq.conf"
   },
   {
     "filterListId": 2003,
@@ -13144,25 +13144,25 @@
     "filterListId": 2279,
     "id": 2419,
     "primariness": 1,
-    "url": "https://badmojr.github.io/1Hosts/complete/wildcards.txt"
+    "url": "https://badmojr.github.io/1Hosts/Lite/wildcards.txt"
   },
   {
     "filterListId": 2279,
     "id": 2420,
     "primariness": 2,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/complete/wildcards.txt"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/wildcards.txt"
   },
   {
     "filterListId": 2280,
     "id": 2421,
     "primariness": 1,
-    "url": "https://badmojr.github.io/1Hosts/mini/wildcards.txt"
+    "url": "https://badmojr.github.io/1Hosts/Lite/wildcards.txt"
   },
   {
     "filterListId": 2280,
     "id": 2422,
     "primariness": 2,
-    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/mini/wildcards.txt"
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/wildcards.txt"
   },
   {
     "filterListId": 2281,
@@ -16921,5 +16921,95 @@
     "primariness": 1,
     "segmentNumber": 4,
     "url": "https://raw.githubusercontent.com/mitchellkrogza/Ultimate.Hosts.Blacklist/master/domains/domains3.list"
+  },
+  {
+    "filterListId": 309,
+    "id": 3086,
+    "primariness": 2,
+    "url": "https://badmojr.github.io/1Hosts/Lite/hosts.txt"
+  },
+  {
+    "filterListId": 309,
+    "id": 3087,
+    "primariness": 3,
+    "url": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Lite/hosts.txt"
+  },
+  {
+    "filterListId": 810,
+    "id": 3088,
+    "primariness": 2,
+    "url": "https://badmojr.github.io/1Hosts/Lite/domains.txt"
+  },
+  {
+    "filterListId": 810,
+    "id": 3089,
+    "primariness": 3,
+    "url": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Lite/domains.txt"
+  },
+  {
+    "filterListId": 1734,
+    "id": 3090,
+    "primariness": 2,
+    "url": "https://badmojr.github.io/1Hosts/Pro/hosts.txt"
+  },
+  {
+    "filterListId": 1734,
+    "id": 3091,
+    "primariness": 3,
+    "url": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Pro/hosts.txt"
+  },
+  {
+    "filterListId": 2751,
+    "id": 3092,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Xtra/hosts.txt"
+  },
+  {
+    "filterListId": 2751,
+    "id": 3093,
+    "primariness": 2,
+    "url": "https://badmojr.github.io/1Hosts/Xtra/hosts.txt"
+  },
+  {
+    "filterListId": 2751,
+    "id": 3094,
+    "primariness": 3,
+    "url": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Xtra/hosts.txt"
+  },
+  {
+    "filterListId": 2752,
+    "id": 3095,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Xtra/domains.txt"
+  },
+  {
+    "filterListId": 2752,
+    "id": 3096,
+    "primariness": 2,
+    "url": "https://badmojr.github.io/1Hosts/Xtra/domains.txt"
+  },
+  {
+    "filterListId": 2752,
+    "id": 3097,
+    "primariness": 3,
+    "url": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Xtra/domains.txt"
+  },
+  {
+    "filterListId": 2753,
+    "id": 3098,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Xtra/adblock.txt"
+  },
+  {
+    "filterListId": 2753,
+    "id": 3099,
+    "primariness": 2,
+    "url": "https://badmojr.github.io/1Hosts/Xtra/adblock.txt"
+  },
+  {
+    "filterListId": 2753,
+    "id": 3100,
+    "primariness": 3,
+    "url": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Xtra/adblock.txt"
   }
 ]
