@@ -73,8 +73,10 @@ npm start
 
 1. Edit JSON files in `services/Directory/data/`
 2. Run `./lint.sh` to sort/format JSON consistently
-3. Generate migration: `dotnet ef migrations add <Name> -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api`
+3. **⚠️ ALWAYS REQUIRED**: Generate migration: `dotnet ef migrations add <Name> -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api`
 4. Migration auto-applies on startup via `MigrationService`
+
+**Note**: EF Core migrations are REQUIRED for ALL data changes. The database schema is managed by migrations, not by the JSON files alone. Forgetting this step will result in data inconsistencies between the JSON seed data and the database.
 
 ### Adding EF Migrations
 
@@ -119,7 +121,7 @@ When assigned to GitHub Issues requesting data updates, follow this comprehensiv
 1. **JSON Updates**: Modify relevant files in `services/Directory/data/`
 2. **Relationship Mapping**: Update junction tables (FilterListMaintainer, FilterListTag, etc.)
 3. **Data Validation**: Ensure unique names (title case), valid relationships
-4. **Migration Generation**: Follow standard EF migration process
+4. **⚠️ REQUIRED: EF Migration Generation**: After ANY data changes, always generate an EF Core migration to capture the changes in the database schema
 5. **Testing**: Verify changes don't break existing functionality
 
 ### Quality Standards
