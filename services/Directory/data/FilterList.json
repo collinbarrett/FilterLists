@@ -17924,5 +17924,15 @@
     "issuesUrl": "https://github.com/AdCrunchSoftware/Filters/issues",
     "licenseId": 4,
     "name": "AdCrunch for Adblock Plus"
+  },
+  {
+    "description": "Filter that enables ad blocking on websites in Ukrainian language.",
+    "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "id": 2739,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Ukrainian Filter",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   }
 ]
