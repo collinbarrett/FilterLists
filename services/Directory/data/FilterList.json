@@ -17991,5 +17991,12 @@
     "issuesUrl": "https://github.com/elliotwutingfeng/United-States-SDN-List-Websites/issues",
     "licenseId": 10,
     "name": "United States SDN List (Pi-hole)"
+  },
+  {
+    "description": "Automatically updated IP blocklist maintained by NETMOUNTAINS® Group GmbH, a German IT security company providing threat intelligence and security services.",
+    "homeUrl": "https://netmountains.de",
+    "id": 2747,
+    "licenseId": 3,
+    "name": "NETMOUNTAINS IP Blocklist"
   }
 ]
