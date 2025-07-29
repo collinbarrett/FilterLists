@@ -1048,5 +1048,10 @@
     "id": 203,
     "name": "Threat Sourcing",
     "url": "https://www.threatsourcing.com"
+  },
+  {
+    "id": 204,
+    "name": "ShadowWhisperer",
+    "url": "https://github.com/ShadowWhisperer"
   }
 ]

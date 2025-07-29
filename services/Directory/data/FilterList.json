@@ -18199,5 +18199,285 @@
     "id": 2770,
     "licenseId": 35,
     "name": "1Hosts Xtra (Little Snitch)"
+  },
+  {
+    "description": "DNS blocklist for blocking advertisements from various sources",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2771,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Ads"
+  },
+  {
+    "description": "DNS blocklist for blocking adult content and NSFW websites",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2772,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Adult"
+  },
+  {
+    "description": "DNS blocklist for blocking Apple telemetry and tracking domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2773,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Apple"
+  },
+  {
+    "description": "DNS blocklist for blocking bloatware and unnecessary software connections",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2774,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Bloat"
+  },
+  {
+    "description": "DNS blocklist for blocking chat and messaging platform trackers",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2775,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Chat"
+  },
+  {
+    "description": "DNS blocklist for blocking cryptocurrency mining and related services",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2776,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Cryptocurrency"
+  },
+  {
+    "description": "DNS blocklist for blocking dating websites and services",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2777,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Dating"
+  },
+  {
+    "description": "DNS blocklist for blocking dynamic DNS and frequently changing domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2778,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Dynamic"
+  },
+  {
+    "description": "DNS blocklist for blocking free hosting and potentially suspicious domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2779,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Free"
+  },
+  {
+    "description": "DNS blocklist for blocking junk mail and spam-related domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2780,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Junk"
+  },
+  {
+    "description": "DNS blocklist for blocking malware hosting and distribution sites",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2781,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Malware"
+  },
+  {
+    "description": "DNS blocklist for blocking marketing and promotional domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2782,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Marketing"
+  },
+  {
+    "description": "DNS blocklist for blocking email marketing and newsletter domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2783,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Marketing-Email"
+  },
+  {
+    "description": "DNS blocklist for blocking Microsoft telemetry and tracking domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2784,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Microsoft"
+  },
+  {
+    "description": "DNS blocklist for blocking remote access and control software",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2785,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Remote"
+  },
+  {
+    "description": "DNS blocklist for blocking risky and potentially harmful domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2786,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Risk"
+  },
+  {
+    "description": "DNS blocklist for blocking scam and fraudulent websites",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2787,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Scam"
+  },
+  {
+    "description": "DNS blocklist for blocking shock sites and disturbing content",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2788,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Shock"
+  },
+  {
+    "description": "DNS blocklist for blocking top-level domains associated with abuse",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2789,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Top_Level"
+  },
+  {
+    "description": "DNS blocklist for blocking tracking and analytics domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2790,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Tracking"
+  },
+  {
+    "description": "DNS blocklist for blocking VPN tunnels and proxy services",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2791,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Tunnels"
+  },
+  {
+    "description": "DNS blocklist for blocking typosquatting and misspelled domains",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2792,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Typo"
+  },
+  {
+    "description": "DNS blocklist for blocking URL shortening services",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2793,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - UrlShortener"
+  },
+  {
+    "description": "DNS allowlist for popular cloud services and CDNs",
+    "homeUrl": "https://github.com/ShadowWhisperer/BlockLists",
+    "id": 2794,
+    "issuesUrl": "https://github.com/ShadowWhisperer/BlockLists/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Whitelist"
+  },
+  {
+    "description": "IP blocklist for extreme brute force attack sources from honeypot data",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2795,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - BruteForce Extreme"
+  },
+  {
+    "description": "IP blocklist for high-level brute force attack sources from honeypot data",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2796,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - BruteForce High"
+  },
+  {
+    "description": "IP blocklist for low-level brute force attack sources from honeypot data",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2797,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - BruteForce Low"
+  },
+  {
+    "description": "IP blocklist for medium-level brute force attack sources from honeypot data",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2798,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - BruteForce Medium"
+  },
+  {
+    "description": "IP blocklist for malware-infected browsers and compromised systems",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2799,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Malware Browser"
+  },
+  {
+    "description": "IP blocklist for known hacker and attacker IP addresses",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2800,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Malware Hackers"
+  },
+  {
+    "description": "IP blocklist for old hacker and attacker IP addresses (archived)",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2801,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Malware Hackers_Old"
+  },
+  {
+    "description": "IP blocklist for malicious hosting providers and bulletproof hosting",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2802,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Malware Hosting"
+  },
+  {
+    "description": "IP blocklist for advertising and promotional IP addresses",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2803,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Other Ads"
+  },
+  {
+    "description": "IP blocklist for tracking and analytics IP addresses",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2804,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Other Trackers"
+  },
+  {
+    "description": "IP blocklist for tunnel and proxy service IP addresses",
+    "homeUrl": "https://github.com/ShadowWhisperer/IPs",
+    "id": 2805,
+    "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
+    "licenseId": 7,
+    "name": "ShadowWhisperer - Other Tunnel"
   }
 ]
