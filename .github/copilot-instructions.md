@@ -268,6 +268,7 @@ API containerized with multi-stage build. Database runs in Docker volume with pe
 - **Aspire orchestration**: Always start development via `FilterLists.AppHost`
 - **Unique naming**: All FilterList names must be unique and in title case
 - **⚠️ FilterList Name Uniqueness**: The database has a unique constraint on FilterList.Name. Any duplicate names will cause migration failures. When adding new FilterLists or modifying existing ones, ensure all names are unique. If differentiation is needed for similar lists (e.g., different hosting sources), use descriptive suffixes like "(GitHub Only)", "(GitHub Pages Primary)", etc.
+- **⚠️ FilterListViewUrl Unique Constraint**: The database has a unique constraint on (FilterListId, SegmentNumber, Primariness) in the FilterListViewUrl table. When adding multiple ViewUrls for the same FilterList, ensure that the combination of segmentNumber (defaults to 1) and primariness (defaults to 1) is unique for each FilterListId. Duplicate combinations will cause migration failures during database seeding.
 - **⚠️ Required Foreign Keys**: All foreign key references (licenseId, maintainerId, etc.) must exist in their respective tables
 - **⚠️ URL Field Validation**: All URL fields are validated as proper URIs and must include protocol (http/https)
 - **No build artifacts**: Never commit build artifacts like `dotnet-install.sh`, `node_modules`, `dist`, or other generated files
