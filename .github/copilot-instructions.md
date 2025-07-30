@@ -208,5 +208,6 @@ API containerized with multi-stage build. Database runs in Docker volume with pe
 - **Read-only runtime**: Database modifications only via migrations
 - **Aspire orchestration**: Always start development via `FilterLists.AppHost`
 - **Unique naming**: All FilterList names must be unique and in title case
+- **⚠️ FilterList Name Uniqueness**: The database has a unique constraint on FilterList.Name. Any duplicate names will cause migration failures. When adding new FilterLists or modifying existing ones, ensure all names are unique. If differentiation is needed for similar lists (e.g., different hosting sources), use descriptive suffixes like "(GitHub Only)", "(GitHub Pages Primary)", etc.
 - **No build artifacts**: Never commit build artifacts like `dotnet-install.sh`, `node_modules`, `dist`, or other generated files
 - **⚠️ JSON File Location**: NEVER create or modify JSON data files in the repository root directory. All JSON data files MUST be in `services/Directory/data/` only. The root directory should only contain `global.json` (a .NET SDK configuration file)
