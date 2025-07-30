@@ -17569,5 +17569,35 @@
     "id": 3199,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/thedoggybrad/supersecurityfilterlist/main/list.txt"
+  },
+  {
+    "filterListId": 2813,
+    "id": 3200,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/AntiTLDAbuserFilterlist/main/list.txt"
+  },
+  {
+    "filterListId": 2813,
+    "id": 3201,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/thedoggybrad/AntiTLDAbuserFilterlist@main/list.txt"
+  },
+  {
+    "filterListId": 2813,
+    "id": 3202,
+    "primariness": 3,
+    "url": "https://cdn.statically.io/gh/thedoggybrad/AntiTLDAbuserFilterlist/main/list.txt"
+  },
+  {
+    "filterListId": 2813,
+    "id": 3203,
+    "primariness": 4,
+    "url": "https://raw.githack.com/thedoggybrad/AntiTLDAbuserFilterlist/main/list.txt"
+  },
+  {
+    "filterListId": 2813,
+    "id": 3204,
+    "primariness": 5,
+    "url": "https://gitloaf.com/cdn/thedoggybrad/AntiTLDAbuserFilterlist/main/list.txt"
   }
 ]
