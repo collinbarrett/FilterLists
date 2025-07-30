@@ -23,16 +23,14 @@ web/                         # React frontend
 infra/cloudflare-workers/    # CDN edge workers
 ```
 
-## Key Patterns & Conventions
+## Core Architecture Patterns
 
-### Data-Driven Architecture
-
-- **Seed Data**: All domain data lives in JSON files under `services/Directory/data/`
-- **Migrations**: EF Core migrations are auto-generated from JSON changes via `lint.sh`
-- **Read-Only DbContext**: `QueryDbContext` throws on save operations - data changes only via migrations
+### Data-Driven Design
+- **JSON-First**: All domain data lives in JSON files under `services/Directory/data/`
+- **Auto-Migration**: EF Core migrations auto-generated from JSON changes via `lint.sh`
+- **Read-Only Runtime**: `QueryDbContext` throws on save operations - data changes only via migrations
 
 ### Query Pattern (No CQRS/MediatR)
-
 ```csharp
 public static class GetLists
 {
@@ -42,16 +40,6 @@ public static class GetLists
             await ctx.FilterLists.Select(f => new Response(...)).ToListAsync(ct);
     }
     public sealed record Response(...);
-}
-```
-
-### Entity Configuration Pattern
-
-```csharp
-internal sealed class FilterListTypeConfiguration : IEntityTypeConfiguration<FilterList>
-{
-    public void Configure(EntityTypeBuilder<FilterList> builder) =>
-        builder.HasDataJsonFile<FilterList>(); // Loads from JSON
 }
 ```
 
@@ -201,6 +189,77 @@ API containerized with multi-stage build. Database runs in Docker volume with pe
 - Ant Design `Table` component for main list display
 - Tag clouds for maintainers, languages, syntaxes
 
+## Data Model Field Requirements & Constraints
+
+### FilterList.json Field Constraints
+- **id**: Required, unique integer primary key
+- **name**: Required, unique, max 256 characters, title case formatting required
+- **description**: Optional, text description of the filter list
+- **homeUrl**: Optional, max 512 characters, main project website
+- **onionUrl**: Optional, max 512 characters, Tor hidden service URL
+- **policyUrl**: Optional, max 512 characters, privacy/usage policy
+- **submissionUrl**: Optional, max 512 characters, URL for submitting issues/reports
+- **issuesUrl**: Optional, max 512 characters, issue tracker URL
+- **forumUrl**: Optional, max 512 characters, discussion forum URL
+- **chatUrl**: Optional, max 512 characters, chat/IRC/Discord URL
+- **emailAddress**: Optional, max 256 characters, contact email
+- **donateUrl**: Optional, max 512 characters, donation/support URL
+- **licenseId**: Required, foreign key to License.json, defaults to 5 if not specified
+
+### FilterListViewUrl.json Field Constraints
+- **id**: Required, unique integer primary key
+- **filterListId**: Required, foreign key to FilterList.json
+- **url**: Required, max 512 characters, actual download URL for the list
+- **segmentNumber**: Optional, defaults to 1, for multi-part lists
+- **primariness**: Optional, defaults to 1, lower numbers = higher priority mirrors
+- **Unique constraint**: (filterListId, segmentNumber, primariness) must be unique
+
+### Maintainer.json Field Constraints
+- **id**: Required, unique integer primary key
+- **name**: Required, unique, max 64 characters
+- **url**: Optional, max 512 characters, maintainer's website/profile
+- **emailAddress**: Optional, max 256 characters, contact email
+- **twitterHandle**: Optional, max 32 characters, Twitter username without @
+
+### License.json Field Constraints
+- **id**: Required, unique integer primary key
+- **name**: Required, unique, max 64 characters
+- **url**: Optional, max 512 characters, license text URL
+- **permitsModification**: Required boolean, defaults to false
+- **permitsDistribution**: Required boolean, defaults to false
+- **permitsCommercialUse**: Required boolean, defaults to false
+
+### Language.json Field Constraints
+- **id**: Required, unique integer primary key
+- **iso6391**: Required, unique, exactly 2 characters, ISO 639-1 language code
+- **name**: Required, unique, max 64 characters, language name in English
+
+### Tag.json Field Constraints
+- **id**: Required, unique integer primary key
+- **name**: Required, unique, max 32 characters
+- **description**: Optional, text description of the tag's purpose
+
+### Syntax.json Field Constraints
+- **id**: Required, unique integer primary key
+- **name**: Required, unique, max 64 characters
+- **url**: Optional, max 512 characters, documentation/specification URL
+
+### Software.json Field Constraints
+- **id**: Required, unique integer primary key
+- **name**: Required, unique, max 64 characters
+- **homeUrl**: Optional, max 512 characters, software's main website
+- **downloadUrl**: Optional, max 512 characters, download page URL
+- **supportsAbpUrlScheme**: Required boolean, defaults to false
+
+### Junction Table Requirements
+- **FilterListMaintainer.json**: Requires valid filterListId and maintainerId
+- **FilterListLanguage.json**: Requires valid filterListId and languageId
+- **FilterListTag.json**: Requires valid filterListId and tagId
+- **FilterListSyntax.json**: Requires valid filterListId and syntaxId
+- **Fork.json**: Requires valid upstreamFilterListId and forkFilterListId
+- **Merge.json**: Requires valid includesFilterListId and includedInFilterListId
+- **Dependent.json**: Requires valid dependencyFilterListId and dependentFilterListId
+
 ## Critical Notes
 
 - **No MediatR**: Use direct query pattern instead
@@ -209,5 +268,7 @@ API containerized with multi-stage build. Database runs in Docker volume with pe
 - **Aspire orchestration**: Always start development via `FilterLists.AppHost`
 - **Unique naming**: All FilterList names must be unique and in title case
 - **⚠️ FilterList Name Uniqueness**: The database has a unique constraint on FilterList.Name. Any duplicate names will cause migration failures. When adding new FilterLists or modifying existing ones, ensure all names are unique. If differentiation is needed for similar lists (e.g., different hosting sources), use descriptive suffixes like "(GitHub Only)", "(GitHub Pages Primary)", etc.
+- **⚠️ Required Foreign Keys**: All foreign key references (licenseId, maintainerId, etc.) must exist in their respective tables
+- **⚠️ URL Field Validation**: All URL fields are validated as proper URIs and must include protocol (http/https)
 - **No build artifacts**: Never commit build artifacts like `dotnet-install.sh`, `node_modules`, `dist`, or other generated files
 - **⚠️ JSON File Location**: NEVER create or modify JSON data files in the repository root directory. All JSON data files MUST be in `services/Directory/data/` only. The root directory should only contain `global.json` (a .NET SDK configuration file)
