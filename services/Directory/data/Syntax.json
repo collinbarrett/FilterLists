@@ -217,5 +217,20 @@
     "id": 58,
     "name": "Suricata",
     "url": "https://suricata.io/documentation/"
+  },
+  {
+    "id": 59,
+    "name": "dnsmasq address",
+    "url": "http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html"
+  },
+  {
+    "id": 60,
+    "name": "dnsmasq server",
+    "url": "http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html"
+  },
+  {
+    "id": 61,
+    "name": "dnsmasq local",
+    "url": "http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html"
   }
 ]

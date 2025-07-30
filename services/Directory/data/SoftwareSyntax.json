@@ -348,8 +348,32 @@
     "syntaxId": 48
   },
   {
+    "softwareId": 22,
+    "syntaxId": 59
+  },
+  {
+    "softwareId": 22,
+    "syntaxId": 60
+  },
+  {
+    "softwareId": 22,
+    "syntaxId": 61
+  },
+  {
     "softwareId": 23,
     "syntaxId": 20
+  },
+  {
+    "softwareId": 23,
+    "syntaxId": 59
+  },
+  {
+    "softwareId": 23,
+    "syntaxId": 60
+  },
+  {
+    "softwareId": 23,
+    "syntaxId": 61
   },
   {
     "softwareId": 25,
