@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.0"/>
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.0" />
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
@@ -9,12 +9,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Directory\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj"/>
+        <ProjectReference Include="..\Directory\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1"/>
-        <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.3.2"/>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.4.0" />
+        <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.4.0" />
     </ItemGroup>
 
 </Project>
