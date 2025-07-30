@@ -17591,13 +17591,13 @@
   {
     "filterListId": 2813,
     "id": 3203,
-    "primariness": 4,
+    "primariness": 5,
     "url": "https://raw.githack.com/thedoggybrad/AntiTLDAbuserFilterlist/main/list.txt"
   },
   {
     "filterListId": 2813,
     "id": 3204,
-    "primariness": 5,
+    "primariness": 4,
     "url": "https://gitloaf.com/cdn/thedoggybrad/AntiTLDAbuserFilterlist/main/list.txt"
   },
   {
