@@ -262,5 +262,13 @@
   {
     "includedInFilterListId": 2657,
     "includesFilterListId": 2658
+  },
+  {
+    "includedInFilterListId": 2812,
+    "includesFilterListId": 692
+  },
+  {
+    "includedInFilterListId": 2812,
+    "includesFilterListId": 1490
   }
 ]
