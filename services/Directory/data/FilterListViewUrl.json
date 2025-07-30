@@ -17563,5 +17563,11 @@
     "id": 3198,
     "primariness": 1,
     "url": "https://malsilo.gitlab.io/feeds/dumps/malsilo-url.rules"
+  },
+  {
+    "filterListId": 2812,
+    "id": 3199,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/thedoggybrad/supersecurityfilterlist/main/list.txt"
   }
 ]
