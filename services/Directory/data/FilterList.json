@@ -18476,5 +18476,13 @@
     "id": 2811,
     "licenseId": 5,
     "name": "MalSilo URL Rules"
+  },
+  {
+    "description": "Secure yourself with the biggest filterlist of dangerous websites, links and IPs. It is for UBlock Origin, UBlock, AdBlock Plus, AdBlock, Opera, Vivaldi and other compatible adblocks.",
+    "homeUrl": "https://github.com/thedoggybrad/supersecurityfilterlist",
+    "id": 2812,
+    "issuesUrl": "https://github.com/thedoggybrad/supersecurityfilterlist/issues",
+    "licenseId": 2,
+    "name": "The Super Security Filterlist"
   }
 ]
