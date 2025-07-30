@@ -18532,5 +18532,61 @@
     "issuesUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/issues",
     "licenseId": 10,
     "name": "ChongLuaDao Phishing Blocklist (IPs)"
+  },
+  {
+    "description": "Feed of QSnatch DGA domains, a major malware family that targets QNAP NAS devices.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2819,
+    "licenseId": 5,
+    "name": "1275.ru DGA Feed - QSnatch"
+  },
+  {
+    "description": "Feed of Bamital DGA domains, a malware family that generates domains algorithmically.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2820,
+    "licenseId": 5,
+    "name": "1275.ru DGA Feed - Bamital"
+  },
+  {
+    "description": "Feed of Virut DGA domains, a polymorphic virus and malware family.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2821,
+    "licenseId": 5,
+    "name": "1275.ru DGA Feed - Virut"
+  },
+  {
+    "description": "Feed of Corebot DGA domains, a banking trojan malware family.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2822,
+    "licenseId": 5,
+    "name": "1275.ru DGA Feed - Corebot"
+  },
+  {
+    "description": "Feed of Matsnu DGA domains, a malware family known for domain generation attacks.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2823,
+    "licenseId": 5,
+    "name": "1275.ru DGA Feed - Matsnu"
+  },
+  {
+    "description": "Feed of Ramnit DGA domains, a banking trojan and worm malware family.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2824,
+    "licenseId": 5,
+    "name": "1275.ru DGA Feed - Ramnit"
+  },
+  {
+    "description": "Feed of CryptoLocker DGA domains, a ransomware family that uses domain generation.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2825,
+    "licenseId": 5,
+    "name": "1275.ru DGA Feed - CryptoLocker"
+  },
+  {
+    "description": "Feed of SharkBot DGA domains, an Android banking trojan malware family.",
+    "homeUrl": "https://1275.ru/spisok-aktivnyh-dga-domain-generation-algorithm-domenov/",
+    "id": 2826,
+    "licenseId": 5,
+    "name": "1275.ru DGA Feed - SharkBot"
   }
 ]

@@ -17629,5 +17629,53 @@
     "id": 3209,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/main/ips.txt"
+  },
+  {
+    "filterListId": 2819,
+    "id": 3210,
+    "primariness": 1,
+    "url": "https://1275.ru/DGA/qsnatch.txt"
+  },
+  {
+    "filterListId": 2820,
+    "id": 3211,
+    "primariness": 1,
+    "url": "https://1275.ru/DGA/bamital.txt"
+  },
+  {
+    "filterListId": 2821,
+    "id": 3212,
+    "primariness": 1,
+    "url": "https://1275.ru/DGA/virut.txt"
+  },
+  {
+    "filterListId": 2822,
+    "id": 3213,
+    "primariness": 1,
+    "url": "https://1275.ru/DGA/corebot.txt"
+  },
+  {
+    "filterListId": 2823,
+    "id": 3214,
+    "primariness": 1,
+    "url": "https://1275.ru/DGA/matsnu.txt"
+  },
+  {
+    "filterListId": 2824,
+    "id": 3215,
+    "primariness": 1,
+    "url": "https://1275.ru/DGA/ramnit.txt"
+  },
+  {
+    "filterListId": 2825,
+    "id": 3216,
+    "primariness": 1,
+    "url": "https://1275.ru/DGA/cryptolocker.txt"
+  },
+  {
+    "filterListId": 2826,
+    "id": 3217,
+    "primariness": 1,
+    "url": "https://1275.ru/DGA/sharkbot.txt"
   }
 ]
