@@ -212,5 +212,10 @@
     "id": 57,
     "name": "CSV",
     "url": "https://en.wikipedia.org/wiki/Comma-separated_values"
+  },
+  {
+    "id": 58,
+    "name": "Suricata",
+    "url": "https://suricata.io/documentation/"
   }
 ]

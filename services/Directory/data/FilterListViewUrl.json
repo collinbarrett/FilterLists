@@ -17563,5 +17563,41 @@
     "id": 3192,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/ShadowWhisperer/IPs/master/Other/Tunnel"
+  },
+  {
+    "filterListId": 2806,
+    "id": 3193,
+    "primariness": 1,
+    "url": "https://malsilo.gitlab.io/feeds/dumps/ip_list.txt"
+  },
+  {
+    "filterListId": 2807,
+    "id": 3194,
+    "primariness": 1,
+    "url": "https://malsilo.gitlab.io/feeds/dumps/url_list.txt"
+  },
+  {
+    "filterListId": 2808,
+    "id": 3195,
+    "primariness": 1,
+    "url": "https://malsilo.gitlab.io/feeds/dumps/domain_list.txt"
+  },
+  {
+    "filterListId": 2809,
+    "id": 3196,
+    "primariness": 1,
+    "url": "https://malsilo.gitlab.io/feeds/dumps/malsilo-dns.rules"
+  },
+  {
+    "filterListId": 2810,
+    "id": 3197,
+    "primariness": 1,
+    "url": "https://malsilo.gitlab.io/feeds/dumps/malsilo-ip.rules"
+  },
+  {
+    "filterListId": 2811,
+    "id": 3198,
+    "primariness": 1,
+    "url": "https://malsilo.gitlab.io/feeds/dumps/malsilo-url.rules"
   }
 ]

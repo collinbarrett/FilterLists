@@ -18479,5 +18479,47 @@
     "issuesUrl": "https://github.com/ShadowWhisperer/IPs/issues",
     "licenseId": 7,
     "name": "ShadowWhisperer - Other Tunnel"
+  },
+  {
+    "description": "MalSilo threat intelligence feed containing malicious IPv4 addresses with threat categorization and metadata. This feed provides IP addresses associated with various malware families and threat actors.",
+    "homeUrl": "https://malsilo.gitlab.io/feeds/",
+    "id": 2806,
+    "licenseId": 5,
+    "name": "MalSilo IPv4 Feed"
+  },
+  {
+    "description": "MalSilo threat intelligence feed containing malicious URLs with threat categorization and metadata. This feed provides URLs associated with various malware families and threat actors.",
+    "homeUrl": "https://malsilo.gitlab.io/feeds/",
+    "id": 2807,
+    "licenseId": 5,
+    "name": "MalSilo URL Feed"
+  },
+  {
+    "description": "MalSilo threat intelligence feed containing malicious domains with threat categorization and metadata. This feed provides domains associated with various malware families and threat actors.",
+    "homeUrl": "https://malsilo.gitlab.io/feeds/",
+    "id": 2808,
+    "licenseId": 5,
+    "name": "MalSilo Domain Feed"
+  },
+  {
+    "description": "MalSilo Suricata DNS detection rules for identifying and blocking malicious DNS queries. These rules are designed for use with Suricata IDS/IPS systems.",
+    "homeUrl": "https://malsilo.gitlab.io/feeds/",
+    "id": 2809,
+    "licenseId": 5,
+    "name": "MalSilo DNS Rules"
+  },
+  {
+    "description": "MalSilo Suricata IP detection rules for identifying and blocking malicious IP traffic. These rules are designed for use with Suricata IDS/IPS systems.",
+    "homeUrl": "https://malsilo.gitlab.io/feeds/",
+    "id": 2810,
+    "licenseId": 5,
+    "name": "MalSilo IP Rules"
+  },
+  {
+    "description": "MalSilo Suricata URL detection rules for identifying and blocking malicious URL traffic. These rules are designed for use with Suricata IDS/IPS systems.",
+    "homeUrl": "https://malsilo.gitlab.io/feeds/",
+    "id": 2811,
+    "licenseId": 5,
+    "name": "MalSilo URL Rules"
   }
 ]

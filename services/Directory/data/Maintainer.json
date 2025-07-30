@@ -1053,5 +1053,11 @@
     "id": 204,
     "name": "ShadowWhisperer",
     "url": "https://github.com/ShadowWhisperer"
+  },
+  {
+    "emailAddress": "malsilo@tuta.io",
+    "id": 205,
+    "name": "MalSilo",
+    "url": "https://malsilo.gitlab.io/feeds/"
   }
 ]
