@@ -13218,5 +13218,13 @@
   {
     "filterListId": 2812,
     "tagId": 7
+  },
+  {
+    "filterListId": 2813,
+    "tagId": 6
+  },
+  {
+    "filterListId": 2813,
+    "tagId": 7
   }
 ]

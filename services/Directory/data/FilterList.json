@@ -18484,5 +18484,13 @@
     "issuesUrl": "https://github.com/thedoggybrad/supersecurityfilterlist/issues",
     "licenseId": 2,
     "name": "The Super Security Filterlist"
+  },
+  {
+    "description": "A filterlist for AdBlock Plus compatible filterlists that will warn you from visiting websites that are using those mostly and probably abused TLDs.",
+    "homeUrl": "https://github.com/thedoggybrad/AntiTLDAbuserFilterlist",
+    "id": 2813,
+    "issuesUrl": "https://github.com/thedoggybrad/AntiTLDAbuserFilterlist/issues",
+    "licenseId": 2,
+    "name": "Anti TLD Abuser Filterlist"
   }
 ]
