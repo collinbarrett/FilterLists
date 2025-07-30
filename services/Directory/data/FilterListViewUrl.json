@@ -17599,5 +17599,35 @@
     "id": 3204,
     "primariness": 5,
     "url": "https://gitloaf.com/cdn/thedoggybrad/AntiTLDAbuserFilterlist/main/list.txt"
+  },
+  {
+    "filterListId": 2814,
+    "id": 3205,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/main/urls.txt"
+  },
+  {
+    "filterListId": 2815,
+    "id": 3206,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/main/urls-ABP.txt"
+  },
+  {
+    "filterListId": 2816,
+    "id": 3207,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/main/urls-UBO.txt"
+  },
+  {
+    "filterListId": 2817,
+    "id": 3208,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/main/urls-pihole.txt"
+  },
+  {
+    "filterListId": 2818,
+    "id": 3209,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/main/ips.txt"
   }
 ]
