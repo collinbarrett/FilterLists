@@ -2228,14 +2228,6 @@
     "syntaxId": 2
   },
   {
-    "filterListId": 811,
-    "syntaxId": 1
-  },
-  {
-    "filterListId": 812,
-    "syntaxId": 2
-  },
-  {
     "filterListId": 813,
     "syntaxId": 3
   },
@@ -6192,10 +6184,6 @@
     "syntaxId": 28
   },
   {
-    "filterListId": 1954,
-    "syntaxId": 28
-  },
-  {
     "filterListId": 1955,
     "syntaxId": 28
   },
@@ -6365,10 +6353,6 @@
   },
   {
     "filterListId": 2001,
-    "syntaxId": 20
-  },
-  {
-    "filterListId": 2002,
     "syntaxId": 20
   },
   {
@@ -7173,10 +7157,6 @@
   },
   {
     "filterListId": 2279,
-    "syntaxId": 16
-  },
-  {
-    "filterListId": 2280,
     "syntaxId": 16
   },
   {

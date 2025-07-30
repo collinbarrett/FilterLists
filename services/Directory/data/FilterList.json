@@ -4476,24 +4476,6 @@
     "name": "1Hosts Lite (Domains)"
   },
   {
-    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 811,
-    "licenseId": 35,
-    "name": "1Hosts Lite (GitHub Only)"
-  },
-  {
-    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 812,
-    "licenseId": 35,
-    "name": "1Hosts Lite (Domains, GitHub Only)"
-  },
-  {
     "description": "I use an ad blocker not because I hate ads, but because it makes the Internet so much more safe and less annoying. Most advertising is horrible and annoying, but there are exceptions. However, ad blocking lists like EasyList are dedicated to blocking all ads. The only maintained \"Acceptable Ads\" list is by Eyeo, Inc., which basically takes bribes to whitelist ads. I wanted to start an Acceptable Ads list that was of the people, by the people and for the people.",
     "homeUrl": "https://github.com/jwinnie/acceptable-ads",
     "id": 813,
@@ -12350,15 +12332,6 @@
     "name": "1Hosts Lite (Adblockers)"
   },
   {
-    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 1954,
-    "licenseId": 35,
-    "name": "1Hosts Lite (Adblockers, GitHub Only)"
-  },
-  {
     "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
     "emailAddress": "badmojr@gmail.com",
     "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
@@ -12712,15 +12685,6 @@
     "id": 2001,
     "licenseId": 35,
     "name": "1Hosts Lite (dnsmasq)"
-  },
-  {
-    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2002,
-    "licenseId": 35,
-    "name": "1Hosts Lite (dnsmasq, GitHub Only)"
   },
   {
     "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
@@ -14245,15 +14209,6 @@
     "id": 2279,
     "licenseId": 35,
     "name": "1Hosts Lite (Domains with wildcards)"
-  },
-  {
-    "description": "Balanced - set & forget, prioritizes smooth UX, ideal for general users.",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2280,
-    "licenseId": 35,
-    "name": "1Hosts Lite (Domains with wildcards, GitHub Pages Primary)"
   },
   {
     "description": "Moderately strict - may introduce sporadic minor breaks, privacy-focused.",
