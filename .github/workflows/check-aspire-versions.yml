@@ -1,0 +1,47 @@
+name: Check Aspire SDK Version Sync
+
+on:
+  pull_request:
+    paths:
+      - 'services/**/*.csproj'
+      - 'services/**/*.props'
+  workflow_dispatch:
+
+jobs:
+  check-aspire-versions:
+    runs-on: ubuntu-latest
+    name: Verify Aspire SDK versions are in sync
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Check Aspire version consistency
+      shell: bash
+      run: |
+        echo "🔍 Checking Aspire.AppHost.Sdk version consistency..."
+        
+        # Extract version from Directory.Build.props
+        CPM_VERSION=$(grep -o 'Include="Aspire.AppHost.Sdk" Version="[^"]*"' services/Directory.Build.props | grep -o 'Version="[^"]*"' | sed 's/Version="\(.*\)"/\1/')
+        echo "📦 Central Package Management version: $CPM_VERSION"
+        
+        # Extract version from .csproj file
+        SDK_VERSION=$(grep -o 'Name="Aspire.AppHost.Sdk" Version="[^"]*"' services/FilterLists.AppHost/FilterLists.AppHost.csproj | grep -o 'Version="[^"]*"' | sed 's/Version="\(.*\)"/\1/')
+        echo "🔧 SDK reference version: $SDK_VERSION"
+        
+        # Compare versions
+        if [ "$CPM_VERSION" != "$SDK_VERSION" ]; then
+          echo "❌ Version mismatch detected!"
+          echo "   Central Package Management: $CPM_VERSION"
+          echo "   SDK Reference: $SDK_VERSION"
+          echo ""
+          echo "🔧 To fix this, update the version in services/FilterLists.AppHost/FilterLists.AppHost.csproj"
+          echo "   to match the version in services/Directory.Build.props"
+          exit 1
+        else
+          echo "✅ Aspire.AppHost.Sdk versions are in sync: $CPM_VERSION"
+        fi
+        
+        # Also check if there are any newer Aspire packages that might indicate an update is needed
+        echo ""
+        echo "📋 All Aspire package versions in the project:"
+        grep -r "Aspire" services/ --include="*.props" --include="*.csproj" | grep -E "(Version|version)" | sort

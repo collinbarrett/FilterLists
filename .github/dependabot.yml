@@ -12,6 +12,12 @@ updates:
     directory: "services"
     schedule:
       interval: "daily"
+    # Enable detection of all dependency types including SDK references
+    # This should help Dependabot detect PackageVersion elements in Directory.Build.props
+    allow:
+      - dependency-type: "all"
+    # Explicitly include patterns that might contain SDK references
+    ignore: []
   - package-ecosystem: "npm"
     directory: "/web"
     schedule:

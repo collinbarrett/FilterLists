@@ -4,4 +4,12 @@
         <Nullable>enable</Nullable>
         <AnalysisMode>Recommended</AnalysisMode>
     </PropertyGroup>
+    
+    <!-- 
+    Central Package Management for Aspire SDK
+    Dependabot should detect and update this PackageVersion element
+    -->
+    <ItemGroup>
+        <PackageVersion Include="Aspire.AppHost.Sdk" Version="9.3.0" />
+    </ItemGroup>
 </Project>
