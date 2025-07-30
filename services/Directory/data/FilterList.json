@@ -18492,5 +18492,45 @@
     "issuesUrl": "https://github.com/thedoggybrad/AntiTLDAbuserFilterlist/issues",
     "licenseId": 2,
     "name": "Anti TLD Abuser Filterlist"
+  },
+  {
+    "description": "Machine-readable blocklist of phishing URLs from the Chống Lừa Đảo project, updated once a day.",
+    "homeUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist",
+    "id": 2814,
+    "issuesUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/issues",
+    "licenseId": 10,
+    "name": "ChongLuaDao Phishing Blocklist (URLs)"
+  },
+  {
+    "description": "Machine-readable blocklist of phishing URLs from the Chống Lừa Đảo project in AdBlock Plus format, updated once a day.",
+    "homeUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist",
+    "id": 2815,
+    "issuesUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/issues",
+    "licenseId": 10,
+    "name": "ChongLuaDao Phishing Blocklist (AdBlock Plus)"
+  },
+  {
+    "description": "Machine-readable blocklist of phishing URLs from the Chống Lừa Đảo project in uBlock Origin format, updated once a day.",
+    "homeUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist",
+    "id": 2816,
+    "issuesUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/issues",
+    "licenseId": 10,
+    "name": "ChongLuaDao Phishing Blocklist (uBlock Origin)"
+  },
+  {
+    "description": "Machine-readable blocklist of phishing URLs from the Chống Lừa Đảo project in Pi-hole format, updated once a day.",
+    "homeUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist",
+    "id": 2817,
+    "issuesUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/issues",
+    "licenseId": 10,
+    "name": "ChongLuaDao Phishing Blocklist (Pi-hole)"
+  },
+  {
+    "description": "Machine-readable blocklist of phishing IPv4 addresses from the Chống Lừa Đảo project, updated once a day.",
+    "homeUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist",
+    "id": 2818,
+    "issuesUrl": "https://github.com/elliotwutingfeng/ChongLuaDao-Phishing-Blocklist/issues",
+    "licenseId": 10,
+    "name": "ChongLuaDao Phishing Blocklist (IPs)"
   }
 ]
