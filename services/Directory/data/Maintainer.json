@@ -1059,5 +1059,10 @@
     "id": 205,
     "name": "MalSilo",
     "url": "https://malsilo.gitlab.io/feeds/"
+  },
+  {
+    "id": 206,
+    "name": "1275.ru",
+    "url": "https://1275.ru/"
   }
 ]
