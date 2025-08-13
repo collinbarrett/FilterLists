@@ -56,8 +56,8 @@ public static class Extensions
             .WithMetrics(metrics =>
             {
                 metrics.AddAspNetCoreInstrumentation()
-                    .AddHttpClientInstrumentation()
-                    .AddRuntimeInstrumentation();
+                    .AddHttpClientInstrumentation();
+                    //.AddRuntimeInstrumentation(); // increases App Insights bill
             })
             .WithTracing(tracing =>
             {
