@@ -55,8 +55,8 @@ public static class Extensions
         builder.Services.AddOpenTelemetry()
             .WithMetrics(metrics =>
             {
-                metrics.AddAspNetCoreInstrumentation()
-                    .AddHttpClientInstrumentation();
+                metrics.AddAspNetCoreInstrumentation();
+                    //.AddHttpClientInstrumentation() // increases App Insights bill
                     //.AddRuntimeInstrumentation(); // increases App Insights bill
             })
             .WithTracing(tracing =>
