@@ -55,9 +55,9 @@ public static class Extensions
         builder.Services.AddOpenTelemetry()
             .WithMetrics(metrics =>
             {
-                metrics.AddAspNetCoreInstrumentation()
-                    .AddHttpClientInstrumentation()
-                    .AddRuntimeInstrumentation();
+                metrics.AddAspNetCoreInstrumentation();
+                    //.AddHttpClientInstrumentation() // increases App Insights bill
+                    //.AddRuntimeInstrumentation(); // increases App Insights bill
             })
             .WithTracing(tracing =>
             {
@@ -67,10 +67,10 @@ public static class Extensions
                         options.Filter = context =>
                             !context.Request.Path.StartsWithSegments(HealthEndpointPath)
                             && !context.Request.Path.StartsWithSegments(AlivenessEndpointPath)
-                    )
+                    );
                     // Uncomment the following line to enable gRPC instrumentation (requires the OpenTelemetry.Instrumentation.GrpcNetClient package)
                     //.AddGrpcClientInstrumentation()
-                    .AddHttpClientInstrumentation();
+                    //.AddHttpClientInstrumentation() // increases App Insights bill
             });
 
         builder.AddOpenTelemetryExporters();
