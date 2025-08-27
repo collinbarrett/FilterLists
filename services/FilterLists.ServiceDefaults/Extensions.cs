@@ -67,10 +67,10 @@ public static class Extensions
                         options.Filter = context =>
                             !context.Request.Path.StartsWithSegments(HealthEndpointPath)
                             && !context.Request.Path.StartsWithSegments(AlivenessEndpointPath)
-                    )
+                    );
                     // Uncomment the following line to enable gRPC instrumentation (requires the OpenTelemetry.Instrumentation.GrpcNetClient package)
                     //.AddGrpcClientInstrumentation()
-                    .AddHttpClientInstrumentation();
+                    //.AddHttpClientInstrumentation() // increases App Insights bill
             });
 
         builder.AddOpenTelemetryExporters();
