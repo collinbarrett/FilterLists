@@ -18588,5 +18588,13 @@
     "id": 2826,
     "licenseId": 5,
     "name": "1275.ru DGA Feed - SharkBot"
+  },
+  {
+    "description": "Blocking of Meta Platforms Domains",
+    "homeUrl": "https://github.com/Bundy01/meta-blocklists",
+    "id": 2827,
+    "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
+    "licenseId": 4,
+    "name": "Meta Dnsmasq"
   }
 ]
