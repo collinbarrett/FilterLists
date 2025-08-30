@@ -17677,5 +17677,11 @@
     "id": 3217,
     "primariness": 1,
     "url": "https://1275.ru/DGA/sharkbot.txt"
+  },
+  {
+    "filterListId": 2827,
+    "id": 3218,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/Bundy01/meta-blocklists/main/meta-dnsmasq.txt"
   }
 ]
