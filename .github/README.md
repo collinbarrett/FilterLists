@@ -1,7 +1,6 @@
 <p align="center"><img src="https://github.com/collinbarrett/FilterLists/blob/main/img/logo_filterlists_outlined.png"></p>
 
-<p align="center"><a href="https://twitter.com/FilterLists"><img alt="Twitter" src="https://img.shields.io/twitter/follow/FilterLists?style=social"></a>
-<a href="https://github.com/collinbarrett/FilterLists/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/collinbarrett/filterlists.svg?label=License"></a>
+<p align="center"><a href="https://github.com/collinbarrett/FilterLists/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/collinbarrett/filterlists.svg?label=License"></a>
 <a href="https://builtwithdot.net/project/125/filterlists"><img alt="BuiltWithDot.net" src="https://builtwithdot.net/project/125/filterlists/badge" /></a>
 <a href="https://madewithreactjs.com/p/filterlists/shield-link"><img alt="MadeWithReactJS.com" src="https://madewithreactjs.com/storage/repo-shields/2335-shield.svg"/></a>
 <br/>FilterLists is the independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.</p>

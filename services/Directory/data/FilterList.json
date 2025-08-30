@@ -17818,7 +17818,7 @@
     "submissionUrl": "https://codeberg.org/toastal/github-less-social#pitching-in"
   },
   {
-    "description": "Blocking of Meta Plateforms Domains",
+    "description": "Blocking of Meta Platforms Domains",
     "homeUrl": "https://github.com/Bundy01/meta-blocklists",
     "id": 2731,
     "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
@@ -17826,7 +17826,7 @@
     "name": "Meta Adblock"
   },
   {
-    "description": "Blocking of Meta Plateforms Domains",
+    "description": "Blocking of Meta Platforms Domains",
     "homeUrl": "https://github.com/Bundy01/meta-blocklists",
     "id": 2732,
     "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
@@ -17834,7 +17834,7 @@
     "name": "Meta Domains"
   },
   {
-    "description": "Blocking of Meta Plateforms Domains",
+    "description": "Blocking of Meta Platforms Domains",
     "homeUrl": "https://github.com/Bundy01/meta-blocklists",
     "id": 2733,
     "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
@@ -17842,7 +17842,7 @@
     "name": "Meta Hosts (IPv4 And IPv6)"
   },
   {
-    "description": "Blocking of Meta Plateforms Domains",
+    "description": "Blocking of Meta Platforms Domains",
     "homeUrl": "https://github.com/Bundy01/meta-blocklists",
     "id": 2734,
     "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
@@ -17850,7 +17850,7 @@
     "name": "Meta Hosts (Only IPv4)"
   },
   {
-    "description": "Blocking of Meta Plateforms Domains",
+    "description": "Blocking of Meta Platforms Domains",
     "homeUrl": "https://github.com/Bundy01/meta-blocklists",
     "id": 2735,
     "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
@@ -18588,5 +18588,13 @@
     "id": 2826,
     "licenseId": 5,
     "name": "1275.ru DGA Feed - SharkBot"
+  },
+  {
+    "description": "Blocking of Meta Platforms Domains",
+    "homeUrl": "https://github.com/Bundy01/meta-blocklists",
+    "id": 2827,
+    "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
+    "licenseId": 4,
+    "name": "Meta Dnsmasq"
   }
 ]
