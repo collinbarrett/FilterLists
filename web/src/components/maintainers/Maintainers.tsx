@@ -1,5 +1,5 @@
 import "./maintainers.css";
-import { HomeOutlined, MailOutlined, TwitterOutlined } from "@ant-design/icons";
+import { HomeOutlined, MailOutlined } from "@ant-design/icons";
 import { Card } from "antd";
 import { Maintainer } from "../../interfaces/Maintainer";
 
@@ -44,18 +44,6 @@ const MaintainerComponent = (props: MaintainerComponentProps) => {
         rel="noopener noreferrer"
       >
         <MailOutlined key="mail" />
-      </a>,
-    );
-  }
-  if (props.maintainer.twitterHandle) {
-    actions.push(
-      <a
-        href={`https://twitter.com/${props.maintainer.twitterHandle}`}
-        title={`${props.maintainer.twitterHandle} on Twitter`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <TwitterOutlined key="twitter" />
       </a>,
     );
   }

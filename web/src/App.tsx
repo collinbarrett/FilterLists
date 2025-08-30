@@ -3,7 +3,6 @@ import {
   DollarOutlined,
   GithubOutlined,
   IeOutlined,
-  TwitterOutlined,
 } from "@ant-design/icons";
 import { Layout, Tag } from "antd";
 import {
@@ -46,7 +45,6 @@ export const App: React.FC = () => (
         }}
       >
         <CopyrightAuthor />
-        <Twitter />
         <GitHub />
         <Api />
         <Tpl />
@@ -82,19 +80,6 @@ const CopyrightAuthor = () => (
       rel="noopener noreferrer"
     >
       Collin M. Barrett
-    </a>
-  </Tag>
-);
-
-const Twitter = () => (
-  <Tag>
-    <a
-      href="https://twitter.com/FilterLists"
-      title="FilterLists on Twitter"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <TwitterOutlined /> Twitter
     </a>
   </Tag>
 );
