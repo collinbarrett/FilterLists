@@ -18596,5 +18596,65 @@
     "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
     "licenseId": 4,
     "name": "Meta Dnsmasq"
+  },
+  {
+    "description": "Blocks intrusive ads, trackers, fake downloads, cookie prompts, overlays, push alerts, widgets, and obsolete web clutter.",
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2828,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "name": "AdVoid.Full"
+  },
+  {
+    "description": "Blocks major ad-servers, trackers, malware, fake download links, cuts-down timer executions.",
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2829,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "name": "AdVoid.Core"
+  },
+  {
+    "description": "DNS-level blocker for ads, trackers, telemetry, malware, and web nuisances. Lightweight, system-wide protection.",
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2830,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "name": "AdVoid.DNS"
+  },
+  {
+    "description": "Blocks site annoyances: cookie-consent banners, popups, modals, push notifications, survey, newsletter and subscribe popups, rating dialogs, skips countdowns, etc.",
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2831,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "name": "AdVoid.Addon.NoAnnoyances"
+  },
+  {
+    "description": "Blocks external features: sharing, Google Chromecast, popup chats, post widgets, like widgets, etc.",
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2832,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "name": "AdVoid.Addon.NoExternals"
+  },
+  {
+    "description": "Blocks non-essential resources: news widgets, JavaScript and CSS maps, PWA install banners, SWF objects, etc.",
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2833,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "name": "AdVoid.Addon.NoExtras"
   }
 ]
