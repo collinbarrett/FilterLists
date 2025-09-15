@@ -18596,5 +18596,13 @@
     "issuesUrl": "https://github.com/Bundy01/meta-blocklists/issues",
     "licenseId": 4,
     "name": "Meta Dnsmasq"
+  },
+    {
+    "description": "Blocks intrusive ads, trackers, fake downloads, cookie prompts, overlays, push alerts, widgets, and obsolete web clutter.",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2828,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "name": "AdVoid.Full"
   }
 ]
