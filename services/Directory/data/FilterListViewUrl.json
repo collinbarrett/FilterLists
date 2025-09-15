@@ -17683,5 +17683,77 @@
     "id": 3218,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Bundy01/meta-blocklists/main/meta-dnsmasq.txt"
+  },
+  {
+    "filterListId": 2828,
+    "id": 3219,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/the-advoid/ad-void/main/AdVoid.Full.txt"
+  },
+  {
+    "filterListId": 2828,
+    "id": 3220,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/the-advoid/ad-void@main/AdVoid.Full.txt"
+  },
+  {
+    "filterListId": 2829,
+    "id": 3221,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/the-advoid/ad-void/main/AdVoid.Core.txt"
+  },
+  {
+    "filterListId": 2829,
+    "id": 3222,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/the-advoid/ad-void@main/AdVoid.Core.txt"
+  },
+  {
+    "filterListId": 2830,
+    "id": 3223,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/the-advoid/ad-void/main/AdVoid.DNS.txt"
+  },
+  {
+    "filterListId": 2830,
+    "id": 3224,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/the-advoid/ad-void@main/AdVoid.DNS.txt"
+  },
+  {
+    "filterListId": 2831,
+    "id": 3225,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/the-advoid/ad-void/main/add-ons/AdVoid.Addon.NoAnnoyances.txt"
+  },
+  {
+    "filterListId": 2831,
+    "id": 3226,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/the-advoid/ad-void@main/add-ons/AdVoid.Addon.NoAnnoyances.txt"
+  },
+  {
+    "filterListId": 2832,
+    "id": 3227,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/the-advoid/ad-void/main/add-ons/AdVoid.Addon.NoExternals.txt"
+  },
+  {
+    "filterListId": 2832,
+    "id": 3228,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/the-advoid/ad-void@main/add-ons/AdVoid.Addon.NoExternals.txt"
+  },
+  {
+    "filterListId": 2833,
+    "id": 3229,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/the-advoid/ad-void/main/add-ons/AdVoid.Addon.NoExtras.txt"
+  },
+  {
+    "filterListId": 2833,
+    "id": 3230,
+    "primariness": 2,
+    "url": "https://cdn.jsdelivr.net/gh/the-advoid/ad-void@main/add-ons/AdVoid.Addon.NoExtras.txt"
   }
 ]
