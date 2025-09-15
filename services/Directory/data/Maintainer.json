@@ -1064,5 +1064,12 @@
     "id": 206,
     "name": "1275.ru",
     "url": "https://1275.ru/"
+  },
+   {
+    "id": 207,
+    "name": "Igor Dimitrijević (igorskyflyer)",
+    "url": "https://github.com/igorskyflyer",
+    "twitterHandle": "igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
   }
 ]
