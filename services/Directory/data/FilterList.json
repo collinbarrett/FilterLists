@@ -18597,7 +18597,7 @@
     "licenseId": 4,
     "name": "Meta Dnsmasq"
   },
-    {
+  {
     "description": "Blocks intrusive ads, trackers, fake downloads, cookie prompts, overlays, push alerts, widgets, and obsolete web clutter.",
     "homeUrl": "https://github.com/the-advoid/ad-void",
     "id": 2828,
@@ -18606,5 +18606,15 @@
     "donateUrl": "https://ko-fi.com/igorskyflyer",
     "emailAddress": "support@igorskyflyer.me",
     "name": "AdVoid.Full"
+  },
+  {
+    "description": "Blocks major ad-servers, trackers, malware, fake download links, cuts-down timer executions.",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2829,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "name": "AdVoid.Core"
   }
 ]
