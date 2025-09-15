@@ -18616,5 +18616,15 @@
     "donateUrl": "https://ko-fi.com/igorskyflyer",
     "emailAddress": "support@igorskyflyer.me",
     "name": "AdVoid.Core"
+  },
+  {
+    "description": "DNS-level blocker for ads, trackers, telemetry, malware, and web nuisances. Lightweight, system-wide protection.",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2830,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "name": "AdVoid.DNS"
   }
 ]
