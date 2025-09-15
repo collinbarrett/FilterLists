@@ -18636,5 +18636,15 @@
     "donateUrl": "https://ko-fi.com/igorskyflyer",
     "emailAddress": "support@igorskyflyer.me",
     "name": "AdVoid.Addon.NoAnnoyances"
+  },
+  {
+    "description": "Blocks external features: sharing, Google Chromecast, popup chats, post widgets, like widgets, etc.",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2832,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "name": "AdVoid.Addon.NoExternals"
   }
 ]
