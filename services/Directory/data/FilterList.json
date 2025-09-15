@@ -18646,5 +18646,15 @@
     "donateUrl": "https://ko-fi.com/igorskyflyer",
     "emailAddress": "support@igorskyflyer.me",
     "name": "AdVoid.Addon.NoExternals"
+  },
+  {
+    "description": "Blocks non-essential resources: news widgets, JavaScript and CSS maps, PWA install banners, SWF objects, etc.",
+    "homeUrl": "https://github.com/the-advoid/ad-void",
+    "id": 2833,
+    "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
+    "licenseId": 4,
+    "donateUrl": "https://ko-fi.com/igorskyflyer",
+    "emailAddress": "support@igorskyflyer.me",
+    "name": "AdVoid.Addon.NoExtras"
   }
 ]
