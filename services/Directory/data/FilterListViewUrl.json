@@ -17755,5 +17755,12 @@
     "id": 3230,
     "primariness": 2,
     "url": "https://cdn.jsdelivr.net/gh/the-advoid/ad-void@main/add-ons/AdVoid.Addon.NoExtras.txt"
+  },
+  {
+    "filterListId": 2834,
+    "id": 3231,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://gist.githubusercontent.com/thedoggybrad/dc52cbed1683bae916322f4659d8b387/raw/51f80466484f31b05fa46dc543569b329855dfb0/nogoogleaioverview.txt"
   }
 ]

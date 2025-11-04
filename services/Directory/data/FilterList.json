@@ -18656,5 +18656,12 @@
     "issuesUrl": "https://github.com/the-advoid/ad-void/issues",
     "licenseId": 4,
     "name": "AdVoid.Addon.NoExtras"
+  },
+  {
+    "description": "Removes Google's AI Overview section and all of its shortcuts from Google Search results.",
+    "homeUrl": "https://gist.github.com/thedoggybrad/dc52cbed1683bae916322f4659d8b387",
+    "id": 2834,
+    "licenseId": 2,
+    "name": "Google AI Overview Remover"
   }
 ]
