@@ -8,6 +8,8 @@ import { getSoftware } from "@/services/get-software";
 import { getSyntaxes } from "@/services/get-syntaxes";
 import { getTags } from "@/services/get-tags";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const [
     filterLists,
