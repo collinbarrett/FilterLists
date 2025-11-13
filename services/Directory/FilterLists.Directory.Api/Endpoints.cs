@@ -17,7 +17,7 @@ internal static class Endpoints
             .Produces<List<GetLanguages.Response>>()
             .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                operation.Tags = new HashSet<OpenApiTag> { LanguagesTag };
+                operation.Tags = new HashSet<OpenApiTagReference> { new(LanguagesTag) };
                 operation.Summary = "Gets the languages targeted by the FilterLists.";
                 operation.OperationId = nameof(GetLanguages);
                 return Task.CompletedTask;
@@ -30,7 +30,7 @@ internal static class Endpoints
             .Produces<List<GetLicenses.Response>>()
             .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                operation.Tags = new HashSet<OpenApiTag> { LicensesTag };
+                operation.Tags = new HashSet<OpenApiTagReference> { new(LicensesTag) };
                 operation.Summary = "Gets the licenses applied to the FilterLists.";
                 operation.OperationId = nameof(GetLicenses);
                 return Task.CompletedTask;
@@ -43,7 +43,7 @@ internal static class Endpoints
             .Produces<List<GetLists.Response>>()
             .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                operation.Tags = new HashSet<OpenApiTag> { FilterListsTag };
+                operation.Tags = new HashSet<OpenApiTagReference> { new(FilterListsTag) };
                 operation.Summary = "Gets the FilterLists.";
                 operation.OperationId = nameof(GetLists);
                 return Task.CompletedTask;
@@ -64,7 +64,7 @@ internal static class Endpoints
             .Produces(StatusCodes.Status404NotFound)
             .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                operation.Tags = new HashSet<OpenApiTag> { FilterListsTag };
+                operation.Tags = new HashSet<OpenApiTagReference> { new(FilterListsTag) };
                 operation.Summary = "Gets the details of the FilterList.";
                 operation.OperationId = nameof(GetListDetails);
                 operation.Parameters =
@@ -88,7 +88,7 @@ internal static class Endpoints
             .Produces<List<GetMaintainers.Response>>()
             .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                operation.Tags = new HashSet<OpenApiTag> { MaintainersTag };
+                operation.Tags = new HashSet<OpenApiTagReference> { new(MaintainersTag) };
                 operation.Summary = "Gets the maintainers of the FilterLists.";
                 operation.OperationId = nameof(GetMaintainers);
                 return Task.CompletedTask;
@@ -101,7 +101,7 @@ internal static class Endpoints
             .Produces<List<GetSoftware.Response>>()
             .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                operation.Tags = new HashSet<OpenApiTag> { SoftwareTag };
+                operation.Tags = new HashSet<OpenApiTagReference> { new(SoftwareTag) };
                 operation.Summary = "Gets the software that subscribes to the FilterLists.";
                 operation.OperationId = nameof(GetSoftware);
                 return Task.CompletedTask;
@@ -114,7 +114,7 @@ internal static class Endpoints
             .Produces<List<GetSyntaxes.Response>>()
             .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                operation.Tags = new HashSet<OpenApiTag> { SyntaxesTag };
+                operation.Tags = new HashSet<OpenApiTagReference> { new(SyntaxesTag) };
                 operation.Summary = "Gets the syntaxes of the FilterLists.";
                 operation.OperationId = nameof(GetSyntaxes);
                 return Task.CompletedTask;
@@ -127,7 +127,7 @@ internal static class Endpoints
             .Produces<List<GetTags.Response>>()
             .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                operation.Tags = new HashSet<OpenApiTag> { TagsTag };
+                operation.Tags = new HashSet<OpenApiTagReference> { new(TagsTag) };
                 operation.Summary = "Gets the tags of the FilterLists.";
                 operation.OperationId = nameof(GetTags);
                 return Task.CompletedTask;
