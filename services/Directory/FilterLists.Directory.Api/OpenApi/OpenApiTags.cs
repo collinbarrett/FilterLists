@@ -89,8 +89,8 @@ internal static class OpenApiTags
     {
         public void Apply(OpenApiDocument swaggerDoc, DocumentFilterContext context)
         {
-            swaggerDoc.Tags =
-            [
+            swaggerDoc.Tags = new HashSet<OpenApiTag>
+            {
                 LanguagesTag,
                 LicensesTag,
                 FilterListsTag,
@@ -98,7 +98,7 @@ internal static class OpenApiTags
                 SoftwareTag,
                 SyntaxesTag,
                 TagsTag
-            ];
+            };
         }
     }
 }
