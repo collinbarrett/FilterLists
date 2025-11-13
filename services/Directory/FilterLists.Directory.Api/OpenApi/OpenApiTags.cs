@@ -1,6 +1,6 @@
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Entities;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace FilterLists.Directory.Api.OpenApi;
@@ -89,8 +89,8 @@ internal static class OpenApiTags
     {
         public void Apply(OpenApiDocument swaggerDoc, DocumentFilterContext context)
         {
-            swaggerDoc.Tags =
-            [
+            swaggerDoc.Tags = new HashSet<OpenApiTag>
+            {
                 LanguagesTag,
                 LicensesTag,
                 FilterListsTag,
@@ -98,7 +98,7 @@ internal static class OpenApiTags
                 SoftwareTag,
                 SyntaxesTag,
                 TagsTag
-            ];
+            };
         }
     }
 }

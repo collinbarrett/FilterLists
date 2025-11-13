@@ -1,7 +1,7 @@
+using System.Text.Json.Nodes;
 using FilterLists.Directory.Application.Queries;
 using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.OpenApi.Any;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using static FilterLists.Directory.Api.OpenApi.OpenApiTags;
 
 namespace FilterLists.Directory.Api;
@@ -17,7 +17,6 @@ internal static class Endpoints
             .Produces<List<GetLanguages.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
-                Tags = [LanguagesTag],
                 Summary = "Gets the languages targeted by the FilterLists.",
                 OperationId = nameof(GetLanguages)
             })
@@ -29,7 +28,6 @@ internal static class Endpoints
             .Produces<List<GetLicenses.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
-                Tags = [LicensesTag],
                 Summary = "Gets the licenses applied to the FilterLists.",
                 OperationId = nameof(GetLicenses)
             })
@@ -41,7 +39,6 @@ internal static class Endpoints
             .Produces<List<GetLists.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
-                Tags = [FilterListsTag],
                 Summary = "Gets the FilterLists.",
                 OperationId = nameof(GetLists)
             })
@@ -61,7 +58,6 @@ internal static class Endpoints
             .Produces(StatusCodes.Status404NotFound)
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
-                Tags = [FilterListsTag],
                 Summary = "Gets the details of the FilterList.",
                 OperationId = nameof(GetListDetails),
                 Parameters =
@@ -72,7 +68,7 @@ internal static class Endpoints
                         In = ParameterLocation.Path,
                         Description = "The identifier of the FilterList.",
                         Required = true,
-                        Example = new OpenApiInteger(1)
+                        Example = JsonValue.Create(1)
                     }
                 ]
             })
@@ -84,7 +80,6 @@ internal static class Endpoints
             .Produces<List<GetMaintainers.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
-                Tags = [MaintainersTag],
                 Summary = "Gets the maintainers of the FilterLists.",
                 OperationId = nameof(GetMaintainers)
             })
@@ -96,7 +91,6 @@ internal static class Endpoints
             .Produces<List<GetSoftware.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
-                Tags = [SoftwareTag],
                 Summary = "Gets the software that subscribes to the FilterLists.",
                 OperationId = nameof(GetSoftware)
             })
@@ -108,7 +102,6 @@ internal static class Endpoints
             .Produces<List<GetSyntaxes.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
-                Tags = [SyntaxesTag],
                 Summary = "Gets the syntaxes of the FilterLists.",
                 OperationId = nameof(GetSyntaxes)
             })
@@ -120,7 +113,6 @@ internal static class Endpoints
             .Produces<List<GetTags.Response>>()
             .WithOpenApi(operation => new OpenApiOperation(operation)
             {
-                Tags = [TagsTag],
                 Summary = "Gets the tags of the FilterLists.",
                 OperationId = nameof(GetTags)
             })

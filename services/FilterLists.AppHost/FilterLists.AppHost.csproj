@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Sdk Name="Aspire.AppHost.Sdk" Version="9.4.0" />
+    <Sdk Name="Aspire.AppHost.Sdk" Version="13.0.0" />
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <UserSecretsId>c7967ef0-ced7-4e18-8282-7302b3c0002b</UserSecretsId>
     </PropertyGroup>
 
@@ -13,8 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.2" />
-        <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.5.2" />
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="13.0.0" />
+        <PackageReference Include="Aspire.Hosting.SqlServer" Version="13.0.0" />
     <PackageReference Include="KubernetesClient" Version="18.0.5" />
     </ItemGroup>
 

@@ -1,4 +1,4 @@
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using ConfigurationExtensions = FilterLists.Directory.Application.ConfigurationExtensions;
 
