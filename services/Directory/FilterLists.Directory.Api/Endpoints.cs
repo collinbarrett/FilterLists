@@ -15,10 +15,12 @@ internal static class Endpoints
         app.MapGet("/languages",
                 async (GetLanguages.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLanguages.Response>>()
-            .WithOpenApi(operation => new OpenApiOperation(operation)
+            .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                Summary = "Gets the languages targeted by the FilterLists.",
-                OperationId = nameof(GetLanguages)
+                operation.Tags = [LanguagesTag];
+                operation.Summary = "Gets the languages targeted by the FilterLists.";
+                operation.OperationId = nameof(GetLanguages);
+                return Task.CompletedTask;
             })
             .AddEndpointFilter(DefaultGetCacheFilter)
             .CacheOutput("ExpireDay");
@@ -26,10 +28,12 @@ internal static class Endpoints
         app.MapGet("/licenses",
                 async (GetLicenses.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLicenses.Response>>()
-            .WithOpenApi(operation => new OpenApiOperation(operation)
+            .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                Summary = "Gets the licenses applied to the FilterLists.",
-                OperationId = nameof(GetLicenses)
+                operation.Tags = [LicensesTag];
+                operation.Summary = "Gets the licenses applied to the FilterLists.";
+                operation.OperationId = nameof(GetLicenses);
+                return Task.CompletedTask;
             })
             .AddEndpointFilter(DefaultGetCacheFilter)
             .CacheOutput("ExpireDay");
@@ -37,10 +41,12 @@ internal static class Endpoints
         app.MapGet("/lists",
                 async (GetLists.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetLists.Response>>()
-            .WithOpenApi(operation => new OpenApiOperation(operation)
+            .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                Summary = "Gets the FilterLists.",
-                OperationId = nameof(GetLists)
+                operation.Tags = [FilterListsTag];
+                operation.Summary = "Gets the FilterLists.";
+                operation.OperationId = nameof(GetLists);
+                return Task.CompletedTask;
             })
             .AddEndpointFilter(DefaultGetCacheFilter)
             .CacheOutput("ExpireDay");
@@ -56,11 +62,12 @@ internal static class Endpoints
                 })
             .Produces<GetListDetails.Response>()
             .Produces(StatusCodes.Status404NotFound)
-            .WithOpenApi(operation => new OpenApiOperation(operation)
+            .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                Summary = "Gets the details of the FilterList.",
-                OperationId = nameof(GetListDetails),
-                Parameters =
+                operation.Tags = [FilterListsTag];
+                operation.Summary = "Gets the details of the FilterList.";
+                operation.OperationId = nameof(GetListDetails);
+                operation.Parameters =
                 [
                     new OpenApiParameter
                     {
@@ -70,7 +77,8 @@ internal static class Endpoints
                         Required = true,
                         Example = JsonValue.Create(1)
                     }
-                ]
+                ];
+                return Task.CompletedTask;
             })
             .AddEndpointFilter(DefaultGetCacheFilter)
             .CacheOutput("ExpireDay");
@@ -78,10 +86,12 @@ internal static class Endpoints
         app.MapGet("/maintainers",
                 async (GetMaintainers.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetMaintainers.Response>>()
-            .WithOpenApi(operation => new OpenApiOperation(operation)
+            .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                Summary = "Gets the maintainers of the FilterLists.",
-                OperationId = nameof(GetMaintainers)
+                operation.Tags = [MaintainersTag];
+                operation.Summary = "Gets the maintainers of the FilterLists.";
+                operation.OperationId = nameof(GetMaintainers);
+                return Task.CompletedTask;
             })
             .AddEndpointFilter(DefaultGetCacheFilter)
             .CacheOutput("ExpireDay");
@@ -89,10 +99,12 @@ internal static class Endpoints
         app.MapGet("/software",
                 async (GetSoftware.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetSoftware.Response>>()
-            .WithOpenApi(operation => new OpenApiOperation(operation)
+            .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                Summary = "Gets the software that subscribes to the FilterLists.",
-                OperationId = nameof(GetSoftware)
+                operation.Tags = [SoftwareTag];
+                operation.Summary = "Gets the software that subscribes to the FilterLists.";
+                operation.OperationId = nameof(GetSoftware);
+                return Task.CompletedTask;
             })
             .AddEndpointFilter(DefaultGetCacheFilter)
             .CacheOutput("ExpireDay");
@@ -100,10 +112,12 @@ internal static class Endpoints
         app.MapGet("/syntaxes",
                 async (GetSyntaxes.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetSyntaxes.Response>>()
-            .WithOpenApi(operation => new OpenApiOperation(operation)
+            .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                Summary = "Gets the syntaxes of the FilterLists.",
-                OperationId = nameof(GetSyntaxes)
+                operation.Tags = [SyntaxesTag];
+                operation.Summary = "Gets the syntaxes of the FilterLists.";
+                operation.OperationId = nameof(GetSyntaxes);
+                return Task.CompletedTask;
             })
             .AddEndpointFilter(DefaultGetCacheFilter)
             .CacheOutput("ExpireDay");
@@ -111,10 +125,12 @@ internal static class Endpoints
         app.MapGet("/tags",
                 async (GetTags.Query query, CancellationToken ct) => await query.ExecuteAsync(ct))
             .Produces<List<GetTags.Response>>()
-            .WithOpenApi(operation => new OpenApiOperation(operation)
+            .AddOpenApiOperationTransformer((operation, context, ct) =>
             {
-                Summary = "Gets the tags of the FilterLists.",
-                OperationId = nameof(GetTags)
+                operation.Tags = [TagsTag];
+                operation.Summary = "Gets the tags of the FilterLists.";
+                operation.OperationId = nameof(GetTags);
+                return Task.CompletedTask;
             })
             .AddEndpointFilter(DefaultGetCacheFilter)
             .CacheOutput("ExpireDay");
