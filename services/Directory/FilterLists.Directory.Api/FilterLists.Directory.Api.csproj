@@ -5,7 +5,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <SelfContained>true</SelfContained>
+        <SelfContained Condition="'$(Configuration)' == 'Release'">true</SelfContained>
         <PublishReadyToRunComposite>true</PublishReadyToRunComposite>
         <ContainerBaseImage>mcr.microsoft.com/dotnet/runtime-deps:9.0-azurelinux3.0-distroless-extra</ContainerBaseImage>
         <ContainerRuntimeIdentifier>linux-x64</ContainerRuntimeIdentifier>
