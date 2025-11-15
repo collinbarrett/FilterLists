@@ -9,7 +9,6 @@ on:
       - global.json
       - services/Directory.Build.props
       - services/Directory/**
-      - services/FilterLists.AppHost/**
       - services/FilterLists.ServiceDefaults/**
   pull_request:
     branches:
@@ -19,7 +18,6 @@ on:
       - global.json
       - services/Directory.Build.props
       - services/Directory/**
-      - services/FilterLists.AppHost/**
       - services/FilterLists.ServiceDefaults/**
 
 env:
