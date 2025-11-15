@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Sdk Name="Aspire.AppHost.Sdk" Version="9.5.2" />
+    <Sdk Name="Aspire.AppHost.Sdk" Version="8.2.2" />
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
@@ -13,8 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.2" />
-        <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.5.2" />
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2" />
+        <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.2.2" />
     </ItemGroup>
 
 </Project>
