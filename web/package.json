@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@azure/monitor-opentelemetry": "^1.14.0",
+    "@azure/monitor-opentelemetry": "^1.14.2",
     "@opentelemetry/exporter-jaeger": "^2.2.0",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-dropdown-menu": "^2.1.16",
