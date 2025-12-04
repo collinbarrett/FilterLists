@@ -22,7 +22,7 @@
     "prettier": "^3.3.2",
     "react": "^19.2.0",
     "react-app-rewired": "^2.1.11",
-    "react-dom": "^19.2.0",
+    "react-dom": "^19.2.1",
     "react-router-dom": "^5.3.4",
     "react-scripts": "^5.0.0",
     "slugify": "^1.6.6",
