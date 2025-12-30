@@ -17762,5 +17762,41 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://gist.githubusercontent.com/thedoggybrad/dc52cbed1683bae916322f4659d8b387/raw/51f80466484f31b05fa46dc543569b329855dfb0/nogoogleaioverview.txt"
+  },
+  {
+    "filterListId": 2835,
+    "id": 3232,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/list.txt"
+  },
+  {
+    "filterListId": 2836,
+    "id": 3233,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/formats/primary/adblock.txt"
+  },
+  {
+    "filterListId": 2837,
+    "id": 3234,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/formats/primary/hosts.txt"
+  },
+  {
+    "filterListId": 2838,
+    "id": 3235,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/formats/primary/dnsmasq.conf"
+  },
+  {
+    "filterListId": 2839,
+    "id": 3236,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/community/blocklist.json"
+  },
+  {
+    "filterListId": 2840,
+    "id": 3237,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/dns/active_domains.json"
   }
 ]
