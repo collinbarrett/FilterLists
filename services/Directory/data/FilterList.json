@@ -18663,5 +18663,59 @@
     "id": 2834,
     "licenseId": 2,
     "name": "Google AI Overview Remover"
+  },
+  {
+    "description": "Real-time updated blocklist of cryptocurrency phishing domains, scam sites, wallet drainers, fake exchanges and seed phrase phishing. DNS-verified active threats.",
+    "emailAddress": "github@phishdestroy.io",
+    "homeUrl": "https://github.com/phishdestroy/destroylist",
+    "id": 2835,
+    "issuesUrl": "https://github.com/phishdestroy/destroylist/issues",
+    "licenseId": 2,
+    "name": "PhishDestroy - Cryptocurrency Phishing Blocklist (Domains)"
+  },
+  {
+    "description": "Real-time updated blocklist of cryptocurrency phishing domains, scam sites, wallet drainers, fake exchanges and seed phrase phishing. DNS-verified active threats.",
+    "emailAddress": "github@phishdestroy.io",
+    "homeUrl": "https://github.com/phishdestroy/destroylist",
+    "id": 2836,
+    "issuesUrl": "https://github.com/phishdestroy/destroylist/issues",
+    "licenseId": 2,
+    "name": "PhishDestroy - Cryptocurrency Phishing Blocklist (AdBlock)"
+  },
+  {
+    "description": "Real-time updated blocklist of cryptocurrency phishing domains, scam sites, wallet drainers, fake exchanges and seed phrase phishing. DNS-verified active threats.",
+    "emailAddress": "github@phishdestroy.io",
+    "homeUrl": "https://github.com/phishdestroy/destroylist",
+    "id": 2837,
+    "issuesUrl": "https://github.com/phishdestroy/destroylist/issues",
+    "licenseId": 2,
+    "name": "PhishDestroy - Cryptocurrency Phishing Blocklist (Hosts)"
+  },
+  {
+    "description": "Real-time updated blocklist of cryptocurrency phishing domains, scam sites, wallet drainers, fake exchanges and seed phrase phishing. DNS-verified active threats.",
+    "emailAddress": "github@phishdestroy.io",
+    "homeUrl": "https://github.com/phishdestroy/destroylist",
+    "id": 2838,
+    "issuesUrl": "https://github.com/phishdestroy/destroylist/issues",
+    "licenseId": 2,
+    "name": "PhishDestroy - Cryptocurrency Phishing Blocklist (Dnsmasq)"
+  },
+  {
+    "description": "Community-aggregated cryptocurrency phishing blocklist from PhishDestroy. Real-time updated list of cryptocurrency phishing domains, scam sites, wallet drainers, fake exchanges and seed phrase phishing.",
+    "emailAddress": "github@phishdestroy.io",
+    "homeUrl": "https://github.com/phishdestroy/destroylist",
+    "id": 2839,
+    "issuesUrl": "https://github.com/phishdestroy/destroylist/issues",
+    "licenseId": 2,
+    "name": "PhishDestroy - Community Aggregated"
+  },
+  {
+    "description": "DNS-verified active cryptocurrency phishing domains from PhishDestroy. Real-time updated list of verified active cryptocurrency phishing domains, scam sites, wallet drainers, and fake exchanges.",
+    "emailAddress": "github@phishdestroy.io",
+    "homeUrl": "https://github.com/phishdestroy/destroylist",
+    "id": 2840,
+    "issuesUrl": "https://github.com/phishdestroy/destroylist/issues",
+    "licenseId": 2,
+    "name": "PhishDestroy - DNS-Verified Active"
   }
 ]
