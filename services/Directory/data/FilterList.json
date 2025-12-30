@@ -18701,7 +18701,7 @@
     "name": "PhishDestroy - Cryptocurrency Phishing Blocklist (Dnsmasq)"
   },
   {
-    "description": "Community-aggregated cryptocurrency phishing blocklist from PhishDestroy. Real-time updated list of cryptocurrency phishing domains, scam sites, wallet drainers, fake exchanges and seed phrase phishing.",
+    "description": "Community-aggregated cryptocurrency phishing blocklist from PhishDestroy containing scam sites, wallet drainers, fake exchanges and seed phrase phishing.",
     "emailAddress": "github@phishdestroy.io",
     "homeUrl": "https://github.com/phishdestroy/destroylist",
     "id": 2839,
@@ -18710,7 +18710,7 @@
     "name": "PhishDestroy - Community Aggregated"
   },
   {
-    "description": "DNS-verified active cryptocurrency phishing domains from PhishDestroy. Real-time updated list of verified active cryptocurrency phishing domains, scam sites, wallet drainers, and fake exchanges.",
+    "description": "DNS-verified active cryptocurrency phishing domains from PhishDestroy including scam sites, wallet drainers, and fake exchanges.",
     "emailAddress": "github@phishdestroy.io",
     "homeUrl": "https://github.com/phishdestroy/destroylist",
     "id": 2840,
