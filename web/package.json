@@ -20,7 +20,7 @@
     "less": "^4.5.1",
     "less-loader": "^12.3.0",
     "prettier": "^3.3.2",
-    "react": "^19.2.3",
+    "react": "^19.2.4",
     "react-app-rewired": "^2.1.11",
     "react-dom": "^19.2.4",
     "react-router-dom": "^5.3.4",
