@@ -18717,5 +18717,41 @@
     "issuesUrl": "https://github.com/phishdestroy/destroylist/issues",
     "licenseId": 2,
     "name": "PhishDestroy - DNS-Verified Active"
+  },
+  {
+    "description": "Security-focused filter list mitigating IDN/Punycode homograph phishing and favicon-based spoofing vectors without breaking site functionality.",
+    "donateUrl": "https://github.com/TantalusDrive",
+    "homeUrl": "https://github.com/TantalusDrive/Secfilters",
+    "id": 2841,
+    "issuesUrl": "https://github.com/TantalusDrive/Secfilters/issues",
+    "licenseId": 9,
+    "name": "IDN Homograph & Favicon Security List - AdGuard version (MV2)"
+  },
+  {
+    "description": "Security-focused filter list mitigating IDN/Punycode homograph phishing and favicon-based spoofing vectors without breaking site functionality.",
+    "donateUrl": "https://github.com/TantalusDrive",
+    "homeUrl": "https://github.com/TantalusDrive/Secfilters",
+    "id": 2842,
+    "issuesUrl": "https://github.com/TantalusDrive/Secfilters/issues",
+    "licenseId": 9,
+    "name": "IDN Homograph & Favicon Security List - ABP version (MV2)"
+  },
+  {
+    "description": "Security-focused filter list mitigating IDN/Punycode homograph phishing and favicon-based spoofing vectors without breaking site functionality.",
+    "donateUrl": "https://github.com/TantalusDrive",
+    "homeUrl": "https://github.com/TantalusDrive/Secfilters",
+    "id": 2843,
+    "issuesUrl": "https://github.com/TantalusDrive/Secfilters/issues",
+    "licenseId": 9,
+    "name": "IDN Homograph & Favicon Security List - Brave version"
+  },
+  {
+    "description": "Security-focused filter list mitigating IDN/Punycode homograph phishing and favicon-based spoofing vectors without breaking site functionality.",
+    "donateUrl": "https://github.com/TantalusDrive",
+    "homeUrl": "https://github.com/TantalusDrive/Secfilters",
+    "id": 2844,
+    "issuesUrl": "https://github.com/TantalusDrive/Secfilters/issues",
+    "licenseId": 9,
+    "name": "IDN Homograph & Favicon Security List - uBlock Origin version"
   }
 ]

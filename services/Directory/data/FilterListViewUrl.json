@@ -17798,5 +17798,53 @@
     "id": 3237,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/dns/active_domains.json"
+  },
+  {
+    "filterListId": 2841,
+    "id": 3238,
+    "primariness": 1,
+    "url": "https://tantalusdrive.github.io/Secfilters/Lists/AdGuard/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2841,
+    "id": 3239,
+    "primariness": 2,
+    "url": "https://raw.githubusercontent.com/TantalusDrive/Secfilters/refs/heads/main/Lists/AdGuard/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2842,
+    "id": 3240,
+    "primariness": 1,
+    "url": "https://tantalusdrive.github.io/Secfilters/Lists/ABP/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2842,
+    "id": 3241,
+    "primariness": 2,
+    "url": "https://raw.githubusercontent.com/TantalusDrive/Secfilters/refs/heads/main/Lists/ABP/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2843,
+    "id": 3242,
+    "primariness": 1,
+    "url": "https://tantalusdrive.github.io/Secfilters/Lists/Brave/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2843,
+    "id": 3243,
+    "primariness": 2,
+    "url": "https://raw.githubusercontent.com/TantalusDrive/Secfilters/refs/heads/main/Lists/Brave/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2844,
+    "id": 3244,
+    "primariness": 1,
+    "url": "https://tantalusdrive.github.io/Secfilters/Lists/uBlock/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2844,
+    "id": 3245,
+    "primariness": 2,
+    "url": "https://raw.githubusercontent.com/TantalusDrive/Secfilters/refs/heads/main/Lists/uBlock/IDNHomographFavicon.txt"
   }
 ]
