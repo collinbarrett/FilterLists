@@ -84,25 +84,51 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 END
             ");
 
-            // Insert FilterListViewUrl if not exists
+            // Insert FilterListViewUrl if not exists - each record checked individually
             migrationBuilder.Sql(@"
+                SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                
                 IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3246)
-                BEGIN
-                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
                     INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
-                    VALUES 
-                        (3246, 2845, 1, 1, N'https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.txt'),
-                        (3247, 2845, 2, 1, N'https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.all.txt'),
-                        (3248, 2845, 3, 1, N'https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.all.txt'),
-                        (3249, 2845, 4, 1, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.all.txt'),
-                        (3250, 2845, 5, 1, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.all.txt'),
-                        (3251, 2845, 6, 1, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.txt'),
-                        (3252, 2845, 7, 1, N'https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.txt'),
-                        (3253, 2845, 8, 1, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.txt'),
-                        (3254, 2845, 9, 1, N'https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.all.txt'),
-                        (3255, 2845, 10, 1, N'https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.all.txt');
-                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
-                END
+                    VALUES (3246, 2845, 1, 1, N'https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3247)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3247, 2845, 2, 1, N'https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.all.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3248)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3248, 2845, 3, 1, N'https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.all.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3249)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3249, 2845, 4, 1, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.all.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3250)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3250, 2845, 5, 1, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.all.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3251)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3251, 2845, 6, 1, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3252)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3252, 2845, 7, 1, N'https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3253)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3253, 2845, 8, 1, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3254)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3254, 2845, 9, 1, N'https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.all.txt');
+                
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [Id] = 3255)
+                    INSERT INTO [FilterListViewUrl] ([Id], [FilterListId], [Primariness], [SegmentNumber], [Url])
+                    VALUES (3255, 2845, 10, 1, N'https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.all.txt');
+                
+                SET IDENTITY_INSERT [FilterListViewUrl] OFF;
             ");
         }
 
