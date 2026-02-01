@@ -135,21 +135,25 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            // Revert ID 2471 name change
+            // Revert ID 2471 name change only if it has the name we set
             migrationBuilder.Sql(@"
                 UPDATE [FilterList]
                 SET [Name] = N'EasyDutch'
-                WHERE [Id] = 2471;
+                WHERE [Id] = 2471 AND [Name] = N'EasyDutch (EasyDutch-uBO)';
             ");
 
-            // Delete ID 2845 and related data if they were inserted by this migration
+            // Delete ID 2845 and related data only if they have the values we set
+            // This is conservative - only deletes if the name matches what we inserted
             migrationBuilder.Sql(@"
-                DELETE FROM [FilterListViewUrl] WHERE [FilterListId] = 2845;
-                DELETE FROM [FilterListTag] WHERE [FilterListId] = 2845;
-                DELETE FROM [FilterListSyntax] WHERE [FilterListId] = 2845;
-                DELETE FROM [FilterListLanguage] WHERE [FilterListId] = 2845;
-                DELETE FROM [FilterListMaintainer] WHERE [FilterListId] = 2845;
-                DELETE FROM [FilterList] WHERE [Id] = 2845;
+                IF EXISTS (SELECT 1 FROM [FilterList] WHERE [Id] = 2845 AND [Name] = N'EasyDutch (EasyDutch-uBlockOrigin)')
+                BEGIN
+                    DELETE FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] BETWEEN 3246 AND 3255;
+                    DELETE FROM [FilterListTag] WHERE [FilterListId] = 2845 AND [TagId] IN (2, 5);
+                    DELETE FROM [FilterListSyntax] WHERE [FilterListId] = 2845 AND [SyntaxId] IN (4, 21);
+                    DELETE FROM [FilterListLanguage] WHERE [FilterListId] = 2845 AND [LanguageId] = 48;
+                    DELETE FROM [FilterListMaintainer] WHERE [FilterListId] = 2845 AND [MaintainerId] = 211;
+                    DELETE FROM [FilterList] WHERE [Id] = 2845;
+                END
             ");
         }
     }
