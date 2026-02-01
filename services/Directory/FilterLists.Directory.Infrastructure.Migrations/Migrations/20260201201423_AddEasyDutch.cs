@@ -12,65 +12,149 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.InsertData(
-                table: "FilterList",
-                columns: new[] { "Id", "ChatUrl", "Description", "DonateUrl", "EmailAddress", "ForumUrl", "HomeUrl", "IssuesUrl", "LicenseId", "Name", "OnionUrl", "PolicyUrl", "SubmissionUrl" },
-                values: new object[] { 2845, null, "Dutch filterlist to use with uBlock Origin", null, null, null, "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/", "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/issues", 4, "EasyDutch", null, null, null });
+            // Insert FilterList if not exists
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT 1 FROM [FilterList] WHERE [Id] = 2845)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterList] ON;
+                    INSERT INTO [FilterList] ([Id], [ChatUrl], [Description], [DonateUrl], [EmailAddress], [ForumUrl], [HomeUrl], [IssuesUrl], [LicenseId], [Name], [OnionUrl], [PolicyUrl], [SubmissionUrl])
+                    VALUES (2845, NULL, N'Dutch filterlist to use with uBlock Origin', NULL, NULL, NULL, N'https://github.com/EasyDutch-uBlockOrigin/EasyDutch/', N'https://github.com/EasyDutch-uBlockOrigin/EasyDutch/issues', 4, N'EasyDutch', NULL, NULL, NULL);
+                    SET IDENTITY_INSERT [FilterList] OFF;
+                END
+            ");
 
-            migrationBuilder.InsertData(
-                table: "FilterListLanguage",
-                columns: new[] { "FilterListId", "LanguageId" },
-                values: new object[] { 2825, (short)113 });
+            // Insert FilterListLanguage for 2825 if not exists
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT 1 FROM [FilterListLanguage] WHERE [FilterListId] = 2825 AND [LanguageId] = 113)
+                BEGIN
+                    INSERT INTO [FilterListLanguage] ([FilterListId], [LanguageId]) VALUES (2825, 113);
+                END
+            ");
 
-            migrationBuilder.InsertData(
-                table: "Maintainer",
-                columns: new[] { "Id", "EmailAddress", "Name", "TwitterHandle", "Url" },
-                values: new object[] { 211, "easydutch@tech-web.aleeas.com", "EasyDutch", null, "https://github.com/EasyDutch-uBlockOrigin" });
+            // Insert Maintainer if not exists
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT 1 FROM [Maintainer] WHERE [Id] = 211)
+                BEGIN
+                    SET IDENTITY_INSERT [Maintainer] ON;
+                    INSERT INTO [Maintainer] ([Id], [EmailAddress], [Name], [TwitterHandle], [Url])
+                    VALUES (211, N'easydutch@tech-web.aleeas.com', N'EasyDutch', NULL, N'https://github.com/EasyDutch-uBlockOrigin');
+                    SET IDENTITY_INSERT [Maintainer] OFF;
+                END
+            ");
 
-            migrationBuilder.InsertData(
-                table: "FilterListLanguage",
-                columns: new[] { "FilterListId", "LanguageId" },
-                values: new object[] { 2845, (short)48 });
+            // Insert FilterListLanguage for 2845 if not exists
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT 1 FROM [FilterListLanguage] WHERE [FilterListId] = 2845 AND [LanguageId] = 48)
+                BEGIN
+                    INSERT INTO [FilterListLanguage] ([FilterListId], [LanguageId]) VALUES (2845, 48);
+                END
+            ");
 
-            migrationBuilder.InsertData(
-                table: "FilterListMaintainer",
-                columns: new[] { "FilterListId", "MaintainerId" },
-                values: new object[] { 2845, 211 });
+            // Insert FilterListMaintainer if not exists
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT 1 FROM [FilterListMaintainer] WHERE [FilterListId] = 2845 AND [MaintainerId] = 211)
+                BEGIN
+                    INSERT INTO [FilterListMaintainer] ([FilterListId], [MaintainerId]) VALUES (2845, 211);
+                END
+            ");
 
-            migrationBuilder.InsertData(
-                table: "FilterListSyntax",
-                columns: new[] { "FilterListId", "SyntaxId" },
-                values: new object[,]
-                {
-                    { 2845, (short)4 },
-                    { 2845, (short)21 }
-                });
+            // Insert FilterListSyntax records if not exist
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT 1 FROM [FilterListSyntax] WHERE [FilterListId] = 2845 AND [SyntaxId] = 4)
+                BEGIN
+                    INSERT INTO [FilterListSyntax] ([FilterListId], [SyntaxId]) VALUES (2845, 4);
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListSyntax] WHERE [FilterListId] = 2845 AND [SyntaxId] = 21)
+                BEGIN
+                    INSERT INTO [FilterListSyntax] ([FilterListId], [SyntaxId]) VALUES (2845, 21);
+                END
+            ");
 
-            migrationBuilder.InsertData(
-                table: "FilterListTag",
-                columns: new[] { "FilterListId", "TagId" },
-                values: new object[,]
-                {
-                    { 2845, 2 },
-                    { 2845, 5 }
-                });
+            // Insert FilterListTag records if not exist
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT 1 FROM [FilterListTag] WHERE [FilterListId] = 2845 AND [TagId] = 2)
+                BEGIN
+                    INSERT INTO [FilterListTag] ([FilterListId], [TagId]) VALUES (2845, 2);
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListTag] WHERE [FilterListId] = 2845 AND [TagId] = 5)
+                BEGIN
+                    INSERT INTO [FilterListTag] ([FilterListId], [TagId]) VALUES (2845, 5);
+                END
+            ");
 
-            migrationBuilder.InsertData(
-                table: "FilterListViewUrl",
-                columns: new[] { "FilterListId", "Id", "Primariness", "SegmentNumber", "Url" },
-                values: new object[,]
-                {
-                    { 2845, 3246, (short)1, (short)0, "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.txt" },
-                    { 2845, 3247, (short)2, (short)0, "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.all.txt" },
-                    { 2845, 3248, (short)3, (short)0, "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.all.txt" },
-                    { 2845, 3249, (short)4, (short)0, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.all.txt" },
-                    { 2845, 3250, (short)5, (short)0, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.all.txt" },
-                    { 2845, 3251, (short)6, (short)0, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.txt" },
-                    { 2845, 3252, (short)7, (short)0, "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.txt" },
-                    { 2845, 3253, (short)8, (short)0, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.txt" },
-                    { 2845, 3254, (short)9, (short)0, "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.all.txt" },
-                    { 2845, 3255, (short)10, (short)0, "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.all.txt" }
-                });
+            // Insert FilterListViewUrl records if not exist
+            migrationBuilder.Sql(@"
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3246)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3246, 1, 0, N'https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3247)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3247, 2, 0, N'https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.all.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3248)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3248, 3, 0, N'https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.all.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3249)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3249, 4, 0, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.all.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3250)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3250, 5, 0, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.all.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3251)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3251, 6, 0, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3252)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3252, 7, 0, N'https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3253)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3253, 8, 0, N'https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3254)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3254, 9, 0, N'https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.all.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+                IF NOT EXISTS (SELECT 1 FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] = 3255)
+                BEGIN
+                    SET IDENTITY_INSERT [FilterListViewUrl] ON;
+                    INSERT INTO [FilterListViewUrl] ([FilterListId], [Id], [Primariness], [SegmentNumber], [Url])
+                    VALUES (2845, 3255, 10, 0, N'https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.all.txt');
+                    SET IDENTITY_INSERT [FilterListViewUrl] OFF;
+                END
+            ");
         }
 
         /// <inheritdoc />
