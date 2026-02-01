@@ -15767,7 +15767,7 @@
     "id": 2471,
     "issuesUrl": "https://github.com/EasyDutch-uBO/EasyDutch/issues",
     "licenseId": 4,
-    "name": "EasyDutch"
+    "name": "EasyDutch (EasyDutch-uBO)"
   },
   {
     "description": "A blocklist of malicious URLs that are being used for malware distribution.",
@@ -18760,6 +18760,6 @@
     "id": 2845,
     "issuesUrl": "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/issues",
     "licenseId": 4,
-    "name": "EasyDutch"
+    "name": "EasyDutch (EasyDutch-uBlockOrigin)"
   }
 ]
