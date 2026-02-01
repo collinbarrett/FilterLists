@@ -143,10 +143,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             ");
 
             // Delete ID 2845 and related data only if they have the values we set
-            // This is conservative - only deletes if the name matches what we inserted
+            // Conservative approach: Only deletes specific records with IDs/values that match what we inserted
+            // This prevents accidental deletion of data that might have been added through other means
             migrationBuilder.Sql(@"
                 IF EXISTS (SELECT 1 FROM [FilterList] WHERE [Id] = 2845 AND [Name] = N'EasyDutch (EasyDutch-uBlockOrigin)')
                 BEGIN
+                    -- Delete only the specific FilterListViewUrl records we inserted (IDs 3246-3255)
                     DELETE FROM [FilterListViewUrl] WHERE [FilterListId] = 2845 AND [Id] BETWEEN 3246 AND 3255;
                     DELETE FROM [FilterListTag] WHERE [FilterListId] = 2845 AND [TagId] IN (2, 5);
                     DELETE FROM [FilterListSyntax] WHERE [FilterListId] = 2845 AND [SyntaxId] IN (4, 21);
