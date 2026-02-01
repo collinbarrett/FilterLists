@@ -57,19 +57,19 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 
             migrationBuilder.InsertData(
                 table: "FilterListViewUrl",
-                columns: new[] { "FilterListId", "Id", "Primariness", "Url" },
+                columns: new[] { "FilterListId", "Id", "Primariness", "SegmentNumber", "Url" },
                 values: new object[,]
                 {
-                    { 2845, 3246, (short)1, "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.txt" },
-                    { 2845, 3247, (short)2, "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.all.txt" },
-                    { 2845, 3248, (short)3, "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.all.txt" },
-                    { 2845, 3249, (short)4, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.all.txt" },
-                    { 2845, 3250, (short)5, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.all.txt" },
-                    { 2845, 3251, (short)6, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.txt" },
-                    { 2845, 3252, (short)7, "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.txt" },
-                    { 2845, 3253, (short)8, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.txt" },
-                    { 2845, 3254, (short)9, "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.all.txt" },
-                    { 2845, 3255, (short)10, "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.all.txt" }
+                    { 2845, 3246, (short)1, (short)0, "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.txt" },
+                    { 2845, 3247, (short)2, (short)0, "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.all.txt" },
+                    { 2845, 3248, (short)3, (short)0, "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.all.txt" },
+                    { 2845, 3249, (short)4, (short)0, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.all.txt" },
+                    { 2845, 3250, (short)5, (short)0, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.all.txt" },
+                    { 2845, 3251, (short)6, (short)0, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.txt" },
+                    { 2845, 3252, (short)7, (short)0, "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.txt" },
+                    { 2845, 3253, (short)8, (short)0, "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.txt" },
+                    { 2845, 3254, (short)9, (short)0, "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.all.txt" },
+                    { 2845, 3255, (short)10, (short)0, "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.all.txt" }
                 });
         }
 
