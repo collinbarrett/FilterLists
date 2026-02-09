@@ -18753,5 +18753,13 @@
     "issuesUrl": "https://github.com/TantalusDrive/Secfilters/issues",
     "licenseId": 9,
     "name": "IDN Homograph & Favicon Security List - uBlock Origin version"
+  },
+  {
+    "description": "Dutch filterlist to use with uBlock Origin",
+    "homeUrl": "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/",
+    "id": 2845,
+    "issuesUrl": "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/issues",
+    "licenseId": 4,
+    "name": "EasyDutch"
   }
 ]
