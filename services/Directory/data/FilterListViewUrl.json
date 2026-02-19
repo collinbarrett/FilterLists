@@ -17846,5 +17846,65 @@
     "id": 3245,
     "primariness": 2,
     "url": "https://raw.githubusercontent.com/TantalusDrive/Secfilters/refs/heads/main/Lists/uBlock/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3246,
+    "primariness": 1,
+    "url": "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3247,
+    "primariness": 2,
+    "url": "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.all.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3249,
+    "primariness": 3,
+    "url": "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.all.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3250,
+    "primariness": 4,
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.all.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3251,
+    "primariness": 5,
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.all.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3252,
+    "primariness": 6,
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3253,
+    "primariness": 7,
+    "url": "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3254,
+    "primariness": 8,
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3255,
+    "primariness": 9,
+    "url": "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.all.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3256,
+    "primariness": 10,
+    "url": "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.all.txt"
   }
 ]
