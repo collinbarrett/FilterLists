@@ -17846,5 +17846,23 @@
     "id": 3245,
     "primariness": 2,
     "url": "https://raw.githubusercontent.com/TantalusDrive/Secfilters/refs/heads/main/Lists/uBlock/IDNHomographFavicon.txt"
+  },
+  {
+    "filterListId": 2845,
+    "id": 3246,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/actx4gh/recruiter-spam-domains/trunk/domains.txt"
+  },
+  {
+    "filterListId": 2846,
+    "id": 3247,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/actx4gh/recruiter-spam-domains/trunk/adblock.txt"
+  },
+  {
+    "filterListId": 2847,
+    "id": 3248,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/actx4gh/recruiter-spam-domains/trunk/hosts.txt"
   }
 ]
