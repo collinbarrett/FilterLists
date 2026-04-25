@@ -18753,5 +18753,13 @@
     "issuesUrl": "https://github.com/TantalusDrive/Secfilters/issues",
     "licenseId": 9,
     "name": "IDN Homograph & Favicon Security List - uBlock Origin version"
+  },
+  {
+    "description": "Filter list for website features that use or promote Generative AI.",
+    "homeUrl": "https://github.com/Stevoisiak/Stevos-GenAI-Blocklist",
+    "id": 2845,
+    "issuesUrl": "https://github.com/Stevoisiak/Stevos-GenAI-Blocklist/issues",
+    "licenseId": 2,
+    "name": "Stevo's GenAI Blocklist"
   }
 ]
