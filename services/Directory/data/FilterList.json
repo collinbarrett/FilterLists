@@ -18753,5 +18753,26 @@
     "issuesUrl": "https://github.com/TantalusDrive/Secfilters/issues",
     "licenseId": 9,
     "name": "IDN Homograph & Favicon Security List - uBlock Origin version"
+  },
+  {
+    "description": "Domains commonly used to send recruiter spam and phishing-style job solicitations.",
+    "homeUrl": "https://github.com/actx4gh/recruiter-spam-domains",
+    "id": 2845,
+    "licenseId": 28,
+    "name": "Recruiter / Job Spam Domains"
+  },
+  {
+    "description": "Adblock-format rules for domains commonly used to send recruiter spam and phishing-style job solicitations.",
+    "homeUrl": "https://github.com/actx4gh/recruiter-spam-domains",
+    "id": 2846,
+    "licenseId": 28,
+    "name": "Recruiter / Job Spam Domains (Adblock)"
+  },
+  {
+    "description": "Hosts-file format for domains commonly used to send recruiter spam and phishing-style job solicitations.",
+    "homeUrl": "https://github.com/actx4gh/recruiter-spam-domains",
+    "id": 2847,
+    "licenseId": 28,
+    "name": "Recruiter / Job Spam Domains (Hosts)"
   }
 ]
