@@ -18761,5 +18761,13 @@
     "issuesUrl": "https://github.com/ProtoConsent/data/issues",
     "licenseId": 4,
     "name": "ProtoConsent Personalization"
+  },
+  {
+    "description": "Ublock Origin / Adblock list for Switzerland dropshipping stores, ingested from Konsumentenschutz.ch.",
+    "homeUrl": "https://github.com/Kdansky/switzerland-dropshipping",
+    "id": 2857,
+    "issuesUrl": "https://github.com/Kdansky/switzerland-dropshipping/issues",
+    "licenseId": 2,
+    "name": "Switzerland Dropshipping Block List"
   }
 ]
