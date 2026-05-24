@@ -41,6 +41,8 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: global.json
 
       - name: Build
         run: dotnet build -c Release
