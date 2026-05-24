@@ -38,7 +38,6 @@ function handleOptions(request) {
   // Allow CORS from filterlists.com domains and localhost
   const allowedOrigins = [
     "https://filterlists.com",
-    "https://next.filterlists.com",
     "http://localhost:3000",
   ];
   
@@ -71,7 +70,6 @@ function addCorsHeaders(response, request) {
   // Allow CORS from filterlists.com domains and localhost
   const allowedOrigins = [
     "https://filterlists.com",
-    "https://next.filterlists.com",
     "http://localhost:3000",
   ];
   
