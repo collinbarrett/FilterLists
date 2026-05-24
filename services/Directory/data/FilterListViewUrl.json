@@ -17666,5 +17666,53 @@
     "id": 3254,
     "primariness": 3,
     "url": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Lite/wildcards.txt"
+  },
+  {
+    "filterListId": 2849,
+    "id": 3255,
+    "primariness": 1,
+    "url": "https://cdn.jsdelivr.net/gh/ProtoConsent/data@main/lists/domains/protoconsent_core.txt"
+  },
+  {
+    "filterListId": 2850,
+    "id": 3256,
+    "primariness": 1,
+    "url": "https://cdn.jsdelivr.net/gh/ProtoConsent/data@main/lists/domains/protoconsent_full.txt"
+  },
+  {
+    "filterListId": 2851,
+    "id": 3257,
+    "primariness": 1,
+    "url": "https://cdn.jsdelivr.net/gh/ProtoConsent/data@main/lists/domains/protoconsent_ads.txt"
+  },
+  {
+    "filterListId": 2852,
+    "id": 3258,
+    "primariness": 1,
+    "url": "https://cdn.jsdelivr.net/gh/ProtoConsent/data@main/lists/domains/protoconsent_analytics.txt"
+  },
+  {
+    "filterListId": 2853,
+    "id": 3259,
+    "primariness": 1,
+    "url": "https://cdn.jsdelivr.net/gh/ProtoConsent/data@main/lists/domains/protoconsent_advanced_tracking.txt"
+  },
+  {
+    "filterListId": 2854,
+    "id": 3260,
+    "primariness": 1,
+    "url": "https://cdn.jsdelivr.net/gh/ProtoConsent/data@main/lists/domains/protoconsent_security.txt"
+  },
+  {
+    "filterListId": 2855,
+    "id": 3261,
+    "primariness": 1,
+    "url": "https://cdn.jsdelivr.net/gh/ProtoConsent/data@main/lists/domains/protoconsent_third_parties.txt"
+  },
+  {
+    "filterListId": 2856,
+    "id": 3262,
+    "primariness": 1,
+    "url": "https://cdn.jsdelivr.net/gh/ProtoConsent/data@main/lists/domains/protoconsent_personalization.txt"
   }
 ]

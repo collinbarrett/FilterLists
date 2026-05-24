@@ -18697,5 +18697,69 @@
     "issuesUrl": "https://github.com/actx4gh/recruiter-spam-domains/issues",
     "licenseId": 28,
     "name": "Recruiter / Job Spam Domains (Hosts)"
+  },
+  {
+    "description": "All purposes except Security, deduplicated domain blocklist (~157K entries).",
+    "homeUrl": "https://github.com/ProtoConsent/data",
+    "id": 2849,
+    "issuesUrl": "https://github.com/ProtoConsent/data/issues",
+    "licenseId": 4,
+    "name": "ProtoConsent Core"
+  },
+  {
+    "description": "All six purposes including Security, deduplicated domain blocklist (~257K entries).",
+    "homeUrl": "https://github.com/ProtoConsent/data",
+    "id": 2850,
+    "issuesUrl": "https://github.com/ProtoConsent/data/issues",
+    "licenseId": 4,
+    "name": "ProtoConsent Full"
+  },
+  {
+    "description": "Advertising networks and ad servers domain blocklist (~104K entries).",
+    "homeUrl": "https://github.com/ProtoConsent/data",
+    "id": 2851,
+    "issuesUrl": "https://github.com/ProtoConsent/data/issues",
+    "licenseId": 4,
+    "name": "ProtoConsent Ads"
+  },
+  {
+    "description": "Analytics and measurement services domain blocklist (~34K entries).",
+    "homeUrl": "https://github.com/ProtoConsent/data",
+    "id": 2852,
+    "issuesUrl": "https://github.com/ProtoConsent/data/issues",
+    "licenseId": 4,
+    "name": "ProtoConsent Analytics"
+  },
+  {
+    "description": "Fingerprinting and advanced tracking domain blocklist (~18K entries).",
+    "homeUrl": "https://github.com/ProtoConsent/data",
+    "id": 2853,
+    "issuesUrl": "https://github.com/ProtoConsent/data/issues",
+    "licenseId": 4,
+    "name": "ProtoConsent Advanced Tracking"
+  },
+  {
+    "description": "Phishing, scam, and malware domains blocklist (~100K entries).",
+    "homeUrl": "https://github.com/ProtoConsent/data",
+    "id": 2854,
+    "issuesUrl": "https://github.com/ProtoConsent/data/issues",
+    "licenseId": 4,
+    "name": "ProtoConsent Security"
+  },
+  {
+    "description": "Social widgets and external embeds domain blocklist (~640 entries).",
+    "homeUrl": "https://github.com/ProtoConsent/data",
+    "id": 2855,
+    "issuesUrl": "https://github.com/ProtoConsent/data/issues",
+    "licenseId": 4,
+    "name": "ProtoConsent Third Parties"
+  },
+  {
+    "description": "A/B testing and personalization domain blocklist (~285 entries).",
+    "homeUrl": "https://github.com/ProtoConsent/data",
+    "id": 2856,
+    "issuesUrl": "https://github.com/ProtoConsent/data/issues",
+    "licenseId": 4,
+    "name": "ProtoConsent Personalization"
   }
 ]
