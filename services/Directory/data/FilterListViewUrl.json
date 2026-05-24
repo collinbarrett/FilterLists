@@ -17792,5 +17792,23 @@
     "id": 3246,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Stevoisiak/Stevos-GenAI-Blocklist/refs/heads/main/GenAI-Blocklist.txt"
+  },
+  {
+    "filterListId": 2846,
+    "id": 3247,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/actx4gh/recruiter-spam-domains/trunk/domains.txt"
+  },
+  {
+    "filterListId": 2847,
+    "id": 3248,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/actx4gh/recruiter-spam-domains/trunk/adblock.txt"
+  },
+  {
+    "filterListId": 2848,
+    "id": 3249,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/actx4gh/recruiter-spam-domains/trunk/hosts.txt"
   }
 ]

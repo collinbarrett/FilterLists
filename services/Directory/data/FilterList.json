@@ -18761,5 +18761,29 @@
     "issuesUrl": "https://github.com/Stevoisiak/Stevos-GenAI-Blocklist/issues",
     "licenseId": 2,
     "name": "Stevo's GenAI Blocklist"
+  },
+  {
+    "description": "Domains commonly used to send recruiter spam and phishing-style job solicitations.",
+    "homeUrl": "https://github.com/actx4gh/recruiter-spam-domains",
+    "id": 2846,
+    "issuesUrl": "https://github.com/actx4gh/recruiter-spam-domains/issues",
+    "licenseId": 28,
+    "name": "Recruiter / Job Spam Domains"
+  },
+  {
+    "description": "Adblock-format rules for domains commonly used to send recruiter spam and phishing-style job solicitations.",
+    "homeUrl": "https://github.com/actx4gh/recruiter-spam-domains",
+    "id": 2847,
+    "issuesUrl": "https://github.com/actx4gh/recruiter-spam-domains/issues",
+    "licenseId": 28,
+    "name": "Recruiter / Job Spam Domains (Adblock)"
+  },
+  {
+    "description": "Hosts-file format for domains commonly used to send recruiter spam and phishing-style job solicitations.",
+    "homeUrl": "https://github.com/actx4gh/recruiter-spam-domains",
+    "id": 2848,
+    "issuesUrl": "https://github.com/actx4gh/recruiter-spam-domains/issues",
+    "licenseId": 28,
+    "name": "Recruiter / Job Spam Domains (Hosts)"
   }
 ]
