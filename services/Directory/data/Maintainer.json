@@ -1088,5 +1088,11 @@
     "id": 210,
     "name": "TantalusDrive",
     "url": "https://github.com/TantalusDrive"
+  },
+  {
+    "emailAddress": "easydutch@tech-web.aleeas.com",
+    "id": 211,
+    "name": "EasyDutch",
+    "url": "https://github.com/EasyDutch-uBlockOrigin"
   }
 ]
