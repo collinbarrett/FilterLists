@@ -13,6 +13,8 @@ module.exports = override(
     style: true,
   }),
   addLessLoader({
+    // Ant Design 4 emits Less deprecation warnings that CRA treats as CI build failures.
+    lessLogAsWarnOrErr: false,
     lessOptions: {
       javascriptEnabled: true,
       modifyVars: {
