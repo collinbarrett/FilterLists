@@ -1,6 +1,7 @@
 using FilterLists.Directory.Infrastructure.Persistence.Queries;
 using FilterLists.Directory.Infrastructure.Persistence.Queries.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -12,17 +13,31 @@ public static class ConfigurationExtensions
 
     public static void AddInfrastructure(this IHostApplicationBuilder builder)
     {
+        var runningEfCoreTools = string.Equals(
+            Environment.GetEnvironmentVariable("DOTNET_RUNNING_EF_CORE_TOOLS"),
+            "true",
+            StringComparison.OrdinalIgnoreCase);
+
         // TODO: use different connection strings for migrations and queries (https://stackoverflow.com/q/78564037/2343739)
         builder.AddSqlServerDbContext<QueryDbContext>("directorydb",
             _ => { },
-            o => o.UseSqlServer(so =>
-                    // retry on Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - Undefined error: 0)
-                    so.EnableRetryOnFailure([0])
-                        .MigrationsAssembly(MigrationsAssembly))
-                .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
-                .EnableSensitiveDataLogging(string.Equals(
-                    Environment.GetEnvironmentVariable("DOTNET_RUNNING_EF_CORE_TOOLS"), "true",
-                    StringComparison.OrdinalIgnoreCase)));
+            options =>
+            {
+                options.UseSqlServer(so =>
+                        // retry on Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - Undefined error: 0)
+                        so.EnableRetryOnFailure([0])
+                            .MigrationsAssembly(MigrationsAssembly))
+                    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
+                    .EnableSensitiveDataLogging(runningEfCoreTools);
+
+                if (!runningEfCoreTools)
+                {
+                    // Seed data is modeled from JSON files and enforced by checked-in migrations.
+                    // Runtime startup should continue to apply migrations even if the JSON changes
+                    // ahead of a tooling-generated snapshot update.
+                    options.ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning));
+                }
+            });
 
         builder.Services.AddHostedService<MigrationService>();
     }
