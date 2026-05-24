@@ -1,0 +1,60 @@
+name: Copilot Setup Steps
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+      - global.json
+      - services/Directory.Build.props
+      - services/Directory/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+      - global.json
+      - services/Directory.Build.props
+      - services/Directory/**
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: global.json
+
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes jq
+
+      - name: Install dotnet-ef
+        run: dotnet tool install --global dotnet-ef --version 10.0.8
+
+      - name: Add dotnet tools to PATH
+        run: echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
+
+      - name: Verify toolchain
+        run: |
+          dotnet --info
+          dotnet-ef --version
+          jq --version
+
+      - name: Restore Directory API
+        run: dotnet restore ./services/Directory/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj
+
+      - name: Build Directory API
+        run: dotnet build --configuration Release --no-restore ./services/Directory/FilterLists.Directory.Api/FilterLists.Directory.Api.csproj

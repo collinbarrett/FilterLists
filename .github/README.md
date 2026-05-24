@@ -24,7 +24,9 @@ Typical adblockers run as an extension in popular web browsers. As we browse the
 
 ## Adding or Updating Lists
 
-To submit a new list or update data about an existing list, please submit a pull request to [data](https://github.com/collinbarrett/FilterLists/tree/main/services/Directory/data) in conjunction with the data model described [here](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar). Once you open the pull request, our [Migrate bot](https://github.com/collinbarrett/FilterLists/blob/main/services/Directory/azure-pipelines.migrate.yaml) will create an [Entity Framework Core migration](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli) with your changes and test them. Please ensure to [grant the bot permissions to push to your pull request branch](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork). You can find more details on this process [here](https://github.com/collinbarrett/FilterLists/issues/1674).
+To submit a new list or update data about an existing list, please submit a pull request to [data](https://github.com/collinbarrett/FilterLists/tree/main/services/Directory/data) in conjunction with the data model described [here](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar). Every JSON data change must be sorted with `services/Directory/data/lint.sh` and accompanied by an [Entity Framework Core migration](https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli) generated from `services/Directory` with `dotnet ef migrations add <MigrationName> -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api`.
+
+If you assign one of these issues to GitHub Copilot cloud agent, add the `directory-data` label so the repository's agent instructions trigger the research-first workflow.
 
 Alternatively, you can [open a new issue](https://github.com/collinbarrett/FilterLists/issues/new) providing information for all of the fields described in the [data model](https://github.com/collinbarrett/FilterLists/wiki/Data-Model_sidebar).
 
@@ -60,7 +62,8 @@ Modify the database schema or seed data by adding an EF Core migration.
 
 1. Install the [EF Core tools](https://learn.microsoft.com/en-us/ef/core/cli/dotnet#installing-the-tools).
 2. Modify the `QueryDbContext` EF Core model or the seed data.
-3. Execute the command below in the `services/Directory` directory replacing `<MigrationName>` with a meaningful name.
+3. If you changed seed data under `services/Directory/data`, run `./lint.sh` from that directory.
+4. Execute the command below in the `services/Directory` directory replacing `<MigrationName>` with a meaningful name.
 
 ```bash
 dotnet ef migrations add <MigrationName> -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api
