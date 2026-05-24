@@ -116,6 +116,7 @@ When assigned to GitHub Issues requesting data updates, follow this comprehensiv
 3. **Data Validation**: Ensure unique names (title case), valid relationships
 4. **⚠️ REQUIRED: EF Migration Generation**: After ANY data changes, always generate an EF Core migration to capture the changes in the database schema
 5. **Testing**: Verify changes don't break existing functionality
+6. **Dead lists**: If current upstream research shows a filter list is fully dead and all published URLs are gone, remove the dead `FilterList` entries and dependent seed data instead of keeping discontinued placeholders
 
 ### Quality Standards
 

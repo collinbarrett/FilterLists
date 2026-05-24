@@ -10628,24 +10628,6 @@
     "name": "Soteria nou's domain list - Widgets"
   },
   {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 1734,
-    "licenseId": 35,
-    "name": "1Hosts Pro"
-  },
-  {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 1735,
-    "licenseId": 35,
-    "name": "1Hosts Pro (Domains)"
-  },
-  {
     "description": "AdGuard Home is one of the tools for the future, or at least it is for those who know how to set up and use a Raspberry Pi. However, its current internal structure discards virtually every $-using block rule (e.g. EasyList), which makes EasyList and similar lists virtually useless in AdGuard Home, despite how many of the entries would be ≥90% as functional without them. So until the AdGuard Home team implements a better way to deal with $ values, here's my intermissional list to work around it.",
     "donateUrl": "https://sproutsluckycorner.wordpress.com/2017/11/14/my-work-and-contact-resume/#donations",
     "emailAddress": "imreeil42@gmail.com",
@@ -12334,15 +12316,6 @@
     "name": "1Hosts Lite (Adblockers)"
   },
   {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 1955,
-    "licenseId": 35,
-    "name": "1Hosts Pro (Adblockers)"
-  },
-  {
     "description": "A blocklist to protect users against untrustworthy retail sites.",
     "homeUrl": "https://github.com/durablenapkin/scamblocklist",
     "id": 1956,
@@ -12687,15 +12660,6 @@
     "id": 2001,
     "licenseId": 35,
     "name": "1Hosts Lite (dnsmasq)"
-  },
-  {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2003,
-    "licenseId": 35,
-    "name": "1Hosts Pro (dnsmasq)"
   },
   {
     "description": "This is believed to be the world's oldest adblock list to still be hosted at its original domain, having last been updated in August 2003 and has rejected submissions ever since.",
@@ -14211,15 +14175,6 @@
     "id": 2279,
     "licenseId": 35,
     "name": "1Hosts Lite (Domains with wildcards)"
-  },
-  {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2281,
-    "licenseId": 35,
-    "name": "1Hosts Pro (Domains with wildcards)"
   },
   {
     "description": "Goodbye Ads is designed for Unix-like systems (such as Android), gets a list of domains that serve ads, tracking scripts and malware from multiple reputable sources and creates a hosts file that prevents your system from connecting to them.",
@@ -18048,51 +18003,6 @@
     "id": 2758,
     "licenseId": 35,
     "name": "1Hosts Lite (Little Snitch)"
-  },
-  {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2759,
-    "licenseId": 35,
-    "name": "1Hosts Pro (Wildcards for dnscrypt-proxy)"
-  },
-  {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2760,
-    "licenseId": 35,
-    "name": "1Hosts Pro (Response Policy Zone)"
-  },
-  {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2761,
-    "licenseId": 35,
-    "name": "1Hosts Pro (Unbound)"
-  },
-  {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2762,
-    "licenseId": 35,
-    "name": "1Hosts Pro (Windows)"
-  },
-  {
-    "description": "Discontinued. Replaced by 1Hosts (Xtra).",
-    "emailAddress": "badmojr@gmail.com",
-    "forumUrl": "https://forum.xda-developers.com/android/general/badmojr-one-host-file-to-block-t3713360",
-    "homeUrl": "https://github.com/badmojr/1Hosts",
-    "id": 2763,
-    "licenseId": 35,
-    "name": "1Hosts Pro (Little Snitch)"
   },
   {
     "description": "Aggressive - stops emerging privacy threats dead! For power users who prioritize security above all.",
