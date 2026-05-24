@@ -2,6 +2,7 @@ name: Copilot Setup Steps
 
 on:
   workflow_dispatch:
+  # Validate setup-step changes without rerunning this workflow on every Directory PR.
   push:
     branches:
       - main
@@ -9,7 +10,7 @@ on:
       - .github/workflows/copilot-setup-steps.yml
       - global.json
       - services/Directory.Build.props
-      - services/Directory/**
+      - services/Directory/**/*.csproj
   pull_request:
     branches:
       - main
@@ -17,7 +18,7 @@ on:
       - .github/workflows/copilot-setup-steps.yml
       - global.json
       - services/Directory.Build.props
-      - services/Directory/**
+      - services/Directory/**/*.csproj
 
 jobs:
   copilot-setup-steps:
