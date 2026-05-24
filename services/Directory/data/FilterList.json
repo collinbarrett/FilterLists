@@ -9173,9 +9173,11 @@
     "name": "Assistant list for WordPress validators and translators"
   },
   {
+    "chatUrl": "https://mastodon.social/@rooneymcnibnug",
     "description": "A general ad & tracking domain blocklist for pihole.",
     "homeUrl": "https://github.com/RooneyMcNibNug/pihole-stuff",
     "id": 1536,
+    "issuesUrl": "https://github.com/RooneyMcNibNug/pihole-stuff/issues",
     "licenseId": 14,
     "name": "SNAFU List"
   },
