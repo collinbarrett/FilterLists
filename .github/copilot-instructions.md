@@ -27,7 +27,7 @@ infra/cloudflare-workers/    # CDN edge workers
 
 ### Data-Driven Design
 - **JSON-First**: All domain data lives in JSON files under `services/Directory/data/`
-- **Auto-Migration**: EF Core migrations auto-generated from JSON changes via `lint.sh`
+- **Checked-In Migrations**: JSON changes must be followed by a checked-in EF Core migration
 - **Read-Only Runtime**: `QueryDbContext` throws on save operations - data changes only via migrations
 
 ### Query Pattern (No CQRS/MediatR)
@@ -73,6 +73,11 @@ Always run from `services/Directory/` with these specific parameters:
 ```bash
 dotnet ef migrations add <MigrationName> -p FilterLists.Directory.Infrastructure.Migrations -s FilterLists.Directory.Api
 ```
+
+### GitHub Copilot Cloud Agent
+
+- `AGENTS.md` defines the automatic workflow for issues labeled `directory-data`.
+- `.github/instructions/directory-data.instructions.md` carries file-scoped rules for JSON data files and EF migrations.
 
 ## Data Change Requests via GitHub Issues
 
