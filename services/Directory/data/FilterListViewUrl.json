@@ -14548,7 +14548,7 @@
     "filterListId": 2471,
     "id": 2679,
     "primariness": 1,
-    "url": "https://easydutch-ubo.github.io/EasyDutch/EasyDutch.txt"
+    "url": "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.txt"
   },
   {
     "filterListId": 2472,
@@ -14836,7 +14836,7 @@
     "filterListId": 2471,
     "id": 2732,
     "primariness": 2,
-    "url": "https://easydutchcdn.pages.dev/EasyDutch.all.txt"
+    "url": "https://easydutch-ublockorigin.github.io/EasyDutch/EasyDutch.all.txt"
   },
   {
     "filterListId": 2520,
@@ -15219,61 +15219,61 @@
     "filterListId": 2471,
     "id": 2798,
     "primariness": 3,
-    "url": "https://easydutch-ubo.github.io/EasyDutchCDN/EasyDutch.all.txt"
+    "url": "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.all.txt"
   },
   {
     "filterListId": 2471,
     "id": 2799,
     "primariness": 4,
-    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBO/EasyDutchCDN@main/EasyDutch.all.txt"
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.all.txt"
   },
   {
     "filterListId": 2471,
     "id": 2800,
     "primariness": 5,
-    "url": "https://cdn.statically.io/gh/EasyDutch-uBO/EasyDutchCDN/main/EasyDutch.all.txt"
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.all.txt"
   },
   {
     "filterListId": 2471,
     "id": 2801,
     "primariness": 6,
-    "url": "https://easydutch.pages.dev/EasyDutch.txt"
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutch@gh-pages/EasyDutch.txt"
   },
   {
     "filterListId": 2471,
     "id": 2802,
     "primariness": 7,
-    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBO/EasyDutch@gh-pages/EasyDutch.txt"
+    "url": "https://easydutch-ublockorigin.github.io/EasyDutchCDN/EasyDutch.txt"
   },
   {
     "filterListId": 2471,
     "id": 2803,
     "primariness": 8,
-    "url": "https://easydutch-ubo.github.io/EasyDutchCDN/EasyDutch.txt"
+    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBlockOrigin/EasyDutchCDN@main/EasyDutch.txt"
   },
   {
     "filterListId": 2471,
     "id": 2804,
     "primariness": 9,
-    "url": "https://easydutchcdn.pages.dev/EasyDutch.txt"
+    "url": "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.all.txt"
   },
   {
     "filterListId": 2471,
     "id": 2805,
     "primariness": 10,
-    "url": "https://cdn.jsdelivr.net/gh/EasyDutch-uBO/EasyDutchCDN@main/EasyDutch.txt"
+    "url": "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.all.txt"
   },
   {
     "filterListId": 2471,
     "id": 2806,
     "primariness": 11,
-    "url": "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/EasyDutch.txt"
+    "url": "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutch/gh-pages/EasyDutch.txt"
   },
   {
     "filterListId": 2471,
     "id": 2807,
     "primariness": 12,
-    "url": "https://cdn.jsdelivr.net/gh/Nomes77/AdBlockFilters@main/EasyDutch.txt"
+    "url": "https://raw.githubusercontent.com/EasyDutch-uBlockOrigin/EasyDutchCDN/main/EasyDutch.txt"
   },
   {
     "filterListId": 2520,
@@ -16624,66 +16624,6 @@
     "id": 3045,
     "primariness": 1,
     "url": "https://badblock.celenity.dev/wildcards-no-star/personal.txt"
-  },
-  {
-    "filterListId": 2717,
-    "id": 3046,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/wildcards-no-%2A/personal.txt"
-  },
-  {
-    "filterListId": 2718,
-    "id": 3047,
-    "primariness": 1,
-    "url": "https://badblock.celenity.dev/abp/whitelist.txt"
-  },
-  {
-    "filterListId": 2718,
-    "id": 3048,
-    "primariness": 2,
-    "url": "https://raw.githubusercontent.com/celenityy/BadBlock/main/whitelist.txt"
-  },
-  {
-    "filterListId": 2719,
-    "id": 3049,
-    "primariness": 1,
-    "url": "https://divested.dev/hosts-domains-wildcards"
-  },
-  {
-    "filterListId": 2720,
-    "id": 3050,
-    "primariness": 1,
-    "url": "https://divested.dev/hosts-domains"
-  },
-  {
-    "filterListId": 2721,
-    "id": 3051,
-    "primariness": 1,
-    "url": "https://divested.dev/hosts"
-  },
-  {
-    "filterListId": 2722,
-    "id": 3052,
-    "primariness": 1,
-    "url": "https://divested.dev/hosts-dnsmasq"
-  },
-  {
-    "filterListId": 2723,
-    "id": 3053,
-    "primariness": 1,
-    "url": "https://divested.dev/blocklists/Fingerprinting.ubl"
-  },
-  {
-    "filterListId": 2723,
-    "id": 3054,
-    "primariness": 2,
-    "url": "https://codeberg.org/divested/dnsbl/raw/branch/master/Fingerprinting.ubl"
-  },
-  {
-    "filterListId": 2723,
-    "id": 3055,
-    "primariness": 3,
-    "url": "https://gitlab.com/divested/dnsbl/-/raw/master/Fingerprinting.ubl"
   },
   {
     "filterListId": 2723,

@@ -15761,11 +15761,11 @@
     "name": "MurdochList"
   },
   {
-    "description": "Dutch supplement for the Easylist filters to use with uBlock Origin",
+    "description": "Dutch filterlist to use with uBlock Origin",
     "donateUrl": "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
-    "homeUrl": "https://github.com/EasyDutch-uBO/EasyDutch/",
+    "homeUrl": "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/",
     "id": 2471,
-    "issuesUrl": "https://github.com/EasyDutch-uBO/EasyDutch/issues",
+    "issuesUrl": "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/issues",
     "licenseId": 4,
     "name": "EasyDutch"
   },
