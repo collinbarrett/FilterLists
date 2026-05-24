@@ -9,25 +9,14 @@ updates:
     schedule:
       interval: "daily"
   - package-ecosystem: "nuget"
-    directory: "services"
+    directory: "/services"
     schedule:
       interval: "daily"
+    groups:
+      aspire:
+        patterns:
+          - "Aspire.*"
   - package-ecosystem: "npm"
     directory: "/web"
     schedule:
       interval: "daily"
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    target-branch: "next"
-  - package-ecosystem: "docker"
-    directory: "/web"
-    schedule:
-      interval: "daily"
-    target-branch: "next"
-  - package-ecosystem: "npm"
-    directory: "/web"
-    schedule:
-      interval: "daily"
-    target-branch: "next"
