@@ -27,6 +27,7 @@ If the assigned issue has the `directory-data` label, or the issue body explicit
 9. Review the generated migration to confirm it captures only the intended data changes.
 10. Run a focused validation step for the touched Directory slice before handing the pull request back.
 11. Summarize the external sources used, any cherry-picked commits, and the key data-model additions in the pull request or final session message.
+12. If current upstream research shows a filter list is fully dead and all published URLs are gone, prefer removing the dead `FilterList` rows and their dependent seed data instead of keeping discontinued placeholder entries.
 
 ## Guardrails
 

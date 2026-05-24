@@ -10,6 +10,7 @@ applyTo: "services/Directory/data/*.json,services/Directory/FilterLists.Director
 - Keep all foreign keys valid across the junction and relationship tables.
 - `FilterList.name` must stay unique and in title case.
 - `FilterListViewUrl` rows are only for mirrors or multi-part segments, not different list flavors.
+- If upstream research shows a filter list is fully dead and all published URLs are gone, remove the dead `FilterList` rows and dependent seed data instead of keeping discontinued placeholders.
 - Every JSON change must ship with a generated migration under `services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/`.
 - URL fields must stay valid absolute URIs, including the protocol.
 
