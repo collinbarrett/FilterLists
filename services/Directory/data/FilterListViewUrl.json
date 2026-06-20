@@ -15454,24 +15454,6 @@
     "url": "https://www.lb.lt/en/illegalwww?export=csv"
   },
   {
-    "filterListId": 2591,
-    "id": 2856,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/multi.txt"
-  },
-  {
-    "filterListId": 2592,
-    "id": 2857,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/tif.txt"
-  },
-  {
-    "filterListId": 2593,
-    "id": 2858,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/fake.txt"
-  },
-  {
     "filterListId": 2594,
     "id": 2859,
     "primariness": 1,
@@ -15488,24 +15470,6 @@
     "id": 2861,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt"
-  },
-  {
-    "filterListId": 2597,
-    "id": 2862,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/multi.txt"
-  },
-  {
-    "filterListId": 2598,
-    "id": 2863,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/tif.txt"
-  },
-  {
-    "filterListId": 2599,
-    "id": 2864,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/fake.txt"
   },
   {
     "filterListId": 2600,
@@ -15622,34 +15586,10 @@
     "url": "https://raw.githubusercontent.com/thedoggybrad/Frame-Blocker-Filter/main/socialmedia-exception.txt"
   },
   {
-    "filterListId": 2620,
-    "id": 2886,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/light.txt"
-  },
-  {
-    "filterListId": 2621,
-    "id": 2887,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/light.txt"
-  },
-  {
     "filterListId": 2622,
     "id": 2888,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light.txt"
-  },
-  {
-    "filterListId": 2623,
-    "id": 2889,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/pro.txt"
-  },
-  {
-    "filterListId": 2624,
-    "id": 2890,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.txt"
   },
   {
     "filterListId": 2625,
@@ -15658,34 +15598,10 @@
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.txt"
   },
   {
-    "filterListId": 2626,
-    "id": 2892,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/pro.plus.txt"
-  },
-  {
-    "filterListId": 2627,
-    "id": 2893,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/pro.plus.txt"
-  },
-  {
     "filterListId": 2628,
     "id": 2894,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.plus.txt"
-  },
-  {
-    "filterListId": 2629,
-    "id": 2895,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/ultimate.txt"
-  },
-  {
-    "filterListId": 2630,
-    "id": 2896,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/ultimate.txt"
   },
   {
     "filterListId": 2631,
@@ -15698,18 +15614,6 @@
     "id": 2898,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.txt"
-  },
-  {
-    "filterListId": 2633,
-    "id": 2899,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/personal.txt"
-  },
-  {
-    "filterListId": 2634,
-    "id": 2900,
-    "primariness": 1,
-    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/personal.txt"
   },
   {
     "filterListId": 2635,
