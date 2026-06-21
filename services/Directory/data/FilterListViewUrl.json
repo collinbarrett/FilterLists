@@ -17624,5 +17624,11 @@
     "id": 3263,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/Kdansky/switzerland-dropshipping/main/dropshipping-filters.txt"
+  },
+  {
+    "filterListId": 2858,
+    "id": 3264,
+    "primariness": 1,
+    "url": "https://filters.adtidy.org/ios/filters/25_optimized.txt"
   }
 ]
