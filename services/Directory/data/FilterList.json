@@ -954,13 +954,13 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
-    "description": "Filter that enables removing of the ads from websites with English content or content in languages that lack separate AdGuard lists.",
+    "description": "EasyList + AdGuard English filter. This complete filter is necessary for quality ad blocking.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 166,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard Base Filter (AdGuard for Chromium)",
+    "name": "AdGuard Base filter + EasyList (AdGuard for Chromium)",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
@@ -974,7 +974,7 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
-    "description": "A filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, regional AdGuard lists, EasyList, EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking. This filter is used by AdGuard DNS servers to block ads.",
+    "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
     "homeUrl": "https://github.com/AdguardTeam/AdguardSDNSFilter",
     "id": 168,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardSDNSFilter/issues",
@@ -13895,13 +13895,13 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
-    "description": "Filter that enables removing of the ads from websites with English content or content in languages that lack separate AdGuard lists.",
+    "description": "EasyList + AdGuard English filter. This complete filter is necessary for quality ad blocking.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 2210,
     "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
     "licenseId": 12,
-    "name": "AdGuard Base Filter (uBlock Origin)",
+    "name": "AdGuard Base filter + EasyList",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
@@ -13915,7 +13915,7 @@
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   },
   {
-    "description": "Blocks irritating elements on webpages, including cookie notices, third-party widgets and in-page popups (Doesn’t include social media widgets and buttons, to block them you can still use Social media filter separately). It was inspired by Fanboy Annoyances List, but doesn’t duplicate it, so you can use them both together.",
+    "description": "Blocks irritating elements on web pages including cookie notices, third-party widgets and in-page pop-ups. Contains the following AdGuard filters: Cookie Notices, Popups, Mobile App Banners, Other Annoyances and Widgets.",
     "forumUrl": "https://forum.adguard.com/index.php?categories/filter-rules.66/",
     "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
     "id": 2212,
@@ -18647,5 +18647,14 @@
     "issuesUrl": "https://github.com/Kdansky/switzerland-dropshipping/issues",
     "licenseId": 2,
     "name": "Switzerland Dropshipping Block List"
+  },
+  {
+    "description": "This filter blocks trackers in email clients.",
+    "homeUrl": "https://github.com/AdguardTeam/AdguardFilters",
+    "id": 2858,
+    "issuesUrl": "https://github.com/AdguardTeam/AdguardFilters/issues",
+    "licenseId": 12,
+    "name": "AdGuard Mail Tracking Filter",
+    "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
   }
 ]
