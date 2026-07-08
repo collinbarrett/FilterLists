@@ -18545,12 +18545,12 @@
     "name": "IDN Homograph & Favicon Security List - uBlock Origin version"
   },
   {
-    "description": "Filter list for website features that use or promote Generative AI.",
-    "homeUrl": "https://github.com/Stevoisiak/Stevos-GenAI-Blocklist",
+    "description": "Filter list for website features and content that uses Generative AI.",
+    "homeUrl": "https://github.com/Stevoisiak/Stevos-AI-Blocklist",
     "id": 2845,
-    "issuesUrl": "https://github.com/Stevoisiak/Stevos-GenAI-Blocklist/issues",
+    "issuesUrl": "https://github.com/Stevoisiak/Stevos-AI-Blocklist/issues",
     "licenseId": 2,
-    "name": "Stevo's GenAI Blocklist"
+    "name": "Stevo's AI Blocklist"
   },
   {
     "description": "Domains commonly used to send recruiter spam and phishing-style job solicitations.",
