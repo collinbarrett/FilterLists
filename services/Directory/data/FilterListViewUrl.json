@@ -17630,5 +17630,23 @@
     "id": 3264,
     "primariness": 1,
     "url": "https://filters.adtidy.org/ios/filters/25_optimized.txt"
+  },
+  {
+    "filterListId": 2859,
+    "id": 3265,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/omerdduran/turk-adfilter/main/turk-adfilter.txt"
+  },
+  {
+    "filterListId": 2859,
+    "id": 3266,
+    "primariness": 2,
+    "url": "https://codeberg.org/omerdduran/turk-adfilter/raw/branch/main/turk-adfilter.txt"
+  },
+  {
+    "filterListId": 2860,
+    "id": 3267,
+    "primariness": 1,
+    "url": "https://raw.githubusercontent.com/omerdduran/turk-adfilter/main/hosts.txt"
   }
 ]

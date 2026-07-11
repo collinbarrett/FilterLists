@@ -18656,5 +18656,23 @@
     "licenseId": 12,
     "name": "AdGuard Mail Tracking Filter",
     "policyUrl": "https://kb.adguard.com/en/general/adguard-filter-policy"
+  },
+  {
+    "description": "Community-driven, open-source blocklist targeting Turkey-based ad, tracker and malicious content providers — including Turkish illegal gambling and phishing/scam domains that global lists don't cover. Compatible with AdGuard, uBlock Origin, Pi-hole, AdGuard Home and NextDNS. Actively maintained, daily updates.",
+    "homeUrl": "https://reklamsiz-turkiye.com",
+    "id": 2859,
+    "issuesUrl": "https://github.com/omerdduran/turk-adfilter/issues",
+    "licenseId": 4,
+    "name": "Turk-AdFilter",
+    "submissionUrl": "https://github.com/omerdduran/turk-adfilter/pulls"
+  },
+  {
+    "description": "Community-driven, open-source hosts/DNS blocklist targeting Turkey-based ad, tracker and malicious content providers. Compatible with Pi-hole, AdGuard Home and NextDNS. Actively maintained, daily updates.",
+    "homeUrl": "https://reklamsiz-turkiye.com",
+    "id": 2860,
+    "issuesUrl": "https://github.com/omerdduran/turk-adfilter/issues",
+    "licenseId": 4,
+    "name": "Turk-AdFilter (Hosts)",
+    "submissionUrl": "https://github.com/omerdduran/turk-adfilter/pulls"
   }
 ]
