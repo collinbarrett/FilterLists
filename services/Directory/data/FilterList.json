@@ -18727,5 +18727,61 @@
     "name": "Spades Darklist",
     "policyUrl": "https://github.com/vinayak509143/spades-ux-shield-filters/blob/main/CONTRIBUTING.md",
     "submissionUrl": "https://github.com/vinayak509143/spades-ux-shield-filters/issues/new?template=rule-request.yml"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2867,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters"
+  },
+  {
+    "description": "The ad and tracker-blocking subset of Dropship Filters.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2868,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Ads)"
+  },
+  {
+    "description": "The affiliate and redirect-blocking subset of Dropship Filters.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2869,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Redirects)"
+  },
+  {
+    "description": "The search-result hiding subset of Dropship Filters.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2870,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Search)"
+  },
+  {
+    "description": "A DNS-safe bare-domain version of Dropship Filters for Pi-hole.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2871,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Pi-hole)"
+  },
+  {
+    "description": "An expanded maximum-compatibility version of the search subset of Dropship Filters.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2872,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Search Compat)"
+  },
+  {
+    "description": "An expanded maximum-compatibility version of Dropship Filters.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2873,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Full Compat)"
   }
 ]
