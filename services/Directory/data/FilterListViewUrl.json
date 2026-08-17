@@ -17648,5 +17648,47 @@
     "id": 3267,
     "primariness": 1,
     "url": "https://raw.githubusercontent.com/omerdduran/turk-adfilter/main/hosts.txt"
+  },
+  {
+    "filterListId": 2861,
+    "id": 3268,
+    "primariness": 1,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full.txt"
+  },
+  {
+    "filterListId": 2861,
+    "id": 3269,
+    "primariness": 2,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt"
+  },
+  {
+    "filterListId": 2861,
+    "id": 3270,
+    "primariness": 3,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt"
+  },
+  {
+    "filterListId": 2861,
+    "id": 3271,
+    "primariness": 4,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search.txt"
+  },
+  {
+    "filterListId": 2861,
+    "id": 3272,
+    "primariness": 5,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-pihole.txt"
+  },
+  {
+    "filterListId": 2861,
+    "id": 3273,
+    "primariness": 6,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search-compat.txt"
+  },
+  {
+    "filterListId": 2861,
+    "id": 3274,
+    "primariness": 7,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full-compat.txt"
   }
 ]

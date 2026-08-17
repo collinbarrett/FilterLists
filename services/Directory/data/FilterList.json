@@ -18674,5 +18674,13 @@
     "licenseId": 4,
     "name": "Turk-AdFilter (Hosts)",
     "submissionUrl": "https://github.com/omerdduran/turk-adfilter/pulls"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2861,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters"
   }
 ]
