@@ -18674,5 +18674,15 @@
     "licenseId": 4,
     "name": "Turk-AdFilter (Hosts)",
     "submissionUrl": "https://github.com/omerdduran/turk-adfilter/pulls"
+  },
+  {
+    "id": 3500,
+    "name": "BlackCatOfficial's Blocking Trash Ads (Made in VN)",
+    "description": "Specialized ad-blocking filter made by a Vietnamese guy that blocks all ads missed by standard lists.",
+    "homeUrl": "https://github.com/BlackCatOfficialytb/BlackCatOfficial-ubo-filter",
+    "viewUrl": "https://github.com/BlackCatOfficialytb/BlackCatOfficial-ubo-filter/raw/refs/heads/main/filter.txt",
+    "issuesUrl": "https://github.com/BlackCatOfficialytb/BlackCatOfficial-ubo-filter/issues",
+    "licenseId": 2,
+    "syntaxId": 6
   }
 ]
