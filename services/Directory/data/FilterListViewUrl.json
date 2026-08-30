@@ -15939,25 +15939,25 @@
     "filterListId": 2669,
     "id": 2953,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt"
+    "url": "https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/combined/combined.txt"
   },
   {
     "filterListId": 2670,
     "id": 2954,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt"
+    "url": "https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/ads/ads.txt"
   },
   {
     "filterListId": 2671,
     "id": 2955,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt"
+    "url": "https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/annoyances/annoyances.txt"
   },
   {
     "filterListId": 2672,
     "id": 2956,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt"
+    "url": "https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt"
   },
   {
     "filterListId": 2673,
