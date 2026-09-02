@@ -17654,5 +17654,23 @@
     "id": 3268,
     "primariness": 1,
     "url": "https://github.com/BlackCatOfficialytb/BlackCatOfficial-ubo-filter/raw/refs/heads/main/filter.txt"
+  },
+  {
+    "filterListId": 2862,
+    "id": 3269,
+    "primariness": 1,
+    "url": "https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt"
+  },
+  {
+    "filterListId": 2863,
+    "id": 3270,
+    "primariness": 1,
+    "url": "https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt"
+  },
+  {
+    "filterListId": 2864,
+    "id": 3271,
+    "primariness": 1,
+    "url": "https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt"
   }
 ]
