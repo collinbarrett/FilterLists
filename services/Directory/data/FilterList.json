@@ -18678,5 +18678,32 @@
     "issuesUrl": "https://github.com/BlackCatOfficialytb/BlackCatOfficial-ubo-filter/issues",
     "licenseId": 2,
     "name": "BlackCatOfficial's Blocking Trash Ads (Made in VN)"
+  },
+  {
+    "description": "Daily-updated domains blocklist aggregated and de-duplicated from 46 curated upstream sources, with per-source attribution, verified licences and a public false-positive cross-check. Covers advertising, tracking, malware and phishing, plus gambling, piracy, streaming and adult domains from some upstream sources.",
+    "homeUrl": "https://github.com/fabriziosalmi/blacklists",
+    "id": 2862,
+    "issuesUrl": "https://github.com/fabriziosalmi/blacklists/issues",
+    "licenseId": 4,
+    "name": "Fabrizio Salmi's Domains Blacklist",
+    "submissionUrl": "https://github.com/fabriziosalmi/blacklists/pulls"
+  },
+  {
+    "description": "Daily-updated domains blocklist aggregated and de-duplicated from 46 curated upstream sources, published in Unbound format with per-source attribution, verified licences and a public false-positive cross-check. Covers advertising, tracking, malware and phishing, plus gambling, piracy, streaming and adult domains from some upstream sources.",
+    "homeUrl": "https://github.com/fabriziosalmi/blacklists",
+    "id": 2863,
+    "issuesUrl": "https://github.com/fabriziosalmi/blacklists/issues",
+    "licenseId": 4,
+    "name": "Fabrizio Salmi's Domains Blacklist (Unbound)",
+    "submissionUrl": "https://github.com/fabriziosalmi/blacklists/pulls"
+  },
+  {
+    "description": "Daily-updated domains blocklist aggregated and de-duplicated from 46 curated upstream sources, published in Response Policy Zone format with per-source attribution, verified licences and a public false-positive cross-check. Covers advertising, tracking, malware and phishing, plus gambling, piracy, streaming and adult domains from some upstream sources.",
+    "homeUrl": "https://github.com/fabriziosalmi/blacklists",
+    "id": 2864,
+    "issuesUrl": "https://github.com/fabriziosalmi/blacklists/issues",
+    "licenseId": 4,
+    "name": "Fabrizio Salmi's Domains Blacklist (RPZ)",
+    "submissionUrl": "https://github.com/fabriziosalmi/blacklists/pulls"
   }
 ]
