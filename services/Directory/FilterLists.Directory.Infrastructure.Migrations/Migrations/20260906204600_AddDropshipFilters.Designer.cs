@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20260906203303_AddDropshipFilters")]
+    [Migration("20260906204600_AddDropshipFilters")]
     partial class AddDropshipFilters
     {
         /// <inheritdoc />
@@ -21170,8 +21170,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2865,
                             Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters"
                         });
@@ -65504,7 +65504,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 219,
                             Name = "Lalaggi",
-                            Url = "https://github.com/Lalaggi"
+                            Url = "https://gitlab.com/Lalaggi"
                         });
                 });
 
@@ -91535,7 +91535,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3272,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-full.txt"
                                 },
                                 new
                                 {
@@ -91543,7 +91543,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3273,
                                     Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-ads.txt"
                                 },
                                 new
                                 {
@@ -91551,7 +91551,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3274,
                                     Primariness = (short)3,
                                     SegmentNumber = (short)0,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-redirects.txt"
                                 },
                                 new
                                 {
@@ -91559,7 +91559,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3275,
                                     Primariness = (short)4,
                                     SegmentNumber = (short)0,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-search.txt"
                                 },
                                 new
                                 {
@@ -91567,7 +91567,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3276,
                                     Primariness = (short)5,
                                     SegmentNumber = (short)0,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-pihole.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-pihole.txt"
                                 },
                                 new
                                 {
@@ -91575,7 +91575,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3277,
                                     Primariness = (short)6,
                                     SegmentNumber = (short)0,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search-compat.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-search-compat.txt"
                                 },
                                 new
                                 {
@@ -91583,7 +91583,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3278,
                                     Primariness = (short)7,
                                     SegmentNumber = (short)0,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full-compat.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-full-compat.txt"
                                 });
                         });
 

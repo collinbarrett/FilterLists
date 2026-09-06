@@ -15,12 +15,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.InsertData(
                 table: "FilterList",
                 columns: new[] { "Id", "ChatUrl", "Description", "DonateUrl", "EmailAddress", "ForumUrl", "HomeUrl", "IssuesUrl", "LicenseId", "Name", "OnionUrl", "PolicyUrl", "SubmissionUrl" },
-                values: new object[] { 2865, null, "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters", null, null, null });
+                values: new object[] { 2865, null, "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.", null, null, null, "https://gitlab.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters", null, null, null });
 
             migrationBuilder.InsertData(
                 table: "Maintainer",
                 columns: new[] { "Id", "EmailAddress", "Name", "TwitterHandle", "Url" },
-                values: new object[] { 219, null, "Lalaggi", null, "https://github.com/Lalaggi" });
+                values: new object[] { 219, null, "Lalaggi", null, "https://gitlab.com/Lalaggi" });
 
             migrationBuilder.InsertData(
                 table: "Tag",
@@ -70,13 +70,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "Id", "Primariness", "Url" },
                 values: new object[,]
                 {
-                    { 2865, 3272, (short)1, "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full.txt" },
-                    { 2865, 3273, (short)2, "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt" },
-                    { 2865, 3274, (short)3, "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt" },
-                    { 2865, 3275, (short)4, "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search.txt" },
-                    { 2865, 3276, (short)5, "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-pihole.txt" },
-                    { 2865, 3277, (short)6, "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search-compat.txt" },
-                    { 2865, 3278, (short)7, "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full-compat.txt" }
+                    { 2865, 3272, (short)1, "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-full.txt" },
+                    { 2865, 3273, (short)2, "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-ads.txt" },
+                    { 2865, 3274, (short)3, "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-redirects.txt" },
+                    { 2865, 3275, (short)4, "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-search.txt" },
+                    { 2865, 3276, (short)5, "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-pihole.txt" },
+                    { 2865, 3277, (short)6, "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-search-compat.txt" },
+                    { 2865, 3278, (short)7, "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-full-compat.txt" }
                 });
         }
 

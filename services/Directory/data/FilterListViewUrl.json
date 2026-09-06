@@ -17677,42 +17677,42 @@
     "filterListId": 2865,
     "id": 3272,
     "primariness": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-full.txt"
   },
   {
     "filterListId": 2865,
     "id": 3273,
     "primariness": 2,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-ads.txt"
   },
   {
     "filterListId": 2865,
     "id": 3274,
     "primariness": 3,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-redirects.txt"
   },
   {
     "filterListId": 2865,
     "id": 3275,
     "primariness": 4,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-search.txt"
   },
   {
     "filterListId": 2865,
     "id": 3276,
     "primariness": 5,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-pihole.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-pihole.txt"
   },
   {
     "filterListId": 2865,
     "id": 3277,
     "primariness": 6,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search-compat.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-search-compat.txt"
   },
   {
     "filterListId": 2865,
     "id": 3278,
     "primariness": 7,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full-compat.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/main/dropship_filters-full-compat.txt"
   }
 ]
