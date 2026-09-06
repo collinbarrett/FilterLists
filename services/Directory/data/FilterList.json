@@ -18705,5 +18705,13 @@
     "licenseId": 4,
     "name": "Fabrizio Salmi's Domains Blacklist (RPZ)",
     "submissionUrl": "https://github.com/fabriziosalmi/blacklists/pulls"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2865,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters"
   }
 ]
