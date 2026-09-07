@@ -21170,7 +21170,61 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
-                            Name = "Dropship Filters"
+                            Name = "Dropship Filters (Full)"
+                        },
+                        new
+                        {
+                            Id = 2866,
+                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+                            LicenseId = 8,
+                            Name = "Dropship Filters (Ads)"
+                        },
+                        new
+                        {
+                            Id = 2867,
+                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+                            LicenseId = 8,
+                            Name = "Dropship Filters (Redirects)"
+                        },
+                        new
+                        {
+                            Id = 2868,
+                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+                            LicenseId = 8,
+                            Name = "Dropship Filters (Search)"
+                        },
+                        new
+                        {
+                            Id = 2869,
+                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+                            LicenseId = 8,
+                            Name = "Dropship Filters (Pi-hole)"
+                        },
+                        new
+                        {
+                            Id = 2870,
+                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+                            LicenseId = 8,
+                            Name = "Dropship Filters (Search Compatibility)"
+                        },
+                        new
+                        {
+                            Id = 2871,
+                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+                            LicenseId = 8,
+                            Name = "Dropship Filters (Full Compatibility)"
                         });
                 });
 
@@ -25807,6 +25861,36 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2865,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2869,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
                             LanguageId = (short)37
                         });
                 });
@@ -33929,6 +34013,36 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2865,
+                            MaintainerId = 219
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            MaintainerId = 219
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            MaintainerId = 219
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            MaintainerId = 219
+                        },
+                        new
+                        {
+                            FilterListId = 2869,
+                            MaintainerId = 219
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            MaintainerId = 219
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
                             MaintainerId = 219
                         });
                 });
@@ -45721,11 +45835,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2865,
-                            SyntaxId = (short)1
-                        },
-                        new
-                        {
-                            FilterListId = 2865,
                             SyntaxId = (short)3
                         },
                         new
@@ -45736,6 +45845,86 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2865,
+                            SyntaxId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            SyntaxId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            SyntaxId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            SyntaxId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = 2869,
+                            SyntaxId = (short)1
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            SyntaxId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
                             SyntaxId = (short)6
                         });
                 });
@@ -62513,6 +62702,126 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2865,
+                            TagId = 45
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            TagId = 42
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            TagId = 43
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            TagId = 44
+                        },
+                        new
+                        {
+                            FilterListId = 2866,
+                            TagId = 45
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            TagId = 42
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            TagId = 43
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            TagId = 44
+                        },
+                        new
+                        {
+                            FilterListId = 2867,
+                            TagId = 45
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            TagId = 42
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            TagId = 43
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            TagId = 44
+                        },
+                        new
+                        {
+                            FilterListId = 2868,
+                            TagId = 45
+                        },
+                        new
+                        {
+                            FilterListId = 2869,
+                            TagId = 42
+                        },
+                        new
+                        {
+                            FilterListId = 2869,
+                            TagId = 43
+                        },
+                        new
+                        {
+                            FilterListId = 2869,
+                            TagId = 44
+                        },
+                        new
+                        {
+                            FilterListId = 2869,
+                            TagId = 45
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            TagId = 42
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            TagId = 43
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            TagId = 44
+                        },
+                        new
+                        {
+                            FilterListId = 2870,
+                            TagId = 45
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
+                            TagId = 42
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
+                            TagId = 43
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
+                            TagId = 44
+                        },
+                        new
+                        {
+                            FilterListId = 2871,
                             TagId = 45
                         });
                 });
@@ -91551,49 +91860,49 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 },
                                 new
                                 {
-                                    FilterListId = 2865,
+                                    FilterListId = 2866,
                                     Id = 3276,
-                                    Primariness = (short)2,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt"
                                 },
                                 new
                                 {
-                                    FilterListId = 2865,
+                                    FilterListId = 2867,
                                     Id = 3277,
-                                    Primariness = (short)3,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt"
                                 },
                                 new
                                 {
-                                    FilterListId = 2865,
+                                    FilterListId = 2868,
                                     Id = 3278,
-                                    Primariness = (short)4,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search.txt"
                                 },
                                 new
                                 {
-                                    FilterListId = 2865,
+                                    FilterListId = 2869,
                                     Id = 3279,
-                                    Primariness = (short)5,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-pihole.txt"
                                 },
                                 new
                                 {
-                                    FilterListId = 2865,
+                                    FilterListId = 2870,
                                     Id = 3280,
-                                    Primariness = (short)6,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search-compat.txt"
                                 },
                                 new
                                 {
-                                    FilterListId = 2865,
+                                    FilterListId = 2871,
                                     Id = 3281,
-                                    Primariness = (short)7,
+                                    Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full-compat.txt"
                                 });
