@@ -203,5 +203,25 @@
     "description": "Cleans up anime viewing websites to make them easier to use",
     "id": 41,
     "name": "anime"
+  },
+  {
+    "description": "Blocks or hides dropshipping retailers and their storefronts",
+    "id": 42,
+    "name": "dropshipping"
+  },
+  {
+    "description": "Blocks trackers and other privacy-invasive resources from these retailers",
+    "id": 43,
+    "name": "tracker"
+  },
+  {
+    "description": "Blocks affiliate and redirect link chains",
+    "id": 44,
+    "name": "affiliate"
+  },
+  {
+    "description": "Targets Chinese-origin e-commerce and dropshipping retailers",
+    "id": 45,
+    "name": "china"
   }
 ]
