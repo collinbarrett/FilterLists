@@ -18708,10 +18708,58 @@
   },
   {
     "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-    "homeUrl": "https://gitlab.com/Lalaggi/dropship-filters",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
     "id": 2865,
-    "issuesUrl": "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
     "licenseId": 8,
     "name": "Dropship Filters"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2866,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Ads)"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2867,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Redirects)"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2868,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Search)"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2869,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Pi-hole)"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2870,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Search Compat)"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://github.com/Lalaggi/dropship-filters",
+    "id": 2871,
+    "issuesUrl": "https://github.com/Lalaggi/dropship-filters/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters (Full Compat)"
   }
 ]
