@@ -18680,14 +18680,6 @@
     "name": "BlackCatOfficial's Blocking Trash Ads (Made in VN)"
   },
   {
-    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-    "homeUrl": "https://gitlab.com/Lalaggi/dropship-filters",
-    "id": 2861,
-    "issuesUrl": "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
-    "licenseId": 8,
-    "name": "Dropship Filters"
-  },
-  {
     "description": "Daily-updated domains blocklist aggregated and de-duplicated from 46 curated upstream sources, with per-source attribution, verified licences and a public false-positive cross-check. Covers advertising, tracking, malware and phishing, plus gambling, piracy, streaming and adult domains from some upstream sources.",
     "homeUrl": "https://github.com/fabriziosalmi/blacklists",
     "id": 2862,
@@ -18713,5 +18705,13 @@
     "licenseId": 4,
     "name": "Fabrizio Salmi's Domains Blacklist (RPZ)",
     "submissionUrl": "https://github.com/fabriziosalmi/blacklists/pulls"
+  },
+  {
+    "description": "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
+    "homeUrl": "https://gitlab.com/Lalaggi/dropship-filters",
+    "id": 2865,
+    "issuesUrl": "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+    "licenseId": 8,
+    "name": "Dropship Filters"
   }
 ]

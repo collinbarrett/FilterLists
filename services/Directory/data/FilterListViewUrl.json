@@ -17656,22 +17656,10 @@
     "url": "https://github.com/BlackCatOfficialytb/BlackCatOfficial-ubo-filter/raw/refs/heads/main/filter.txt"
   },
   {
-    "filterListId": 2861,
-    "id": 3268,
-    "primariness": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full.txt"
-  },
-  {
     "filterListId": 2862,
     "id": 3269,
     "primariness": 1,
     "url": "https://github.com/fabriziosalmi/blacklists/releases/download/latest/blacklist.txt"
-  },
-  {
-    "filterListId": 2861,
-    "id": 3269,
-    "primariness": 2,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt"
   },
   {
     "filterListId": 2863,
@@ -17680,38 +17668,50 @@
     "url": "https://github.com/fabriziosalmi/blacklists/releases/download/latest/unbound_blacklist.txt"
   },
   {
-    "filterListId": 2861,
-    "id": 3270,
-    "primariness": 3,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt"
-  },
-  {
     "filterListId": 2864,
     "id": 3271,
     "primariness": 1,
     "url": "https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt"
   },
   {
-    "filterListId": 2861,
-    "id": 3271,
+    "filterListId": 2865,
+    "id": 3275,
+    "primariness": 1,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full.txt"
+  },
+  {
+    "filterListId": 2865,
+    "id": 3276,
+    "primariness": 2,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt"
+  },
+  {
+    "filterListId": 2865,
+    "id": 3277,
+    "primariness": 3,
+    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt"
+  },
+  {
+    "filterListId": 2865,
+    "id": 3278,
     "primariness": 4,
     "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search.txt"
   },
   {
-    "filterListId": 2861,
-    "id": 3272,
+    "filterListId": 2865,
+    "id": 3279,
     "primariness": 5,
     "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-pihole.txt"
   },
   {
-    "filterListId": 2861,
-    "id": 3273,
+    "filterListId": 2865,
+    "id": 3280,
     "primariness": 6,
     "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search-compat.txt"
   },
   {
-    "filterListId": 2861,
-    "id": 3274,
+    "filterListId": 2865,
+    "id": 3281,
     "primariness": 7,
     "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full-compat.txt"
   }
