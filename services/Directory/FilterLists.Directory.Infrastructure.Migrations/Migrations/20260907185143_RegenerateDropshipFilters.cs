@@ -17,13 +17,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "Id", "ChatUrl", "Description", "DonateUrl", "EmailAddress", "ForumUrl", "HomeUrl", "IssuesUrl", "LicenseId", "Name", "OnionUrl", "PolicyUrl", "SubmissionUrl" },
                 values: new object[,]
                 {
-                    { 2865, null, "Everything: search-result hiding, ad and tracker blocking, and affiliate redirect blocking.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters", null, null, null },
-                    { 2866, null, "Blocks dropshipping ad networks and trackers.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Ads)", null, null, null },
-                    { 2867, null, "Blocks dropshipping affiliate and redirect link chains.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Redirects)", null, null, null },
-                    { 2868, null, "Hides dropshipping retailers from search results.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Search)", null, null, null },
-                    { 2869, null, "Bare-domain DNS blocklist of dropshipping ad, tracker, and affiliate domains for Pi-hole and AdGuard Home.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Pi-hole)", null, null, null },
-                    { 2870, null, "Compatibility version of the search-result hiding filters for older or non-standard blocking engines.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Search Compatibility)", null, null, null },
-                    { 2871, null, "Compatibility version of the complete filters for older or non-standard blocking engines.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Full Compatibility)", null, null, null }
+                    { 2865, null, "Everything: search-result hiding, ad and tracker blocking, and affiliate redirect blocking.", null, null, null, "https://gitlab.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters", null, null, null },
+                    { 2866, null, "Blocks dropshipping ad networks and trackers.", null, null, null, "https://gitlab.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Ads)", null, null, null },
+                    { 2867, null, "Blocks dropshipping affiliate and redirect link chains.", null, null, null, "https://gitlab.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Redirects)", null, null, null },
+                    { 2868, null, "Hides dropshipping retailers from search results.", null, null, null, "https://gitlab.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Search)", null, null, null },
+                    { 2869, null, "Bare-domain DNS blocklist of dropshipping ad, tracker, and affiliate domains for Pi-hole and AdGuard Home.", null, null, null, "https://gitlab.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Pi-hole)", null, null, null },
+                    { 2870, null, "Compatibility version of the search-result hiding filters for older or non-standard blocking engines.", null, null, null, "https://gitlab.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Search Compatibility)", null, null, null },
+                    { 2871, null, "Compatibility version of the complete filters for older or non-standard blocking engines.", null, null, null, "https://gitlab.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Full Compatibility)", null, null, null }
                 });
 
             migrationBuilder.InsertData(
@@ -31,7 +31,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "SyntaxId" },
                 values: new object[,]
                 {
-                    { 2861, (short)1 },
                     { 2861, (short)3 },
                     { 2861, (short)6 }
                 });
@@ -222,11 +221,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 table: "FilterListMaintainer",
                 keyColumns: new[] { "FilterListId", "MaintainerId" },
                 keyValues: new object[] { 2871, 219 });
-
-            migrationBuilder.DeleteData(
-                table: "FilterListSyntax",
-                keyColumns: new[] { "FilterListId", "SyntaxId" },
-                keyValues: new object[] { 2861, (short)1 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListSyntax",

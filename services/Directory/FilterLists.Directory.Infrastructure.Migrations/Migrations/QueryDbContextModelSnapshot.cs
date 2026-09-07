@@ -21167,8 +21167,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2865,
                             Description = "Everything: search-result hiding, ad and tracker blocking, and affiliate redirect blocking.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters"
                         },
@@ -21176,8 +21176,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2866,
                             Description = "Blocks dropshipping ad networks and trackers.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Ads)"
                         },
@@ -21185,8 +21185,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2867,
                             Description = "Blocks dropshipping affiliate and redirect link chains.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Redirects)"
                         },
@@ -21194,8 +21194,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2868,
                             Description = "Hides dropshipping retailers from search results.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Search)"
                         },
@@ -21203,8 +21203,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2869,
                             Description = "Bare-domain DNS blocklist of dropshipping ad, tracker, and affiliate domains for Pi-hole and AdGuard Home.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Pi-hole)"
                         },
@@ -21212,8 +21212,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2870,
                             Description = "Compatibility version of the search-result hiding filters for older or non-standard blocking engines.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Search Compatibility)"
                         },
@@ -21221,8 +21221,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2871,
                             Description = "Compatibility version of the complete filters for older or non-standard blocking engines.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Full Compatibility)"
                         });
@@ -45795,11 +45795,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2860,
-                            SyntaxId = (short)1
-                        },
-                        new
-                        {
-                            FilterListId = 2861,
                             SyntaxId = (short)1
                         },
                         new
