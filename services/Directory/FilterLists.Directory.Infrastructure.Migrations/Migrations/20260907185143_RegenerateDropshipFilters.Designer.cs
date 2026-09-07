@@ -11,13 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
     [Migration("20260907185143_RegenerateDropshipFilters")]
     partial class RegenerateDropshipFilters
-========
-    [Migration("20260907185040_AddDropshipFilters")]
-    partial class AddDropshipFilters
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21178,99 +21173,59 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
                             LicenseId = 8,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
                             Name = "Dropship Filters"
-========
-                            Name = "Dropship Filters (Full)"
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                         },
                         new
                         {
                             Id = 2866,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
                             Description = "Blocks dropshipping ad networks and trackers.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
-========
-                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             LicenseId = 8,
                             Name = "Dropship Filters (Ads)"
                         },
                         new
                         {
                             Id = 2867,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
                             Description = "Blocks dropshipping affiliate and redirect link chains.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
-========
-                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             LicenseId = 8,
                             Name = "Dropship Filters (Redirects)"
                         },
                         new
                         {
                             Id = 2868,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
                             Description = "Hides dropshipping retailers from search results.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
-========
-                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             LicenseId = 8,
                             Name = "Dropship Filters (Search)"
                         },
                         new
                         {
                             Id = 2869,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
                             Description = "Bare-domain DNS blocklist of dropshipping ad, tracker, and affiliate domains for Pi-hole and AdGuard Home.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
-========
-                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             LicenseId = 8,
                             Name = "Dropship Filters (Pi-hole)"
                         },
                         new
                         {
                             Id = 2870,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
                             Description = "Compatibility version of the search-result hiding filters for older or non-standard blocking engines.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
-========
-                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             LicenseId = 8,
                             Name = "Dropship Filters (Search Compatibility)"
                         },
                         new
                         {
                             Id = 2871,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
                             Description = "Compatibility version of the complete filters for older or non-standard blocking engines.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
-========
-                            Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             LicenseId = 8,
                             Name = "Dropship Filters (Full Compatibility)"
                         });
@@ -45943,11 +45898,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2869,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
                             SyntaxId = (short)2
-========
-                            SyntaxId = (short)1
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                         },
                         new
                         {
@@ -62769,14 +62720,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2866,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
-========
-                            TagId = 44
-                        },
-                        new
-                        {
-                            FilterListId = 2866,
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             TagId = 45
                         },
                         new
@@ -62787,14 +62730,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2867,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
-========
-                            TagId = 43
-                        },
-                        new
-                        {
-                            FilterListId = 2867,
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             TagId = 44
                         },
                         new
@@ -62810,19 +62745,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2868,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
-========
-                            TagId = 43
-                        },
-                        new
-                        {
-                            FilterListId = 2868,
-                            TagId = 44
-                        },
-                        new
-                        {
-                            FilterListId = 2868,
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             TagId = 45
                         },
                         new
@@ -62853,19 +62775,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2870,
-<<<<<<<< HEAD:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185143_RegenerateDropshipFilters.Designer.cs
-========
-                            TagId = 43
-                        },
-                        new
-                        {
-                            FilterListId = 2870,
-                            TagId = 44
-                        },
-                        new
-                        {
-                            FilterListId = 2870,
->>>>>>>> origin/copilot/finish-5764-again:services/Directory/FilterLists.Directory.Infrastructure.Migrations/Migrations/20260907185040_AddDropshipFilters.Designer.cs
                             TagId = 45
                         },
                         new
