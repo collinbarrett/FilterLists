@@ -17672,5 +17672,12 @@
     "id": 3271,
     "primariness": 1,
     "url": "https://github.com/fabriziosalmi/blacklists/releases/download/latest/rpz_blacklist.txt"
+  },
+  {
+    "filterListId": 2865,
+    "id": 3272,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://secure.fanboy.co.nz/fanboy-agegate.txt"
   }
 ]
