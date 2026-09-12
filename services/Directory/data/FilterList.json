@@ -18705,5 +18705,16 @@
     "licenseId": 4,
     "name": "Fabrizio Salmi's Domains Blacklist (RPZ)",
     "submissionUrl": "https://github.com/fabriziosalmi/blacklists/pulls"
+  },
+  {
+    "description": "Removes age-verification pages and overlays on websites.",
+    "donateUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WMGE9MAGGGMHW",
+    "emailAddress": "easylist@protonmail.com",
+    "forumUrl": "https://forums.lanik.us/",
+    "homeUrl": "https://easylist.to/",
+    "id": 2865,
+    "issuesUrl": "https://github.com/easylist/easylist/issues",
+    "licenseId": 16,
+    "name": "Fanboy's Agegate List"
   }
 ]
