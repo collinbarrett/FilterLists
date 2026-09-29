@@ -17679,5 +17679,19 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://secure.fanboy.co.nz/fanboy-agegate.txt"
+  },
+  {
+    "filterListId": 2866,
+    "id": 3273,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://cdn.jsdelivr.net/gh/vinayak509143/spades-ux-shield-filters@main/lists/darklist.txt"
+  },
+  {
+    "filterListId": 2866,
+    "id": 3274,
+    "primariness": 2,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/vinayak509143/spades-ux-shield-filters/main/lists/darklist.txt"
   }
 ]
