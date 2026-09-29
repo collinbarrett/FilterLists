@@ -18716,5 +18716,16 @@
     "issuesUrl": "https://github.com/easylist/easylist/issues",
     "licenseId": 16,
     "name": "Fanboy's Agegate List"
+  },
+  {
+    "description": "Cosmetic rules that hide cookie walls, fake urgency, scarcity chips, and other dark-pattern UI. Not an ad or tracker blocklist. Written for the Spades UX-Shield browser extension; many lines use uBlock Origin-style host## cosmetics, including procedural :has-text. The extension also enforces a checkout, payment, and login freeze that this text file alone does not.",
+    "donateUrl": "https://ko-fi.com/spadesxx",
+    "homeUrl": "https://github.com/vinayak509143/spades-ux-shield-filters",
+    "id": 2866,
+    "issuesUrl": "https://github.com/vinayak509143/spades-ux-shield-filters/issues",
+    "licenseId": 4,
+    "name": "Spades Darklist",
+    "policyUrl": "https://github.com/vinayak509143/spades-ux-shield-filters/blob/main/CONTRIBUTING.md",
+    "submissionUrl": "https://github.com/vinayak509143/spades-ux-shield-filters/issues/new?template=rule-request.yml"
   }
 ]
