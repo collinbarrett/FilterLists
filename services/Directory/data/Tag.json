@@ -210,11 +210,6 @@
     "name": "dropshipping"
   },
   {
-    "description": "Blocks trackers and other privacy-invasive resources from these retailers",
-    "id": 43,
-    "name": "tracker"
-  },
-  {
     "description": "Blocks affiliate and redirect link chains",
     "id": 44,
     "name": "affiliate"
