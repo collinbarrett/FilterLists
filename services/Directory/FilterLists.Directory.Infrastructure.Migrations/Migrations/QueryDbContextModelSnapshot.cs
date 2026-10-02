@@ -21191,7 +21191,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2867,
                             Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters"
@@ -21200,7 +21200,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2868,
                             Description = "The ad and tracker-blocking subset of Dropship Filters.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Ads)"
@@ -21209,7 +21209,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2869,
                             Description = "The affiliate and redirect-blocking subset of Dropship Filters.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Redirects)"
@@ -21218,7 +21218,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2870,
                             Description = "The search-result hiding subset of Dropship Filters.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Search)"
@@ -21227,7 +21227,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2871,
                             Description = "A DNS-safe bare-domain version of Dropship Filters for Pi-hole.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Pi-hole)"
@@ -21236,7 +21236,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2872,
                             Description = "An expanded maximum-compatibility version of the search subset of Dropship Filters.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Search Compat)"
@@ -21245,10 +21245,19 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2873,
                             Description = "An expanded maximum-compatibility version of Dropship Filters.",
-                            HomeUrl = "https://github.com/Lalaggi/dropship-filters",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
                             IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Full Compat)"
+                        },
+                        new
+                        {
+                            Id = 2874,
+                            Description = "A 0.0.0.0 hosts-file version of the DNS-safe Dropship Filters list.",
+                            HomeUrl = "https://gitlab.com/Lalaggi/dropship-filters",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
+                            LicenseId = 8,
+                            Name = "Dropship Filters (Hosts)"
                         });
                 });
 
@@ -25920,6 +25929,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2873,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2874,
                             LanguageId = (short)37
                         });
                 });
@@ -34082,6 +34096,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2873,
+                            MaintainerId = 220
+                        },
+                        new
+                        {
+                            FilterListId = 2874,
                             MaintainerId = 220
                         });
                 });
@@ -45960,6 +45979,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2873,
                             SyntaxId = (short)6
+                        },
+                        new
+                        {
+                            FilterListId = 2874,
+                            SyntaxId = (short)1
                         });
                 });
 
@@ -62856,6 +62880,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2873,
+                            TagId = 45
+                        },
+                        new
+                        {
+                            FilterListId = 2874,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 2874,
+                            TagId = 42
+                        },
+                        new
+                        {
+                            FilterListId = 2874,
+                            TagId = 44
+                        },
+                        new
+                        {
+                            FilterListId = 2874,
                             TagId = 45
                         });
                 });
@@ -91914,7 +91958,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3275,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-full.txt"
                                 },
                                 new
                                 {
@@ -91922,7 +91966,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3276,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-ads.txt"
                                 },
                                 new
                                 {
@@ -91930,7 +91974,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3277,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-redirects.txt"
                                 },
                                 new
                                 {
@@ -91938,7 +91982,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3278,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-search.txt"
                                 },
                                 new
                                 {
@@ -91946,7 +91990,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3279,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-pihole.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-pihole.txt"
                                 },
                                 new
                                 {
@@ -91954,7 +91998,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3280,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search-compat.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-search-compat.txt"
                                 },
                                 new
                                 {
@@ -91962,7 +92006,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 3281,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
-                                    Url = "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full-compat.txt"
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-full-compat.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2874,
+                                    Id = 3282,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-hosts.txt"
                                 });
                         });
 
