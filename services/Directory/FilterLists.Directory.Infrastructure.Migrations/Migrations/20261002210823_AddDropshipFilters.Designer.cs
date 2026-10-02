@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 {
     [DbContext(typeof(QueryDbContext))]
-    [Migration("20261002205200_AddDropshipFilters")]
+    [Migration("20261002210823_AddDropshipFilters")]
     partial class AddDropshipFilters
     {
         /// <inheritdoc />
@@ -21195,7 +21195,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2867,
                             Description = "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters"
                         },
@@ -21204,7 +21204,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2868,
                             Description = "The ad and tracker-blocking subset of Dropship Filters.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Ads)"
                         },
@@ -21213,7 +21213,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2869,
                             Description = "The affiliate and redirect-blocking subset of Dropship Filters.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Redirects)"
                         },
@@ -21222,7 +21222,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2870,
                             Description = "The search-result hiding subset of Dropship Filters.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Search)"
                         },
@@ -21231,7 +21231,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2871,
                             Description = "A DNS-safe bare-domain version of Dropship Filters for Pi-hole.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Pi-hole)"
                         },
@@ -21240,7 +21240,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2872,
                             Description = "An expanded maximum-compatibility version of the search subset of Dropship Filters.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Search Compat)"
                         },
@@ -21249,7 +21249,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2873,
                             Description = "An expanded maximum-compatibility version of Dropship Filters.",
                             HomeUrl = "https://github.com/Lalaggi/dropship-filters",
-                            IssuesUrl = "https://github.com/Lalaggi/dropship-filters/issues",
+                            IssuesUrl = "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
                             LicenseId = 8,
                             Name = "Dropship Filters (Full Compat)"
                         });
@@ -62754,12 +62754,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2867,
-                            TagId = 42
+                            TagId = 3
                         },
                         new
                         {
                             FilterListId = 2867,
-                            TagId = 43
+                            TagId = 42
                         },
                         new
                         {
@@ -62774,12 +62774,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2868,
-                            TagId = 42
+                            TagId = 3
                         },
                         new
                         {
                             FilterListId = 2868,
-                            TagId = 43
+                            TagId = 42
                         },
                         new
                         {
@@ -62814,12 +62814,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2871,
-                            TagId = 42
+                            TagId = 3
                         },
                         new
                         {
                             FilterListId = 2871,
-                            TagId = 43
+                            TagId = 42
                         },
                         new
                         {
@@ -62844,12 +62844,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2873,
-                            TagId = 42
+                            TagId = 3
                         },
                         new
                         {
                             FilterListId = 2873,
-                            TagId = 43
+                            TagId = 42
                         },
                         new
                         {
@@ -68262,12 +68262,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 42,
                             Description = "Blocks or hides dropshipping retailers and their storefronts",
                             Name = "dropshipping"
-                        },
-                        new
-                        {
-                            Id = 43,
-                            Description = "Blocks trackers and other privacy-invasive resources from these retailers",
-                            Name = "tracker"
                         },
                         new
                         {

@@ -17,13 +17,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "Id", "ChatUrl", "Description", "DonateUrl", "EmailAddress", "ForumUrl", "HomeUrl", "IssuesUrl", "LicenseId", "Name", "OnionUrl", "PolicyUrl", "SubmissionUrl" },
                 values: new object[,]
                 {
-                    { 2867, null, "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters", null, null, null },
-                    { 2868, null, "The ad and tracker-blocking subset of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Ads)", null, null, null },
-                    { 2869, null, "The affiliate and redirect-blocking subset of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Redirects)", null, null, null },
-                    { 2870, null, "The search-result hiding subset of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Search)", null, null, null },
-                    { 2871, null, "A DNS-safe bare-domain version of Dropship Filters for Pi-hole.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Pi-hole)", null, null, null },
-                    { 2872, null, "An expanded maximum-compatibility version of the search subset of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Search Compat)", null, null, null },
-                    { 2873, null, "An expanded maximum-compatibility version of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://github.com/Lalaggi/dropship-filters/issues", 8, "Dropship Filters (Full Compat)", null, null, null }
+                    { 2867, null, "An adblock filter list that removes sketchy Chinese dropship retailers (Temu, Shein, AliExpress, Wish, and a large constellation of associated networks) from search results, blocks their ad networks and trackers, and stops affiliate redirect chains — without blocking direct navigation to these sites.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters", null, null, null },
+                    { 2868, null, "The ad and tracker-blocking subset of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Ads)", null, null, null },
+                    { 2869, null, "The affiliate and redirect-blocking subset of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Redirects)", null, null, null },
+                    { 2870, null, "The search-result hiding subset of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Search)", null, null, null },
+                    { 2871, null, "A DNS-safe bare-domain version of Dropship Filters for Pi-hole.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Pi-hole)", null, null, null },
+                    { 2872, null, "An expanded maximum-compatibility version of the search subset of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Search Compat)", null, null, null },
+                    { 2873, null, "An expanded maximum-compatibility version of Dropship Filters.", null, null, null, "https://github.com/Lalaggi/dropship-filters", "https://gitlab.com/Lalaggi/dropship-filters/-/issues", 8, "Dropship Filters (Full Compat)", null, null, null }
                 });
 
             migrationBuilder.InsertData(
@@ -37,7 +37,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 values: new object[,]
                 {
                     { 42, "Blocks or hides dropshipping retailers and their storefronts", "dropshipping" },
-                    { 43, "Blocks trackers and other privacy-invasive resources from these retailers", "tracker" },
                     { 44, "Blocks affiliate and redirect link chains", "affiliate" },
                     { 45, "Targets Chinese-origin e-commerce and dropshipping retailers", "china" }
                 });
@@ -101,26 +100,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 columns: new[] { "FilterListId", "TagId" },
                 values: new object[,]
                 {
+                    { 2867, 3 },
                     { 2867, 42 },
-                    { 2867, 43 },
                     { 2867, 44 },
                     { 2867, 45 },
+                    { 2868, 3 },
                     { 2868, 42 },
-                    { 2868, 43 },
                     { 2868, 45 },
                     { 2869, 42 },
                     { 2869, 44 },
                     { 2869, 45 },
                     { 2870, 42 },
                     { 2870, 45 },
+                    { 2871, 3 },
                     { 2871, 42 },
-                    { 2871, 43 },
                     { 2871, 44 },
                     { 2871, 45 },
                     { 2872, 42 },
                     { 2872, 45 },
+                    { 2873, 3 },
                     { 2873, 42 },
-                    { 2873, 43 },
                     { 2873, 44 },
                     { 2873, 45 }
                 });
@@ -311,12 +310,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2867, 42 });
+                keyValues: new object[] { 2867, 3 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2867, 43 });
+                keyValues: new object[] { 2867, 42 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
@@ -331,12 +330,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2868, 42 });
+                keyValues: new object[] { 2868, 3 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2868, 43 });
+                keyValues: new object[] { 2868, 42 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
@@ -371,12 +370,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2871, 42 });
+                keyValues: new object[] { 2871, 3 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2871, 43 });
+                keyValues: new object[] { 2871, 42 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
@@ -401,12 +400,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2873, 42 });
+                keyValues: new object[] { 2873, 3 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
                 keyColumns: new[] { "FilterListId", "TagId" },
-                keyValues: new object[] { 2873, 43 });
+                keyValues: new object[] { 2873, 42 });
 
             migrationBuilder.DeleteData(
                 table: "FilterListTag",
@@ -497,11 +496,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                 table: "Tag",
                 keyColumn: "Id",
                 keyValue: 42);
-
-            migrationBuilder.DeleteData(
-                table: "Tag",
-                keyColumn: "Id",
-                keyValue: 43);
 
             migrationBuilder.DeleteData(
                 table: "Tag",
