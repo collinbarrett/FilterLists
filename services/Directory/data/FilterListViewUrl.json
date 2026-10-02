@@ -17699,48 +17699,55 @@
     "id": 3275,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-full.txt"
   },
   {
     "filterListId": 2868,
     "id": 3276,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-ads.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-ads.txt"
   },
   {
     "filterListId": 2869,
     "id": 3277,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-redirects.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-redirects.txt"
   },
   {
     "filterListId": 2870,
     "id": 3278,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-search.txt"
   },
   {
     "filterListId": 2871,
     "id": 3279,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-pihole.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-pihole.txt"
   },
   {
     "filterListId": 2872,
     "id": 3280,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-search-compat.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-search-compat.txt"
   },
   {
     "filterListId": 2873,
     "id": 3281,
     "primariness": 1,
     "segmentNumber": 1,
-    "url": "https://github.com/Lalaggi/dropship-filters/releases/latest/download/dropship_filters-full-compat.txt"
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-full-compat.txt"
+  },
+  {
+    "filterListId": 2874,
+    "id": 3282,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-hosts.txt"
   }
 ]
