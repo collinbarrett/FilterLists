@@ -5,19 +5,31 @@ jest.mock("./components", () => {
   const { useState } = jest.requireActual<typeof import("react")>("react");
   const { useHistory } =
     jest.requireActual<typeof import("react-router-dom")>("react-router-dom");
+  function MockInnerTable() {
+    const [filtered, setFiltered] = useState(false);
+    const history = useHistory();
+    return (
+      <>
+        <button onClick={() => setFiltered(true)}>
+          {filtered ? "Filtered lists" : "All lists"}
+        </button>
+        <button onClick={() => history.push("/lists/example")}>
+          Open list details
+        </button>
+        <button onClick={() => history.push("/")}>Close list details</button>
+      </>
+    );
+  }
+
   return {
-    ListsTable: function MockListsTable() {
-      const [filtered, setFiltered] = useState(false);
-      const history = useHistory();
+    ListsTable: function MockListsTable({ resetKey }: { resetKey: number }) {
+      const [providerState, setProviderState] = useState(false);
       return (
         <>
-          <button onClick={() => setFiltered(true)}>
-            {filtered ? "Filtered lists" : "All lists"}
+          <button onClick={() => setProviderState(true)}>
+            {providerState ? "Provider retained" : "Provider mounted"}
           </button>
-          <button onClick={() => history.push("/lists/example")}>
-            Open list details
-          </button>
-          <button onClick={() => history.push("/")}>Close list details</button>
+          <MockInnerTable key={resetKey} />
         </>
       );
     },
@@ -33,12 +45,16 @@ test.each(["/", "/lists/example"])(
     expect(
       screen.getByRole("button", { name: "Filtered lists" }),
     ).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Provider mounted" }));
 
     fireEvent.click(screen.getByRole("link", { name: "FilterLists logo" }));
 
     expect(window.location.pathname).toBe("/");
     expect(
       screen.getByRole("button", { name: "All lists" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: "Provider retained" }),
     ).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: "All lists" }));

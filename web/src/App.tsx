@@ -33,9 +33,20 @@ export const App: React.FC = () => {
               minHeight: 280,
             }}
           >
-            <Switch key={tableKey}>
-              <Route exact path="/" component={ListsTable} />
-              <Route path="/lists/*" component={ListsTable} />
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={(props) => (
+                  <ListsTable {...props} resetKey={tableKey} />
+                )}
+              />
+              <Route
+                path="/lists/*"
+                render={(props) => (
+                  <ListsTable {...props} resetKey={tableKey} />
+                )}
+              />
               <Route path="*" component={NotFound} />
             </Switch>
           </div>
