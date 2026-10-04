@@ -59,7 +59,18 @@ export const App: React.FC = () => {
 };
 
 const Logo = ({ onClick }: { onClick: () => void }) => (
-  <Link to="/" onClick={onClick}>
+  <Link
+    to="/"
+    onClick={(event) => {
+      if (
+        !event.defaultPrevented &&
+        event.button === 0 &&
+        !(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey)
+      ) {
+        onClick();
+      }
+    }}
+  >
     <img
       src={`${process.env.PUBLIC_URL}/logo_filterlists.png`}
       alt="FilterLists logo"
