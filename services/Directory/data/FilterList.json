@@ -18791,5 +18791,12 @@
     "issuesUrl": "https://gitlab.com/Lalaggi/dropship-filters/-/issues",
     "licenseId": 8,
     "name": "Dropship Filters (Hosts)"
+  },
+  {
+    "description": "A curated hosts file with various domain blocks.",
+    "homeUrl": "https://git.flossboxin.org.in/vdbhb59/hosts",
+    "id": 2875,
+    "licenseId": 5,
+    "name": "vdbhb59's Hosts"
   }
 ]

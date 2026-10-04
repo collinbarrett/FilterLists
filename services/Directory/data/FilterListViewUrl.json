@@ -17749,5 +17749,12 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://gitlab.com/Lalaggi/dropship-filters/-/raw/lists/dropship_filters-hosts.txt"
+  },
+  {
+    "filterListId": 2875,
+    "id": 3283,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://hosts.flossboxin.org.in/files/hosts"
   }
 ]
