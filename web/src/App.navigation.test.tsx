@@ -66,3 +66,20 @@ test("opening and closing list details preserves the current table state", () =>
     screen.getByRole("button", { name: "Filtered lists" }),
   ).toBeInTheDocument();
 });
+
+test.each(["ctrlKey", "metaKey", "shiftKey", "altKey"])(
+  "%s-clicking the logo preserves the current table state",
+  (modifier) => {
+    window.history.replaceState({}, "", "/");
+    render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: "All lists" }));
+
+    fireEvent.click(screen.getByRole("link", { name: "FilterLists logo" }), {
+      [modifier]: true,
+    });
+
+    expect(
+      screen.getByRole("button", { name: "Filtered lists" }),
+    ).toBeInTheDocument();
+  },
+);
