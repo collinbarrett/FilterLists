@@ -11,7 +11,10 @@ import {
 import { ListDrawer } from "./ListDrawer";
 import { ListsTable } from "./ListsTable";
 
-export const ListsTableHoc = (props: RouteComponentProps) => {
+export const ListsTableHoc = (
+  props: RouteComponentProps & { resetKey: number },
+) => {
+  const { resetKey, ...routeProps } = props;
   const lists = useLists();
   const languages = useLanguages();
   const licenses = useLicenses();
@@ -22,6 +25,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
   return (
     <>
       <ListsTable
+        key={resetKey}
         lists={lists}
         languages={languages}
         licenses={licenses}
@@ -29,7 +33,7 @@ export const ListsTableHoc = (props: RouteComponentProps) => {
         software={software}
         syntaxes={syntaxes}
         tags={tags}
-        {...props}
+        {...routeProps}
       />
       <ListDrawer
         lists={lists}
