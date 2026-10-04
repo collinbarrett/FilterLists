@@ -31,7 +31,13 @@ export const App: React.FC = () => (
           }}
         >
           <Switch>
-            <Route exact path="/" component={ListsTable} />
+            <Route
+              exact
+              path="/"
+              render={(props) => (
+                <ListsTable key={props.location.key} {...props} />
+              )}
+            />
             <Route path="/lists/*" component={ListsTable} />
             <Route path="*" component={NotFound} />
           </Switch>

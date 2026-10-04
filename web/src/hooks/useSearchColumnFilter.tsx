@@ -24,8 +24,12 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
     const handleSearch = (confirm?: (param: FilterConfirmProps) => void) => {
       confirm && confirm({ closeDropdown: true });
     };
-    const handleReset = (clearFilters?: (selectedKeys: string[]) => void) => {
-      clearFilters && clearFilters([]);
+    const handleReset = (
+      clearFilters: FilterDropdownProps["clearFilters"],
+      confirm: FilterDropdownProps["confirm"],
+    ) => {
+      clearFilters && clearFilters();
+      confirm({ closeDropdown: true });
     };
     setFilterProps({
       filterDropdown: ({
@@ -57,7 +61,7 @@ export const useSearchColumnFilter = <T extends {}>(dataIndex: string) => {
             Search
           </Button>
           <Button
-            onClick={() => handleReset(clearFilters)}
+            onClick={() => handleReset(clearFilters, confirm)}
             size="small"
             style={{ width: 90 }}
           >
