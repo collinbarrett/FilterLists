@@ -13,55 +13,53 @@ import {
   Switch,
 } from "react-router-dom";
 import { ListsTable } from "./components";
+import { useState } from "react";
 
 const { Header, Content, Footer } = Layout;
 
-export const App: React.FC = () => (
-  <Router>
-    <Layout>
-      <Header style={{ background: "#000" }}>
-        <Logo />
-      </Header>
-      <Content>
-        <div
+export const App: React.FC = () => {
+  const [tableKey, setTableKey] = useState(0);
+  return (
+    <Router>
+      <Layout>
+        <Header style={{ background: "#000" }}>
+          <Logo onClick={() => setTableKey((key) => key + 1)} />
+        </Header>
+        <Content>
+          <div
+            style={{
+              paddingLeft: 4,
+              paddingRight: 4,
+              minHeight: 280,
+            }}
+          >
+            <Switch key={tableKey}>
+              <Route exact path="/" component={ListsTable} />
+              <Route path="/lists/*" component={ListsTable} />
+              <Route path="*" component={NotFound} />
+            </Switch>
+          </div>
+        </Content>
+        <Footer
           style={{
-            paddingLeft: 4,
-            paddingRight: 4,
-            minHeight: 280,
+            textAlign: "center",
+            padding: "24px 0px 24px",
+            lineHeight: "24px",
           }}
         >
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={(props) => (
-                <ListsTable key={props.location.key} {...props} />
-              )}
-            />
-            <Route path="/lists/*" component={ListsTable} />
-            <Route path="*" component={NotFound} />
-          </Switch>
-        </div>
-      </Content>
-      <Footer
-        style={{
-          textAlign: "center",
-          padding: "24px 0px 24px",
-          lineHeight: "24px",
-        }}
-      >
-        <CopyrightAuthor />
-        <GitHub />
-        <Api />
-        <Tpl />
-        <Donate />
-      </Footer>
-    </Layout>
-  </Router>
-);
+          <CopyrightAuthor />
+          <GitHub />
+          <Api />
+          <Tpl />
+          <Donate />
+        </Footer>
+      </Layout>
+    </Router>
+  );
+};
 
-const Logo = () => (
-  <Link to="/">
+const Logo = ({ onClick }: { onClick: () => void }) => (
+  <Link to="/" onClick={onClick}>
     <img
       src={`${process.env.PUBLIC_URL}/logo_filterlists.png`}
       alt="FilterLists logo"
