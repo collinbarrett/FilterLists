@@ -17,7 +17,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .UseCollation("Latin1_General_100_CI_AS_SC")
-                .HasAnnotation("ProductVersion", "10.0.12")
+                .HasAnnotation("ProductVersion", "10.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -11933,13 +11933,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
-                            Id = 1711,
-                            HomeUrl = "https://zonefiles.io/",
-                            LicenseId = 5,
-                            Name = "Zonefiles Compromised Domains Live"
-                        },
-                        new
-                        {
                             Id = 1712,
                             HomeUrl = "https://github.com/abc45628/hosts/",
                             IssuesUrl = "https://github.com/abc45628/hosts/issues",
@@ -21266,6 +21259,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://git.flossboxin.org.in/vdbhb59/hosts",
                             LicenseId = 5,
                             Name = "vdbhb59's Hosts"
+                        },
+                        new
+                        {
+                            Id = 2876,
+                            Description = "Domains seen in public malware, phishing and compromise feeds within the last 24 hours, one domain per line. Updated daily.",
+                            HomeUrl = "https://netapi.com/compromised-urls/",
+                            LicenseId = 24,
+                            Name = "NetAPI Compromised Domains"
+                        },
+                        new
+                        {
+                            Id = 2877,
+                            Description = "IPv4 addresses seen in public malware and abuse feeds within the last 24 hours, one address per line. Updated daily.",
+                            HomeUrl = "https://netapi.com/compromised-ips/",
+                            LicenseId = 24,
+                            Name = "NetAPI Compromised IPs"
                         });
                 });
 
@@ -34115,6 +34124,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2875,
                             MaintainerId = 221
+                        },
+                        new
+                        {
+                            FilterListId = 2876,
+                            MaintainerId = 222
+                        },
+                        new
+                        {
+                            FilterListId = 2877,
+                            MaintainerId = 222
                         });
                 });
 
@@ -40810,11 +40829,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
-                            FilterListId = 1711,
-                            SyntaxId = (short)2
-                        },
-                        new
-                        {
                             FilterListId = 1712,
                             SyntaxId = (short)36
                         },
@@ -46002,6 +46016,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2875,
                             SyntaxId = (short)54
+                        },
+                        new
+                        {
+                            FilterListId = 2876,
+                            SyntaxId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = 2877,
+                            SyntaxId = (short)9
                         });
                 });
 
@@ -55337,11 +55361,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
-                            FilterListId = 1711,
-                            TagId = 6
-                        },
-                        new
-                        {
                             FilterListId = 1712,
                             TagId = 3
                         },
@@ -62919,6 +62938,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2874,
                             TagId = 45
+                        },
+                        new
+                        {
+                            FilterListId = 2876,
+                            TagId = 6
+                        },
+                        new
+                        {
+                            FilterListId = 2876,
+                            TagId = 7
+                        },
+                        new
+                        {
+                            FilterListId = 2877,
+                            TagId = 6
                         });
                 });
 
@@ -65934,6 +65968,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 221,
                             Name = "vdbhb59",
                             Url = "https://git.flossboxin.org.in/vdbhb59"
+                        },
+                        new
+                        {
+                            Id = 222,
+                            Name = "NetAPI",
+                            Url = "https://netapi.com/"
                         });
                 });
 
@@ -81730,14 +81770,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                 },
                                 new
                                 {
-                                    FilterListId = 1711,
-                                    Id = 1771,
-                                    Primariness = (short)1,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://zonefiles.io/f/compromised/domains/live/"
-                                },
-                                new
-                                {
                                     FilterListId = 1712,
                                     Id = 1772,
                                     Primariness = (short)1,
@@ -92047,6 +92079,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
                                     Url = "https://hosts.flossboxin.org.in/files/hosts"
+                                },
+                                new
+                                {
+                                    FilterListId = 2876,
+                                    Id = 3284,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://netapi.com/zf-api/f/compromised/domains/live/"
+                                },
+                                new
+                                {
+                                    FilterListId = 2877,
+                                    Id = 3285,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://netapi.com/zf-api/f/compromised/ip/live/"
                                 });
                         });
 

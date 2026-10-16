@@ -7452,10 +7452,6 @@
     "tagId": 6
   },
   {
-    "filterListId": 1711,
-    "tagId": 6
-  },
-  {
     "filterListId": 1712,
     "tagId": 3
   },
@@ -13518,5 +13514,17 @@
   {
     "filterListId": 2874,
     "tagId": 45
+  },
+  {
+    "filterListId": 2876,
+    "tagId": 6
+  },
+  {
+    "filterListId": 2876,
+    "tagId": 7
+  },
+  {
+    "filterListId": 2877,
+    "tagId": 6
   }
 ]
