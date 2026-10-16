@@ -10461,12 +10461,6 @@
     "name": "Botvrij IOC List"
   },
   {
-    "homeUrl": "https://zonefiles.io/",
-    "id": 1711,
-    "licenseId": 5,
-    "name": "Zonefiles Compromised Domains Live"
-  },
-  {
     "homeUrl": "https://github.com/abc45628/hosts/",
     "id": 1712,
     "issuesUrl": "https://github.com/abc45628/hosts/issues",
@@ -18798,5 +18792,19 @@
     "id": 2875,
     "licenseId": 5,
     "name": "vdbhb59's Hosts"
+  },
+  {
+    "description": "Domains seen in public malware, phishing and compromise feeds within the last 24 hours, one domain per line. Updated daily.",
+    "homeUrl": "https://netapi.com/compromised-urls/",
+    "id": 2876,
+    "licenseId": 24,
+    "name": "NetAPI Compromised Domains"
+  },
+  {
+    "description": "IPv4 addresses seen in public malware and abuse feeds within the last 24 hours, one address per line. Updated daily.",
+    "homeUrl": "https://netapi.com/compromised-ips/",
+    "id": 2877,
+    "licenseId": 24,
+    "name": "NetAPI Compromised IPs"
   }
 ]

@@ -9991,12 +9991,6 @@
     "url": "https://www.botvrij.eu/data/ioclist.hostname.raw"
   },
   {
-    "filterListId": 1711,
-    "id": 1771,
-    "primariness": 1,
-    "url": "https://zonefiles.io/f/compromised/domains/live/"
-  },
-  {
     "filterListId": 1712,
     "id": 1772,
     "primariness": 1,
@@ -17756,5 +17750,19 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://hosts.flossboxin.org.in/files/hosts"
+  },
+  {
+    "filterListId": 2876,
+    "id": 3284,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://netapi.com/zf-api/f/compromised/domains/live/"
+  },
+  {
+    "filterListId": 2877,
+    "id": 3285,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://netapi.com/zf-api/f/compromised/ip/live/"
   }
 ]
