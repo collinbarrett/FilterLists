@@ -21275,6 +21275,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://netapi.com/compromised-ips/",
                             LicenseId = 24,
                             Name = "NetAPI Compromised IPs"
+                        },
+                        new
+                        {
+                            Id = 2878,
+                            Description = "Network-level blocklist of third-party ad, popunder, tracker, and malvertising hosts maintained by the Utilvo Shield project. Compatible with uBlock Origin, AdGuard, Brave, and Adblock Plus.",
+                            EmailAddress = "utilvo.com@gmail.com",
+                            HomeUrl = "https://utilvo.com/shield",
+                            LicenseId = 8,
+                            Name = "Utilvo Shield Filters",
+                            PolicyUrl = "https://utilvo.com/shield/privacy"
                         });
                 });
 
@@ -34134,6 +34144,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2877,
                             MaintainerId = 222
+                        },
+                        new
+                        {
+                            FilterListId = 2878,
+                            MaintainerId = 223
                         });
                 });
 
@@ -46026,6 +46041,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2877,
                             SyntaxId = (short)9
+                        },
+                        new
+                        {
+                            FilterListId = 2878,
+                            SyntaxId = (short)3
                         });
                 });
 
@@ -62953,6 +62973,31 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2877,
                             TagId = 6
+                        },
+                        new
+                        {
+                            FilterListId = 2878,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2878,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 2878,
+                            TagId = 6
+                        },
+                        new
+                        {
+                            FilterListId = 2878,
+                            TagId = 7
+                        },
+                        new
+                        {
+                            FilterListId = 2878,
+                            TagId = 9
                         });
                 });
 
@@ -65974,6 +66019,13 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 222,
                             Name = "NetAPI",
                             Url = "https://netapi.com/"
+                        },
+                        new
+                        {
+                            Id = 223,
+                            EmailAddress = "utilvo.com@gmail.com",
+                            Name = "Utilvo",
+                            Url = "https://utilvo.com/"
                         });
                 });
 
@@ -92095,6 +92147,22 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
                                     Url = "https://netapi.com/zf-api/f/compromised/ip/live/"
+                                },
+                                new
+                                {
+                                    FilterListId = 2878,
+                                    Id = 3286,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://utilvo.com/filters/utilvo-shield-filters.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2878,
+                                    Id = 3287,
+                                    Primariness = (short)2,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://utilvo.com/shield/filters.txt"
                                 });
                         });
 
