@@ -18806,5 +18806,14 @@
     "id": 2877,
     "licenseId": 24,
     "name": "NetAPI Compromised IPs"
+  },
+  {
+    "description": "Network-level blocklist of third-party ad, popunder, tracker, and malvertising hosts maintained by the Utilvo Shield project. Compatible with uBlock Origin, AdGuard, Brave, and Adblock Plus.",
+    "emailAddress": "utilvo.com@gmail.com",
+    "homeUrl": "https://utilvo.com/shield",
+    "id": 2878,
+    "licenseId": 8,
+    "name": "Utilvo Shield Filters",
+    "policyUrl": "https://utilvo.com/shield/privacy"
   }
 ]

@@ -13526,5 +13526,25 @@
   {
     "filterListId": 2877,
     "tagId": 6
+  },
+  {
+    "filterListId": 2878,
+    "tagId": 2
+  },
+  {
+    "filterListId": 2878,
+    "tagId": 3
+  },
+  {
+    "filterListId": 2878,
+    "tagId": 6
+  },
+  {
+    "filterListId": 2878,
+    "tagId": 7
+  },
+  {
+    "filterListId": 2878,
+    "tagId": 9
   }
 ]

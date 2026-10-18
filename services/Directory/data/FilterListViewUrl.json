@@ -17764,5 +17764,19 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://netapi.com/zf-api/f/compromised/ip/live/"
+  },
+  {
+    "filterListId": 2878,
+    "id": 3286,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://utilvo.com/filters/utilvo-shield-filters.txt"
+  },
+  {
+    "filterListId": 2878,
+    "id": 3287,
+    "primariness": 2,
+    "segmentNumber": 1,
+    "url": "https://utilvo.com/shield/filters.txt"
   }
 ]
