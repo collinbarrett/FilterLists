@@ -18815,5 +18815,13 @@
     "licenseId": 8,
     "name": "Utilvo Shield Filters",
     "policyUrl": "https://utilvo.com/shield/privacy"
+  },
+  {
+    "description": "Self-updating IPv4 CIDR blocklist targeting rotating-IP headless Chromium scrapers hosted on Tencent Cloud (AS132203), Alibaba Cloud (AS45102), Huawei Cloud (AS136907), and BytePlus (AS139902), while strictly whitelisting verified Googlebot, Bingbot, Applebot, and DuckDuckBot crawlers.",
+    "homeUrl": "https://utilvo.com/edge-shield",
+    "id": 2879,
+    "issuesUrl": "https://github.com/utilvo/utilvo-edge-shield",
+    "licenseId": 2,
+    "name": "Utilvo EdgeShield — Cloud Scraper CIDR & Bot Blocklist"
   }
 ]
