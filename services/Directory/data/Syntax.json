@@ -232,5 +232,10 @@
     "id": 61,
     "name": "dnsmasq local",
     "url": "http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html"
+  },
+  {
+    "id": 62,
+    "name": "Nginx geo/map",
+    "url": "https://utilvo.com/edge-shield/nginx-bot-shield.conf"
   }
 ]
