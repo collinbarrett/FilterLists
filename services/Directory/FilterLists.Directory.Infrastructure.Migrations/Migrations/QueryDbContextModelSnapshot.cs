@@ -21285,6 +21285,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             LicenseId = 8,
                             Name = "Utilvo Shield Filters",
                             PolicyUrl = "https://utilvo.com/shield/privacy"
+                        },
+                        new
+                        {
+                            Id = 2879,
+                            Description = "Self-updating IPv4 CIDR blocklist targeting rotating-IP headless Chromium scrapers hosted on Tencent Cloud (AS132203), Alibaba Cloud (AS45102), Huawei Cloud (AS136907), and BytePlus (AS139902), while strictly whitelisting verified Googlebot, Bingbot, Applebot, and DuckDuckBot crawlers.",
+                            HomeUrl = "https://utilvo.com/edge-shield",
+                            IssuesUrl = "https://github.com/utilvo/utilvo-edge-shield",
+                            LicenseId = 2,
+                            Name = "Utilvo EdgeShield — Cloud Scraper CIDR & Bot Blocklist"
                         });
                 });
 
@@ -34149,6 +34158,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2878,
                             MaintainerId = 223
+                        },
+                        new
+                        {
+                            FilterListId = 2879,
+                            MaintainerId = 223
                         });
                 });
 
@@ -46046,6 +46060,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2878,
                             SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2879,
+                            SyntaxId = (short)34
+                        },
+                        new
+                        {
+                            FilterListId = 2879,
+                            SyntaxId = (short)62
                         });
                 });
 
@@ -62998,6 +63022,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2878,
                             TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 2879,
+                            TagId = 20
                         });
                 });
 
@@ -68141,6 +68170,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = (short)61,
                             Name = "dnsmasq local",
                             Url = "http://www.thekelleys.org.uk/dnsmasq/docs/dnsmasq-man.html"
+                        },
+                        new
+                        {
+                            Id = (short)62,
+                            Name = "Nginx geo/map",
+                            Url = "https://utilvo.com/edge-shield/nginx-bot-shield.conf"
                         });
                 });
 
@@ -92163,6 +92198,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)2,
                                     SegmentNumber = (short)1,
                                     Url = "https://utilvo.com/shield/filters.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2879,
+                                    Id = 3288,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://utilvo.com/api/edge-shield/threats?format=cidr"
                                 });
                         });
 
