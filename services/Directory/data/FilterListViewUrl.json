@@ -17785,5 +17785,12 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://utilvo.com/api/edge-shield/threats?format=cidr"
+  },
+  {
+    "filterListId": 2880,
+    "id": 3289,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://utilvo.com/edge-shield/nginx-bot-shield.conf"
   }
 ]

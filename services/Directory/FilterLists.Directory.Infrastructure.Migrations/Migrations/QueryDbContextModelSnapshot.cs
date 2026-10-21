@@ -21293,7 +21293,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             HomeUrl = "https://utilvo.com/edge-shield",
                             IssuesUrl = "https://github.com/utilvo/utilvo-edge-shield",
                             LicenseId = 2,
-                            Name = "Utilvo EdgeShield — Cloud Scraper CIDR & Bot Blocklist"
+                            Name = "Utilvo EdgeShield — Cloud Scraper CIDR Blocklist"
+                        },
+                        new
+                        {
+                            Id = 2880,
+                            Description = "Zero-conflict Nginx http {} map configuration for blocking EdgeShield cloud scraper traffic.",
+                            HomeUrl = "https://utilvo.com/edge-shield",
+                            IssuesUrl = "https://github.com/utilvo/utilvo-edge-shield",
+                            LicenseId = 2,
+                            Name = "Utilvo EdgeShield — Nginx Bot Shield"
                         });
                 });
 
@@ -34163,6 +34172,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2879,
                             MaintainerId = 223
+                        },
+                        new
+                        {
+                            FilterListId = 2880,
+                            MaintainerId = 223
                         });
                 });
 
@@ -46068,7 +46082,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
-                            FilterListId = 2879,
+                            FilterListId = 2880,
                             SyntaxId = (short)62
                         });
                 });
@@ -63026,6 +63040,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2879,
+                            TagId = 20
+                        },
+                        new
+                        {
+                            FilterListId = 2880,
                             TagId = 20
                         });
                 });
@@ -92206,6 +92225,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
                                     Url = "https://utilvo.com/api/edge-shield/threats?format=cidr"
+                                },
+                                new
+                                {
+                                    FilterListId = 2880,
+                                    Id = 3289,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://utilvo.com/edge-shield/nginx-bot-shield.conf"
                                 });
                         });
 
