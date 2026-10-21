@@ -18822,6 +18822,14 @@
     "id": 2879,
     "issuesUrl": "https://github.com/utilvo/utilvo-edge-shield",
     "licenseId": 2,
-    "name": "Utilvo EdgeShield — Cloud Scraper CIDR & Bot Blocklist"
+    "name": "Utilvo EdgeShield — Cloud Scraper CIDR Blocklist"
+  },
+  {
+    "description": "Zero-conflict Nginx http {} map configuration for blocking EdgeShield cloud scraper traffic.",
+    "homeUrl": "https://utilvo.com/edge-shield",
+    "id": 2880,
+    "issuesUrl": "https://github.com/utilvo/utilvo-edge-shield",
+    "licenseId": 2,
+    "name": "Utilvo EdgeShield — Nginx Bot Shield"
   }
 ]
