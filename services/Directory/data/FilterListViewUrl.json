@@ -17792,5 +17792,12 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://utilvo.com/edge-shield/nginx-bot-shield.conf"
+  },
+  {
+    "filterListId": 2881,
+    "id": 3290,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/aatmnt21-collab/Japanese-Ads-Filter/main/filter.txt"
   }
 ]

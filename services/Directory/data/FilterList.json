@@ -18831,5 +18831,13 @@
     "issuesUrl": "https://github.com/utilvo/utilvo-edge-shield",
     "licenseId": 2,
     "name": "Utilvo EdgeShield — Nginx Bot Shield"
+  },
+  {
+    "description": "Absolute safety & zero-breakage ad/tracker filtering ONLY for LINE & Yahoo! JAPAN ecosystem.",
+    "homeUrl": "https://github.com/aatmnt21-collab/Japanese-Ads-Filter",
+    "id": 2881,
+    "issuesUrl": "https://github.com/aatmnt21-collab/Japanese-Ads-Filter/issues",
+    "licenseId": 2,
+    "name": "Japanese-Ads-Filter"
   }
 ]
