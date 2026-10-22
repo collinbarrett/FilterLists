@@ -21303,6 +21303,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/utilvo/utilvo-edge-shield",
                             LicenseId = 2,
                             Name = "Utilvo EdgeShield — Nginx Bot Shield"
+                        },
+                        new
+                        {
+                            Id = 2881,
+                            Description = "Absolute safety & zero-breakage ad/tracker filtering ONLY for LINE & Yahoo! JAPAN ecosystem.",
+                            HomeUrl = "https://github.com/aatmnt21-collab/Japanese-Ads-Filter",
+                            IssuesUrl = "https://github.com/aatmnt21-collab/Japanese-Ads-Filter/issues",
+                            LicenseId = 2,
+                            Name = "Japanese-Ads-Filter"
                         });
                 });
 
@@ -25980,6 +25989,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2874,
                             LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2881,
+                            LanguageId = (short)73
                         });
                 });
 
@@ -34177,6 +34191,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2880,
                             MaintainerId = 223
+                        },
+                        new
+                        {
+                            FilterListId = 2881,
+                            MaintainerId = 224
                         });
                 });
 
@@ -46084,6 +46103,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2880,
                             SyntaxId = (short)62
+                        },
+                        new
+                        {
+                            FilterListId = 2881,
+                            SyntaxId = (short)28
                         });
                 });
 
@@ -63046,6 +63070,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2880,
                             TagId = 20
+                        },
+                        new
+                        {
+                            FilterListId = 2881,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2881,
+                            TagId = 3
                         });
                 });
 
@@ -66074,6 +66108,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             EmailAddress = "utilvo.com@gmail.com",
                             Name = "Utilvo",
                             Url = "https://utilvo.com/"
+                        },
+                        new
+                        {
+                            Id = 224,
+                            Name = "aatmnt21-collab",
+                            Url = "https://github.com/aatmnt21-collab"
                         });
                 });
 
@@ -92233,6 +92273,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
                                     Url = "https://utilvo.com/edge-shield/nginx-bot-shield.conf"
+                                },
+                                new
+                                {
+                                    FilterListId = 2881,
+                                    Id = 3290,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/aatmnt21-collab/Japanese-Ads-Filter/main/filter.txt"
                                 });
                         });
 
