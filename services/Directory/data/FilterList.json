@@ -18839,5 +18839,13 @@
     "issuesUrl": "https://github.com/aatmnt21-collab/Japanese-Ads-Filter/issues",
     "licenseId": 2,
     "name": "Japanese-Ads-Filter"
+  },
+  {
+    "description": "Hides YouTube Shorts on youtube.com and m.youtube.com: shelves, single Shorts in feeds and search, the channel Shorts tab, the sidebar and bottom-bar entries, the filter chip and Shorts notifications.",
+    "homeUrl": "https://github.com/bpavlina/ublock-hide-yt-shorts",
+    "id": 2882,
+    "issuesUrl": "https://github.com/bpavlina/ublock-hide-yt-shorts/issues",
+    "licenseId": 2,
+    "name": "Hide YouTube Shorts"
   }
 ]

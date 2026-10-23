@@ -21312,6 +21312,15 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/aatmnt21-collab/Japanese-Ads-Filter/issues",
                             LicenseId = 2,
                             Name = "Japanese-Ads-Filter"
+                        },
+                        new
+                        {
+                            Id = 2882,
+                            Description = "Hides YouTube Shorts on youtube.com and m.youtube.com: shelves, single Shorts in feeds and search, the channel Shorts tab, the sidebar and bottom-bar entries, the filter chip and Shorts notifications.",
+                            HomeUrl = "https://github.com/bpavlina/ublock-hide-yt-shorts",
+                            IssuesUrl = "https://github.com/bpavlina/ublock-hide-yt-shorts/issues",
+                            LicenseId = 2,
+                            Name = "Hide YouTube Shorts"
                         });
                 });
 
@@ -25994,6 +26003,76 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2881,
                             LanguageId = (short)73
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)22
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)37
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)40
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)42
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)61
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)73
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)75
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)89
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)114
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)142
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)151
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            LanguageId = (short)180
                         });
                 });
 
@@ -34196,6 +34275,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2881,
                             MaintainerId = 224
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            MaintainerId = 225
                         });
                 });
 
@@ -46108,6 +46192,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2881,
                             SyntaxId = (short)28
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            SyntaxId = (short)4
                         });
                 });
 
@@ -63080,6 +63169,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2881,
                             TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 2882,
+                            TagId = 9
                         });
                 });
 
@@ -66114,6 +66208,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 224,
                             Name = "aatmnt21-collab",
                             Url = "https://github.com/aatmnt21-collab"
+                        },
+                        new
+                        {
+                            Id = 225,
+                            Name = "bpavlina",
+                            Url = "https://github.com/bpavlina"
                         });
                 });
 
@@ -92281,6 +92381,14 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
                                     Url = "https://raw.githubusercontent.com/aatmnt21-collab/Japanese-Ads-Filter/main/filter.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2882,
+                                    Id = 3291,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/bpavlina/ublock-hide-yt-shorts/master/list.txt"
                                 });
                         });
 
