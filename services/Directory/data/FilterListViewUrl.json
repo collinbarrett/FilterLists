@@ -17799,5 +17799,12 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://raw.githubusercontent.com/aatmnt21-collab/Japanese-Ads-Filter/main/filter.txt"
+  },
+  {
+    "filterListId": 2882,
+    "id": 3291,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/bpavlina/ublock-hide-yt-shorts/master/list.txt"
   }
 ]

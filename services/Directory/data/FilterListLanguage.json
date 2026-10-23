@@ -3730,5 +3730,61 @@
   {
     "filterListId": 2881,
     "languageId": 73
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 4
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 22
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 37
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 40
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 42
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 61
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 73
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 75
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 89
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 114
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 132
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 142
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 151
+  },
+  {
+    "filterListId": 2882,
+    "languageId": 180
   }
 ]
