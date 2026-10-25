@@ -21101,20 +21101,26 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2859,
                             Description = "Community-driven, open-source blocklist targeting Turkey-based ad, tracker and malicious content providers — including Turkish illegal gambling and phishing/scam domains that global lists don't cover. Compatible with AdGuard, uBlock Origin, Pi-hole, AdGuard Home and NextDNS. Actively maintained, daily updates.",
+                            EmailAddress = "info@reklamsiz-turkiye.com",
+                            ForumUrl = "https://github.com/omerdduran/turk-adfilter/discussions",
                             HomeUrl = "https://reklamsiz-turkiye.com/",
                             IssuesUrl = "https://github.com/omerdduran/turk-adfilter/issues",
                             LicenseId = 4,
                             Name = "Turk-AdFilter",
+                            PolicyUrl = "https://reklamsiz-turkiye.com/docs/gizlilik",
                             SubmissionUrl = "https://github.com/omerdduran/turk-adfilter/pulls"
                         },
                         new
                         {
                             Id = 2860,
                             Description = "Community-driven, open-source hosts/DNS blocklist targeting Turkey-based ad, tracker and malicious content providers. Compatible with Pi-hole, AdGuard Home and NextDNS. Actively maintained, daily updates.",
+                            EmailAddress = "info@reklamsiz-turkiye.com",
+                            ForumUrl = "https://github.com/omerdduran/turk-adfilter/discussions",
                             HomeUrl = "https://reklamsiz-turkiye.com/",
                             IssuesUrl = "https://github.com/omerdduran/turk-adfilter/issues",
                             LicenseId = 4,
                             Name = "Turk-AdFilter (Hosts)",
+                            PolicyUrl = "https://reklamsiz-turkiye.com/docs/gizlilik",
                             SubmissionUrl = "https://github.com/omerdduran/turk-adfilter/pulls"
                         },
                         new
@@ -66157,6 +66163,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 216,
+                            EmailAddress = "info@reklamsiz-turkiye.com",
                             Name = "omerdduran",
                             Url = "https://github.com/omerdduran"
                         },
@@ -92181,14 +92188,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
                                     Url = "https://raw.githubusercontent.com/omerdduran/turk-adfilter/main/turk-adfilter.txt"
-                                },
-                                new
-                                {
-                                    FilterListId = 2859,
-                                    Id = 3266,
-                                    Primariness = (short)2,
-                                    SegmentNumber = (short)0,
-                                    Url = "https://codeberg.org/omerdduran/turk-adfilter/raw/branch/main/turk-adfilter.txt"
                                 },
                                 new
                                 {
