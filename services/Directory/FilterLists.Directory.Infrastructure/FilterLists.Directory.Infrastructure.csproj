@@ -6,7 +6,7 @@
 
     <ItemGroup>
         <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="13.3.5"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.13"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.14"/>
         <PackageReference Include="OpenTelemetry.Api" Version="1.20.1" />
         <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.14" />
     </ItemGroup>
