@@ -57,7 +57,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
             migrationBuilder.InsertData(
                 table: "FilterListViewUrl",
                 columns: new[] { "FilterListId", "Id", "Primariness", "SegmentNumber", "Url" },
-                values: new object[] { 2859, 3266, (short)2, (short)0, "https://codeberg.org/omerdduran/turk-adfilter/raw/branch/main/turk-adfilter.txt" });
+                values: new object[] { 2859, 3266, (short)2, (short)1, "https://codeberg.org/omerdduran/turk-adfilter/raw/branch/main/turk-adfilter.txt" });
 
             migrationBuilder.UpdateData(
                 table: "Maintainer",
