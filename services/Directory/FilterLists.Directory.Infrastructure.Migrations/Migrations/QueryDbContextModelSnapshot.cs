@@ -17,7 +17,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .UseCollation("Latin1_General_100_CI_AS_SC")
-                .HasAnnotation("ProductVersion", "10.0.13")
+                .HasAnnotation("ProductVersion", "10.0.14")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -21101,7 +21101,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2859,
                             Description = "Community-driven, open-source blocklist targeting Turkey-based ad, tracker and malicious content providers — including Turkish illegal gambling and phishing/scam domains that global lists don't cover. Compatible with AdGuard, uBlock Origin, Pi-hole, AdGuard Home and NextDNS. Actively maintained, daily updates.",
-                            EmailAddress = "info@reklamsiz-turkiye.com",
                             ForumUrl = "https://github.com/omerdduran/turk-adfilter/discussions",
                             HomeUrl = "https://reklamsiz-turkiye.com/",
                             IssuesUrl = "https://github.com/omerdduran/turk-adfilter/issues",
@@ -21114,7 +21113,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2860,
                             Description = "Community-driven, open-source hosts/DNS blocklist targeting Turkey-based ad, tracker and malicious content providers. Compatible with Pi-hole, AdGuard Home and NextDNS. Actively maintained, daily updates.",
-                            EmailAddress = "info@reklamsiz-turkiye.com",
                             ForumUrl = "https://github.com/omerdduran/turk-adfilter/discussions",
                             HomeUrl = "https://reklamsiz-turkiye.com/",
                             IssuesUrl = "https://github.com/omerdduran/turk-adfilter/issues",
@@ -66163,7 +66161,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 216,
-                            EmailAddress = "info@reklamsiz-turkiye.com",
+                            EmailAddress = "me@omerduran.dev",
                             Name = "omerdduran",
                             Url = "https://github.com/omerdduran"
                         },
