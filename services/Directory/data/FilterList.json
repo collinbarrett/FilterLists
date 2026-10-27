@@ -18649,7 +18649,6 @@
   },
   {
     "description": "Community-driven, open-source blocklist targeting Turkey-based ad, tracker and malicious content providers — including Turkish illegal gambling and phishing/scam domains that global lists don't cover. Compatible with AdGuard, uBlock Origin, Pi-hole, AdGuard Home and NextDNS. Actively maintained, daily updates.",
-    "emailAddress": "info@reklamsiz-turkiye.com",
     "forumUrl": "https://github.com/omerdduran/turk-adfilter/discussions",
     "homeUrl": "https://reklamsiz-turkiye.com",
     "id": 2859,
@@ -18661,7 +18660,6 @@
   },
   {
     "description": "Community-driven, open-source hosts/DNS blocklist targeting Turkey-based ad, tracker and malicious content providers. Compatible with Pi-hole, AdGuard Home and NextDNS. Actively maintained, daily updates.",
-    "emailAddress": "info@reklamsiz-turkiye.com",
     "forumUrl": "https://github.com/omerdduran/turk-adfilter/discussions",
     "homeUrl": "https://reklamsiz-turkiye.com",
     "id": 2860,
