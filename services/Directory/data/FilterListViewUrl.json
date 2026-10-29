@@ -14800,13 +14800,13 @@
     "filterListId": 2520,
     "id": 2733,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/dynamic%20rules"
+    "url": "https://raw.githubusercontent.com/Ignotum77/AdBlockFilters/main/dynamic%20rules.txt"
   },
   {
     "filterListId": 2521,
     "id": 2734,
     "primariness": 1,
-    "url": "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/my%20filters"
+    "url": "https://raw.githubusercontent.com/Ignotum77/AdBlockFilters/main/my%20filters.txt"
   },
   {
     "filterListId": 2522,
@@ -15237,25 +15237,25 @@
     "filterListId": 2520,
     "id": 2808,
     "primariness": 2,
-    "url": "https://cdn.statically.io/gh/Nomes77/AdBlockfilters/main/dynamic%20rules"
+    "url": "https://cdn.statically.io/gh/Ignotum77/AdBlockfilters/main/dynamic%20rules.txt"
   },
   {
     "filterListId": 2520,
     "id": 2809,
     "primariness": 3,
-    "url": "https://cdn.jsdelivr.net/gh/Nomes77/AdBlockfilters@main/dynamic%20rules"
+    "url": "https://cdn.jsdelivr.net/gh/Ignotum77/AdBlockfilters@main/dynamic%20rules.txt"
   },
   {
     "filterListId": 2521,
     "id": 2810,
     "primariness": 2,
-    "url": "https://cdn.statically.io/gh/Nomes77/AdBlockfilters/main/my%20filters"
+    "url": "https://cdn.statically.io/gh/Ignotum77/AdBlockfilters/main/my%20filters.txt"
   },
   {
     "filterListId": 2521,
     "id": 2811,
     "primariness": 3,
-    "url": "https://cdn.jsdelivr.net/gh/Nomes77/AdBlockfilters@main/my%20filters"
+    "url": "https://cdn.jsdelivr.net/gh/Ignotum77/AdBlockfilters@main/my%20filters.txt"
   },
   {
     "filterListId": 2519,
