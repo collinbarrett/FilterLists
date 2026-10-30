@@ -21322,6 +21322,78 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://github.com/bpavlina/ublock-hide-yt-shorts/issues",
                             LicenseId = 2,
                             Name = "Hide YouTube Shorts"
+                        },
+                        new
+                        {
+                            Id = 2883,
+                            Description = "Main list. Blocks ads and annoying elements.",
+                            HomeUrl = "https://github.com/Zalexanninev15/NoADS_RU",
+                            IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+                            LicenseId = 2,
+                            Name = "NoADS_RU"
+                        },
+                        new
+                        {
+                            Id = 2884,
+                            Description = "Extended version of NoADS_RU with more filters for ads, trackers and cookie notices. Recommended for most users.",
+                            HomeUrl = "https://github.com/Zalexanninev15/NoADS_RU",
+                            IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+                            LicenseId = 2,
+                            Name = "NoADS_RU Extended"
+                        },
+                        new
+                        {
+                            Id = 2885,
+                            Description = "Most aggressive variant, built on Extended, includes experimental rules. May break some sites.",
+                            HomeUrl = "https://github.com/Zalexanninev15/NoADS_RU",
+                            IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+                            LicenseId = 2,
+                            Name = "NoADS_RU Extended Plus"
+                        },
+                        new
+                        {
+                            Id = 2886,
+                            Description = "Relaxed variant of NoADS_RU that keeps Russian web services (Yandex, VK, Mail.ru, etc.) working. It strives to ensure the best possible performance for Russian websites, even if this conflicts with some of the author's principles.",
+                            HomeUrl = "https://github.com/Zalexanninev15/NoADS_RU",
+                            IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+                            LicenseId = 2,
+                            Name = "NoADS_RU RWS"
+                        },
+                        new
+                        {
+                            Id = 2887,
+                            Description = "Blocks ads, analytics and tracking domains.",
+                            HomeUrl = "https://github.com/Zalexanninev15/NoADS_RU",
+                            IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+                            LicenseId = 2,
+                            Name = "NoADS_RU Hosts Blocker"
+                        },
+                        new
+                        {
+                            Id = 2888,
+                            Description = "Extended domain blocklist. Recommended for most users.",
+                            HomeUrl = "https://github.com/Zalexanninev15/NoADS_RU",
+                            IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+                            LicenseId = 2,
+                            Name = "NoADS_RU Hosts BlockerFL"
+                        },
+                        new
+                        {
+                            Id = 2889,
+                            Description = "Hosts entries for bypassing regional restrictions imposed on the website side. Not a blocklist.",
+                            HomeUrl = "https://github.com/Zalexanninev15/NoADS_RU",
+                            IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+                            LicenseId = 2,
+                            Name = "NoADS_RU Hosts Bypass"
+                        },
+                        new
+                        {
+                            Id = 2890,
+                            Description = "Alternative bypass list, rarely updated. Not a blocklist.",
+                            HomeUrl = "https://github.com/Zalexanninev15/NoADS_RU",
+                            IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+                            LicenseId = 2,
+                            Name = "NoADS_RU Hosts Bypass2"
                         });
                 });
 
@@ -26074,6 +26146,46 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2882,
                             LanguageId = (short)180
+                        },
+                        new
+                        {
+                            FilterListId = 2883,
+                            LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2884,
+                            LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2885,
+                            LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2886,
+                            LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2887,
+                            LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2888,
+                            LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2889,
+                            LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2890,
+                            LanguageId = (short)132
                         });
                 });
 
@@ -34281,6 +34393,46 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2882,
                             MaintainerId = 225
+                        },
+                        new
+                        {
+                            FilterListId = 2883,
+                            MaintainerId = 226
+                        },
+                        new
+                        {
+                            FilterListId = 2884,
+                            MaintainerId = 226
+                        },
+                        new
+                        {
+                            FilterListId = 2885,
+                            MaintainerId = 226
+                        },
+                        new
+                        {
+                            FilterListId = 2886,
+                            MaintainerId = 226
+                        },
+                        new
+                        {
+                            FilterListId = 2887,
+                            MaintainerId = 226
+                        },
+                        new
+                        {
+                            FilterListId = 2888,
+                            MaintainerId = 226
+                        },
+                        new
+                        {
+                            FilterListId = 2889,
+                            MaintainerId = 226
+                        },
+                        new
+                        {
+                            FilterListId = 2890,
+                            MaintainerId = 226
                         });
                 });
 
@@ -46198,6 +46350,66 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2882,
                             SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2883,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2883,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2884,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2884,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2885,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2885,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2886,
+                            SyntaxId = (short)3
+                        },
+                        new
+                        {
+                            FilterListId = 2886,
+                            SyntaxId = (short)4
+                        },
+                        new
+                        {
+                            FilterListId = 2887,
+                            SyntaxId = (short)54
+                        },
+                        new
+                        {
+                            FilterListId = 2888,
+                            SyntaxId = (short)54
+                        },
+                        new
+                        {
+                            FilterListId = 2889,
+                            SyntaxId = (short)14
+                        },
+                        new
+                        {
+                            FilterListId = 2890,
+                            SyntaxId = (short)14
                         });
                 });
 
@@ -63175,6 +63387,86 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2882,
                             TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 2883,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2883,
+                            TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 2884,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2884,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 2884,
+                            TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 2885,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2885,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 2885,
+                            TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 2886,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2886,
+                            TagId = 9
+                        },
+                        new
+                        {
+                            FilterListId = 2887,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2887,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 2888,
+                            TagId = 2
+                        },
+                        new
+                        {
+                            FilterListId = 2888,
+                            TagId = 3
+                        },
+                        new
+                        {
+                            FilterListId = 2889,
+                            TagId = 12
+                        },
+                        new
+                        {
+                            FilterListId = 2890,
+                            TagId = 12
                         });
                 });
 
@@ -66216,6 +66508,12 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 225,
                             Name = "bpavlina",
                             Url = "https://github.com/bpavlina"
+                        },
+                        new
+                        {
+                            Id = 226,
+                            Name = "Zalexanninev15",
+                            Url = "https://github.com/Zalexanninev15"
                         });
                 });
 
@@ -92383,6 +92681,70 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
                                     Url = "https://raw.githubusercontent.com/bpavlina/ublock-hide-yt-shorts/master/list.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2883,
+                                    Id = 3292,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2884,
+                                    Id = 3293,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list_extended.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2885,
+                                    Id = 3294,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list_extended_plus.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2886,
+                                    Id = 3295,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list_rws.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2887,
+                                    Id = 3296,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/blocker.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2888,
+                                    Id = 3297,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/blockerFL.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2889,
+                                    Id = 3298,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/bypass.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2890,
+                                    Id = 3299,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/bypass2.txt"
                                 });
                         });
 
