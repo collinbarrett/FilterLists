@@ -17800,5 +17800,61 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://raw.githubusercontent.com/bpavlina/ublock-hide-yt-shorts/master/list.txt"
+  },
+  {
+    "filterListId": 2883,
+    "id": 3292,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list.txt"
+  },
+  {
+    "filterListId": 2884,
+    "id": 3293,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list_extended.txt"
+  },
+  {
+    "filterListId": 2885,
+    "id": 3294,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list_extended_plus.txt"
+  },
+  {
+    "filterListId": 2886,
+    "id": 3295,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/ads_list_rws.txt"
+  },
+  {
+    "filterListId": 2887,
+    "id": 3296,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/blocker.txt"
+  },
+  {
+    "filterListId": 2888,
+    "id": 3297,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/blockerFL.txt"
+  },
+  {
+    "filterListId": 2889,
+    "id": 3298,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/bypass.txt"
+  },
+  {
+    "filterListId": 2890,
+    "id": 3299,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/bypass2.txt"
   }
 ]
