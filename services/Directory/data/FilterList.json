@@ -18848,5 +18848,69 @@
     "issuesUrl": "https://github.com/bpavlina/ublock-hide-yt-shorts/issues",
     "licenseId": 2,
     "name": "Hide YouTube Shorts"
+  },
+  {
+    "description": "Main list. Blocks ads and annoying elements.",
+    "homeUrl": "https://github.com/Zalexanninev15/NoADS_RU",
+    "id": 2883,
+    "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+    "licenseId": 2,
+    "name": "NoADS_RU"
+  },
+  {
+    "description": "Extended version of NoADS_RU with more filters for ads, trackers and cookie notices. Recommended for most users.",
+    "homeUrl": "https://github.com/Zalexanninev15/NoADS_RU",
+    "id": 2884,
+    "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+    "licenseId": 2,
+    "name": "NoADS_RU Extended"
+  },
+  {
+    "description": "Most aggressive variant, built on Extended, includes experimental rules. May break some sites.",
+    "homeUrl": "https://github.com/Zalexanninev15/NoADS_RU",
+    "id": 2885,
+    "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+    "licenseId": 2,
+    "name": "NoADS_RU Extended Plus"
+  },
+  {
+    "description": "Relaxed variant of NoADS_RU that keeps Russian web services (Yandex, VK, Mail.ru, etc.) working. It strives to ensure the best possible performance for Russian websites, even if this conflicts with some of the author's principles.",
+    "homeUrl": "https://github.com/Zalexanninev15/NoADS_RU",
+    "id": 2886,
+    "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+    "licenseId": 2,
+    "name": "NoADS_RU RWS"
+  },
+  {
+    "description": "Blocks ads, analytics and tracking domains.",
+    "homeUrl": "https://github.com/Zalexanninev15/NoADS_RU",
+    "id": 2887,
+    "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+    "licenseId": 2,
+    "name": "NoADS_RU Hosts Blocker"
+  },
+  {
+    "description": "Extended domain blocklist. Recommended for most users.",
+    "homeUrl": "https://github.com/Zalexanninev15/NoADS_RU",
+    "id": 2888,
+    "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+    "licenseId": 2,
+    "name": "NoADS_RU Hosts BlockerFL"
+  },
+  {
+    "description": "Hosts entries for bypassing regional restrictions imposed on the website side. Not a blocklist.",
+    "homeUrl": "https://github.com/Zalexanninev15/NoADS_RU",
+    "id": 2889,
+    "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+    "licenseId": 2,
+    "name": "NoADS_RU Hosts Bypass"
+  },
+  {
+    "description": "Alternative bypass list, rarely updated. Not a blocklist.",
+    "homeUrl": "https://github.com/Zalexanninev15/NoADS_RU",
+    "id": 2890,
+    "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
+    "licenseId": 2,
+    "name": "NoADS_RU Hosts Bypass2"
   }
 ]
