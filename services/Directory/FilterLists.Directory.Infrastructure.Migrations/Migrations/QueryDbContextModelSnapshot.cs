@@ -17801,7 +17801,6 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2471,
                             Description = "Dutch filterlist to use with uBlock Origin",
-                            DonateUrl = "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
                             HomeUrl = "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/",
                             IssuesUrl = "https://github.com/EasyDutch-uBlockOrigin/EasyDutch/issues",
                             LicenseId = 4,
@@ -18228,9 +18227,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2520,
                             Description = "Medium mode for uBlock Origin when blocking 3p-frames and 3p-scripts",
-                            DonateUrl = "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
-                            HomeUrl = "https://github.com/Nomes77/AdBlockFilters/",
-                            IssuesUrl = "https://github.com/Nomes77/AdBlockFilters/issues",
+                            HomeUrl = "https://github.com/Ignotum77/AdBlockFilters/",
+                            IssuesUrl = "https://github.com/Ignotum77/AdBlockFilters/issues",
                             LicenseId = 4,
                             Name = "Dynamic rules for uBo's medium mode"
                         },
@@ -18238,9 +18236,8 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             Id = 2521,
                             Description = "Personal filter list (My filters)",
-                            DonateUrl = "https://www.paypal.com/donate/?hosted_button_id=NRARDMBBMV3LC",
-                            HomeUrl = "https://github.com/Nomes77/AdBlockFilters/",
-                            IssuesUrl = "https://github.com/Nomes77/AdBlockFilters/issues",
+                            HomeUrl = "https://github.com/Ignotum77/AdBlockFilters/",
+                            IssuesUrl = "https://github.com/Ignotum77/AdBlockFilters/issues",
                             LicenseId = 4,
                             Name = "Personal filter list (My filters) (uBo)"
                         },
@@ -65823,9 +65820,9 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 162,
-                            EmailAddress = "easydutch.adblock@gmail.com",
-                            Name = "Nomes77",
-                            Url = "https://github.com/Nomes77/"
+                            EmailAddress = "easydutch@tech-web.aleeas.com",
+                            Name = "Ignotum77",
+                            Url = "https://github.com/Ignotum77/"
                         },
                         new
                         {
@@ -88433,7 +88430,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2733,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/dynamic rules"
+                                    Url = "https://raw.githubusercontent.com/Ignotum77/AdBlockFilters/main/dynamic rules.txt"
                                 },
                                 new
                                 {
@@ -88441,7 +88438,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2734,
                                     Primariness = (short)1,
                                     SegmentNumber = (short)0,
-                                    Url = "https://raw.githubusercontent.com/Nomes77/AdBlockFilters/main/my filters"
+                                    Url = "https://raw.githubusercontent.com/Ignotum77/AdBlockFilters/main/my filters.txt"
                                 },
                                 new
                                 {
@@ -89017,7 +89014,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2808,
                                     Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://cdn.statically.io/gh/Nomes77/AdBlockfilters/main/dynamic rules"
+                                    Url = "https://cdn.statically.io/gh/Ignotum77/AdBlockfilters/main/dynamic rules.txt"
                                 },
                                 new
                                 {
@@ -89025,7 +89022,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2809,
                                     Primariness = (short)3,
                                     SegmentNumber = (short)0,
-                                    Url = "https://cdn.jsdelivr.net/gh/Nomes77/AdBlockfilters@main/dynamic rules"
+                                    Url = "https://cdn.jsdelivr.net/gh/Ignotum77/AdBlockfilters@main/dynamic rules.txt"
                                 },
                                 new
                                 {
@@ -89033,7 +89030,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2810,
                                     Primariness = (short)2,
                                     SegmentNumber = (short)0,
-                                    Url = "https://cdn.statically.io/gh/Nomes77/AdBlockfilters/main/my filters"
+                                    Url = "https://cdn.statically.io/gh/Ignotum77/AdBlockfilters/main/my filters.txt"
                                 },
                                 new
                                 {
@@ -89041,7 +89038,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Id = 2811,
                                     Primariness = (short)3,
                                     SegmentNumber = (short)0,
-                                    Url = "https://cdn.jsdelivr.net/gh/Nomes77/AdBlockfilters@main/my filters"
+                                    Url = "https://cdn.jsdelivr.net/gh/Ignotum77/AdBlockfilters@main/my filters.txt"
                                 },
                                 new
                                 {
