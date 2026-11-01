@@ -17008,7 +17008,7 @@
     "name": "Dead End"
   },
   {
-    "description": "List of German-speaking web-sites with fake-news, propaganda, hate-speech, etc.",
+    "description": "List of German-speaking websites promoting right-wing extremism, disinformation, conspiracy myths, medical quackery, and reactionary agitation.",
     "homeUrl": "https://codeberg.org/badandugly/badandugly",
     "id": 2655,
     "issuesUrl": "https://codeberg.org/badandugly/badandugly/issues",
@@ -18912,5 +18912,29 @@
     "issuesUrl": "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
     "licenseId": 2,
     "name": "NoADS_RU Hosts Bypass2"
+  },
+  {
+    "description": "List of German-speaking websites promoting right-wing extremism, disinformation, conspiracy myths, medical quackery, and reactionary agitation.",
+    "homeUrl": "https://codeberg.org/badandugly/badandugly",
+    "id": 2891,
+    "issuesUrl": "https://codeberg.org/badandugly/badandugly/issues",
+    "licenseId": 4,
+    "name": "The Bad & The Ugly Blocklist (German) (Domains)"
+  },
+  {
+    "description": "List of German-speaking websites promoting right-wing extremism, disinformation, conspiracy myths, medical quackery, and reactionary agitation.",
+    "homeUrl": "https://codeberg.org/badandugly/badandugly",
+    "id": 2892,
+    "issuesUrl": "https://codeberg.org/badandugly/badandugly/issues",
+    "licenseId": 4,
+    "name": "The Bad & The Ugly Blocklist (German) (Wildcard)"
+  },
+  {
+    "description": "List of German-speaking websites promoting right-wing extremism, disinformation, conspiracy myths, medical quackery, and reactionary agitation.",
+    "homeUrl": "https://codeberg.org/badandugly/badandugly",
+    "id": 2893,
+    "issuesUrl": "https://codeberg.org/badandugly/badandugly/issues",
+    "licenseId": 4,
+    "name": "The Bad & The Ugly Blocklist (German) (Hosts)"
   }
 ]
