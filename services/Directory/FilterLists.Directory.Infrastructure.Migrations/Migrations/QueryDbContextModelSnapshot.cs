@@ -18886,7 +18886,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2603,
                             Description = "Filters to bypass paywalls for news sites (supports less sites than the extension/add-on)",
                             HomeUrl = "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters",
-                            LicenseId = 0,
+                            LicenseId = 5,
                             Name = "Bypass Paywalls Clean filter"
                         },
                         new
@@ -18902,7 +18902,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2605,
                             EmailAddress = "info@lpt.lt",
                             HomeUrl = "https://lpt.lrv.lt/lt/nelegalios-losimu-veiklos-vykdytojai/istaigoms-ir-institucijoms",
-                            LicenseId = 0,
+                            LicenseId = 5,
                             Name = "List of illegal online gambling operators by the Government of the Republic of Lithuania (For institutions)"
                         },
                         new
@@ -18910,7 +18910,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2606,
                             EmailAddress = "info@lpt.lt",
                             HomeUrl = "https://lpt.lrv.lt/lt/nelegalios-losimu-veiklos-vykdytojai/nelegalios-losimu-veiklos-vykdytoju-sarasas",
-                            LicenseId = 0,
+                            LicenseId = 5,
                             Name = "List of illegal online gambling operators by the Government of the Republic of Lithuania"
                         },
                         new
@@ -19108,7 +19108,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             Id = 2638,
                             Description = "Say goodbye to additional annoyances like floating videos, newsletter pop-ups, and other distractions. Using entries that include '#$#' requires Adblock Plus and an Adblock Plus Premium subscription.",
                             HomeUrl = "https://accounts.adblockplus.org/premium",
-                            LicenseId = 0,
+                            LicenseId = 5,
                             Name = "Premium - Distraction Control"
                         },
                         new
@@ -19261,7 +19261,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 2655,
-                            Description = "List of German-speaking web-sites with fake-news, propaganda, hate-speech, etc.",
+                            Description = "List of German-speaking websites promoting right-wing extremism, disinformation, conspiracy myths, medical quackery, and reactionary agitation.",
                             HomeUrl = "https://codeberg.org/badandugly/badandugly",
                             IssuesUrl = "https://codeberg.org/badandugly/badandugly/issues",
                             LicenseId = 4,
@@ -21394,6 +21394,33 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                             IssuesUrl = "https://codeberg.org/Zalexanninev15/NoADS_RU/issues",
                             LicenseId = 2,
                             Name = "NoADS_RU Hosts Bypass2"
+                        },
+                        new
+                        {
+                            Id = 2891,
+                            Description = "List of German-speaking websites promoting right-wing extremism, disinformation, conspiracy myths, medical quackery, and reactionary agitation.",
+                            HomeUrl = "https://codeberg.org/badandugly/badandugly",
+                            IssuesUrl = "https://codeberg.org/badandugly/badandugly/issues",
+                            LicenseId = 4,
+                            Name = "The Bad & The Ugly Blocklist (German) (Domains)"
+                        },
+                        new
+                        {
+                            Id = 2892,
+                            Description = "List of German-speaking websites promoting right-wing extremism, disinformation, conspiracy myths, medical quackery, and reactionary agitation.",
+                            HomeUrl = "https://codeberg.org/badandugly/badandugly",
+                            IssuesUrl = "https://codeberg.org/badandugly/badandugly/issues",
+                            LicenseId = 4,
+                            Name = "The Bad & The Ugly Blocklist (German) (Wildcard)"
+                        },
+                        new
+                        {
+                            Id = 2893,
+                            Description = "List of German-speaking websites promoting right-wing extremism, disinformation, conspiracy myths, medical quackery, and reactionary agitation.",
+                            HomeUrl = "https://codeberg.org/badandugly/badandugly",
+                            IssuesUrl = "https://codeberg.org/badandugly/badandugly/issues",
+                            LicenseId = 4,
+                            Name = "The Bad & The Ugly Blocklist (German) (Hosts)"
                         });
                 });
 
@@ -25739,6 +25766,11 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         },
                         new
                         {
+                            FilterListId = 2655,
+                            LanguageId = (short)32
+                        },
+                        new
+                        {
                             FilterListId = 2659,
                             LanguageId = (short)8
                         },
@@ -26186,6 +26218,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2890,
                             LanguageId = (short)132
+                        },
+                        new
+                        {
+                            FilterListId = 2891,
+                            LanguageId = (short)32
+                        },
+                        new
+                        {
+                            FilterListId = 2892,
+                            LanguageId = (short)32
+                        },
+                        new
+                        {
+                            FilterListId = 2893,
+                            LanguageId = (short)32
                         });
                 });
 
@@ -33372,7 +33419,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2655,
-                            MaintainerId = 168
+                            MaintainerId = 186
                         },
                         new
                         {
@@ -34433,6 +34480,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2890,
                             MaintainerId = 226
+                        },
+                        new
+                        {
+                            FilterListId = 2891,
+                            MaintainerId = 186
+                        },
+                        new
+                        {
+                            FilterListId = 2892,
+                            MaintainerId = 186
+                        },
+                        new
+                        {
+                            FilterListId = 2893,
+                            MaintainerId = 186
                         });
                 });
 
@@ -46410,6 +46472,21 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2890,
                             SyntaxId = (short)14
+                        },
+                        new
+                        {
+                            FilterListId = 2891,
+                            SyntaxId = (short)2
+                        },
+                        new
+                        {
+                            FilterListId = 2892,
+                            SyntaxId = (short)16
+                        },
+                        new
+                        {
+                            FilterListId = 2893,
+                            SyntaxId = (short)54
                         });
                 });
 
@@ -61861,6 +61938,16 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             FilterListId = 2655,
+                            TagId = 15
+                        },
+                        new
+                        {
+                            FilterListId = 2655,
+                            TagId = 21
+                        },
+                        new
+                        {
+                            FilterListId = 2655,
                             TagId = 25
                         },
                         new
@@ -63467,6 +63554,51 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         {
                             FilterListId = 2890,
                             TagId = 12
+                        },
+                        new
+                        {
+                            FilterListId = 2891,
+                            TagId = 15
+                        },
+                        new
+                        {
+                            FilterListId = 2891,
+                            TagId = 21
+                        },
+                        new
+                        {
+                            FilterListId = 2891,
+                            TagId = 25
+                        },
+                        new
+                        {
+                            FilterListId = 2892,
+                            TagId = 15
+                        },
+                        new
+                        {
+                            FilterListId = 2892,
+                            TagId = 21
+                        },
+                        new
+                        {
+                            FilterListId = 2892,
+                            TagId = 25
+                        },
+                        new
+                        {
+                            FilterListId = 2893,
+                            TagId = 15
+                        },
+                        new
+                        {
+                            FilterListId = 2893,
+                            TagId = 21
+                        },
+                        new
+                        {
+                            FilterListId = 2893,
+                            TagId = 25
                         });
                 });
 
@@ -66262,6 +66394,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 186,
+                            EmailAddress = "badandugly.e41g0@aleeas.com",
                             Name = "BadAndUgly",
                             Url = "https://codeberg.org/badandugly"
                         },
@@ -92745,6 +92878,30 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                                     Primariness = (short)1,
                                     SegmentNumber = (short)1,
                                     Url = "https://raw.githubusercontent.com/Zalexanninev15/NoADS_RU/main/hosts/bypass2.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2891,
+                                    Id = 3300,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://codeberg.org/badandugly/badandugly/raw/branch/main/domains.txt"
+                                },
+                                new
+                                {
+                                    FilterListId = 2892,
+                                    Id = 3301,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://codeberg.org/badandugly/badandugly/raw/branch/main/blocklist-wildcard"
+                                },
+                                new
+                                {
+                                    FilterListId = 2893,
+                                    Id = 3302,
+                                    Primariness = (short)1,
+                                    SegmentNumber = (short)1,
+                                    Url = "https://codeberg.org/badandugly/badandugly/raw/branch/main/blocklist-hosts"
                                 });
                         });
 
