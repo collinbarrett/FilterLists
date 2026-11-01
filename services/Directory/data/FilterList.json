@@ -16679,6 +16679,7 @@
     "description": "Filters to bypass paywalls for news sites (supports less sites than the extension/add-on)",
     "homeUrl": "https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters",
     "id": 2603,
+    "licenseId": 5,
     "name": "Bypass Paywalls Clean filter"
   },
   {
@@ -16692,12 +16693,14 @@
     "emailAddress": "info@lpt.lt",
     "homeUrl": "https://lpt.lrv.lt/lt/nelegalios-losimu-veiklos-vykdytojai/istaigoms-ir-institucijoms",
     "id": 2605,
+    "licenseId": 5,
     "name": "List of illegal online gambling operators by the Government of the Republic of Lithuania (For institutions)"
   },
   {
     "emailAddress": "info@lpt.lt",
     "homeUrl": "https://lpt.lrv.lt/lt/nelegalios-losimu-veiklos-vykdytojai/nelegalios-losimu-veiklos-vykdytoju-sarasas",
     "id": 2606,
+    "licenseId": 5,
     "name": "List of illegal online gambling operators by the Government of the Republic of Lithuania"
   },
   {
@@ -16874,6 +16877,7 @@
     "description": "Say goodbye to additional annoyances like floating videos, newsletter pop-ups, and other distractions. Using entries that include '#$#' requires Adblock Plus and an Adblock Plus Premium subscription.",
     "homeUrl": "https://accounts.adblockplus.org/premium",
     "id": 2638,
+    "licenseId": 5,
     "name": "Premium - Distraction Control"
   },
   {
