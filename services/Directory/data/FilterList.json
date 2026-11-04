@@ -18806,7 +18806,7 @@
     "name": "NetAPI Compromised Domains"
   },
   {
-    "description": "IPv4 addresses seen in public malware and abuse feeds within the last 24 hours, one address per line. Updated daily.",
+    "description": "IPv4 addresses that attacked the sensors of NetAPI Nightwatch, NetAPI's own honeypot network, within the last 48 hours (brute force, exploits, malware downloads, etc.), one address per line. Updated every hour.",
     "homeUrl": "https://netapi.com/compromised-ips/",
     "id": 2877,
     "licenseId": 24,
