@@ -21272,7 +21272,7 @@ namespace FilterLists.Directory.Infrastructure.Migrations.Migrations
                         new
                         {
                             Id = 2877,
-                            Description = "IPv4 addresses seen in public malware and abuse feeds within the last 24 hours, one address per line. Updated daily.",
+                            Description = "IPv4 addresses that attacked the sensors of NetAPI Nightwatch, NetAPI's own honeypot network, within the last 48 hours (brute force, exploits, malware downloads, etc.), one address per line. Updated every hour.",
                             HomeUrl = "https://netapi.com/compromised-ips/",
                             LicenseId = 24,
                             Name = "NetAPI Compromised IPs"
