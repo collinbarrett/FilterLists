@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="13.6.5" />
         <PackageReference Include="Aspire.Hosting.SqlServer" Version="13.3.5" />
         <PackageReference Include="MessagePack" Version="3.1.12" />
         <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.14" />
