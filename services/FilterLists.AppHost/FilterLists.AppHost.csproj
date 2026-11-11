@@ -3,6 +3,7 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net11.0</TargetFramework>
+        <AspireUseCliBundle>true</AspireUseCliBundle>
         <UserSecretsId>c7967ef0-ced7-4e18-8282-7302b3c0002b</UserSecretsId>
     </PropertyGroup>
 
