@@ -43,7 +43,7 @@ jobs:
           sudo apt-get install --yes jq
 
       - name: Install dotnet-ef
-        run: dotnet tool install --global dotnet-ef --version 10.0.8
+        run: dotnet tool install --global dotnet-ef --version 11.0.0
 
       - name: Add dotnet tools to PATH
         run: echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
