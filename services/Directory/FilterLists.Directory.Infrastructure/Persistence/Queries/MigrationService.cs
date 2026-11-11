@@ -41,7 +41,7 @@ public sealed class MigrationService(IServiceProvider serviceProvider) : IHosted
         }
         catch (Exception ex)
         {
-            activity?.RecordException(ex);
+            activity?.AddException(ex);
             throw;
         }
     }
