@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations;
 
 [DbContext(typeof(QueryDbContext))]
-[Migration("20261117214319_AddDatacenterIpRanges")]
-partial class _20261117214319_AddDatacenterIpRanges
+[Migration("20261117220727_AddDatacenterIpRanges")]
+partial class _20261117220727_AddDatacenterIpRanges
 {
     /// <inheritdoc />
     protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21431,8 +21431,9 @@ partial class _20261117214319_AddDatacenterIpRanges
                         Description = "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.",
                         HomeUrl = "https://github.com/moonetix/datacenter-ip-ranges",
                         IssuesUrl = "https://github.com/moonetix/datacenter-ip-ranges/issues",
-                        LicenseId = 2,
-                        Name = "Datacenter IP Ranges (IPv4)"
+                        LicenseId = 3,
+                        Name = "Datacenter IP Ranges (IPv4)",
+                        PolicyUrl = "https://github.com/moonetix/datacenter-ip-ranges#sources-and-terms"
                     },
                     new
                     {
@@ -21440,8 +21441,9 @@ partial class _20261117214319_AddDatacenterIpRanges
                         Description = "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.",
                         HomeUrl = "https://github.com/moonetix/datacenter-ip-ranges",
                         IssuesUrl = "https://github.com/moonetix/datacenter-ip-ranges/issues",
-                        LicenseId = 2,
-                        Name = "Datacenter IP Ranges (IPv6)"
+                        LicenseId = 3,
+                        Name = "Datacenter IP Ranges (IPv6)",
+                        PolicyUrl = "https://github.com/moonetix/datacenter-ip-ranges#sources-and-terms"
                     });
             });
 
