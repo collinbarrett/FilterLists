@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FilterLists.Directory.Infrastructure.Migrations.Migrations;
 
 /// <inheritdoc />
-public partial class _20261117214319_AddDatacenterIpRanges : Migration
+public partial class _20261117220727_AddDatacenterIpRanges : Migration
 {
     /// <inheritdoc />
     protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,8 +17,8 @@ public partial class _20261117214319_AddDatacenterIpRanges : Migration
             columns: new[] { "Id", "ChatUrl", "Description", "DonateUrl", "EmailAddress", "ForumUrl", "HomeUrl", "IssuesUrl", "LicenseId", "Name", "OnionUrl", "PolicyUrl", "SubmissionUrl" },
             values: new object[,]
             {
-                { 2894, null, "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.", null, null, null, "https://github.com/moonetix/datacenter-ip-ranges", "https://github.com/moonetix/datacenter-ip-ranges/issues", 2, "Datacenter IP Ranges (IPv4)", null, null, null },
-                { 2895, null, "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.", null, null, null, "https://github.com/moonetix/datacenter-ip-ranges", "https://github.com/moonetix/datacenter-ip-ranges/issues", 2, "Datacenter IP Ranges (IPv6)", null, null, null }
+                { 2894, null, "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.", null, null, null, "https://github.com/moonetix/datacenter-ip-ranges", "https://github.com/moonetix/datacenter-ip-ranges/issues", 3, "Datacenter IP Ranges (IPv4)", null, "https://github.com/moonetix/datacenter-ip-ranges#sources-and-terms", null },
+                { 2895, null, "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.", null, null, null, "https://github.com/moonetix/datacenter-ip-ranges", "https://github.com/moonetix/datacenter-ip-ranges/issues", 3, "Datacenter IP Ranges (IPv6)", null, "https://github.com/moonetix/datacenter-ip-ranges#sources-and-terms", null }
             });
 
         migrationBuilder.InsertData(

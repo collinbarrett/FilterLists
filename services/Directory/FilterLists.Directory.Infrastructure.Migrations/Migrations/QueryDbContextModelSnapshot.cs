@@ -15,7 +15,7 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
     // If you encounter a merge conflict in the line below, it means you need to
     // discard one of the migration branches and recreate its migrations on top of
     // the other branch. See https://aka.ms/efcore-docs-migrations-conflicts for more info.
-    public override string LastMigrationId => "20261117214319_AddDatacenterIpRanges";
+    public override string LastMigrationId => "20261117220727_AddDatacenterIpRanges";
 
     protected override void BuildModel(ModelBuilder modelBuilder)
     {
@@ -21433,8 +21433,9 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                         Description = "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.",
                         HomeUrl = "https://github.com/moonetix/datacenter-ip-ranges",
                         IssuesUrl = "https://github.com/moonetix/datacenter-ip-ranges/issues",
-                        LicenseId = 2,
-                        Name = "Datacenter IP Ranges (IPv4)"
+                        LicenseId = 3,
+                        Name = "Datacenter IP Ranges (IPv4)",
+                        PolicyUrl = "https://github.com/moonetix/datacenter-ip-ranges#sources-and-terms"
                     },
                     new
                     {
@@ -21442,8 +21443,9 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                         Description = "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.",
                         HomeUrl = "https://github.com/moonetix/datacenter-ip-ranges",
                         IssuesUrl = "https://github.com/moonetix/datacenter-ip-ranges/issues",
-                        LicenseId = 2,
-                        Name = "Datacenter IP Ranges (IPv6)"
+                        LicenseId = 3,
+                        Name = "Datacenter IP Ranges (IPv6)",
+                        PolicyUrl = "https://github.com/moonetix/datacenter-ip-ranges#sources-and-terms"
                     });
             });
 
