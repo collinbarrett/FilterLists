@@ -18940,5 +18940,21 @@
     "issuesUrl": "https://codeberg.org/badandugly/badandugly/issues",
     "licenseId": 4,
     "name": "The Bad & The Ugly Blocklist (German) (Hosts)"
+  },
+  {
+    "description": "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.",
+    "homeUrl": "https://github.com/moonetix/datacenter-ip-ranges",
+    "id": 2894,
+    "issuesUrl": "https://github.com/moonetix/datacenter-ip-ranges/issues",
+    "licenseId": 2,
+    "name": "Datacenter IP Ranges (IPv4)"
+  },
+  {
+    "description": "Cloud, hosting and CDN IP ranges (AWS, Google Cloud, Oracle Cloud, DigitalOcean, Akamai Cloud/Linode, Vultr, Cloudflare, Fastly, GitHub) merged from the feeds each provider publishes itself, rebuilt daily. One CIDR per line. Tor exits, iCloud Private Relay and crawler ranges are kept out of these two lists. An nginx `geo` setup is in the README.",
+    "homeUrl": "https://github.com/moonetix/datacenter-ip-ranges",
+    "id": 2895,
+    "issuesUrl": "https://github.com/moonetix/datacenter-ip-ranges/issues",
+    "licenseId": 2,
+    "name": "Datacenter IP Ranges (IPv6)"
   }
 ]
