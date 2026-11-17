@@ -17877,5 +17877,19 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://codeberg.org/badandugly/badandugly/raw/branch/main/blocklist-hosts"
+  },
+  {
+    "filterListId": 2894,
+    "id": 3303,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/moonetix/datacenter-ip-ranges/main/data/ipv4.txt"
+  },
+  {
+    "filterListId": 2895,
+    "id": 3304,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://raw.githubusercontent.com/moonetix/datacenter-ip-ranges/main/data/ipv6.txt"
   }
 ]
