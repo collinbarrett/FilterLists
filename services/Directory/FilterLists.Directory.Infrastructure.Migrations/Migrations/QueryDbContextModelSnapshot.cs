@@ -15,7 +15,7 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
     // If you encounter a merge conflict in the line below, it means you need to
     // discard one of the migration branches and recreate its migrations on top of
     // the other branch. See https://aka.ms/efcore-docs-migrations-conflicts for more info.
-    public override string LastMigrationId => "20261117220727_AddDatacenterIpRanges";
+    public override string LastMigrationId => "20261118001908_AddThreatClusterMaliciousDomains";
 
     protected override void BuildModel(ModelBuilder modelBuilder)
     {
@@ -21446,6 +21446,39 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                         LicenseId = 3,
                         Name = "Datacenter IP Ranges (IPv6)",
                         PolicyUrl = "https://github.com/moonetix/datacenter-ip-ranges#sources-and-terms"
+                    },
+                    new
+                    {
+                        Id = 2896,
+                        Description = "High-confidence malicious domains observed in security incidents over the last 30 days, extracted from multi-source threat reporting and validated before publication. Refreshed hourly; stable entries, false positives retired automatically.",
+                        EmailAddress = "hello@threatcluster.io",
+                        HomeUrl = "https://threatcluster.io/iocs",
+                        IssuesUrl = "https://github.com/Jam0k/Threat-Intelligence-MCP/issues",
+                        LicenseId = 24,
+                        Name = "ThreatCluster Malicious Domains",
+                        PolicyUrl = "https://threatcluster.io/iocs"
+                    },
+                    new
+                    {
+                        Id = 2897,
+                        Description = "High-confidence malicious domains observed in security incidents over the last 30 days, extracted from multi-source threat reporting and validated before publication. Refreshed hourly; stable entries, false positives retired automatically.",
+                        EmailAddress = "hello@threatcluster.io",
+                        HomeUrl = "https://threatcluster.io/iocs",
+                        IssuesUrl = "https://github.com/Jam0k/Threat-Intelligence-MCP/issues",
+                        LicenseId = 24,
+                        Name = "ThreatCluster Malicious Domains (Hosts)",
+                        PolicyUrl = "https://threatcluster.io/iocs"
+                    },
+                    new
+                    {
+                        Id = 2898,
+                        Description = "High-confidence malicious domains observed in security incidents over the last 30 days, extracted from multi-source threat reporting and validated before publication. Refreshed hourly; stable entries, false positives retired automatically.",
+                        EmailAddress = "hello@threatcluster.io",
+                        HomeUrl = "https://threatcluster.io/iocs",
+                        IssuesUrl = "https://github.com/Jam0k/Threat-Intelligence-MCP/issues",
+                        LicenseId = 24,
+                        Name = "ThreatCluster Malicious Domains (AdGuard/uBlock)",
+                        PolicyUrl = "https://threatcluster.io/iocs"
                     });
             });
 
@@ -26258,6 +26291,21 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                     {
                         FilterListId = 2893,
                         LanguageId = (short)32
+                    },
+                    new
+                    {
+                        FilterListId = 2896,
+                        LanguageId = (short)37
+                    },
+                    new
+                    {
+                        FilterListId = 2897,
+                        LanguageId = (short)37
+                    },
+                    new
+                    {
+                        FilterListId = 2898,
+                        LanguageId = (short)37
                     });
             });
 
@@ -34530,6 +34578,21 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                     {
                         FilterListId = 2895,
                         MaintainerId = 227
+                    },
+                    new
+                    {
+                        FilterListId = 2896,
+                        MaintainerId = 228
+                    },
+                    new
+                    {
+                        FilterListId = 2897,
+                        MaintainerId = 228
+                    },
+                    new
+                    {
+                        FilterListId = 2898,
+                        MaintainerId = 228
                     });
             });
 
@@ -46532,6 +46595,21 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                     {
                         FilterListId = 2895,
                         SyntaxId = (short)41
+                    },
+                    new
+                    {
+                        FilterListId = 2896,
+                        SyntaxId = (short)2
+                    },
+                    new
+                    {
+                        FilterListId = 2897,
+                        SyntaxId = (short)54
+                    },
+                    new
+                    {
+                        FilterListId = 2898,
+                        SyntaxId = (short)4
                     });
             });
 
@@ -63654,6 +63732,51 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                     {
                         FilterListId = 2895,
                         TagId = 20
+                    },
+                    new
+                    {
+                        FilterListId = 2896,
+                        TagId = 6
+                    },
+                    new
+                    {
+                        FilterListId = 2896,
+                        TagId = 46
+                    },
+                    new
+                    {
+                        FilterListId = 2896,
+                        TagId = 47
+                    },
+                    new
+                    {
+                        FilterListId = 2897,
+                        TagId = 6
+                    },
+                    new
+                    {
+                        FilterListId = 2897,
+                        TagId = 46
+                    },
+                    new
+                    {
+                        FilterListId = 2897,
+                        TagId = 47
+                    },
+                    new
+                    {
+                        FilterListId = 2898,
+                        TagId = 6
+                    },
+                    new
+                    {
+                        FilterListId = 2898,
+                        TagId = 46
+                    },
+                    new
+                    {
+                        FilterListId = 2898,
+                        TagId = 47
                     });
             });
 
@@ -66708,6 +66831,12 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                         Id = 227,
                         Name = "Moonetix",
                         Url = "https://moonetix.com/"
+                    },
+                    new
+                    {
+                        Id = 228,
+                        Name = "ThreatCluster",
+                        Url = "https://threatcluster.io/"
                     });
             });
 
@@ -69119,6 +69248,18 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                         Id = 45,
                         Description = "Targets Chinese-origin e-commerce and dropshipping retailers",
                         Name = "china"
+                    },
+                    new
+                    {
+                        Id = 46,
+                        Description = "Indicators of compromise and reporting about cyber threats",
+                        Name = "threat-intelligence"
+                    },
+                    new
+                    {
+                        Id = 47,
+                        Description = "Focuses on cybersecurity threats and defensive use",
+                        Name = "security"
                     });
             });
 
@@ -92979,6 +93120,30 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                                 Primariness = (short)1,
                                 SegmentNumber = (short)1,
                                 Url = "https://raw.githubusercontent.com/moonetix/datacenter-ip-ranges/main/data/ipv6.txt"
+                            },
+                            new
+                            {
+                                FilterListId = 2896,
+                                Id = 3305,
+                                Primariness = (short)1,
+                                SegmentNumber = (short)1,
+                                Url = "https://threatcluster.io/api/iocs/public/domains.txt"
+                            },
+                            new
+                            {
+                                FilterListId = 2897,
+                                Id = 3306,
+                                Primariness = (short)1,
+                                SegmentNumber = (short)1,
+                                Url = "https://threatcluster.io/api/iocs/public/hosts.txt"
+                            },
+                            new
+                            {
+                                FilterListId = 2898,
+                                Id = 3307,
+                                Primariness = (short)1,
+                                SegmentNumber = (short)1,
+                                Url = "https://threatcluster.io/api/iocs/public/adguard.txt"
                             });
                     });
 
