@@ -18958,5 +18958,35 @@
     "licenseId": 3,
     "name": "Datacenter IP Ranges (IPv6)",
     "policyUrl": "https://github.com/moonetix/datacenter-ip-ranges#sources-and-terms"
+  },
+  {
+    "description": "High-confidence malicious domains observed in security incidents over the last 30 days, extracted from multi-source threat reporting and validated before publication. Refreshed hourly; stable entries, false positives retired automatically.",
+    "emailAddress": "hello@threatcluster.io",
+    "homeUrl": "https://threatcluster.io/iocs",
+    "id": 2896,
+    "issuesUrl": "https://github.com/Jam0k/Threat-Intelligence-MCP/issues",
+    "licenseId": 24,
+    "name": "ThreatCluster Malicious Domains",
+    "policyUrl": "https://threatcluster.io/iocs"
+  },
+  {
+    "description": "High-confidence malicious domains observed in security incidents over the last 30 days, extracted from multi-source threat reporting and validated before publication. Refreshed hourly; stable entries, false positives retired automatically.",
+    "emailAddress": "hello@threatcluster.io",
+    "homeUrl": "https://threatcluster.io/iocs",
+    "id": 2897,
+    "issuesUrl": "https://github.com/Jam0k/Threat-Intelligence-MCP/issues",
+    "licenseId": 24,
+    "name": "ThreatCluster Malicious Domains (Hosts)",
+    "policyUrl": "https://threatcluster.io/iocs"
+  },
+  {
+    "description": "High-confidence malicious domains observed in security incidents over the last 30 days, extracted from multi-source threat reporting and validated before publication. Refreshed hourly; stable entries, false positives retired automatically.",
+    "emailAddress": "hello@threatcluster.io",
+    "homeUrl": "https://threatcluster.io/iocs",
+    "id": 2898,
+    "issuesUrl": "https://github.com/Jam0k/Threat-Intelligence-MCP/issues",
+    "licenseId": 24,
+    "name": "ThreatCluster Malicious Domains (AdGuard/uBlock)",
+    "policyUrl": "https://threatcluster.io/iocs"
   }
 ]

@@ -17891,5 +17891,26 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://raw.githubusercontent.com/moonetix/datacenter-ip-ranges/main/data/ipv6.txt"
+  },
+  {
+    "filterListId": 2896,
+    "id": 3305,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://threatcluster.io/api/iocs/public/domains.txt"
+  },
+  {
+    "filterListId": 2897,
+    "id": 3306,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://threatcluster.io/api/iocs/public/hosts.txt"
+  },
+  {
+    "filterListId": 2898,
+    "id": 3307,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://threatcluster.io/api/iocs/public/adguard.txt"
   }
 ]
