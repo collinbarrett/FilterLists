@@ -3834,5 +3834,17 @@
   {
     "filterListId": 2893,
     "languageId": 32
+  },
+  {
+    "filterListId": 2896,
+    "languageId": 37
+  },
+  {
+    "filterListId": 2897,
+    "languageId": 37
+  },
+  {
+    "filterListId": 2898,
+    "languageId": 37
   }
 ]

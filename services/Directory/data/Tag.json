@@ -218,5 +218,15 @@
     "description": "Targets Chinese-origin e-commerce and dropshipping retailers",
     "id": 45,
     "name": "china"
+  },
+  {
+    "description": "Indicators of compromise and reporting about cyber threats",
+    "id": 46,
+    "name": "threat-intelligence"
+  },
+  {
+    "description": "Focuses on cybersecurity threats and defensive use",
+    "id": 47,
+    "name": "security"
   }
 ]
