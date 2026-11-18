@@ -1,4 +1,4 @@
-<Project Sdk="Aspire.AppHost.Sdk/13.6.5">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
@@ -8,11 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Directory\FilterLists.Directory.Api\FilterLists.Directory.Api.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Aspire.Hosting" Version="17.0.0" />
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="17.0.0" />
+        <PackageReference Include="Aspire.Hosting.Dotnet" Version="17.0.0" />
         <PackageReference Include="Aspire.Hosting.SqlServer" Version="17.0.0" />
         <PackageReference Include="MessagePack" Version="3.1.12" />
         <PackageReference Include="System.Security.Cryptography.Pkcs" Version="11.0.0" />
