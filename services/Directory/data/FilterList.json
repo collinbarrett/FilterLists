@@ -18988,5 +18988,26 @@
     "licenseId": 24,
     "name": "ThreatCluster Malicious Domains (AdGuard/uBlock)",
     "policyUrl": "https://threatcluster.io/iocs"
+  },
+  {
+    "description": "Blocks 150+ AI chatbots, AI image/video generators, AI companion apps and AI writing tools (ChatGPT, Gemini, Claude, Copilot, Character.AI, Replika…). Maintained daily.",
+    "homeUrl": "https://mindveto.app/network/",
+    "id": 2899,
+    "licenseId": 45,
+    "name": "Mindveto AI Blocklist (Hosts)"
+  },
+  {
+    "description": "Blocks 150+ AI chatbots, AI image/video generators, AI companion apps and AI writing tools (ChatGPT, Gemini, Claude, Copilot, Character.AI, Replika…). Maintained daily.",
+    "homeUrl": "https://mindveto.app/network/",
+    "id": 2900,
+    "licenseId": 45,
+    "name": "Mindveto AI Blocklist (Adblock Plus)"
+  },
+  {
+    "description": "Blocks 150+ AI chatbots, AI image/video generators, AI companion apps and AI writing tools (ChatGPT, Gemini, Claude, Copilot, Character.AI, Replika…). Maintained daily.",
+    "homeUrl": "https://mindveto.app/network/",
+    "id": 2901,
+    "licenseId": 45,
+    "name": "Mindveto AI Blocklist (Domains)"
   }
 ]

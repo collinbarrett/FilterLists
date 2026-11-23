@@ -17912,5 +17912,26 @@
     "primariness": 1,
     "segmentNumber": 1,
     "url": "https://threatcluster.io/api/iocs/public/adguard.txt"
+  },
+  {
+    "filterListId": 2899,
+    "id": 3308,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://mindveto.app/downloads/hosts.txt"
+  },
+  {
+    "filterListId": 2900,
+    "id": 3309,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://mindveto.app/downloads/adblock.txt"
+  },
+  {
+    "filterListId": 2901,
+    "id": 3310,
+    "primariness": 1,
+    "segmentNumber": 1,
+    "url": "https://mindveto.app/downloads/domains.txt"
   }
 ]
