@@ -344,5 +344,13 @@
     "permitsDistribution": false,
     "permitsModification": true,
     "url": "https://opensource.org/licenses/CPAL-1.0"
+  },
+  {
+    "id": 45,
+    "name": "Mindveto All Rights Reserved",
+    "permitsCommercialUse": false,
+    "permitsDistribution": false,
+    "permitsModification": false,
+    "url": "https://mindveto.app/downloads/LICENSE.txt"
   }
 ]

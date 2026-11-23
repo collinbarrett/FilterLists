@@ -15,7 +15,7 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
     // If you encounter a merge conflict in the line below, it means you need to
     // discard one of the migration branches and recreate its migrations on top of
     // the other branch. See https://aka.ms/efcore-docs-migrations-conflicts for more info.
-    public override string LastMigrationId => "20261118001908_AddThreatClusterMaliciousDomains";
+    public override string LastMigrationId => "20261123191239_AddMindvetoAiBlocklist";
 
     protected override void BuildModel(ModelBuilder modelBuilder)
     {
@@ -21479,6 +21479,30 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                         LicenseId = 24,
                         Name = "ThreatCluster Malicious Domains (AdGuard/uBlock)",
                         PolicyUrl = "https://threatcluster.io/iocs"
+                    },
+                    new
+                    {
+                        Id = 2899,
+                        Description = "Blocks 150+ AI chatbots, AI image/video generators, AI companion apps and AI writing tools (ChatGPT, Gemini, Claude, Copilot, Character.AI, Replika…). Maintained daily.",
+                        HomeUrl = "https://mindveto.app/network/",
+                        LicenseId = 45,
+                        Name = "Mindveto AI Blocklist (Hosts)"
+                    },
+                    new
+                    {
+                        Id = 2900,
+                        Description = "Blocks 150+ AI chatbots, AI image/video generators, AI companion apps and AI writing tools (ChatGPT, Gemini, Claude, Copilot, Character.AI, Replika…). Maintained daily.",
+                        HomeUrl = "https://mindveto.app/network/",
+                        LicenseId = 45,
+                        Name = "Mindveto AI Blocklist (Adblock Plus)"
+                    },
+                    new
+                    {
+                        Id = 2901,
+                        Description = "Blocks 150+ AI chatbots, AI image/video generators, AI companion apps and AI writing tools (ChatGPT, Gemini, Claude, Copilot, Character.AI, Replika…). Maintained daily.",
+                        HomeUrl = "https://mindveto.app/network/",
+                        LicenseId = 45,
+                        Name = "Mindveto AI Blocklist (Domains)"
                     });
             });
 
@@ -46610,6 +46634,21 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                     {
                         FilterListId = 2898,
                         SyntaxId = (short)4
+                    },
+                    new
+                    {
+                        FilterListId = 2899,
+                        SyntaxId = (short)54
+                    },
+                    new
+                    {
+                        FilterListId = 2900,
+                        SyntaxId = (short)3
+                    },
+                    new
+                    {
+                        FilterListId = 2901,
+                        SyntaxId = (short)2
                     });
             });
 
@@ -63777,6 +63816,36 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                     {
                         FilterListId = 2898,
                         TagId = 47
+                    },
+                    new
+                    {
+                        FilterListId = 2899,
+                        TagId = 48
+                    },
+                    new
+                    {
+                        FilterListId = 2899,
+                        TagId = 49
+                    },
+                    new
+                    {
+                        FilterListId = 2900,
+                        TagId = 48
+                    },
+                    new
+                    {
+                        FilterListId = 2900,
+                        TagId = 49
+                    },
+                    new
+                    {
+                        FilterListId = 2901,
+                        TagId = 48
+                    },
+                    new
+                    {
+                        FilterListId = 2901,
+                        TagId = 49
                     });
             });
 
@@ -65403,6 +65472,15 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                         PermitsDistribution = false,
                         PermitsModification = true,
                         Url = "https://opensource.org/licenses/CPAL-1.0"
+                    },
+                    new
+                    {
+                        Id = 45,
+                        Name = "Mindveto All Rights Reserved",
+                        PermitsCommercialUse = false,
+                        PermitsDistribution = false,
+                        PermitsModification = false,
+                        Url = "https://mindveto.app/downloads/LICENSE.txt"
                     });
             });
 
@@ -69260,6 +69338,18 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                         Id = 47,
                         Description = "Focuses on cybersecurity threats and defensive use",
                         Name = "security"
+                    },
+                    new
+                    {
+                        Id = 48,
+                        Description = "Blocks AI services and tools",
+                        Name = "ai"
+                    },
+                    new
+                    {
+                        Id = 49,
+                        Description = "Lists intended for parental control",
+                        Name = "parental-control"
                     });
             });
 
@@ -93144,6 +93234,30 @@ partial class QueryDbContextModelSnapshot : ModelSnapshot
                                 Primariness = (short)1,
                                 SegmentNumber = (short)1,
                                 Url = "https://threatcluster.io/api/iocs/public/adguard.txt"
+                            },
+                            new
+                            {
+                                FilterListId = 2899,
+                                Id = 3308,
+                                Primariness = (short)1,
+                                SegmentNumber = (short)1,
+                                Url = "https://mindveto.app/downloads/hosts.txt"
+                            },
+                            new
+                            {
+                                FilterListId = 2900,
+                                Id = 3309,
+                                Primariness = (short)1,
+                                SegmentNumber = (short)1,
+                                Url = "https://mindveto.app/downloads/adblock.txt"
+                            },
+                            new
+                            {
+                                FilterListId = 2901,
+                                Id = 3310,
+                                Primariness = (short)1,
+                                SegmentNumber = (short)1,
+                                Url = "https://mindveto.app/downloads/domains.txt"
                             });
                     });
 

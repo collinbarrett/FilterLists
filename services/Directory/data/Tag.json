@@ -228,5 +228,15 @@
     "description": "Focuses on cybersecurity threats and defensive use",
     "id": 47,
     "name": "security"
+  },
+  {
+    "description": "Blocks AI services and tools",
+    "id": 48,
+    "name": "ai"
+  },
+  {
+    "description": "Lists intended for parental control",
+    "id": 49,
+    "name": "parental-control"
   }
 ]
